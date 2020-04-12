@@ -8,5 +8,18 @@
 
   <ItemGroup>
     <Content Remove="wwwroot\css\site.css" />
+    <Content Remove="wwwroot\fonts\fontawesome-webfont.svg" />
+    <Content Remove="wwwroot\fonts\FontAwesome.otf" />
+    <Content Remove="wwwroot\fonts\glyphicons-halflings-regular.woff" />
+    <Content Remove="wwwroot\fonts\glyphicons-halflings-regular.eot" />
+    <Content Remove="wwwroot\fonts\.DS_Store" />
+    <Content Remove="wwwroot\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Remove="wwwroot\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Remove="wwwroot\fonts\fontawesome-webfont.woff2" />
+    <Content Remove="wwwroot\fonts\fontawesome-webfont.ttf" />
+    <Content Remove="wwwroot\fonts\fontawesome-webfont.woff" />
+    <Content Remove="wwwroot\fonts\glyphicons-halflings-regular.svg" />
+    <Content Remove="wwwroot\fonts\fontawesome-webfont.eot" />
+    <Content Remove="wwwroot\js\.DS_Store" />
   </ItemGroup>
 </Project>

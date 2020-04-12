@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/arsh/Desktop/IEApp/ProtectGaia/ProtectGaia.csproj",
+      "projectUniqueName": "/Users/arsh/Desktop/ProtectGaia/ProtectGaia/ProtectGaia.csproj",
       "projectName": "ProtectGaia",
-      "projectPath": "/Users/arsh/Desktop/IEApp/ProtectGaia/ProtectGaia.csproj",
+      "projectPath": "/Users/arsh/Desktop/ProtectGaia/ProtectGaia/ProtectGaia.csproj",
       "packagesPath": "/Users/arsh/.nuget/packages/",
-      "outputPath": "/Users/arsh/Desktop/IEApp/ProtectGaia/obj/",
+      "outputPath": "/Users/arsh/Desktop/ProtectGaia/ProtectGaia/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/arsh/.config/NuGet/NuGet.Config"
