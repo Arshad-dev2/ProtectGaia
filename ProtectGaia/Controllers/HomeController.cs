@@ -28,6 +28,12 @@ namespace ProtectGaia.Controllers
             return View();
         }
 
+        public IActionResult Contact()
+        {
+            var lister = new List<string>() { "Apple", "Banana", "Orange" };
+            return View(lister);
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
