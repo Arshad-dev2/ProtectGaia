@@ -22,4 +22,10 @@
     <Content Remove="wwwroot\fonts\fontawesome-webfont.eot" />
     <Content Remove="wwwroot\js\.DS_Store" />
   </ItemGroup>
+
+
+
+  <ItemGroup>
+    <Folder Include="wwwroot\images\NewFolder\" />
+  </ItemGroup>
 </Project>
