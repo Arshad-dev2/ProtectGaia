@@ -115,13 +115,16 @@ img {
 
 code {
 	background-color: #ee6e73;
+	
 	border-radius: 2px;
 	color: #fff;
+	
 	padding: 2px 4px;
 }
 
 pre {
 	background-color: #f8f8f8;
+	
 	border: 1px solid #eee;
 	border-radius: 4px;
 	padding: 10px;
@@ -187,18 +190,21 @@ iframe {
 /* ========= BUTTON =========*/
 
 .mu-primary-btn {
-	background-color: #4a7729;
-	color: #fff;
+	background-color: transparent;
+	color: #505050;
 	display: inline-block;
 	font-size: 18px;
-	padding: 15px 70px;
+	padding: 10px 40px;
 	text-transform: uppercase;
 	font-weight: 700;
-	border-radius: 25px;
+	border-radius: 10px;
+	border-color: #505050;
+	border-style: solid;
 }
 
 .mu-primary-btn:hover,
 .mu-primary-btn:focus {
+	background-color: #505050;
 	color: #fff;
 }
 
@@ -316,7 +322,9 @@ a:focus,
 /*--------------------*/
 
 #mu-hero {
-	background-color: #4a7729;
+	/*position: sticky;
+	top:100px;*/
+	background-color: #303030;
 	display: inline;
 	float: left;
 	width: 100%;
@@ -329,6 +337,7 @@ a:focus,
 }
 
 .mu-navbar .mu-logo {
+	
 	color: #fff;
 	font-weight: 600;
 	font-size: 36px;
@@ -371,8 +380,8 @@ a:focus,
 /* MENUE */
 /*--------------------*/
 
-.mu-navbar {
-	padding: 20px 0;
+.mu-navbar {	
+	padding: 2px 0;
 }
 
 .mu-navbar-nav {
@@ -475,6 +484,7 @@ a:focus,
 	width: 100%;
 	z-index: 99;
 	padding: 12% 16%;
+	
 }
 
 .mu-single-slide-content {
@@ -482,6 +492,7 @@ a:focus,
 	float: left;
 	text-align: center;
 	width: 100%;
+	
 }
 
 .mu-single-slide-content h1 {
