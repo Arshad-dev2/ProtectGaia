@@ -9,7 +9,6 @@ C:\Users\gupta\Source\Repos\ProtectGaia\ProtectGaia\bin\Debug\netcoreapp3.1\Prot
 C:\Users\gupta\Source\Repos\ProtectGaia\ProtectGaia\bin\Debug\netcoreapp3.1\ProtectGaia.pdb
 C:\Users\gupta\Source\Repos\ProtectGaia\ProtectGaia\bin\Debug\netcoreapp3.1\ProtectGaia.Views.dll
 C:\Users\gupta\Source\Repos\ProtectGaia\ProtectGaia\bin\Debug\netcoreapp3.1\ProtectGaia.Views.pdb
-C:\Users\gupta\Source\Repos\ProtectGaia\ProtectGaia\obj\Debug\netcoreapp3.1\ProtectGaia.csprojAssemblyReference.cache
 C:\Users\gupta\Source\Repos\ProtectGaia\ProtectGaia\obj\Debug\netcoreapp3.1\ProtectGaia.csproj.CoreCompileInputs.cache
 C:\Users\gupta\Source\Repos\ProtectGaia\ProtectGaia\obj\Debug\netcoreapp3.1\ProtectGaia.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\gupta\Source\Repos\ProtectGaia\ProtectGaia\obj\Debug\netcoreapp3.1\ProtectGaia.RazorAssemblyInfo.cache
@@ -37,3 +36,4 @@ C:\Users\gupta\Source\Repos\ProtectGaia\ProtectGaia\obj\Debug\netcoreapp3.1\Prot
 C:\Users\gupta\Source\Repos\ProtectGaia\ProtectGaia\obj\Debug\netcoreapp3.1\ProtectGaia.csproj.CopyComplete
 C:\Users\gupta\Source\Repos\ProtectGaia\ProtectGaia\obj\Debug\netcoreapp3.1\Razor\Views\Home\Contact.cshtml.g.cs
 C:\Users\gupta\Source\Repos\ProtectGaia\ProtectGaia\bin\Debug\netcoreapp3.1\aws-beanstalk-tools-defaults.json
+C:\Users\gupta\Source\Repos\ProtectGaia\ProtectGaia\obj\Debug\netcoreapp3.1\ProtectGaia.csprojAssemblyReference.cache
