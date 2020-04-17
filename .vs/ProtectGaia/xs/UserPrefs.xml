@@ -1,0 +1,24 @@
+﻿<Properties GitUserInfo="UsingMD" StartupConfiguration="{BDDF4489-5DDE-44B4-8633-EF399E5DB6BC}|Default">
+  <MonoDevelop.Ide.Workbench>
+    <Files>
+      <File FileName="ProtectGaia/Views/Shared/_Layout.cshtml" Line="31" Column="1" />
+      <File FileName="ProtectGaia/wwwroot/css/style.css" Line="3671" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="ProtectGaia" expanded="True" selected="True">
+            <Node name="ProtectGaia" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.ProtectGaia PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

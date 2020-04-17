@@ -8,26 +8,24 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\gupta\\.nuget\\packages\\": {}
+    "/Users/sameekshaingle/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\gupta\\Source\\Repos\\ProtectGaia\\ProtectGaia\\ProtectGaia.csproj",
+      "projectUniqueName": "/Users/sameekshaingle/Desktop/ProtectGaia/ProtectGaia/ProtectGaia.csproj",
       "projectName": "ProtectGaia",
-      "projectPath": "C:\\Users\\gupta\\Source\\Repos\\ProtectGaia\\ProtectGaia\\ProtectGaia.csproj",
-      "packagesPath": "C:\\Users\\gupta\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\gupta\\Source\\Repos\\ProtectGaia\\ProtectGaia\\obj\\",
+      "projectPath": "/Users/sameekshaingle/Desktop/ProtectGaia/ProtectGaia/ProtectGaia.csproj",
+      "packagesPath": "/Users/sameekshaingle/.nuget/packages/",
+      "outputPath": "/Users/sameekshaingle/Desktop/ProtectGaia/ProtectGaia/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\gupta\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/sameekshaingle/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -61,7 +59,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.200/RuntimeIdentifierGraph.json"
       }
     }
   }

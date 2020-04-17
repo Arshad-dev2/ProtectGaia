@@ -164,7 +164,7 @@ blockquote {
 	border-radius: 0 4px 4px 0;
 	color: #323232;
 	padding: 15px 15px;
-	border-left: 5px solid #808080;
+	border-left: 5px solid #4a7729;
 	font-weight: 600;
 }
 
@@ -323,14 +323,10 @@ a:focus,
 /*--------------------*/
 
 #mu-hero {
-	position: fixed;
-	top: 0px;
-	height: 80px;
-	background-color: #303030;
+	background-color: transparent;
 	display: inline;
 	float: left;
 	width: 100%;
-	z-index: 999;
 }
 
 .mu-logo-area {
@@ -399,16 +395,13 @@ a:focus,
 }
 
 .mu-navbar-nav li a {
-	color: #fefeff;
+	color: white;
 	display: block;
-	font-size: 14px;
+	font-size: 16px;
 	font-weight: 700;
-	text-transform: uppercase;
+	text-transform: capitalize;
 	padding: 9px 18px;
-	border-radius: 15px;
-	-webkit-transition: all 0.5s;
-	-o-transition: all 0.5s;
-	transition: all 0.5s;
+	border-radius: 0.20rem;
 }
 
 
@@ -422,14 +415,15 @@ a:focus,
 .mu-navbar-nav li.active a,
 .mu-navbar-nav li a:hover,
 .mu-navbar-nav li a:focus {
-	background-color: #fff;
-	color: #808080;
+	color: #4a7729;
+    border-color: white;
+    border-radius: 0.20rem;
+    border: 1px solid;
 }
 
 
-
 .mu-navbar-nav .dropdown-menu {
-	left: auto;
+	/*left: auto;*/
 	right: 0;
 }
 
@@ -440,7 +434,7 @@ a:focus,
 
 .mu-navbar-nav li .dropdown-menu a:hover,
 .mu-navbar-nav li .dropdown-menu a:focus {
-	color: #808080;
+	color: #4a7729;
 }
 
 
@@ -449,9 +443,6 @@ a:focus,
 /*--------------------*/
 
 #mu-slider {
-	position: relative;
-	overflow: hidden;
-	margin: 80px auto;
 	display: inline;
 	float: left;
 	width: 100%;
@@ -477,7 +468,7 @@ a:focus,
 	right: 0;
 	top: 0;
 	bottom: 0;
-	opacity: 0.4;
+	opacity: 0.8;
 	z-index: 10;
 }
 
@@ -2924,9 +2915,10 @@ td,th {
 
 	.mu-navbar .navbar-toggler {
 		color: #fff;
-		border-color: #fff;
+		border-color: white;
 		cursor: pointer;
 		padding: 10px 15px;
+
 	}
 
 	.mu-single-slide-content-area {
@@ -3671,3 +3663,8 @@ td,th {
 	
 }
 
+.top-right {
+    position: absolute;
+    top: 10px;
+    right: 16px;
+}

@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< Updated upstream
     "C:\\Users\\gupta\\Source\\Repos\\ProtectGaia\\ProtectGaia\\ProtectGaia.csproj": {}
   },
   "projects": {
@@ -16,6 +17,22 @@
         "configFilePaths": [
           "C:\\Users\\gupta\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+=======
+    "/Users/sameekshaingle/Desktop/ProtectGaia/ProtectGaia/ProtectGaia.csproj": {}
+  },
+  "projects": {
+    "/Users/sameekshaingle/Desktop/ProtectGaia/ProtectGaia/ProtectGaia.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/sameekshaingle/Desktop/ProtectGaia/ProtectGaia/ProtectGaia.csproj",
+        "projectName": "ProtectGaia",
+        "projectPath": "/Users/sameekshaingle/Desktop/ProtectGaia/ProtectGaia/ProtectGaia.csproj",
+        "packagesPath": "/Users/sameekshaingle/.nuget/packages/",
+        "outputPath": "/Users/sameekshaingle/Desktop/ProtectGaia/ProtectGaia/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/sameekshaingle/.config/NuGet/NuGet.Config"
+>>>>>>> Stashed changes
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
