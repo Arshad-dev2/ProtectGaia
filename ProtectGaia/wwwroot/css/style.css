@@ -610,16 +610,16 @@ a:focus,
 	width: 100%;
 }
 
-#mu-call-to-action:before {
-	background: #0091E3;
-	content: '';
-	position: absolute;
-	opacity: 0.84;
-	left: 0;
-	right: 0;
-	top: 0;
-	bottom: 0;
-}
+	#mu-call-to-action:before {
+		background: black;
+		content: '';
+		position: absolute;
+		opacity: 0.84;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+	}
 
 .mu-call-to-action-area {
 	display: inline;
