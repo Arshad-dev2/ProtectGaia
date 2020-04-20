@@ -25,7 +25,4 @@
 
 
 
-  <ItemGroup>
-    <Folder Include="wwwroot\images\NewFolder\" />
-  </ItemGroup>
 </Project>
