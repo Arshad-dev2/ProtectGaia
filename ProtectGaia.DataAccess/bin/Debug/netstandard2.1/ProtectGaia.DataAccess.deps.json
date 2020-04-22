@@ -1,0 +1,67 @@
+{
+  "runtimeTarget": {
+    "name": ".NETStandard,Version=v2.1/",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETStandard,Version=v2.1": {},
+    ".NETStandard,Version=v2.1/": {
+      "ProtectGaia.DataAccess/1.0.0": {
+        "dependencies": {
+          "Newtonsoft.Json": "12.0.3",
+          "ProtectGaia.Entities": "1.0.0",
+          "ProtectGaia.Interface": "1.0.0"
+        },
+        "runtime": {
+          "ProtectGaia.DataAccess.dll": {}
+        }
+      },
+      "Newtonsoft.Json/12.0.3": {
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "assemblyVersion": "12.0.0.0",
+            "fileVersion": "12.0.3.23909"
+          }
+        }
+      },
+      "ProtectGaia.Entities/1.0.0": {
+        "runtime": {
+          "ProtectGaia.Entities.dll": {}
+        }
+      },
+      "ProtectGaia.Interface/1.0.0": {
+        "dependencies": {
+          "ProtectGaia.Entities": "1.0.0"
+        },
+        "runtime": {
+          "ProtectGaia.Interface.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ProtectGaia.DataAccess/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Newtonsoft.Json/12.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-6mgjfnRB4jKMlzHSl+VD+oUc1IebOZabkbyWj2RiTgWwYPPuaK1H97G1sHqGwPlS5npiF5Q0OrxN1wni2n5QWg==",
+      "path": "newtonsoft.json/12.0.3",
+      "hashPath": "newtonsoft.json.12.0.3.nupkg.sha512"
+    },
+    "ProtectGaia.Entities/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ProtectGaia.Interface/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

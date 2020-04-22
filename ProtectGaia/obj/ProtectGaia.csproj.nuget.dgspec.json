@@ -1,32 +1,207 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\gupta\\source\\repos\\ProtectGaia-dev\\ProtectGaia\\ProtectGaia.csproj": {}
+    "/Users/arsh/Desktop/IE/EcoMorph/ProtectGaia/ProtectGaia.csproj": {}
   },
   "projects": {
-    "C:\\Users\\gupta\\source\\repos\\ProtectGaia-dev\\ProtectGaia\\ProtectGaia.csproj": {
+    "/Users/arsh/Desktop/IE/EcoMorph/ProtectGaia.DataAccess/ProtectGaia.DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gupta\\source\\repos\\ProtectGaia-dev\\ProtectGaia\\ProtectGaia.csproj",
-        "projectName": "ProtectGaia",
-        "projectPath": "C:\\Users\\gupta\\source\\repos\\ProtectGaia-dev\\ProtectGaia\\ProtectGaia.csproj",
-        "packagesPath": "C:\\Users\\gupta\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gupta\\source\\repos\\ProtectGaia-dev\\ProtectGaia\\obj\\",
+        "projectUniqueName": "/Users/arsh/Desktop/IE/EcoMorph/ProtectGaia.DataAccess/ProtectGaia.DataAccess.csproj",
+        "projectName": "ProtectGaia.DataAccess",
+        "projectPath": "/Users/arsh/Desktop/IE/EcoMorph/ProtectGaia.DataAccess/ProtectGaia.DataAccess.csproj",
+        "packagesPath": "/Users/arsh/.nuget/packages/",
+        "outputPath": "/Users/arsh/Desktop/IE/EcoMorph/ProtectGaia.DataAccess/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\gupta\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/arsh/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "projectReferences": {
+              "/Users/arsh/Desktop/IE/EcoMorph/ProtectGaia.Entities/ProtectGaia.Entities.csproj": {
+                "projectPath": "/Users/arsh/Desktop/IE/EcoMorph/ProtectGaia.Entities/ProtectGaia.Entities.csproj"
+              },
+              "/Users/arsh/Desktop/IE/EcoMorph/ProtectGaia.Interface/ProtectGaia.Interface.csproj": {
+                "projectPath": "/Users/arsh/Desktop/IE/EcoMorph/ProtectGaia.Interface/ProtectGaia.Interface.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.200/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/arsh/Desktop/IE/EcoMorph/ProtectGaia.Entities/ProtectGaia.Entities.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/arsh/Desktop/IE/EcoMorph/ProtectGaia.Entities/ProtectGaia.Entities.csproj",
+        "projectName": "ProtectGaia.Entities",
+        "projectPath": "/Users/arsh/Desktop/IE/EcoMorph/ProtectGaia.Entities/ProtectGaia.Entities.csproj",
+        "packagesPath": "/Users/arsh/.nuget/packages/",
+        "outputPath": "/Users/arsh/Desktop/IE/EcoMorph/ProtectGaia.Entities/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/arsh/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.200/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/arsh/Desktop/IE/EcoMorph/ProtectGaia.Interface/ProtectGaia.Interface.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/arsh/Desktop/IE/EcoMorph/ProtectGaia.Interface/ProtectGaia.Interface.csproj",
+        "projectName": "ProtectGaia.Interface",
+        "projectPath": "/Users/arsh/Desktop/IE/EcoMorph/ProtectGaia.Interface/ProtectGaia.Interface.csproj",
+        "packagesPath": "/Users/arsh/.nuget/packages/",
+        "outputPath": "/Users/arsh/Desktop/IE/EcoMorph/ProtectGaia.Interface/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/arsh/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "projectReferences": {
+              "/Users/arsh/Desktop/IE/EcoMorph/ProtectGaia.Entities/ProtectGaia.Entities.csproj": {
+                "projectPath": "/Users/arsh/Desktop/IE/EcoMorph/ProtectGaia.Entities/ProtectGaia.Entities.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.200/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/arsh/Desktop/IE/EcoMorph/ProtectGaia/ProtectGaia.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/arsh/Desktop/IE/EcoMorph/ProtectGaia/ProtectGaia.csproj",
+        "projectName": "ProtectGaia",
+        "projectPath": "/Users/arsh/Desktop/IE/EcoMorph/ProtectGaia/ProtectGaia.csproj",
+        "packagesPath": "/Users/arsh/.nuget/packages/",
+        "outputPath": "/Users/arsh/Desktop/IE/EcoMorph/ProtectGaia/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/arsh/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
-            "projectReferences": {}
+            "projectReferences": {
+              "/Users/arsh/Desktop/IE/EcoMorph/ProtectGaia.DataAccess/ProtectGaia.DataAccess.csproj": {
+                "projectPath": "/Users/arsh/Desktop/IE/EcoMorph/ProtectGaia.DataAccess/ProtectGaia.DataAccess.csproj"
+              },
+              "/Users/arsh/Desktop/IE/EcoMorph/ProtectGaia.Entities/ProtectGaia.Entities.csproj": {
+                "projectPath": "/Users/arsh/Desktop/IE/EcoMorph/ProtectGaia.Entities/ProtectGaia.Entities.csproj"
+              },
+              "/Users/arsh/Desktop/IE/EcoMorph/ProtectGaia.Interface/ProtectGaia.Interface.csproj": {
+                "projectPath": "/Users/arsh/Desktop/IE/EcoMorph/ProtectGaia.Interface/ProtectGaia.Interface.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -55,7 +230,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.200/RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -1,0 +1,14 @@
+/Users/arsh/Desktop/IE/EcoMorph/ProtectGaia.DataAccess/bin/Debug/netstandard2.1/ProtectGaia.DataAccess.deps.json
+/Users/arsh/Desktop/IE/EcoMorph/ProtectGaia.DataAccess/bin/Debug/netstandard2.1/ProtectGaia.DataAccess.dll
+/Users/arsh/Desktop/IE/EcoMorph/ProtectGaia.DataAccess/bin/Debug/netstandard2.1/ProtectGaia.DataAccess.pdb
+/Users/arsh/Desktop/IE/EcoMorph/ProtectGaia.DataAccess/bin/Debug/netstandard2.1/ProtectGaia.Entities.dll
+/Users/arsh/Desktop/IE/EcoMorph/ProtectGaia.DataAccess/bin/Debug/netstandard2.1/ProtectGaia.Interface.dll
+/Users/arsh/Desktop/IE/EcoMorph/ProtectGaia.DataAccess/bin/Debug/netstandard2.1/ProtectGaia.Entities.pdb
+/Users/arsh/Desktop/IE/EcoMorph/ProtectGaia.DataAccess/bin/Debug/netstandard2.1/ProtectGaia.Interface.pdb
+/Users/arsh/Desktop/IE/EcoMorph/ProtectGaia.DataAccess/obj/Debug/netstandard2.1/ProtectGaia.DataAccess.csprojAssemblyReference.cache
+/Users/arsh/Desktop/IE/EcoMorph/ProtectGaia.DataAccess/obj/Debug/netstandard2.1/ProtectGaia.DataAccess.csproj.CoreCompileInputs.cache
+/Users/arsh/Desktop/IE/EcoMorph/ProtectGaia.DataAccess/obj/Debug/netstandard2.1/ProtectGaia.DataAccess.AssemblyInfoInputs.cache
+/Users/arsh/Desktop/IE/EcoMorph/ProtectGaia.DataAccess/obj/Debug/netstandard2.1/ProtectGaia.DataAccess.AssemblyInfo.cs
+/Users/arsh/Desktop/IE/EcoMorph/ProtectGaia.DataAccess/obj/Debug/netstandard2.1/ProtectGaia.DataAccess.csproj.CopyComplete
+/Users/arsh/Desktop/IE/EcoMorph/ProtectGaia.DataAccess/obj/Debug/netstandard2.1/ProtectGaia.DataAccess.dll
+/Users/arsh/Desktop/IE/EcoMorph/ProtectGaia.DataAccess/obj/Debug/netstandard2.1/ProtectGaia.DataAccess.pdb

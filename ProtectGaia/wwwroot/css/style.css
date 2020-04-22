@@ -225,7 +225,7 @@ iframe {
 
     .mu-send-msg-btn:hover,
     .mu-send-msg-btn:focus {
-        background-color: #fff;
+        background-color: green;
     }
 
 /*scrol to top*/
@@ -3189,7 +3189,7 @@ a:focus,
     position: fixed;
     top: 0rem;
     width: 100%;
-    z-index: 2;
+    z-index: 100;
 }
 
 .title-image {
