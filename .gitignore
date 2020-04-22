@@ -1,0 +1,5 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/ProtectGaia/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_Web_Layout.cshtml.g.cs

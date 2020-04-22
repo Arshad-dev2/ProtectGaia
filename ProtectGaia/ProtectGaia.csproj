@@ -21,7 +21,6 @@
     <Content Remove="wwwroot\fonts\glyphicons-halflings-regular.svg" />
     <Content Remove="wwwroot\fonts\fontawesome-webfont.eot" />
     <Content Remove="wwwroot\js\.DS_Store" />
-    <Content Remove="wwwroot\images\Home\eco_logo.png" />
     <Content Remove="Views\Shared\_Web_Layout.cshtml" />
   </ItemGroup>
 
