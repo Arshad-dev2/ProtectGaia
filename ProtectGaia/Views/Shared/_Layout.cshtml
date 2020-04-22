@@ -39,7 +39,7 @@
     <!-- END SCROLL TOP BUTTON -->
     <!-- Start Header -->
     <header id="mu-hero">
-        <img src="~/images/Home/ghg_home.jpg" alt="EcoMorph" class="title-image" />
+        <img src="~/images/Home/ghg_home.jpg" alt="EcoMorph" class="title-image" style="width: 100%; height: auto"/>
         <div class="top-right">
             <nav class="navbar navbar-expand-lg navbar-light mu-navbar">
                 <div>
@@ -57,11 +57,11 @@
                             <a asp-controller="Home" asp-action="Index">Home</a>
                         </li>
                         <li class="nav-item"><a href="#" onclick="scrollToDiv('aboutus')">About us</a></li>
-                        <li class="nav-item"><a href="#"onclick="scrollToDiv('aboutus')">Resources</a></li>
+                        <li class="nav-item"><a href="#"onclick="scrollToDiv('Resources')">Resources</a></li>
          
                         <li class="nav-item"><a href="#"onclick="scrollToDiv('aboutus')">Get Involved</a></li>
 
-                        <li class="nav-item"><a href="#"onclick="scrollToDiv('contactus')">Contact us</a></li>
+                        <li class="nav-item"><a asp-controller="Home" asp-action="Contact">Contact Us</a></li>
                     </ul>
                 </div>
             </nav>
