@@ -22,21 +22,7 @@
 
 (function( $ ){
 
-	/* ----------------------------------------------------------- */
-	/*  1. MAIN SLIDER
-	/* ----------------------------------------------------------- */
-
-	$('.mu-slide').slick({
-		arrows: true,
-		dots: false,
-		infinite: true,
-		speed: 500,
-		autoplay: true,
-		cssEase: 'linear'
-	});
-
 	
-	/* ----------------------------------------------------------- */
 	/*  2. VIDEO POPUP
 	/* ----------------------------------------------------------- */
 
@@ -83,20 +69,6 @@
 	});
 
 
-   	/* ----------------------------------------------------------- */
-	/*  3. TESTIMONIALS (SLICK SLIDER)
-	/* ----------------------------------------------------------- */
-
-		$('.mu-testimonial-slide').slick({
-			arrows: true,
-			dots: false,
-			infinite: true,
-			speed: 500,
-			autoplay: true,
-			cssEase: 'linear'
-		});
-
-	/* ----------------------------------------------------------- */
   	/*  4. SCROLL TOP BUTTON
   	/* ----------------------------------------------------------- */
 
@@ -117,33 +89,6 @@
 	      return false;
 	    });
 	 
-		
-	/* ----------------------------------------------------------- */
-	/*  5. CLIENTS SLIDEER ( SLICK SLIDER )
-	/* ----------------------------------------------------------- */
-
-		$('.mu-clients-slider').slick({
-		  slidesToShow: 5,
-		  arrows: false,
-		  autoplay: true,
-		  responsive: [
-		    {
-		      breakpoint: 768,
-		      settings: {
-		        arrows: false,
-		        slidesToShow: 3
-		      }
-		    },
-		    {
-		      breakpoint: 480,
-		      settings: {
-		        arrows: false,
-		        slidesToShow: 2
-		      }
-		    }
-		  ]
-		});
-
 	
 	/* ----------------------------------------------------------- */
 	/*  6. PORTFOLIO GALLERY

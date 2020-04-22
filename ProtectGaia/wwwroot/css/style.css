@@ -331,12 +331,14 @@ a:focus,
     display: inline;
     float: left;
     width: 50%;
+    /*padding-left:20px;*/
 }
 
 .mu-navbar .mu-logo {
     color: #fff;
     font-weight: 600;
     font-size: 36px;
+    padding-left: 20px;
 }
 
 .mu-logo span {
@@ -683,20 +685,21 @@ a:focus,
 /* SERVICE */
 /*--------------------*/
 
-#mu-service {
+#mu-researches {
     display: inline;
     float: left;
     width: 100%;
     padding: 100px 0 50px;
+    background-color: #F0F0F0;
 }
 
-.mu-service-area {
+.mu-researches-area {
     display: inline;
     float: left;
     width: 100%;
 }
 
-.mu-service-content {
+.mu-researches-content {
     display: inline;
     float: left;
     width: 100%;
@@ -1462,7 +1465,7 @@ td, th {
 }
 
 .mu-footer-top {
-    background-color: #0277bd;
+    background-color: #292929;
     display: inline;
     float: left;
     padding: 55px 0;
@@ -3123,7 +3126,7 @@ td, th {
         margin-top: 30px;
     }
 
-    #mu-service {
+    #mu-researches {
         padding: 60px 0 50px;
     }
 
@@ -3434,6 +3437,7 @@ td, th {
         line-height: 43px;
         width: 45px;
         height: 45px;
+
     }
 
     .mu-navbar {
