@@ -8,6 +8,8 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using ProtectGaia.Interface;
+using ProtectGaia.DataAccess;
 
 namespace ProtectGaia
 {
@@ -24,6 +26,8 @@ namespace ProtectGaia
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+
+            services.AddScoped<IMeetupApi, MeetupApi>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

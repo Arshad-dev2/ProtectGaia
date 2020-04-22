@@ -1,0 +1,162 @@
+﻿@{
+    Layout = "_WebLayout";
+    ViewData["Title"] = "Infographics";
+}
+
+<link href="~/css/infographics.css" rel="stylesheet">
+<script>var contactId = "resourcesone";</script>
+
+<div class="container" style="margin-top:10rem;">
+    <!--New Content below-->
+
+    <h2 style="text-align:center">Infographics</h2>
+
+    <div class="row" style="margin-top: 3rem;">
+        <div class="col-md-6">
+            <img src="/images/infographics/info1.png" style="width:80%; height: 100%;" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+            <br />
+        </div>
+        <div class="col-md-6">
+            <img src="/images/infographics/info2.png" style="width:80%; height: 100%;" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+            <br />
+        </div>
+    </div>
+    <div class="row" style="margin-top: 6rem;">
+        <div class="col-md-6">
+            <img src="/images/infographics/info3.png" style="width:80%; height: 100%;" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+            <br />
+        </div>
+        <div class="col-md-6">
+            <img src="/images/infographics/info4.png" style="width: 80%; height: 100%;" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+            <br />
+        </div>
+    </div>
+    <div class="row" style="margin-top: 6rem;">
+        <div class="col-md-6" >
+            <img src="/images/infographics/info5.png" style="width:80%; height: 100%;" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+            <br />
+        </div>
+        <div class="col-md-6">
+            <img src="/images/infographics/info6.png" style="width: 80%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+            <br />
+        </div>
+    </div> <br />
+</div>
+
+<div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times; </span>
+    <div class="modal-content">
+
+        <div class="mySlides" style="margin-left: 20rem;">
+            <div class="numbertext">1 / 6</div>
+            <img src="/images/infographics/infographic1.png" style="width:60%; height: 20%">
+        </div>
+
+        <div class="mySlides" style="margin-left: 18rem;">
+            <div class="numbertext">2 / 6</div>
+            <video width="640" height="480" controls>
+                <source src="/images/infographics/infographic2.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <div class="mySlides" style="margin-left: 18rem;">
+            <div class="numbertext">3 / 6</div>
+            <video width="640" height="480" controls>
+                <source src="/images/infographics/infographic3.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <div class="mySlides" style="margin-left: 18rem;">
+            <div class="numbertext">4 / 6</div>
+            <video width="640" height="480" controls>
+                <source src="/images/infographics/infographic4.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <div class="mySlides" style="margin-left: 18rem;">
+            <div class="numbertext">5 / 6</div>
+            <video width="640" height="480" controls>
+                <source src="/images/infographics/infographic5.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <div class="mySlides" style="margin-left: 18rem;">
+            <div class="numbertext">6 / 6</div>
+            <video width="640" height="480" controls>
+                <source src="/images/infographics/infographic6.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        <div class="caption-container">
+            <p id="caption"></p>
+        </div>
+
+        <!--
+
+        <div class="col-md-2">
+            <img class="demo cursor" src="/images/infographics/info1.png" onclick="currentSlide(1)" alt="Infographic 1">
+            <br />
+        <div class="col-md-2">
+            <img class="demo cursor" src="/images/infographics/info2.png" onclick="currentSlide(2)" alt="Infographic 2">
+            <br />
+        </div>
+        <div class="col-md-2">
+            <img class="demo cursor" src="/images/infographics/info3.png" onclick="currentSlide(3)" alt="Infographic 3">
+            <br />
+        </div>
+        <div class="col-md-2">
+            <img class="demo cursor" src="/images/infographics/info4.png" onclick="currentSlide(4)" alt="Infographic 4">
+            <br />
+        </div>
+        <div class="col-md-2">
+            <img class="demo cursor" src="/images/infographics/info5.png" onclick="currentSlide(3)" alt="Infographic 5">
+            <br />
+        </div>
+        <div class="col-md-2">
+            <img class="demo cursor" src="/images/infographics/info6.png" onclick="currentSlide(4)" alt="Infographic 6">
+            <br />
+        </div>
+    </div>
+</div> -->
+        </div>
+    </div> 
+
+<script>function openModal() {
+        document.getElementById("myModal").style.display = "block";
+    }
+
+    function closeModal() {
+        document.getElementById("myModal").style.display = "none";
+    }
+
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("demo");
+        var captionText = document.getElementById("caption");
+        if (n > slides.length) { slideIndex = 1 }
+        if (n < 1) { slideIndex = slides.length }
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        captionText.innerHTML = dots[slideIndex - 1].alt;
+    }</script>

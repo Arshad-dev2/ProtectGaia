@@ -21,8 +21,24 @@
     <Content Remove="wwwroot\fonts\glyphicons-halflings-regular.svg" />
     <Content Remove="wwwroot\fonts\fontawesome-webfont.eot" />
     <Content Remove="wwwroot\js\.DS_Store" />
+    <Content Remove="wwwroot\images\Home\eco_logo.png" />
+    <Content Remove="Views\Shared\_Web_Layout.cshtml" />
   </ItemGroup>
 
 
 
+  <ItemGroup>
+    <ProjectReference Include="..\ProtectGaia.DataAccess\ProtectGaia.DataAccess.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
+    <ProjectReference Include="..\ProtectGaia.Entities\ProtectGaia.Entities.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
+    <ProjectReference Include="..\ProtectGaia.Interface\ProtectGaia.Interface.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Views\Resources\" />
+  </ItemGroup>
 </Project>

@@ -5,6 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using ProtectGaia.Interface;
 using ProtectGaia.Models;
 
 namespace ProtectGaia.Controllers
@@ -13,13 +14,18 @@ namespace ProtectGaia.Controllers
     {
         private readonly ILogger<HomeController> _logger;
 
-        public HomeController(ILogger<HomeController> logger)
+        private readonly IMeetupApi _iMeetupApi;
+
+        public HomeController(ILogger<HomeController> logger, IMeetupApi iMeetupApi)
         {
             _logger = logger;
+            _iMeetupApi = iMeetupApi;
+
         }
 
         public IActionResult Index()
         {
+            //var result = _iMeetupApi.UpcomingEvents();
             return View();
         }
 
@@ -30,8 +36,8 @@ namespace ProtectGaia.Controllers
 
         public IActionResult Contact()
         {
-            var lister = new List<string>() { "Apple", "Banana", "Orange" };
-            return View(lister);
+            
+            return View();
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

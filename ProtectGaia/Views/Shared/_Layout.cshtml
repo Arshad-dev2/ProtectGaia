@@ -28,7 +28,7 @@
     <!-- Google Fonts Open sans -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700,800" rel="stylesheet">
 
-
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 <body>
 
@@ -56,27 +56,29 @@
                         <li class="nav-item active">
                             <a asp-controller="Home" asp-action="Index">Home</a>
                         </li>
-                        <li class="nav-item"><a href="#" onclick="scrollToDiv('aboutus')">About us</a></li>
-                        <li class="nav-item"><a href="#"onclick="scrollToDiv('Resources')">Resources</a></li>
+                        <li class="nav-item" id="aboutusone"><a href="/#aboutus" onclick="scrollToDiv('aboutus')">About us</a></li>
+                        <li class="nav-item" id="resourcesone"><a href="/#resources"onclick="scrollToDiv('resources')">Resources</a></li>
          
-                        <li class="nav-item"><a href="#"onclick="scrollToDiv('aboutus')">Get Involved</a></li>
+                        <li class="nav-item" id="aboutusone"><a href="/#getinvolved"onclick="scrollToDiv('aboutus')">Get Involved</a></li>
 
-                        <li class="nav-item"><a asp-controller="Home" asp-action="Contact">Contact Us</a></li>
+                        <li class="nav-item" id="contactusone"><a asp-controller="Home" asp-action="Contact" onclick="MakeActive(id)">Contact Us</a></li>
                     </ul>
                 </div>
             </nav>
         </div>
     </header>
     <!-- End Header -->
+    <main>
     @RenderBody()
-
+        </main>
     <!-- End main content -->
     <!-- Start footer -->
 
-    <footer>
-        <div class="mu-container mu-footer-top">
-            <center><p class="mu-copy-right">&copy; Copyright <a rel="nofollow" href="http://markups.io">EcoMorph</a>.<br/> All right reserved.</p></center>
-</div>
+
+    <footer style="height:100px">
+        <div class="mu-container mu-footer-top" style="background-color:#292929">
+            <center> <p class="mu-copy-right">&copy; Copyright <a rel="nofollow" href="http://markups.io">EcoMorph</a>.<br /> All right reserved.</p></center>
+        </div>
     </footer>
     <!-- End footer -->
     <!-- JavaScript -->
@@ -102,34 +104,7 @@
     <!-- Custom js -->
     <script type="text/javascript" src="/js/custom.js"></script>
 
-    <!-- About us Skills Circle progress  -->
-    <script>// First circle
-        new Circlebar({
-            element: "#circle-1",
-            type: "progress",
-            maxValue: "90"
-        });
-
-        // Second circle
-        new Circlebar({
-            element: "#circle-2",
-            type: "progress",
-            maxValue: "84"
-        });
-
-        // Third circle
-        new Circlebar({
-            element: "#circle-3",
-            type: "progress",
-            maxValue: "60"
-        });
-
-        // Fourth circle
-        new Circlebar({
-            element: "#circle-4",
-            type: "progress",
-            maxValue: "74"
-        });</script>
+    
 
 </body>
 </html>

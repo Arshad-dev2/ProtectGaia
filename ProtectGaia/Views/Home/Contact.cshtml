@@ -1,46 +1,61 @@
-﻿@{ 
-    Layout = "_Web_Layout";
+﻿@{
+    Layout = "_WebLayout";
 }
-<main>
-<!DOCTYPE html>
-    <html lang="en">
-        
-        <head>
-            <meta name="viewport" content="width=device-width, initial-scale=1">
-            <style>
-                .card {
-                    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-                    transition: 0.3s;
-                    width: 40%;
-                    border-radius: 5px;
-                }
+<script>
+    var contactId = "contactusone";
+</script>
+<section id="mu-contact">
+    <div class="container" id="contactus">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="mu-contact-area">
+                    <!-- Title -->
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="mu-title">
+                                <h2>Having Issues!</h2>
+                                <p>If you have any issues. Please address the issue below.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Start Contact Content -->
+                    <div class="mu-contact-content">
+                        <div class="row">
 
-                    .card:hover {
-                        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-                    }
+                            <div class="col-md-12">
+                                <div class="mu-contact-form-area">
+                                    <div id="form-messages"></div>
+                                    <form id="ajax-contact" method="post" action="mailer.php" class="mu-contact-form">
 
-                img {
-                    border-radius: 5px 5px 0 0;
-                }
+                                        <div class="form-group">
+                                            <span class="fa fa-user mu-contact-icon"></span>
+                                            <input type="text" class="form-control" placeholder="Name" id="name" name="name" required>
+                                        </div>
 
-                .container {
-                    padding: 2px 16px;
-                }
-            </style>
-        </head>
-        <body>
+                                        <div class="form-group">
+                                            <span class="fa fa-envelope mu-contact-icon"></span>
+                                            <input type="email" class="form-control" placeholder="Enter Email" id="email" name="email" required>
+                                        </div>
 
-            <h2>Round Card</h2>
+                                        <div class="form-group">
+                                            <span class="fa fa-folder-open-o mu-contact-icon"></span>
+                                            <input type="text" class="form-control" placeholder="Your Subject" id="subject" name="subject" required>
+                                        </div>
 
-            <div class="card">
-                <img src="img_avatar2.png" alt="Avatar" style="width:100%">
-                <div class="container">
-                    <h4><b>Jane Doe</b></h4>
-                    <p>Interior Designer</p>
+                                        <div class="form-group">
+                                            <span class="fa fa-pencil-square-o mu-contact-icon"></span>
+                                            <textarea class="form-control" placeholder="Message" id="message" name="message" required></textarea>
+                                        </div>
+                                        <button type="submit" class="mu-send-msg-btn"><span>Send Message</span></button>
+                                    </form>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- End Contact Content -->
                 </div>
             </div>
-
-        </body>
-    </html>
-
-</main>
+        </div>
+    </div>
+</section>
