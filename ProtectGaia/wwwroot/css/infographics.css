@@ -37,15 +37,14 @@
     position: relative;
     background-color: #fefefe;
     margin: auto;
-    padding: 0;
-    width: 90%;
-    max-width: 1200px;
-    margin-top: 6rem;
+    width: 80%;
+    max-width: 700px;
+    margin-top: 5rem;
 }
 
 /* The Close Button */
 .close {
-    margin-top: 2rem;
+    margin-top: 1.5rem;
     color: white;
     position: absolute;
     right: 25px;
