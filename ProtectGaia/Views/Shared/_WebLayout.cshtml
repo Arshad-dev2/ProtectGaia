@@ -4,11 +4,13 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Home - Eco Morph</title>
+    <title>@ViewBag.Title - Eco Morph</title>
     <!-- Favicon -->
-    <link rel="shortcut icon" type="/image/icon" href="/images/favicon.ico" />
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <!-- Font Awesome -->
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+    @*<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">*@
+    <link href="~/lib/font-awesome/css/all.min.css" rel="stylesheet" />
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <!-- Slick slider -->
@@ -28,6 +30,8 @@
     <!-- Google Fonts Open sans -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700,800" rel="stylesheet">
 
+    <!--W3 cards-->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
 </head>
 <body>
@@ -43,7 +47,7 @@
             <nav class="navbar navbar-expand-lg navbar-light mu-navbar">
                 <div>
                     <!-- Text based logo -->
-                    <a class="navbar-brand mu-logo" href="index.html"><img src="~/images/Home/eco_logo.png" alt="Eco Morph" style="height:70%;width:70%" /></a>
+                    <a class="navbar-brand mu-logo" href="index.html"><img src="~/images/Home/eco_logo.png" alt="Eco Morph" style="height:70%;width:70%" padding-left: 50px; /></a>
                     <!-- image based logo -->
                     <!-- <a class="navbar-brand mu-logo" href="index.html"><img src="assets/images/logo.png" alt="logo"></a> -->
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -55,12 +59,14 @@
                         <li class="nav-item active">
                             <a asp-controller="Home" asp-action="Index">Home</a>
                         </li>
-                        <li class="nav-item" id="aboutusone"><a href="/#aboutus" onclick="scrollToDiv('aboutus')">About us</a></li>
-                        <li class="nav-item" id="resourcesone"><a href="/#resources" onclick="scrollToDiv('resources')">Resources</a></li>
-
-                        <li class="nav-item" id="aboutusone"><a href="/#getinvolved" onclick="scrollToDiv('aboutus')">Get Involved</a></li>
-
-                        <li class="nav-item" id="contactusone"><a asp-controller="Home" asp-action="Contact">Contact us</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="dropdown-toggle" href="#" role="button" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Explore</a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" asp-controller="Explore" asp-Action="Infographics" onclick="MakeActive('infographics')">Infographics</a>
+                                <a class="dropdown-item" asp-controller="Explore" asp-Action="Visualization">Visualizations</a>
+                            </div>
+                        </li>
+                        <li class="nav-item" id="aboutusone"><a asp-controller="Blogs" asp-Action="Index" onclick="MakeActive('blogs')">Blogs</a></li>
                     </ul>
                 </div>
             </nav>

@@ -388,6 +388,7 @@ a:focus,
     display: block;
     text-align: right;
     width: 100%;
+    right:8rem!important;
 }
 
     .mu-navbar-nav li {
@@ -417,26 +418,31 @@ a:focus,
 .mu-navbar-nav li a:hover,
 .mu-navbar-nav li a:focus {
     color: #4a7729;
-    border-color: white;
-    border-radius: 0.20rem;
+    border-color: #4a7729;
+    border-radius: 0.30rem;
     border: 1px solid;
 }
 
 
 .mu-navbar-nav .dropdown-menu {
-    /*left: auto;*/
-    right: 0;
+    width: inherit;
+    background-color: rgb(51, 51, 51);
+    border: none;
 }
 
 .mu-navbar-nav li .dropdown-menu a {
-    color: #444;
+    color: #fff;
     padding: 6px 15px;
+    font-weight: 500;
 }
 
     .mu-navbar-nav li .dropdown-menu a:hover,
     .mu-navbar-nav li .dropdown-menu a:focus {
         color: #4a7729;
+        background: none;
+        border: none;
     }
+
 
 
 /*--------------------*/
@@ -2451,7 +2457,7 @@ a:focus,
         cursor: pointer;
         padding: 10px 15px;
         position: relative;
-        left: 5rem;
+        left: 15rem;
     }
 
     .mu-single-slide-content-area {
@@ -3245,3 +3251,24 @@ a:focus,
     font-family: 'Raleway', sans-serif;
     padding: 75px 25px 25px 25px;
 }
+
+.deviceLocation {
+    background-color: #2a4d69 !important;
+    color: white !important;
+}
+
+.currentTemp {
+    background-color: #74C2E1 !important;
+    color: white !important;
+}
+.AqiValue {
+    background-color: #4b86b4 !important;
+    color: white !important;
+   
+}
+.OzoneValue {
+    background-color: #afcfee !important;
+    color: white !important;
+}
+
+

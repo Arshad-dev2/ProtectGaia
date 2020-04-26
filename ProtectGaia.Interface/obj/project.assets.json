@@ -2,9 +2,21 @@
   "version": 3,
   "targets": {
     ".NETStandard,Version=v2.1": {
+      "Newtonsoft.Json/12.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        }
+      },
       "ProtectGaia.Entities/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.1",
+        "dependencies": {
+          "Newtonsoft.Json": "12.0.3"
+        },
         "compile": {
           "bin/placeholder/ProtectGaia.Entities.dll": {}
         },
@@ -15,6 +27,37 @@
     }
   },
   "libraries": {
+    "Newtonsoft.Json/12.0.3": {
+      "sha512": "6mgjfnRB4jKMlzHSl+VD+oUc1IebOZabkbyWj2RiTgWwYPPuaK1H97G1sHqGwPlS5npiF5Q0OrxN1wni2n5QWg==",
+      "type": "package",
+      "path": "newtonsoft.json/12.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "lib/net20/Newtonsoft.Json.dll",
+        "lib/net20/Newtonsoft.Json.xml",
+        "lib/net35/Newtonsoft.Json.dll",
+        "lib/net35/Newtonsoft.Json.xml",
+        "lib/net40/Newtonsoft.Json.dll",
+        "lib/net40/Newtonsoft.Json.xml",
+        "lib/net45/Newtonsoft.Json.dll",
+        "lib/net45/Newtonsoft.Json.xml",
+        "lib/netstandard1.0/Newtonsoft.Json.dll",
+        "lib/netstandard1.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.3/Newtonsoft.Json.dll",
+        "lib/netstandard1.3/Newtonsoft.Json.xml",
+        "lib/netstandard2.0/Newtonsoft.Json.dll",
+        "lib/netstandard2.0/Newtonsoft.Json.xml",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.xml",
+        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.xml",
+        "newtonsoft.json.12.0.3.nupkg.sha512",
+        "newtonsoft.json.nuspec",
+        "packageIcon.png"
+      ]
+    },
     "ProtectGaia.Entities/1.0.0": {
       "type": "project",
       "path": "../ProtectGaia.Entities/ProtectGaia.Entities.csproj",
@@ -27,19 +70,19 @@
     ]
   },
   "packageFolders": {
-    "/Users/arsh/.nuget/packages/": {}
+    "/Users/sameekshaingle/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/arsh/Desktop/IE/EcoMorph/ProtectGaia.Interface/ProtectGaia.Interface.csproj",
+      "projectUniqueName": "/Users/sameekshaingle/Desktop/ProtectGaia/ProtectGaia.Interface/ProtectGaia.Interface.csproj",
       "projectName": "ProtectGaia.Interface",
-      "projectPath": "/Users/arsh/Desktop/IE/EcoMorph/ProtectGaia.Interface/ProtectGaia.Interface.csproj",
-      "packagesPath": "/Users/arsh/.nuget/packages/",
-      "outputPath": "/Users/arsh/Desktop/IE/EcoMorph/ProtectGaia.Interface/obj/",
+      "projectPath": "/Users/sameekshaingle/Desktop/ProtectGaia/ProtectGaia.Interface/ProtectGaia.Interface.csproj",
+      "packagesPath": "/Users/sameekshaingle/.nuget/packages/",
+      "outputPath": "/Users/sameekshaingle/Desktop/ProtectGaia/ProtectGaia.Interface/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/arsh/.config/NuGet/NuGet.Config"
+        "/Users/sameekshaingle/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netstandard2.1"
@@ -50,8 +93,8 @@
       "frameworks": {
         "netstandard2.1": {
           "projectReferences": {
-            "/Users/arsh/Desktop/IE/EcoMorph/ProtectGaia.Entities/ProtectGaia.Entities.csproj": {
-              "projectPath": "/Users/arsh/Desktop/IE/EcoMorph/ProtectGaia.Entities/ProtectGaia.Entities.csproj"
+            "/Users/sameekshaingle/Desktop/ProtectGaia/ProtectGaia.Entities/ProtectGaia.Entities.csproj": {
+              "projectPath": "/Users/sameekshaingle/Desktop/ProtectGaia/ProtectGaia.Entities/ProtectGaia.Entities.csproj"
             }
           }
         }

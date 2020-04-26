@@ -1,55 +1,48 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewBag.Title = "Home";
 }
-
+@model List<ProtectGaia.Models.Article>
 <!-- Start main content -->
 <!-- Start  usout -->
 <section id="mu-about">
-
-    <div id="mu-call-to-action">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="mu-call-to-action-area">
-                        <div class="mu-title">
-                            <h2 style="color:white">Target, Educate, Act!</h2>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <div class="container-fluid" >
+        <div class="row">
+            <div class="col-sm deviceLocation"> <br />Your device location<br /> <h3>Detecting . . .</h3></div>
+            <div class="col-sm currentTemp">Current Weather<br />Current Temp : Updating<br />Feels Like : Updating . . .</div>
+            <div class="col-sm AqiValue"><br />Air Quality Index<br /> <h3>Updating . . .</h3></div>
+            <div class="col-sm OzoneValue"><br />Ozone Index<br /><h3>Updating . . .</h3></div>
         </div>
     </div>
+
     <div class="container">
         <div class="row">
             <div class="col-md-12">
                 <div class="mu-about-area">
-                    <div class="row"  id="aboutus">
+                    <div class="row" id="aboutus">
                         <div class="col-md-12">
                             <!-- Title -->
                             <div class="mu-title">
-                                <h2>About Us</h2>
+                                <h2>News Feed</h2>
+                                <h4>Checkout some popular News &amp; Articles powered by NewsAPI</h4>
                             </div>
                         </div>
                     </div>
                     <!-- Start Feature Content -->
                     <div class="row">
-                        <div class="col-md-6">
-                            <div class="mu-about-left">
-                                <img class="" src="~/images/Home/about_us.jpg" alt="img">
+                        @foreach (Article each in Model)
+                        {
+                            <div class="col-md-6" style="margin-bottom:1rem;">
+                                <div class="card" style="padding-bottom:1rem;height:150px; box-shadow: 0px 0px 14px #ededed">
+                                    <div class="container">
+                                        <h5 style="color:black"><b>@each.Title</b></h5>
+                                        <p style="color:green">@each.Source  - @each.PublishedDate</p>
+                                        <a href=@each.Url class="w3-button w3-black" style="float:right" target="_blank">Read More&nbsp;<i class="fas fa-angle-double-right"></i></a>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="mu-about-right" style="padding-top:70px">
-                                <p>
-                                    Eco Morph is a Melbourne based organisation with a primary objective to provide a collective platform to our young generation, by involving them to join us and make their contribution towards reducing the Greenhouse Gas (GHG) emissions through transport and household energy sectors into the environment and understanding the related health benefits.
-                                </p>
-                                <p>
-                                    This will also help the community to achieve better and healthy living standards for themselves as well as for our future generations.
-                                </p>
-                            </div>
-                        </div>
+                        }
                     </div>
-                    <!-- End Feature Content -->
+                    <!-- End News Content -->
                 </div>
             </div>
         </div>
@@ -59,12 +52,15 @@
 <!-- Start Video -->
 <div id="mu-video">
     <div class="row">
-        <div class="col-md-5">
-            <div class="mu-video-right">
-                <p>The video delivers a baisc understanding about how our day-to-day activities contribute towards an increase in Green House Gase (GHG) emissions.</p>
+        <div class="col-md-12">
+            <div class="mu-title">
+                <h2>Carbon Footprint - A brief overview</h2>
             </div>
         </div>
-        <div class="col-md-7">
+    </div>
+    <div class="row">
+
+        <div class="col-md-7 mx-auto">
             <div class="mu-video-left">
                 <a href="#" class="mu-video-play-btn"><i class="fa fa-play" aria-hidden="true"></i></a>
             </div>
@@ -80,56 +76,3 @@
     </div>
     <!-- End Video Popup -->
 </div>
-<!-- Start Portfolio -->
-<section id="mu-portfolio">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="mu-portfolio-area">
-                    <!-- Title -->
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="mu-title" id="resources">
-                                <h2>Resources</h2>
-                                <p>The collection gives deep insights to sources of GHG emissions, and hence, discuss about ways to mitigate it.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-4">
-                            <a asp-controller="Resources" asp-action="Infographics">
-                                <div class="pic" style=" background: url(/images/Home/blogs_2.jpg) no-repeat">
-                                    <div class="text">
-                                        Infographics
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-
-                        <div class="col-md-4">
-                            <a asp-controller="Resources" asp-action="Visualization">
-                                <div class="pic" style=" background: url(/images/Home/blogs_2.jpg) no-repeat">
-                                    <div class="text">
-                                        Visualizations
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-md-4">
-                            <a asp-controller="Resources" asp-action="Blogs">
-                                <div class="pic" style=" background: url(/images/Home/blogs_2.jpg) no-repeat">
-                                    <div class="text">
-                                        Blogs
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-
-</section>
-<!-- End Portfolio -->

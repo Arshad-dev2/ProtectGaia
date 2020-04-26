@@ -14,6 +14,9 @@
       "ProtectGaia.Entities/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.1",
+        "dependencies": {
+          "Newtonsoft.Json": "12.0.3"
+        },
         "compile": {
           "bin/placeholder/ProtectGaia.Entities.dll": {}
         },
@@ -87,19 +90,19 @@
     ]
   },
   "packageFolders": {
-    "/Users/arsh/.nuget/packages/": {}
+    "/Users/sameekshaingle/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/arsh/Desktop/IE/EcoMorph/ProtectGaia.DataAccess/ProtectGaia.DataAccess.csproj",
+      "projectUniqueName": "/Users/sameekshaingle/Desktop/ProtectGaia/ProtectGaia.DataAccess/ProtectGaia.DataAccess.csproj",
       "projectName": "ProtectGaia.DataAccess",
-      "projectPath": "/Users/arsh/Desktop/IE/EcoMorph/ProtectGaia.DataAccess/ProtectGaia.DataAccess.csproj",
-      "packagesPath": "/Users/arsh/.nuget/packages/",
-      "outputPath": "/Users/arsh/Desktop/IE/EcoMorph/ProtectGaia.DataAccess/obj/",
+      "projectPath": "/Users/sameekshaingle/Desktop/ProtectGaia/ProtectGaia.DataAccess/ProtectGaia.DataAccess.csproj",
+      "packagesPath": "/Users/sameekshaingle/.nuget/packages/",
+      "outputPath": "/Users/sameekshaingle/Desktop/ProtectGaia/ProtectGaia.DataAccess/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/arsh/.config/NuGet/NuGet.Config"
+        "/Users/sameekshaingle/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netstandard2.1"
@@ -110,11 +113,11 @@
       "frameworks": {
         "netstandard2.1": {
           "projectReferences": {
-            "/Users/arsh/Desktop/IE/EcoMorph/ProtectGaia.Entities/ProtectGaia.Entities.csproj": {
-              "projectPath": "/Users/arsh/Desktop/IE/EcoMorph/ProtectGaia.Entities/ProtectGaia.Entities.csproj"
+            "/Users/sameekshaingle/Desktop/ProtectGaia/ProtectGaia.Entities/ProtectGaia.Entities.csproj": {
+              "projectPath": "/Users/sameekshaingle/Desktop/ProtectGaia/ProtectGaia.Entities/ProtectGaia.Entities.csproj"
             },
-            "/Users/arsh/Desktop/IE/EcoMorph/ProtectGaia.Interface/ProtectGaia.Interface.csproj": {
-              "projectPath": "/Users/arsh/Desktop/IE/EcoMorph/ProtectGaia.Interface/ProtectGaia.Interface.csproj"
+            "/Users/sameekshaingle/Desktop/ProtectGaia/ProtectGaia.Interface/ProtectGaia.Interface.csproj": {
+              "projectPath": "/Users/sameekshaingle/Desktop/ProtectGaia/ProtectGaia.Interface/ProtectGaia.Interface.csproj"
             }
           }
         }

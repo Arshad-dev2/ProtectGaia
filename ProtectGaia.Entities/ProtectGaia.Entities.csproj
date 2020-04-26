@@ -5,6 +5,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="MeetupEntity\" />
+    <Folder Include="NewsEntity\" />
+    <Folder Include="WeatherEntity\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
   </ItemGroup>
 </Project>

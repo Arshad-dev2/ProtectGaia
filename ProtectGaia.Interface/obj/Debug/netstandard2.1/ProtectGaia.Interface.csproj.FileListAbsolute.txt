@@ -10,3 +10,15 @@
 /Users/arsh/Desktop/IE/EcoMorph/ProtectGaia.Interface/obj/Debug/netstandard2.1/ProtectGaia.Interface.csproj.CopyComplete
 /Users/arsh/Desktop/IE/EcoMorph/ProtectGaia.Interface/obj/Debug/netstandard2.1/ProtectGaia.Interface.dll
 /Users/arsh/Desktop/IE/EcoMorph/ProtectGaia.Interface/obj/Debug/netstandard2.1/ProtectGaia.Interface.pdb
+/Users/sameekshaingle/Desktop/ProtectGaia/ProtectGaia.Interface/bin/Debug/netstandard2.1/ProtectGaia.Interface.deps.json
+/Users/sameekshaingle/Desktop/ProtectGaia/ProtectGaia.Interface/bin/Debug/netstandard2.1/ProtectGaia.Interface.dll
+/Users/sameekshaingle/Desktop/ProtectGaia/ProtectGaia.Interface/bin/Debug/netstandard2.1/ProtectGaia.Interface.pdb
+/Users/sameekshaingle/Desktop/ProtectGaia/ProtectGaia.Interface/bin/Debug/netstandard2.1/ProtectGaia.Entities.dll
+/Users/sameekshaingle/Desktop/ProtectGaia/ProtectGaia.Interface/bin/Debug/netstandard2.1/ProtectGaia.Entities.pdb
+/Users/sameekshaingle/Desktop/ProtectGaia/ProtectGaia.Interface/obj/Debug/netstandard2.1/ProtectGaia.Interface.csprojAssemblyReference.cache
+/Users/sameekshaingle/Desktop/ProtectGaia/ProtectGaia.Interface/obj/Debug/netstandard2.1/ProtectGaia.Interface.csproj.CoreCompileInputs.cache
+/Users/sameekshaingle/Desktop/ProtectGaia/ProtectGaia.Interface/obj/Debug/netstandard2.1/ProtectGaia.Interface.AssemblyInfoInputs.cache
+/Users/sameekshaingle/Desktop/ProtectGaia/ProtectGaia.Interface/obj/Debug/netstandard2.1/ProtectGaia.Interface.AssemblyInfo.cs
+/Users/sameekshaingle/Desktop/ProtectGaia/ProtectGaia.Interface/obj/Debug/netstandard2.1/ProtectGaia.Interface.csproj.CopyComplete
+/Users/sameekshaingle/Desktop/ProtectGaia/ProtectGaia.Interface/obj/Debug/netstandard2.1/ProtectGaia.Interface.dll
+/Users/sameekshaingle/Desktop/ProtectGaia/ProtectGaia.Interface/obj/Debug/netstandard2.1/ProtectGaia.Interface.pdb

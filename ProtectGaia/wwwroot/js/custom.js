@@ -50,7 +50,7 @@
 
     $('.mu-video-close-btn').click(function(){
 
-        $('.mu-video-iframe').attr('src', $('.mu-video-iframe').attr('src'));
+        $('.mu-video-iframe').attr('src', $('.mu-video-iframe').attr('src',''));
 
     });
 
@@ -94,15 +94,7 @@
 	/*  6. PORTFOLIO GALLERY
 	/* ----------------------------------------------------------- */ 
 	
-		$('.filtr-container').filterizr();
-
-		//Simple filter controls
-
-	    $('.mu-simplefilter li').click(function() {
-	       $('.mu-simplefilter li').removeClass('active');
-	        $(this).addClass('active');
-	    });
-
+		
 
 	/* ----------------------------------------------------------- */
 	/*  7. PORTFOLIO POPUP VIEW ( IMAGE LIGHTBOX )

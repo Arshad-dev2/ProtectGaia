@@ -1,13 +1,13 @@
 
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProtectGaia", "ProtectGaia\ProtectGaia.csproj", "{7AA3353A-EBD6-4211-AE15-9EA2CCF50995}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProtectGaia.DataAccess", "ProtectGaia.DataAccess\ProtectGaia.DataAccess.csproj", "{5413C4D2-35AE-44C1-86C1-9593CFCA473B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProtectGaia.Entities", "ProtectGaia.Entities\ProtectGaia.Entities.csproj", "{C66A41A4-AC1F-4D4D-B28C-27E95A739D49}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProtectGaia.Interface", "ProtectGaia.Interface\ProtectGaia.Interface.csproj", "{7CFD58E8-3BC5-4970-889B-2FFD45D34843}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProtectGaia", "ProtectGaia\ProtectGaia.csproj", "{3FA95DA7-42EF-40D9-B8D3-C08257AAA405}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,10 +15,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{7AA3353A-EBD6-4211-AE15-9EA2CCF50995}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7AA3353A-EBD6-4211-AE15-9EA2CCF50995}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7AA3353A-EBD6-4211-AE15-9EA2CCF50995}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7AA3353A-EBD6-4211-AE15-9EA2CCF50995}.Release|Any CPU.Build.0 = Release|Any CPU
 		{5413C4D2-35AE-44C1-86C1-9593CFCA473B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{5413C4D2-35AE-44C1-86C1-9593CFCA473B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5413C4D2-35AE-44C1-86C1-9593CFCA473B}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -31,5 +27,9 @@ Global
 		{7CFD58E8-3BC5-4970-889B-2FFD45D34843}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7CFD58E8-3BC5-4970-889B-2FFD45D34843}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7CFD58E8-3BC5-4970-889B-2FFD45D34843}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3FA95DA7-42EF-40D9-B8D3-C08257AAA405}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3FA95DA7-42EF-40D9-B8D3-C08257AAA405}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3FA95DA7-42EF-40D9-B8D3-C08257AAA405}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3FA95DA7-42EF-40D9-B8D3-C08257AAA405}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

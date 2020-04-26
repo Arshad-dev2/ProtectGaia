@@ -55,12 +55,12 @@
                         <li class="nav-item active">
                             <a asp-controller="Home" asp-action="Index">Home</a>
                         </li>
-                        <li class="nav-item"><a href="#" onclick="scrollToDiv('aboutus')">About us</a></li>
-                        <li class="nav-item"><a href="#" onclick="scrollToDiv('aboutus')">Resources</a></li>
+                        <li class="nav-item"><a asp-controller="Home" asp-action="Index" onclick="scrollToDiv('aboutus')">About us</a></li>
+                        <li class="nav-item"><a asp-controller="Home" asp-action="Index"  onclick="scrollToDiv('Resources')">Resources</a></li>
 
-                        <li class="nav-item"><a href="#" onclick="scrollToDiv('aboutus')">Get Involved</a></li>
+                        <li class="nav-item"><a asp-controller="Home" asp-action="Index" onclick="scrollToDiv('aboutus')">Get Involved</a></li>
 
-                        <li class="nav-item"><a href="#" onclick="scrollToDiv('contactus')">Contact us</a></li>
+                        <li class="nav-item"><a asp-controller="Home" asp-action="Index"  onclick="scrollToDiv('contactus')">Contact us</a></li>
                     </ul>
                 </div>
             </nav>
