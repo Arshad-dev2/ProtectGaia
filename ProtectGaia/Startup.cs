@@ -8,6 +8,8 @@ using Microsoft.Extensions.DependencyInjection.Extensions;
 using Microsoft.Extensions.Hosting;
 using ProtectGaia.DataAccess;
 using ProtectGaia.Interface;
+using Microsoft.EntityFrameworkCore;
+using ProtectGaia.DataContexts;
 
 namespace ProtectGaia
 {
@@ -23,8 +25,13 @@ namespace ProtectGaia
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+
+
             services.AddControllersWithViews();
+            //services.AddDbContextPool<ChallengeDB>(options => options.UseSqlServer(Configuration.GetConnectionString("EcoMorphConnection")));
+
             services.AddDistributedMemoryCache();
+
 
             services.AddSession(options =>
             {
@@ -36,6 +43,15 @@ namespace ProtectGaia
             services.AddScoped<INewsApi, NewsApi>();
             services.AddScoped<IWeatherApi, WeatherApi>();
             services.TryAddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+            services.AddAuthentication()
+            .AddGoogle(options =>
+            {
+                IConfigurationSection googleAuthNSection =
+                    Configuration.GetSection("Authentication:Google");
+
+                options.ClientId = googleAuthNSection["ClientId"];
+                options.ClientSecret = googleAuthNSection["ClientSecret"];
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

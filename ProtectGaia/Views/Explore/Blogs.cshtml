@@ -10,9 +10,13 @@
 <h1 style="margin-top: 8rem; margin-left: 45rem;"> Blogs </h1>
 <!-- Start Row 1 -->
 <div class="w3-panel w3-card" style="margin-top:3rem;">
-    <h3 style="padding-top:20px; text-align:center;">Greenhouse Gas Emissions </h3>
-    <span style="text-align:right;float:right; text-decoration: underline;">Scroll For More</span><br /><br />
-    <div class="row scrolling-wrapper-flexbox">
+    @*<span style="text-align:right;float:right; text-decoration: underline;">Scroll For More</span><br /><br />*@
+    <div class="w3-light-grey w3-section">
+        <button onclick="myFunction('Demo4')" class="w3-button w3-block">
+            <h3 style="padding-top:20px; text-align:center;">Greenhouse Gas Emissions </h3>
+        </button>
+        <div id="Demo4" class="w3-hide w3-container">
+             <div class="row">
         <div class="col-md-4">
             <div class="w3-card">
                 <img src="/images/blogs/ghg_blog1.png" alt="Greenhouse Gases" style="width:100%; height:215px;">
@@ -64,6 +68,10 @@
             </div>
         </div>
     </div>
+        </div>
+    </div>
+
+   
 </div>
 <!-- End Row 1-->
 <!--Start Row 2-->
