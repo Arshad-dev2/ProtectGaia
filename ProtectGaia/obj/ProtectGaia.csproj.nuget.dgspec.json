@@ -1,48 +1,96 @@
 {
   "format": 1,
   "restore": {
-<<<<<<< Updated upstream
-    "C:\\Users\\gupta\\Source\\Repos\\ProtectGaia\\ProtectGaia\\ProtectGaia.csproj": {}
+    "C:\\Users\\gupta\\source\\repos\\ProtectGaia-dev\\ProtectGaia\\ProtectGaia.csproj": {}
   },
   "projects": {
-    "C:\\Users\\gupta\\Source\\Repos\\ProtectGaia\\ProtectGaia\\ProtectGaia.csproj": {
+    "C:\\Users\\gupta\\source\\repos\\ProtectGaia-dev\\ProtectGaia.DataAccess\\ProtectGaia.DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gupta\\Source\\Repos\\ProtectGaia\\ProtectGaia\\ProtectGaia.csproj",
-        "projectName": "ProtectGaia",
-        "projectPath": "C:\\Users\\gupta\\Source\\Repos\\ProtectGaia\\ProtectGaia\\ProtectGaia.csproj",
+        "projectUniqueName": "C:\\Users\\gupta\\source\\repos\\ProtectGaia-dev\\ProtectGaia.DataAccess\\ProtectGaia.DataAccess.csproj",
+        "projectName": "ProtectGaia.DataAccess",
+        "projectPath": "C:\\Users\\gupta\\source\\repos\\ProtectGaia-dev\\ProtectGaia.DataAccess\\ProtectGaia.DataAccess.csproj",
         "packagesPath": "C:\\Users\\gupta\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gupta\\Source\\Repos\\ProtectGaia\\ProtectGaia\\obj\\",
+        "outputPath": "C:\\Users\\gupta\\source\\repos\\ProtectGaia-dev\\ProtectGaia.DataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\gupta\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-=======
-    "/Users/sameekshaingle/Desktop/ProtectGaia/ProtectGaia/ProtectGaia.csproj": {}
-  },
-  "projects": {
-    "/Users/sameekshaingle/Desktop/ProtectGaia/ProtectGaia/ProtectGaia.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "/Users/sameekshaingle/Desktop/ProtectGaia/ProtectGaia/ProtectGaia.csproj",
-        "projectName": "ProtectGaia",
-        "projectPath": "/Users/sameekshaingle/Desktop/ProtectGaia/ProtectGaia/ProtectGaia.csproj",
-        "packagesPath": "/Users/sameekshaingle/.nuget/packages/",
-        "outputPath": "/Users/sameekshaingle/Desktop/ProtectGaia/ProtectGaia/obj/",
-        "projectStyle": "PackageReference",
-        "configFilePaths": [
-          "/Users/sameekshaingle/.config/NuGet/NuGet.Config"
->>>>>>> Stashed changes
         ],
         "originalTargetFrameworks": [
-          "netcoreapp3.1"
+          "netstandard2.1"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netcoreapp3.1": {
+          "netstandard2.1": {
+            "projectReferences": {
+              "C:\\Users\\gupta\\source\\repos\\ProtectGaia-dev\\ProtectGaia.Entities\\ProtectGaia.Entities.csproj": {
+                "projectPath": "C:\\Users\\gupta\\source\\repos\\ProtectGaia-dev\\ProtectGaia.Entities\\ProtectGaia.Entities.csproj"
+              },
+              "C:\\Users\\gupta\\source\\repos\\ProtectGaia-dev\\ProtectGaia.Interface\\ProtectGaia.Interface.csproj": {
+                "projectPath": "C:\\Users\\gupta\\source\\repos\\ProtectGaia-dev\\ProtectGaia.Interface\\ProtectGaia.Interface.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\gupta\\source\\repos\\ProtectGaia-dev\\ProtectGaia.Entities\\ProtectGaia.Entities.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\gupta\\source\\repos\\ProtectGaia-dev\\ProtectGaia.Entities\\ProtectGaia.Entities.csproj",
+        "projectName": "ProtectGaia.Entities",
+        "projectPath": "C:\\Users\\gupta\\source\\repos\\ProtectGaia-dev\\ProtectGaia.Entities\\ProtectGaia.Entities.csproj",
+        "packagesPath": "C:\\Users\\gupta\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\gupta\\source\\repos\\ProtectGaia-dev\\ProtectGaia.Entities\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\gupta\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
             "projectReferences": {}
           }
         },
@@ -53,7 +101,145 @@
         }
       },
       "frameworks": {
+        "netstandard2.1": {
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\gupta\\source\\repos\\ProtectGaia-dev\\ProtectGaia.Interface\\ProtectGaia.Interface.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\gupta\\source\\repos\\ProtectGaia-dev\\ProtectGaia.Interface\\ProtectGaia.Interface.csproj",
+        "projectName": "ProtectGaia.Interface",
+        "projectPath": "C:\\Users\\gupta\\source\\repos\\ProtectGaia-dev\\ProtectGaia.Interface\\ProtectGaia.Interface.csproj",
+        "packagesPath": "C:\\Users\\gupta\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\gupta\\source\\repos\\ProtectGaia-dev\\ProtectGaia.Interface\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\gupta\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "projectReferences": {
+              "C:\\Users\\gupta\\source\\repos\\ProtectGaia-dev\\ProtectGaia.Entities\\ProtectGaia.Entities.csproj": {
+                "projectPath": "C:\\Users\\gupta\\source\\repos\\ProtectGaia-dev\\ProtectGaia.Entities\\ProtectGaia.Entities.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\gupta\\source\\repos\\ProtectGaia-dev\\ProtectGaia\\ProtectGaia.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\gupta\\source\\repos\\ProtectGaia-dev\\ProtectGaia\\ProtectGaia.csproj",
+        "projectName": "ProtectGaia",
+        "projectPath": "C:\\Users\\gupta\\source\\repos\\ProtectGaia-dev\\ProtectGaia\\ProtectGaia.csproj",
+        "packagesPath": "C:\\Users\\gupta\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\gupta\\source\\repos\\ProtectGaia-dev\\ProtectGaia\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\gupta\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "C:\\Users\\gupta\\source\\repos\\ProtectGaia-dev\\ProtectGaia.DataAccess\\ProtectGaia.DataAccess.csproj": {
+                "projectPath": "C:\\Users\\gupta\\source\\repos\\ProtectGaia-dev\\ProtectGaia.DataAccess\\ProtectGaia.DataAccess.csproj"
+              },
+              "C:\\Users\\gupta\\source\\repos\\ProtectGaia-dev\\ProtectGaia.Entities\\ProtectGaia.Entities.csproj": {
+                "projectPath": "C:\\Users\\gupta\\source\\repos\\ProtectGaia-dev\\ProtectGaia.Entities\\ProtectGaia.Entities.csproj"
+              },
+              "C:\\Users\\gupta\\source\\repos\\ProtectGaia-dev\\ProtectGaia.Interface\\ProtectGaia.Interface.csproj": {
+                "projectPath": "C:\\Users\\gupta\\source\\repos\\ProtectGaia-dev\\ProtectGaia.Interface\\ProtectGaia.Interface.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
         "netcoreapp3.1": {
+          "dependencies": {
+            "MetOfficeDataPoint": {
+              "target": "Package",
+              "version": "[2.1.0, )"
+            },
+            "Microsoft.AspNetCore.Session": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.3, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

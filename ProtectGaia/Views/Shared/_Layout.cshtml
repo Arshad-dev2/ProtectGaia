@@ -4,11 +4,12 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Home - Task Eco</title>
+    <title>@ViewBag.Title - Eco Morph</title>
     <!-- Favicon -->
-    <link rel="shortcut icon" type="/image/icon" href="/images/favicon.ico" />
+    <link rel="shortcut icon" type="/image/icon" href="/favicon.ico" />
     <!-- Font Awesome -->
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+   @* <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">*@
+    <link href="~/lib/font-awesome/css/all.min.css" rel="stylesheet" />
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <!-- Slick slider -->
@@ -28,6 +29,9 @@
     <!-- Google Fonts Open sans -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700,800" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="/js/geoLocation.js"></script>
 
 </head>
 <body>
@@ -39,12 +43,12 @@
     <!-- END SCROLL TOP BUTTON -->
     <!-- Start Header -->
     <header id="mu-hero">
-        <img src="~/images/Home/ghg_home.jpg" alt="Task Eco" class="title-image" />
+        <img src="~/images/Home/ghg_home.jpg" alt="EcoMorph" class="title-image" style="width: 100%; height: auto"/>
         <div class="top-right">
             <nav class="navbar navbar-expand-lg navbar-light mu-navbar">
                 <div>
-                    <!-- Text based logo -->
-                    <a class="navbar-brand mu-logo" href="index.html"><span>TASK ECO!</span></a>
+                    <!-- Logo -->
+                    <a asp-controller="Home" asp-action="Index"><img src="~/images/Home/eco_logo.png" alt="Eco Morph" style="height:70%;width:70%; padding-left: 50px;" /></a>
                     <!-- image based logo -->
                     <!-- <a class="navbar-brand mu-logo" href="index.html"><img src="assets/images/logo.png" alt="logo"></a> -->
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -52,35 +56,46 @@
                     </button>
                 </div>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto mu-navbar-nav">
+                    <ul class="navbar-nav mr-auto mu-navbar-nav" style="padding-right: 80px;">
                         <li class="nav-item active">
                             <a asp-controller="Home" asp-action="Index">Home</a>
                         </li>
-                        <li class="nav-item"><a href="about-us.html">About us</a></li>
                         <li class="nav-item dropdown">
-                            <a class="dropdown-toggle" href="blog.html" role="button" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Resources</a>
+                            <a class="dropdown-toggle" href="#" role="button" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Explore</a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="blog.html">Infographics</a>
-                                <a class="dropdown-item" href="blog-single.html">Visualisations</a>
-                                <a class="dropdown-item" href="blog-single.html">Blogs</a>
+                                <a class="dropdown-item" asp-controller="Explore" asp-Action="Infographics" onclick="MakeActive('infographics')">Infographics</a>
+                                <a class="dropdown-item" asp-controller="Explore" asp-Action="Visualization">Visualizations</a>
                             </div>
                         </li>
-                        <li class="nav-item"><a href="services.html">Get Involved</a></li>
-
-                        <li class="nav-item"><a href="contact.html">Contact us</a></li>
+                    <li class="nav-item" id="aboutusone"><a asp-controller="Blogs" asp-Action="Index" onclick="MakeActive('blogs')">Blogs</a></li>
                     </ul>
                 </div>
             </nav>
         </div>
     </header>
-    <!-- End Header -->
-    @RenderBody()
+   
 
+    <!-- End Header -->
+    <main>
+    @RenderBody()
+        </main>
     <!-- End main content -->
     <!-- Start footer -->
 
-    <footer>
-            <p class="mu-copy-right">&copy; Copyright <a rel="nofollow" href="http://markups.io">task.eco</a>. All right reserved.</p>
+    <div class="row" style="height:50px;">
+
+    </div>
+    <footer style="height:100px">
+        <div class="mu-container mu-footer-top" style="background-color:#292929">
+            <div class="row">
+                <div class="col-md-12">
+                    <h4 style="color:white;margin-left:1rem;">Contact Us</h4><br />
+                    <p style="color:white;margin-left:1rem;"><i class="far fa-envelope"></i> environs@gmail.com</p>
+                    <p style="color:white;margin-left:1rem;"><i class="fas fa-map-marker-alt"></i> Melbourne, Australia</p>
+                </div>
+            </div>
+            <center> <p class="mu-copy-right">Designed by <a rel="nofollow" href="https://www.ecomorph.me">Environs</a>.<br /> All right reserved.</p></center>
+        </div>
     </footer>
     <!-- End footer -->
     <!-- JavaScript -->
@@ -96,43 +111,17 @@
     <script type="text/javascript" src="/js/jquery.filterizr.min.js"></script>
     <!-- Gallery Lightbox -->
     <script type="text/javascript" src="/js/jquery.magnific-popup.min.js"></script>
-    <!-- Counter js -->
-    <script type="text/javascript" src="/js/counter.js"></script>
+    <!-- Counter js
+    <script type="text/javascript" src="/js/counter.js"></script>-->
     <!-- Ajax contact form  -->
     <script type="text/javascript" src="/js/app.js"></script>
+    <script type="text/javascript" src="/js/header.js"></script>
 
 
     <!-- Custom js -->
     <script type="text/javascript" src="/js/custom.js"></script>
 
-    <!-- About us Skills Circle progress  -->
-    <script>// First circle
-        new Circlebar({
-            element: "#circle-1",
-            type: "progress",
-            maxValue: "90"
-        });
-
-        // Second circle
-        new Circlebar({
-            element: "#circle-2",
-            type: "progress",
-            maxValue: "84"
-        });
-
-        // Third circle
-        new Circlebar({
-            element: "#circle-3",
-            type: "progress",
-            maxValue: "60"
-        });
-
-        // Fourth circle
-        new Circlebar({
-            element: "#circle-4",
-            type: "progress",
-            maxValue: "74"
-        });</script>
+    
 
 </body>
 </html>
