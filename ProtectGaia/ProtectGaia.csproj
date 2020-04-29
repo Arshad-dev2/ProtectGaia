@@ -7,7 +7,7 @@
 
 
   <ItemGroup>
-    <Content Remove="wwwroot\css\site.css" />
+   
     <Content Remove="wwwroot\fonts\fontawesome-webfont.svg" />
     <Content Remove="wwwroot\fonts\FontAwesome.otf" />
     <Content Remove="wwwroot\fonts\glyphicons-halflings-regular.woff" />
@@ -46,7 +46,6 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Views\" />
     <Folder Include="DataContexts\" />
     <Folder Include="ActionFilters\" />
   </ItemGroup>
@@ -77,8 +76,6 @@
   <ItemGroup>
     <None Remove="obj\Debug\netcoreapp3.1\Razor\Views\*.g.cs" />
     <None Remove="Views\Resources\Blogs.cshtml" />
-    
-    <None Remove="Views\Explore\Blogs.cshtml" />
     <None Remove="Views\Shared\Index.cshtml" />
     <None Remove="obj\Debug\netcoreapp3.1\Razor\Views\Explore\Infographics.cshtml.g.cs" />
     <None Remove="obj\Debug\netcoreapp3.1\Razor\Views\Explore\Blogs.cshtml.g.cs" />

@@ -4,7 +4,7 @@
     "profile" : "default",
     "region"  : "ap-southeast-2",
     "application" : "EcoMorph",
-    "environment" : "EcoMorph-prod",
+    "environment" : "EcoMorph-dev",
     "cname"       : "ecomorph-dev",
     "solution-stack" : "64bit Windows Server 2016 v2.5.2 running IIS 10.0",
     "environment-type" : "SingleInstance",
