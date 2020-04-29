@@ -40,11 +40,27 @@
     <a class="scrollToTop" href="#">
         <i class="fa fa-angle-up"></i>
     </a>
+
     <!-- END SCROLL TOP BUTTON -->
     <!-- Start Header -->
+
     <header id="mu-hero">
-        <img src="~/images/Home/ghg_home.jpg" alt="EcoMorph" class="title-image" style="width: 100%; height: auto"/>
+
+        <!--<img src="~/images/Home/ghg_home - Copy.jpg" alt="EcoMorph" class="title-image" style="width: 100%; height: auto" />-->
+
+
+        <div class="new-container">
+            <img src="~/images/Home/ghg_home - Copy.jpg" alt="EcoMorph" style=" filter: brightness(80%);opacity:0.9; width:100%; height:auto">
+            <div class="image-text-block" >
+                <p style=" font-size:42px; color:#f5f5f5; font-family:Comic Sans MS, cursive, sans-serif"><b> ECOMORPH </b></p>
+              
+                <p style=" font-size:38px; color:#f5f5f5; font-family:Comic Sans MS, cursive, sans-serif"/><b>Every Action makes a Difference!</b></p>
+
+            </div>
+        </div>
+
         <div class="top-right">
+            <div class="deviceLocation"> <p>Detecting . . .</p></div>
             <nav class="navbar navbar-expand-lg navbar-light mu-navbar">
                 <div>
                     <!-- Logo -->
@@ -67,34 +83,36 @@
                                 <a class="dropdown-item" asp-controller="Explore" asp-Action="Visualization">Visualizations</a>
                             </div>
                         </li>
-                    <li class="nav-item" id="aboutusone"><a asp-controller="Blogs" asp-Action="Index" onclick="MakeActive('blogs')">Blogs</a></li>
+                        <li class="nav-item" id="aboutusone"><a asp-controller="Blogs" asp-Action="Index" onclick="MakeActive('blogs')">Blogs</a></li>
                     </ul>
                 </div>
             </nav>
         </div>
     </header>
-   
+
 
     <!-- End Header -->
     <main>
-    @RenderBody()
-        </main>
+        @RenderBody()
+    </main>
     <!-- End main content -->
     <!-- Start footer -->
 
     <div class="row" style="height:50px;">
 
     </div>
-    <footer style="height:100px">
-        <div class="mu-container mu-footer-top" style="background-color:#292929">
-            <div class="row">
-                <div class="col-md-12">
-                    <h4 style="color:white;margin-left:1rem;">Contact Us</h4><br />
-                    <p style="color:white;margin-left:1rem;"><i class="far fa-envelope"></i> environs@gmail.com</p>
-                    <p style="color:white;margin-left:1rem;"><i class="fas fa-map-marker-alt"></i> Melbourne, Australia</p>
-                </div>
+    <footer>
+        <div class="new-container">
+            <img src="~/images/Home/1.jpg" alt="contact-us" style=" filter: brightness(50%);opacity:0.9; width:100%; height:13rem;">
+            <div class="new-text-block">
+                <h4>Contact Us</h4><br />
+                <p><i class="far fa-envelope"></i> environs@gmail.com</p>
+                <p><i class="fas fa-map-marker-alt"></i> Melbourne, Australia</p>
             </div>
-            <center> <p class="mu-copy-right">Designed by <a rel="nofollow" href="https://www.ecomorph.me">Environs</a>.<br /> All right reserved.</p></center>
+        </div>
+        <div class="mu-container mu-footer-top" style="background-color:#292929">
+           
+            <center> <p class="mu-copy-right">Designed by <a rel="nofollow" href="https://www.ecomorph.me">Environs</a>. All rights reserved.</p></center>
         </div>
     </footer>
     <!-- End footer -->
@@ -121,7 +139,7 @@
     <!-- Custom js -->
     <script type="text/javascript" src="/js/custom.js"></script>
 
-    
+
 
 </body>
 </html>

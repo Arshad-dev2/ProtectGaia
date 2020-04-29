@@ -33,10 +33,10 @@ function makeCall(location) {
         async: false,
         success: function (response) {
             if (response.isSucess==true) {
-                $(".deviceLocation").html("<br />Your device location<br/> <h3>" + response.location.address + "</h3>");
-                $(".currentTemp").html("</br><img src=\"" + response.location.icon + "\" style=\"widhth:30%;float:right\" alt=\"Weather\"/><b>Current Weather</b><br/>Current Temp:" + response.location.temp + "&#8451;<br/>Feels Like: " + response.location.feelsLikeTemp + "&#8451;");
-                $(".AqiValue").html("<br />Air Quality Index<br /> <h1 style=\"display:inline\">" + response.location.aqi + "</h1>&nbsp;μg/m<superscript>3</superscript>");
-                $(".OzoneValue").html("<br />Ozone Index<br /><h1 style=\"display:inline\">" + response.location.ozone + "</h1>&nbsp;μg/m<superscript>3</superscript>");
+                $(".deviceLocation").html("<p><i class=\"fa fa-map-marker\" style=\"color: #ff3333\"></i>&nbsp;" + response.location.address + "</p>");
+                $(".currentTemp").html("<img src=\"" + response.location.icon + "\" style=\"widhth:30%;float:right;position:relative;bottom:2rem;right:1rem\" alt=\"Weather\"/><h3><b>Current Temp</b></h3><p style=\"font-size:40px;\"><b>" + response.location.temp + "&#8451" + "<b>/</b>"  + response.location.feelsLikeTemp + "&#8451;</b></p>");
+                $(".AqiValue").html("<h3><b>Air Quality Index</b></h3> <b><h1 style=\"font-size:54px;\"><b> " + response.location.aqi + "&nbsp;</b ></h1 >μg/m<superscript>3</superscript>");
+                $(".OzoneValue").html("<h3><b>Ozone Index</b></h3><b><h1 style=\"font-size:54px;\"><b> " + response.location.ozone + "&nbsp;</b ></h1 >μg/m<superscript>3</superscript>");
             }
             else {
                 $(".deviceLocation").html("<br />Your device location<br/> <b>" + "Location Unavailable" + "</b>");

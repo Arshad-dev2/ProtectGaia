@@ -33,6 +33,40 @@ Version: 1.0
 #RESPONSIVE STYLE
 ==========*/
 
+/*WIDGETS*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*--------------------*/
 /* BASIC TYPOGRAPHY */
@@ -975,7 +1009,7 @@ a:focus,
     background-color: #292929;
     display: inline;
     float: left;
-    padding: 55px 0;
+    padding: 2rem 0;
     width: 100%;
 }
 
@@ -2088,142 +2122,6 @@ a:focus,
 
 
 /*--------------------*/
-/* CONTACT US */
-/*--------------------*/
-
-#mu-contact {
-    background-color: #fff;
-    display: inline;
-    float: left;
-    width: 100%;
-}
-
-.mu-contact-area {
-    display: inline;
-    float: left;
-    text-align: center;
-    padding: 100px 0;
-    width: 100%;
-}
-
-.mu-contact-content {
-    display: inline;
-    float: left;
-    width: 100%;
-    padding: 0 28%;
-}
-
-.mu-contact-form-area {
-    display: inline;
-    float: left;
-    width: 100%;
-}
-
-.mu-contact-form {
-    text-align: center;
-}
-
-    .mu-contact-form .form-group {
-        position: relative;
-    }
-
-    .mu-contact-form .mu-contact-icon {
-        color: #808080;
-        font-size: 14px;
-        position: absolute;
-        left: 5px;
-        top: 15px;
-    }
-
-    .mu-contact-form .form-group input {
-        background: transparent;
-        border-radius: 0;
-        color: #333;
-        font-size: 14px;
-        border: 1px #cccccc;
-        border-style: none none solid none;
-        height: 45px;
-        padding: 0 25px;
-        margin-bottom: 24px;
-        -webkit-transition: all 0.5s;
-        -o-transition: all 0.5s;
-        transition: all 0.5s;
-    }
-
-    .mu-contact-form .form-group textarea {
-        background: transparent;
-        border: 1px #cccccc;
-        border-style: none none solid none;
-        border-radius: 0;
-        color: #333;
-        font-size: 14px;
-        padding: 10px;
-        height: 100px;
-        padding: 13px 25px;
-        -webkit-transition: all 0.5s;
-        transition: all 0.5s;
-    }
-
-    .mu-contact-form .form-control:focus {
-        background-color: #fff;
-        border-style: none none solid none;
-        outline: 0;
-        box-shadow: none;
-    }
-
-    .mu-contact-form .form-control::-webkit-input-placeholder {
-        color: #7e7e7e;
-        font-size: 14px;
-    }
-
-    .mu-contact-form .form-control:-moz-placeholder { /* Firefox 18- */
-        color: #7e7e7e;
-        font-size: 14px;
-    }
-
-    .mu-contact-form .form-control::-moz-placeholder { /* Firefox 19+ */
-        color: #7e7e7e;
-        font-size: 14px;
-    }
-
-    .mu-contact-form .form-control:-ms-input-placeholder {
-        color: #7e7e7e;
-        font-size: 14px;
-    }
-
-    .mu-contact-form .button-default::after,
-    .mu-contact-form .button-default > span {
-        padding: 12px 40px;
-    }
-
-#form-messages {
-    margin-bottom: 10px;
-    background-color: #fff;
-}
-
-.success {
-    padding: 1em;
-    margin-bottom: 0.75rem;
-    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
-    color: #468847;
-    background-color: #dff0d8;
-    border: 1px solid #d6e9c6;
-    -webkit-border-radius: 4px;
-    border-radius: 4px;
-}
-
-.error {
-    padding: 1em;
-    margin-bottom: 0.75rem;
-    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
-    color: #b94a48;
-    background-color: #f2dede;
-    border: 1px solid rgba(185, 74, 72, 0.3);
-    -webkit-border-radius: 4px;
-    border-radius: 4px;
-}
-
-/*--------------------*/
 /* 404 ERROR PAGE */
 /*--------------------*/
 
@@ -3229,7 +3127,7 @@ a:focus,
 }
 
 
-/*RESOURCE*/
+/*WIDGETS*/
 .pic {
     height: 100%;
     width: 100%;
@@ -3252,23 +3150,126 @@ a:focus,
     padding: 75px 25px 25px 25px;
 }
 
+
+.widget-card {
+    box-shadow: 0 3px 0 0 rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    
+}
+
+.widget-container {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+}
+
+    .widget-container::after,
+    .row::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
 .deviceLocation {
-    background-color: #2a4d69 !important;
+    background-color: #505050 !important;
     color: white !important;
+    height: 2.2rem;
+    padding-right:6.6rem;
+    text-align: right;
 }
 
 .currentTemp {
-    background-color: #74C2E1 !important;
+    
+    background-color: #4b86b4 !important;
+
     color: white !important;
+    text-align: center;    
+    width: 96%;
+    height: 12rem;
+    position: absolute;
+    bottom: 0.29rem;    
+    right: 0.6rem;   
+    padding:1rem;
+    opacity: 0.7;
 }
+
+
 .AqiValue {
     background-color: #4b86b4 !important;
     color: white !important;
-   
+    text-align: center;
+    width: 96%;
+    height: 12rem;
+    position: absolute;
+    bottom: 0.26rem;
+    right: 0.6rem;
+    padding: 1rem;
+    opacity: 0.7;
 }
 .OzoneValue {
-    background-color: #afcfee !important;
+    background-color: #4b86b4 !important;
     color: white !important;
+    text-align: center;
+    width: 96%;
+    height: 12rem;
+    position: absolute;
+    bottom: 0.26rem;
+    right: 0.6rem;
+    padding: 1rem;
+    opacity: 0.7;
 }
 
 
+/*HIGHLIGHTS*/
+
+.h-card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 100%;
+    
+}
+
+    .h-card:hover {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    }
+
+.h-container {
+    padding: 2px 16px;
+    background-color:#f5f5f5;
+}
+
+/*contact-us*/
+
+.new-container {
+    position: relative;
+    font-family: Arial;
+    
+}
+
+.new-text-block {
+    position: absolute;
+    top: 2.7rem;
+    right: 1.8rem;
+    background-color: transparent;
+    color: white;
+    padding-left: 40px;
+    padding-right: 40px;
+    text-align: center;
+    width: 96%;
+    height: 10rem;
+}
+
+.image-text-block {
+    position: absolute;
+    bottom:15rem;
+    right: 1.8rem;
+    background-color: transparent;
+    color: white;
+    padding-left: 40px;
+    padding-right: 40px;
+    text-align: center;
+    width: 96%;
+    height: 10rem;
+}
+    
