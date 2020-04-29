@@ -1,27 +1,23 @@
 ﻿using System;
 using System.Diagnostics;
+using System.Linq;
 using System.Web;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
+using Newtonsoft.Json;
+using ProtectGaia.ActionFilters;
 using ProtectGaia.Entities.NewsEntity;
+using ProtectGaia.Entities.WeatherEntity;
 using ProtectGaia.Interface;
 using ProtectGaia.Models;
-using MetOfficeDataPoint;
-using MetOfficeDataPoint.Models;
-using MetOfficeDataPoint.Models.GeoCoordinate;
-using ProtectGaia.Entities.WeatherEntity;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore;
-using Newtonsoft.Json;
 
 namespace ProtectGaia.Controllers
 {
     /// <summary>
     /// Home Contrller Navigates through all  pages
     /// </summary>
+    [BasicAuthenticationAttribute("ecoMorph", "Password123", BasicRealm = "ecoMorph")]
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
