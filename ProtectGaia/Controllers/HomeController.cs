@@ -17,7 +17,7 @@ namespace ProtectGaia.Controllers
     /// <summary>
     /// Home Contrller Navigates through all  pages
     /// </summary>
-    [BasicAuthenticationAttribute("ecoMorph", "Password123", BasicRealm = "ecoMorph")]
+   ///[BasicAuthenticationAttribute("ecoMorph", "Password123", BasicRealm = "ecoMorph")]
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;

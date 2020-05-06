@@ -40,3 +40,17 @@ C:\Users\gupta\source\repos\ProtectGaia-dev\ProtectGaia.DataAccess\obj\Debug\net
 C:\Users\gupta\source\repos\ProtectGaia-dev\ProtectGaia.DataAccess\obj\Debug\netstandard2.1\ProtectGaia.DataAccess.csproj.CopyComplete
 C:\Users\gupta\source\repos\ProtectGaia-dev\ProtectGaia.DataAccess\obj\Debug\netstandard2.1\ProtectGaia.DataAccess.dll
 C:\Users\gupta\source\repos\ProtectGaia-dev\ProtectGaia.DataAccess\obj\Debug\netstandard2.1\ProtectGaia.DataAccess.pdb
+C:\Users\gupta\source\repos\ProtectGaia-dev - Copy (2)\ProtectGaia.DataAccess\bin\Debug\netstandard2.1\ProtectGaia.DataAccess.deps.json
+C:\Users\gupta\source\repos\ProtectGaia-dev - Copy (2)\ProtectGaia.DataAccess\bin\Debug\netstandard2.1\ProtectGaia.DataAccess.dll
+C:\Users\gupta\source\repos\ProtectGaia-dev - Copy (2)\ProtectGaia.DataAccess\bin\Debug\netstandard2.1\ProtectGaia.DataAccess.pdb
+C:\Users\gupta\source\repos\ProtectGaia-dev - Copy (2)\ProtectGaia.DataAccess\bin\Debug\netstandard2.1\ProtectGaia.Entities.dll
+C:\Users\gupta\source\repos\ProtectGaia-dev - Copy (2)\ProtectGaia.DataAccess\bin\Debug\netstandard2.1\ProtectGaia.Interface.dll
+C:\Users\gupta\source\repos\ProtectGaia-dev - Copy (2)\ProtectGaia.DataAccess\bin\Debug\netstandard2.1\ProtectGaia.Entities.pdb
+C:\Users\gupta\source\repos\ProtectGaia-dev - Copy (2)\ProtectGaia.DataAccess\bin\Debug\netstandard2.1\ProtectGaia.Interface.pdb
+C:\Users\gupta\source\repos\ProtectGaia-dev - Copy (2)\ProtectGaia.DataAccess\obj\Debug\netstandard2.1\ProtectGaia.DataAccess.csprojAssemblyReference.cache
+C:\Users\gupta\source\repos\ProtectGaia-dev - Copy (2)\ProtectGaia.DataAccess\obj\Debug\netstandard2.1\ProtectGaia.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\gupta\source\repos\ProtectGaia-dev - Copy (2)\ProtectGaia.DataAccess\obj\Debug\netstandard2.1\ProtectGaia.DataAccess.AssemblyInfoInputs.cache
+C:\Users\gupta\source\repos\ProtectGaia-dev - Copy (2)\ProtectGaia.DataAccess\obj\Debug\netstandard2.1\ProtectGaia.DataAccess.AssemblyInfo.cs
+C:\Users\gupta\source\repos\ProtectGaia-dev - Copy (2)\ProtectGaia.DataAccess\obj\Debug\netstandard2.1\ProtectGaia.DataAccess.csproj.CopyComplete
+C:\Users\gupta\source\repos\ProtectGaia-dev - Copy (2)\ProtectGaia.DataAccess\obj\Debug\netstandard2.1\ProtectGaia.DataAccess.dll
+C:\Users\gupta\source\repos\ProtectGaia-dev - Copy (2)\ProtectGaia.DataAccess\obj\Debug\netstandard2.1\ProtectGaia.DataAccess.pdb

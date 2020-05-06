@@ -95,11 +95,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\gupta\\source\\repos\\ProtectGaia-dev\\ProtectGaia.DataAccess\\ProtectGaia.DataAccess.csproj",
+      "projectUniqueName": "C:\\Users\\gupta\\source\\repos\\ProtectGaia-dev - Copy (2)\\ProtectGaia.DataAccess\\ProtectGaia.DataAccess.csproj",
       "projectName": "ProtectGaia.DataAccess",
-      "projectPath": "C:\\Users\\gupta\\source\\repos\\ProtectGaia-dev\\ProtectGaia.DataAccess\\ProtectGaia.DataAccess.csproj",
+      "projectPath": "C:\\Users\\gupta\\source\\repos\\ProtectGaia-dev - Copy (2)\\ProtectGaia.DataAccess\\ProtectGaia.DataAccess.csproj",
       "packagesPath": "C:\\Users\\gupta\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\gupta\\source\\repos\\ProtectGaia-dev\\ProtectGaia.DataAccess\\obj\\",
+      "outputPath": "C:\\Users\\gupta\\source\\repos\\ProtectGaia-dev - Copy (2)\\ProtectGaia.DataAccess\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\gupta\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -115,11 +115,11 @@
       "frameworks": {
         "netstandard2.1": {
           "projectReferences": {
-            "C:\\Users\\gupta\\source\\repos\\ProtectGaia-dev\\ProtectGaia.Entities\\ProtectGaia.Entities.csproj": {
-              "projectPath": "C:\\Users\\gupta\\source\\repos\\ProtectGaia-dev\\ProtectGaia.Entities\\ProtectGaia.Entities.csproj"
+            "C:\\Users\\gupta\\source\\repos\\ProtectGaia-dev - Copy (2)\\ProtectGaia.Entities\\ProtectGaia.Entities.csproj": {
+              "projectPath": "C:\\Users\\gupta\\source\\repos\\ProtectGaia-dev - Copy (2)\\ProtectGaia.Entities\\ProtectGaia.Entities.csproj"
             },
-            "C:\\Users\\gupta\\source\\repos\\ProtectGaia-dev\\ProtectGaia.Interface\\ProtectGaia.Interface.csproj": {
-              "projectPath": "C:\\Users\\gupta\\source\\repos\\ProtectGaia-dev\\ProtectGaia.Interface\\ProtectGaia.Interface.csproj"
+            "C:\\Users\\gupta\\source\\repos\\ProtectGaia-dev - Copy (2)\\ProtectGaia.Interface\\ProtectGaia.Interface.csproj": {
+              "projectPath": "C:\\Users\\gupta\\source\\repos\\ProtectGaia-dev - Copy (2)\\ProtectGaia.Interface\\ProtectGaia.Interface.csproj"
             }
           }
         }

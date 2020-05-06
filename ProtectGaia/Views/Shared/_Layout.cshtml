@@ -1,95 +1,77 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
+
+
 <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Home: Ecomorph</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="~/assets/css/main.css" />
+
+    <noscript><link rel="stylesheet" href="/css/noscript.css" /></noscript>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+
     <title>@ViewBag.Title - Eco Morph</title>
     <!-- Favicon -->
     <link rel="shortcut icon" type="/image/icon" href="/favicon.ico" />
     <!-- Font Awesome -->
-   @* <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">*@
+    @* <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">*@
     <link href="~/lib/font-awesome/css/all.min.css" rel="stylesheet" />
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-    <!-- Slick slider -->
-    <link href="~/css/slick.css" rel="stylesheet">
-    <!-- Gallery Lightbox -->
-    <link href="~/css/magnific-popup.css" rel="stylesheet">
-    <!-- Skills Circle CSS  -->
-    <link rel="stylesheet" type="text/css" href="https://unpkg.com/circlebars@1.0.3/dist/circle.css">
-
-
-    <!-- Main Style -->
-    <link href="~/css/style.css" rel="stylesheet">
-
-    <!-- Fonts -->
-    <!-- Google Fonts Raleway -->
-    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,400i,500,500i,600,700" rel="stylesheet">
-    <!-- Google Fonts Open sans -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700,800" rel="stylesheet">
-
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="/js/geoLocation.js"></script>
 
 </head>
-<body>
+<body class="homepage is-preload">
 
     <!--START SCROLL TOP BUTTON -->
-    <a class="scrollToTop" href="#">
-        <i class="fa fa-angle-up"></i>
-    </a>
+    @*<a class="scrollToTop" href="#">
+            <i class="fa fa-angle-up"></i>
+        </a>*@
 
     <!-- END SCROLL TOP BUTTON -->
     <!-- Start Header -->
+    @*<div class="deviceLocation"> <p>Detecting . . .</p></div>*@
 
-    <header id="mu-hero">
+    <div id="page-wrapper">
 
-        <!--<img src="~/images/Home/ghg_home - Copy.jpg" alt="EcoMorph" class="title-image" style="width: 100%; height: auto" />-->
+        <!-- Header -->
+        <section id="header">
+            <!-- Logo -->
+            <h1>
+                <a href="index.html">
+                    <img src="~/images/logo.jpeg" alt="ecoMorph" style="width:4rem;height:4rem;"> EcoMorph
+                </a>
+            </h1>
 
+            <!-- Nav -->
+            <nav id="nav">
+                <ul>
+                    <li class="current"><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="#">Explainers</a>
+                        <ul>
+                            <li><a href="#">Energy Consumption</a></li>
+                            <li><a href="#">Transport Emisiions</a></li>
+                            <li><a href="#">Household Practices</a></li>
+                            <li><a href="#">Climate Change</a></li>
+                            <li><a href="#">Health Impacts</a></li>
+                            <li><a href="#">Make a Change</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="left-sidebar.html">TakeChallenge</a></li>
+                    <li> <div class="deviceLocation"> Detecting . . .</div> </li>
 
-        <div class="new-container">
-            <img src="~/images/Home/ghg_home - Copy.jpg" alt="EcoMorph" style=" filter: brightness(80%);opacity:0.9; width:100%; height:auto">
-            <div class="image-text-block" >
-                <p style=" font-size:42px; color:#f5f5f5; font-family:Comic Sans MS, cursive, sans-serif"><b> ECOMORPH </b></p>
-              
-                <p style=" font-size:38px; color:#f5f5f5; font-family:Comic Sans MS, cursive, sans-serif"/><b>Every Action makes a Difference!</b></p>
-
-            </div>
-        </div>
-
-        <div class="top-right">
-            <div class="deviceLocation"> <p>Detecting . . .</p></div>
-            <nav class="navbar navbar-expand-lg navbar-light mu-navbar">
-                <div>
-                    <!-- Logo -->
-                    <a asp-controller="Home" asp-action="Index"><img src="~/images/Home/eco_logo.png" alt="Eco Morph" style="height:70%;width:70%; padding-left: 50px;" /></a>
-                    <!-- image based logo -->
-                    <!-- <a class="navbar-brand mu-logo" href="index.html"><img src="assets/images/logo.png" alt="logo"></a> -->
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="fa fa-bars"></span>
-                    </button>
-                </div>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto mu-navbar-nav" style="padding-right: 80px;">
-                        <li class="nav-item active">
-                            <a asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="dropdown-toggle" href="#" role="button" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Explore</a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" asp-controller="Explore" asp-Action="Infographics" onclick="MakeActive('infographics')">Infographics</a>
-                                <a class="dropdown-item" asp-controller="Explore" asp-Action="Visualization">Visualizations</a>
-                            </div>
-                        </li>
-                        <li class="nav-item" id="aboutusone"><a href="/Blogs/Index" onclick="MakeActive('blogs')">Blogs</a></li>
-                    </ul>
-                </div>
+                </ul>
             </nav>
-        </div>
-    </header>
-
+        </section>
+    </div>
 
     <!-- End Header -->
     <main>
@@ -97,24 +79,67 @@
     </main>
     <!-- End main content -->
     <!-- Start footer -->
+    <section id="footer" style="filter: brightness(100%)">
+        <div class="container">
+            <div class="row">
+                <div class="col-8 col-12-medium">
 
-    <div class="row" style="height:50px;">
+                    <section>
+                        <header>
+                            <h2>Contact Us</h2>
+                        </header>
 
-    </div>
-    <footer>
-        <div class="new-container">
-            <img src="~/images/Home/1.jpg" alt="contact-us" style=" filter: brightness(50%);opacity:0.9; width:100%; height:13rem;">
-            <div class="new-text-block">
-                <h4>Contact Us</h4><br />
-                <p><i class="far fa-envelope"></i> environs@gmail.com</p>
-                <p><i class="fas fa-map-marker-alt"></i> Melbourne, Australia</p>
+                        <ul class="dates">
+                            <li>
+                                <span class="date"><strong><i class="fas fa-map-marker-alt"></i>&nbsp</strong></span>
+                                <br />
+                                <p>Address: Melbourne, Australia</p>
+                            </li>
+                            <li>
+                                <span class="date"><strong><i class="fa fa-envelope"></i></strong></span>
+                                <br />
+                                <p>Email: environs@gmail.com</p>
+                            </li>
+
+                            <li>
+                                <span class="date"><strong><i class="fa fa-mobile"></i>&nbsp</strong></span>
+                                <br />
+                                <p>Phone: (800) 000-0000</p>
+                            </li>
+
+                        </ul>
+                    </section>
+                </div>
+                <div class="col-4 col-12-medium">
+                    <section>
+                        <header>
+                            <h2>What's this all about?</h2>
+                        </header>
+                        <a href="#" class="image featured"><img src="images/15.png" alt="" /></a>
+                        <p>
+                            This is <strong>Dopetrope</strong> a free, fully responsive HTML5 site template by
+                            <a href="http://twitter.com/ajlkn">AJ</a> for <a href="http://html5up.net/">HTML5 UP</a> It's released for free under
+                            the <a href="http://html5up.net/license/">Creative Commons Attribution</a> license so feel free to use it for any personal or commercial project &ndash; just don't forget to credit us!
+                        </p>
+                        
+                    </section>
+                </div>
+
+
+                <div class="col-12">
+                    <!-- Copyright -->
+                    <div id="copyright">
+                        <ul class="links">
+                            <li>Designed by Environs. All rights reserved.</li>
+                        </ul>
+                    </div>
+
+                </div>
             </div>
         </div>
-        <div class="mu-container mu-footer-top" style="background-color:#292929">
-           
-            <center> <p class="mu-copy-right">Designed by <a rel="nofollow" href="https://www.ecomorph.me">Environs</a>. All rights reserved.</p></center>
-        </div>
-    </footer>
+    </section>
+
+
     <!-- End footer -->
     <!-- JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -138,6 +163,14 @@
 
     <!-- Custom js -->
     <script type="text/javascript" src="/js/custom.js"></script>
+
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.dropotron.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
 
 
 
