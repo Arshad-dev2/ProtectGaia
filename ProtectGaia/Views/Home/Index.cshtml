@@ -4,12 +4,6 @@
 @model List<ProtectGaia.Models.Article>
 <!-- Start main content -->
 <!-- Corousel -->
-<style>
-    
-   @* <img src=\"" + response.location.icon + "\" style=\"widhth:30%;float:right;position:relative;bottom:2rem;right:1rem\" alt=\"Weather\"/ >*@
-   
-   
-</style>
 
 <section id="banner">
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -23,15 +17,12 @@
         <!-- Wrapper for slides -->
         <div class="carousel-inner">
             <div class="item active">
-                <img src="~/images/bulb1.jpg" alt="ecoMorph" style="        width: 100%;
-        height: auto;
-        filter: brightness(100%);
-        opacity: 0.9;">
+                <img src="~/images/bulb1.jpg" alt="ecoMorph" style=" width: 100%;height: auto;filter: brightness(100%);opacity: 0.9;">
                 <header style="position: absolute;bottom:6.7rem;right: 15rem;">
                     <h2>ECOMORPH</h2>
                     <p>Every Action Makes a Difference!</p>
                     <br><class ="actions">
-                        <a href="#" class="button large">Get Started</a>
+                        <a href="#" class="button large">Take the Challenge!</a>
                 </header>
 
             </div>
@@ -41,6 +32,8 @@
                 <header style="position: absolute;bottom:6.7rem;right: 11rem;">
                     <h2>GO GREEN TODAY.</h2>
                     <p>For a Better Future Tomorrow!</p>
+                    <br><class ="actions">
+                        <a href="#" class="button large">Take the Challenge!</a>
                 </header>
             </div>
 
@@ -49,6 +42,8 @@
                 <header style="position: absolute;bottom:9rem;right: 25rem;">
                     <h2>HEALTH IS WEALTH!</h2>
                     <p>Healthy life comes from Healthy Lifestyle</p>
+                    <br><class ="actions">
+                        <a href="#" class="button large">Take the Challenge!</a>
                 </header>
             </div>
         </div>
@@ -120,7 +115,7 @@
                 <!-- Portfolio -->
                 <section>
                     <header class="major">
-                        <h2>Explore!</h2>
+                        <h2>Explainers!</h2>
                     </header>
                     <div class="row">
                         <div class="col-4 col-6-medium col-12-small">
@@ -129,10 +124,11 @@
                                 <header>
                                     <h3>Energy Consumption</h3>
                                 </header>
-                                <p>Lorem ipsum dolor sit amet sit veroeros sed amet blandit consequat veroeros lorem blandit adipiscing et feugiat phasellus tempus dolore ipsum lorem dolore.</p>
+                                <p>Energy sector is the largest contributor of greenhouse gases in Australia. It accounts for more than 33 percent of total GHG emissions.</p>
+                                
                                 <footer>
                                     <ul class="actions">
-                                        <li><a href="#" class="button alt">Find out more</a></li>
+                                        <li><a asp-controller="Explore" asp-Action="EnergyConsumption" class="button alt">Find out more</a></li>
                                     </ul>
                                 </footer>
                             </section>
@@ -143,10 +139,11 @@
                                 <header>
                                     <h3>Transport Emissions</h3>
                                 </header>
-                                <p>Lorem ipsum dolor sit amet sit veroeros sed amet blandit consequat veroeros lorem blandit adipiscing et feugiat phasellus tempus dolore ipsum lorem dolore.</p>
+                                <p>Australia’s transport infrastructure is failing in terms of its carbon contribution. It is bound to get worse if we do not act now! </p>
+                                
                                 <footer>
                                     <ul class="actions">
-                                        <li><a href="#" class="button alt">Find out more</a></li>
+                                        <li><a asp-controller="Explore" asp-Action="TransportEmissions" class="button alt">Find out more</a></li>
                                     </ul>
                                 </footer>
                             </section>
@@ -157,10 +154,11 @@
                                 <header>
                                     <h3>Household Practices</h3>
                                 </header>
-                                <p>Lorem ipsum dolor sit amet sit veroeros sed amet blandit consequat veroeros lorem blandit adipiscing et feugiat phasellus tempus dolore ipsum lorem dolore.</p>
+                                <p>Did you know an average Australian household generates more than 7 tons of greenhouse gases which can be reduced, know how you can help! </p>
+                               
                                 <footer>
                                     <ul class="actions">
-                                        <li><a href="#" class="button alt">Find out more</a></li>
+                                        <li><a asp-controller="Explore" asp-Action="HouseholdPractices" class="button alt">Find out more</a></li>
                                     </ul>
                                 </footer>
                             </section>
@@ -171,11 +169,12 @@
                                 <header>
                                     <h3>Climate Change</h3>
                                 </header>
-                                <p>Lorem ipsum dolor sit amet sit veroeros sed amet blandit consequat veroeros lorem blandit adipiscing et feugiat phasellus tempus dolore ipsum lorem dolore.</p>
+                                <p>Excess emissions of greenhouse gases in Australia are leading to a rapid change in our environment. Change before it is too late!</p>
                                 <br><br>
+                                <br>
                                 <footer>
                                     <ul class="actions">
-                                        <li><a href="#" class="button alt">Find out more</a></li>
+                                        <li><a asp-controller="Explore" asp-Action="ClimateChange" class="button alt">Find out more</a></li>
                                     </ul>
                                 </footer>
                             </section>
@@ -186,10 +185,10 @@
                                 <header>
                                     <h3>Health Impacts</h3>
                                 </header>
-                                <p>Lorem ipsum dolor sit amet sit veroeros sed amet blandit consequat veroeros lorem blandit adipiscing et feugiat phasellus tempus dolore ipsum lorem dolore.</p>
+                                <p>It is not only our environment that is being affected, human health is in grave danger too! Understand about the health impacts of these emissions!</p>
                                 <footer>
                                     <ul class="actions">
-                                        <li><a href="#" class="button alt">Find out more</a></li>
+                                        <li><a asp-controller="Explore" asp-Action="HealthImpacts" class="button alt">Find out more</a></li>
                                     </ul>
                                 </footer>
                             </section>
@@ -200,10 +199,10 @@
                                 <header>
                                     <h3>Make a Change!</h3>
                                 </header>
-                                <p>Lorem ipsum dolor sit amet sit veroeros sed amet blandit consequat veroeros lorem blandit adipiscing et feugiat phasellus tempus dolore ipsum lorem dolore.</p>
+                                <p>Small effort makes a big impact and together, all of us can make a difference. Know how you can contribute towards reducing greenhouse emissions! </p>
                                 <footer>
                                     <ul class="actions">
-                                        <li><a href="#" class="button alt">Find out more</a></li>
+                                        <li><a asp-controller="Explore" asp-Action="MakeAChange" class="button alt">Find out more</a></li>
                                     </ul>
                                 </footer>
                             </section>

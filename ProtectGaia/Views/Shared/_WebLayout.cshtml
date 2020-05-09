@@ -2,35 +2,28 @@
 <html lang="en">
 <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Home: Ecomorph</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="~/assets/css/main.css" />
+
+    <noscript><link rel="stylesheet" href="/css/noscript.css" /></noscript>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+
     <title>@ViewBag.Title - Eco Morph</title>
     <!-- Favicon -->
-    <link rel="shortcut icon" href="/images/favicon.ico" type="image/icon">
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" type="/image/icon" href="/favicon.ico" />
     <!-- Font Awesome -->
-    @*<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">*@
+    @* <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">*@
     <link href="~/lib/font-awesome/css/all.min.css" rel="stylesheet" />
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-    <!-- Slick slider -->
-    <link href="~/css/slick.css" rel="stylesheet">
-    <!-- Gallery Lightbox -->
-    <link href="~/css/magnific-popup.css" rel="stylesheet">
-    <!-- Skills Circle CSS  -->
-    <link rel="stylesheet" type="text/css" href="https://unpkg.com/circlebars@1.0.3/dist/circle.css">
-
-
-    <!-- Main Style -->
-    <link href="~/css/style.css" rel="stylesheet">
-
-    <!-- Fonts -->
-    <!-- Google Fonts Raleway -->
-    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,400i,500,500i,600,700" rel="stylesheet">
-    <!-- Google Fonts Open sans -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700,800" rel="stylesheet">
-
-    <!--W3 cards-->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="/js/geoLocation.js"></script>
 
 </head>
 <body>
@@ -41,49 +34,58 @@
     </a>
     <!-- END SCROLL TOP BUTTON -->
     <!-- Start Header -->
-    <header id="mu-hero">
-        <div class="top-right">
-            <nav class="navbar navbar-expand-lg navbar-light mu-navbar">
-                <div>
-                    <!-- Text based logo -->
-                    
-                        <a  asp-controller="Home" asp-action="Index" class="navbar-brand mu-logo"><img src="~/images/Home/eco_logo.png" alt="Eco Morph" style="height:70%;width:70%; padding-left: 50px;" /></a>
-                        <!-- image based logo -->
-                        <!-- <a class="navbar-brand mu-logo" href="index.html"><img src="assets/images/logo.png" alt="logo"></a> -->
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="fa fa-bars"></span>
-                        </button>
-                </div>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto mu-navbar-nav" style="padding-right: 80px;">
-                        <li class="nav-item active">
-                            <a asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="dropdown-toggle" href="#" role="button" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Explore</a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" asp-controller="Explore" asp-Action="Infographics" onclick="MakeActive('infographics')">Infographics</a>
-                                <a class="dropdown-item" asp-controller="Explore" asp-Action="Visualization">Visualizations</a>
-                            </div>
-                        </li>
-                        <li class="nav-item" id="aboutusone"><a href="/blogs/index" onclick="MakeActive('blogs')">Blogs</a></li>
-                    </ul>
-                </div>
+    <div id="page-wrapper">
+
+        <!-- Header -->
+        <section id="header">
+            <!-- Logo -->
+            <h1>
+                <a asp-controller="Home" asp-action="Index">
+                    <img src="~/images/logo.jpeg" alt="ecoMorph" style="width:4rem;height:4rem;" />
+                </a>EcoMorph
+            </h1>
+
+            <!-- Nav -->
+            <nav id="nav">
+                <ul>
+                    <li class="current"><a asp-controller="Home" asp-action="Index">Home</a></li>
+                    <li>
+                        <a href="#">Explainers</a>
+                        <ul>
+                            <li><a asp-controller="Explore" asp-Action="EnergyConsumption" onclick="MakeActive('EnergyConsumption')">Energy Consumption</a></li>
+                            <li><a asp-controller="Explore" asp-Action="TransportEmissions" onclick="MakeActive('TransportEmissions')">Transport Emissions</a></li>
+                            <li><a asp-controller="Explore" asp-Action="HouseholdPractices" onclick="MakeActive('HouseholdActivities')">Household Practices</a></li>
+                            <li><a asp-controller="Explore" asp-Action="ClimateChange" onclick="MakeActive('ClimateChange')">Climate Change</a></li>
+                            <li><a asp-controller="Explore" asp-Action="HealthImpacts" onclick="MakeActive('HealthImpacts')">Health Impacts</a></li>
+                            <li><a asp-controller="Explore" asp-Action="MakeAChange" onclick="MakeActive('MakeAChange')">Make a Change</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="left-sidebar.html">TakeChallenge</a></li>
+                    <li> <div class="deviceLocation"> Detecting . . .</div> </li>
+
+                </ul>
             </nav>
-        </div>
-    </header>
-    <main style="margin-top:4rem;">
+        </section>
+    </div>
+    <main>
         <!-- End Header -->
         @RenderBody()
     </main>
     <!-- End main content -->
     <!-- Start footer -->
 
-    <footer>
-        <div class="mu-container mu-footer-top">
-            <center> <p class="mu-copy-right">Designed by <a rel="nofollow" href="https://www.ecomorph.me">Environs</a>.<br /> All right reserved.</p></center>
+    <section id="footer" style="filter: brightness(100%);padding-bottom: 0.5px; padding-top: 0.5px;">
+        <div class="container">
+            <!-- Copyright -->
+            <div id="copyright">
+                <ul class="links">
+                    <li>Designed by Environs. All rights reserved.</li>
+                </ul>
+            </div>
         </div>
-    </footer>
+    </section>
+
+
     <!-- End footer -->
     <!-- JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -108,6 +110,16 @@
 
     <!-- Custom js -->
     <script type="text/javascript" src="/js/custom.js"></script>
+
+    <!--from new template-->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.dropotron.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    
 
 
 

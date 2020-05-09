@@ -2,7 +2,9 @@
 <html lang="en">
 
 
+
 <head>
+
     <!-- Required meta tags -->
     <title>Home: Ecomorph</title>
     <meta charset="utf-8" />
@@ -28,44 +30,44 @@
     <script src="/js/geoLocation.js"></script>
 
 </head>
+
 <body class="homepage is-preload">
 
     <!--START SCROLL TOP BUTTON -->
-    @*<a class="scrollToTop" href="#">
+    <a class="scrollToTop" href="#">
             <i class="fa fa-angle-up"></i>
-        </a>*@
+        </a>
 
     <!-- END SCROLL TOP BUTTON -->
     <!-- Start Header -->
-    @*<div class="deviceLocation"> <p>Detecting . . .</p></div>*@
-
+    
     <div id="page-wrapper">
 
         <!-- Header -->
         <section id="header">
             <!-- Logo -->
             <h1>
-                <a href="index.html">
-                    <img src="~/images/logo.jpeg" alt="ecoMorph" style="width:4rem;height:4rem;"> EcoMorph
+                <a asp-controller="Home" asp-action="Index">
+                    <img src="~/images/logo.jpeg" alt="ecoMorph" style="width:4rem;height:4rem;" />EcoMorph
                 </a>
             </h1>
 
             <!-- Nav -->
             <nav id="nav">
                 <ul>
-                    <li class="current"><a href="index.html">Home</a></li>
+                    <li class="current"><a asp-controller="Home" asp-action="Index">Home</a></li>
                     <li>
                         <a href="#">Explainers</a>
                         <ul>
-                            <li><a href="#">Energy Consumption</a></li>
-                            <li><a href="#">Transport Emisiions</a></li>
-                            <li><a href="#">Household Practices</a></li>
-                            <li><a href="#">Climate Change</a></li>
-                            <li><a href="#">Health Impacts</a></li>
-                            <li><a href="#">Make a Change</a></li>
+                            <li><a asp-controller="Explainers" asp-Action="EnergyConsumption">Energy Consumption</a></li>
+                            <li><a asp-controller="Explainers" asp-Action="TransportEmissions">Transport Emissions</a></li>
+                            <li><a asp-controller="Explainers" asp-Action="HouseholdPractices">Household Practices</a></li>
+                            <li><a asp-controller="Explainers" asp-Action="ClimateChange">Climate Change</a></li>
+                            <li><a asp-controller="Explainers" asp-Action="HealthImpacts">Health Impacts</a></li>
+                            <li><a asp-controller="Explainers" asp-Action="MakeAChange" >Make a Change</a></li>
                         </ul>
                     </li>
-                    <li><a href="left-sidebar.html">TakeChallenge</a></li>
+                    <li><a href="#">TakeChallenge</a></li>
                     <li> <div class="deviceLocation"> Detecting . . .</div> </li>
 
                 </ul>
@@ -116,11 +118,6 @@
                             <h2>What's this all about?</h2>
                         </header>
                         <a href="#" class="image featured"><img src="images/15.png" alt="" /></a>
-                        <p>
-                            This is <strong>Dopetrope</strong> a free, fully responsive HTML5 site template by
-                            <a href="http://twitter.com/ajlkn">AJ</a> for <a href="http://html5up.net/">HTML5 UP</a> It's released for free under
-                            the <a href="http://html5up.net/license/">Creative Commons Attribution</a> license so feel free to use it for any personal or commercial project &ndash; just don't forget to credit us!
-                        </p>
                         
                     </section>
                 </div>
