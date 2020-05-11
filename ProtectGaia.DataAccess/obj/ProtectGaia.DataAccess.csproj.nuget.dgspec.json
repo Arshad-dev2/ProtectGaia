@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia.DataAccess/ProtectGaia.DataAccess.csproj": {}
+    "/Users/arsh/Documents/GitHub/ProtectGaia_Main/ProtectGaia.DataAccess/ProtectGaia.DataAccess.csproj": {}
   },
   "projects": {
-    "/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia.DataAccess/ProtectGaia.DataAccess.csproj": {
+    "/Users/arsh/Documents/GitHub/ProtectGaia_Main/ProtectGaia.DataAccess/ProtectGaia.DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia.DataAccess/ProtectGaia.DataAccess.csproj",
+        "projectUniqueName": "/Users/arsh/Documents/GitHub/ProtectGaia_Main/ProtectGaia.DataAccess/ProtectGaia.DataAccess.csproj",
         "projectName": "ProtectGaia.DataAccess",
-        "projectPath": "/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia.DataAccess/ProtectGaia.DataAccess.csproj",
+        "projectPath": "/Users/arsh/Documents/GitHub/ProtectGaia_Main/ProtectGaia.DataAccess/ProtectGaia.DataAccess.csproj",
         "packagesPath": "/Users/arsh/.nuget/packages/",
-        "outputPath": "/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia.DataAccess/obj/",
+        "outputPath": "/Users/arsh/Documents/GitHub/ProtectGaia_Main/ProtectGaia.DataAccess/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/arsh/.nuget/NuGet/NuGet.Config"
+          "/Users/arsh/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.1"
@@ -25,11 +25,11 @@
         "frameworks": {
           "netstandard2.1": {
             "projectReferences": {
-              "/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia.Entities/ProtectGaia.Entities.csproj": {
-                "projectPath": "/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia.Entities/ProtectGaia.Entities.csproj"
+              "/Users/arsh/Documents/GitHub/ProtectGaia_Main/ProtectGaia.Entities/ProtectGaia.Entities.csproj": {
+                "projectPath": "/Users/arsh/Documents/GitHub/ProtectGaia_Main/ProtectGaia.Entities/ProtectGaia.Entities.csproj"
               },
-              "/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia.Interface/ProtectGaia.Interface.csproj": {
-                "projectPath": "/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia.Interface/ProtectGaia.Interface.csproj"
+              "/Users/arsh/Documents/GitHub/ProtectGaia_Main/ProtectGaia.Interface/ProtectGaia.Interface.csproj": {
+                "projectPath": "/Users/arsh/Documents/GitHub/ProtectGaia_Main/ProtectGaia.Interface/ProtectGaia.Interface.csproj"
               }
             }
           }
@@ -67,17 +67,17 @@
         }
       }
     },
-    "/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia.Entities/ProtectGaia.Entities.csproj": {
+    "/Users/arsh/Documents/GitHub/ProtectGaia_Main/ProtectGaia.Entities/ProtectGaia.Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia.Entities/ProtectGaia.Entities.csproj",
+        "projectUniqueName": "/Users/arsh/Documents/GitHub/ProtectGaia_Main/ProtectGaia.Entities/ProtectGaia.Entities.csproj",
         "projectName": "ProtectGaia.Entities",
-        "projectPath": "/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia.Entities/ProtectGaia.Entities.csproj",
+        "projectPath": "/Users/arsh/Documents/GitHub/ProtectGaia_Main/ProtectGaia.Entities/ProtectGaia.Entities.csproj",
         "packagesPath": "/Users/arsh/.nuget/packages/",
-        "outputPath": "/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia.Entities/obj/",
+        "outputPath": "/Users/arsh/Documents/GitHub/ProtectGaia_Main/ProtectGaia.Entities/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/arsh/.nuget/NuGet/NuGet.Config"
+          "/Users/arsh/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.1"
@@ -123,17 +123,17 @@
         }
       }
     },
-    "/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia.Interface/ProtectGaia.Interface.csproj": {
+    "/Users/arsh/Documents/GitHub/ProtectGaia_Main/ProtectGaia.Interface/ProtectGaia.Interface.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia.Interface/ProtectGaia.Interface.csproj",
+        "projectUniqueName": "/Users/arsh/Documents/GitHub/ProtectGaia_Main/ProtectGaia.Interface/ProtectGaia.Interface.csproj",
         "projectName": "ProtectGaia.Interface",
-        "projectPath": "/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia.Interface/ProtectGaia.Interface.csproj",
+        "projectPath": "/Users/arsh/Documents/GitHub/ProtectGaia_Main/ProtectGaia.Interface/ProtectGaia.Interface.csproj",
         "packagesPath": "/Users/arsh/.nuget/packages/",
-        "outputPath": "/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia.Interface/obj/",
+        "outputPath": "/Users/arsh/Documents/GitHub/ProtectGaia_Main/ProtectGaia.Interface/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/arsh/.nuget/NuGet/NuGet.Config"
+          "/Users/arsh/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.1"
@@ -144,8 +144,8 @@
         "frameworks": {
           "netstandard2.1": {
             "projectReferences": {
-              "/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia.Entities/ProtectGaia.Entities.csproj": {
-                "projectPath": "/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia.Entities/ProtectGaia.Entities.csproj"
+              "/Users/arsh/Documents/GitHub/ProtectGaia_Main/ProtectGaia.Entities/ProtectGaia.Entities.csproj": {
+                "projectPath": "/Users/arsh/Documents/GitHub/ProtectGaia_Main/ProtectGaia.Entities/ProtectGaia.Entities.csproj"
               }
             }
           }

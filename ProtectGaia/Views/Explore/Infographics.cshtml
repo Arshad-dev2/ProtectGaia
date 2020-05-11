@@ -1,0 +1,138 @@
+﻿@{
+    Layout = "_WebLayout";
+    ViewBag.Title = "Infographics";
+}
+
+<link href="~/css/infographics.css" rel="stylesheet">
+<script>var contactId = "resourcesone";</script>
+
+<h1 style="margin-top: 8rem; text-align: center;"> Infographics </h1>
+
+<div class="container">
+    <div class="row" style="margin-top: 3rem; text-align:center;">
+        <div class="col-md-4">
+            <img id="myImg" class="popimg" src="/images/infographics/info1.png" alt="Infographic 1" style="width:80%; height: 250px; margin-top: 2rem;">
+            <br />
+        </div>
+        <div class="col-md-4">
+            <img id="myImg" class="popimg" src="/images/infographics/info2.png" alt="Infographic 2" style="width:80%; height: 250px; margin-top: 2rem;">
+            <br />
+        </div>
+        <div class="col-md-4">
+            <img id="myImg" class="popimg" src="/images/infographics/info3.png" alt="Infographic 3" style="width:80%; height: 250px; margin-top: 2rem;">
+            <br />
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row" style="margin-top: 5rem; text-align:center;">
+        <div class="col-md-4">
+            <img id="myImg" class="popimg" src="/images/infographics/info4.png" alt="Infographic 4" style="width:80%; height: 250px; margin-top: 2rem;">
+            <br />
+        </div>
+        <div class="col-md-4">
+            <img id="myImg" class="popimg" src="/images/infographics/info5.png" alt="Infographic 5" style="width:80%; height: 250px; margin-top: 2rem;">
+            <br />
+        </div>
+        <div class="col-md-4">
+            <img id="myImg" class="popimg" src="/images/infographics/info6.png" alt="Infographic 6" style="width:80%; height: 250px; margin-top: 2rem;">
+
+            <br />
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row" style="margin-top: 5rem; text-align:center;">
+        <div class="col-md-4">
+            <img id="myImg" class="popimg" src="/images/infographics/info7.png" alt="Infographic 7" style="width:80%; height: 250px; margin-top: 2rem;">
+            <br />
+        </div>
+        <div class="col-md-4">
+            <img id="myImg" class="popimg" src="/images/infographics/info8.png" alt="Infographic 8" style="width:80%; height: 250px; margin-top: 2rem;">
+
+            <br />
+        </div>
+        <div class="col-md-4">
+            <img id="myImg" class="popimg" src="/images/infographics/info9.png" alt="Infographic 8" style="width:80%; height: 250px; margin-top: 2rem;">
+
+            <br />
+        </div>
+    </div>
+</div>
+<br />
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="info1">
+    <div id="caption"></div>
+</div>
+
+<script>// Get the modal
+    var modal = document.getElementById("myModal");
+    var img_elem = document.getElementsByClassName("popimg");
+    // Get the image and insert it inside the modal - use its "alt" text as a caption
+    var img = document.getElementById("myImg");
+    var modalImg = document.getElementById("info1");
+    var captionText = document.getElementById("caption");
+    console.log(img_elem);
+
+    img_elem[0].onclick = function () {
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+    }
+
+    img_elem[1].onclick = function () {
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+    }
+
+    img_elem[2].onclick = function () {
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+    }
+
+    img_elem[3].onclick = function () {
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+    }
+
+    img_elem[4].onclick = function () {
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+    }
+
+    img_elem[5].onclick = function () {
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+    }
+    img_elem[6].onclick = function () {
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+    }
+    img_elem[7].onclick = function () {
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+    }
+    img_elem[8].onclick = function () {
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+    }
+    // Get the <span> element that closes the modal
+
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function () {
+        modal.style.display = "none";
+    }</script>
+

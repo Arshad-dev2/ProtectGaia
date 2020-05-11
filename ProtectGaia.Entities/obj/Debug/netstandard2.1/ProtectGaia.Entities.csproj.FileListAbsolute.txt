@@ -41,3 +41,4 @@ C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia.Entities/obj/
 /Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia.Entities/obj/Debug/netstandard2.1/ProtectGaia.Entities.AssemblyInfo.cs
 /Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia.Entities/obj/Debug/netstandard2.1/ProtectGaia.Entities.dll
 /Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia.Entities/obj/Debug/netstandard2.1/ProtectGaia.Entities.pdb
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia.Entities/obj/Debug/netstandard2.1/ProtectGaia.Entities.csprojAssemblyReference.cache

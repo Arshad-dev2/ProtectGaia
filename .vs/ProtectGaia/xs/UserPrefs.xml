@@ -1,15 +1,22 @@
 ﻿<Properties StartupConfiguration="{3FA95DA7-42EF-40D9-B8D3-C08257AAA405}|Default">
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="ProtectGaia/Controllers/ExplainersController.cs">
     <Files>
-      <File FileName="ProtectGaia/Views/Home/Index.cshtml" />
-      <File FileName="ProtectGaia/wwwroot/css/style.css" />
-      <File FileName="ProtectGaia/wwwroot/css/infographics.css" Line="138" Column="1" />
-      <File FileName="../../../../usr/local/share/dotnet/sdk/3.1.200/Sdks/Microsoft.NET.Sdk/targets/Microsoft.PackageDependencyResolution.targets" Line="14" Column="7" />
+      <File FileName="ProtectGaia/Views/Home/Index.cshtml" Line="8" Column="22" />
+      <File FileName="ProtectGaia/wwwroot/css/infographics.css" />
+      <File FileName="ProtectGaia/Controllers/BlogsController.cs" Line="1" Column="1" />
+      <File FileName="ProtectGaia/Controllers/ExplainersController.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="ProtectGaia" expanded="True" selected="True" />
+          <Node name="ProtectGaia" expanded="True">
+            <Node name="ProtectGaia" expanded="True">
+              <Node name="bin" expanded="True" />
+              <Node name="Controllers" expanded="True">
+                <Node name="ExploreController.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
         </State>
       </Pad>
     </Pads>
