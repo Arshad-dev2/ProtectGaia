@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Net;
@@ -33,12 +34,19 @@ namespace ProtectGaia.DataAccess
                 //Description = x.Description,
                 Url = x.Url,
                 Source = x.Source
-            }).ToList().Take(4);
+            }).Where(
+                y=>(y.UrlToImage!=null &&
+                    (y.Title.ToLower().Contains("environment")||
+                    y.Title.ToLower().Contains("climate") ||
+                     y.Title.ToLower().Contains("greenhouse gas")
+                     ))).ToList();
+
+            var distinctArticle = filteredArticles.GroupBy(x => x.Source.Name).Select(g => g.First()).ToList().Take(4);
 
             NewsResponse updatedNewsResponse = new NewsResponse()
             {
                 Status = newsResponse.Status,
-                Articles = filteredArticles
+                Articles = distinctArticle
             };
 
                 //persons.Where(x => !exclusionKeys.Contains(x.compositeKey));

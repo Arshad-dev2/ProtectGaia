@@ -1,37 +1,35 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\gupta\\source\\repos\\ProtectGaia-dev - Copy (2)\\ProtectGaia.DataAccess\\ProtectGaia.DataAccess.csproj": {}
+    "/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia.DataAccess/ProtectGaia.DataAccess.csproj": {}
   },
   "projects": {
-    "C:\\Users\\gupta\\source\\repos\\ProtectGaia-dev - Copy (2)\\ProtectGaia.DataAccess\\ProtectGaia.DataAccess.csproj": {
+    "/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia.DataAccess/ProtectGaia.DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gupta\\source\\repos\\ProtectGaia-dev - Copy (2)\\ProtectGaia.DataAccess\\ProtectGaia.DataAccess.csproj",
+        "projectUniqueName": "/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia.DataAccess/ProtectGaia.DataAccess.csproj",
         "projectName": "ProtectGaia.DataAccess",
-        "projectPath": "C:\\Users\\gupta\\source\\repos\\ProtectGaia-dev - Copy (2)\\ProtectGaia.DataAccess\\ProtectGaia.DataAccess.csproj",
-        "packagesPath": "C:\\Users\\gupta\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gupta\\source\\repos\\ProtectGaia-dev - Copy (2)\\ProtectGaia.DataAccess\\obj\\",
+        "projectPath": "/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia.DataAccess/ProtectGaia.DataAccess.csproj",
+        "packagesPath": "/Users/arsh/.nuget/packages/",
+        "outputPath": "/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia.DataAccess/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\gupta\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/arsh/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.1"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netstandard2.1": {
             "projectReferences": {
-              "C:\\Users\\gupta\\source\\repos\\ProtectGaia-dev - Copy (2)\\ProtectGaia.Entities\\ProtectGaia.Entities.csproj": {
-                "projectPath": "C:\\Users\\gupta\\source\\repos\\ProtectGaia-dev - Copy (2)\\ProtectGaia.Entities\\ProtectGaia.Entities.csproj"
+              "/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia.Entities/ProtectGaia.Entities.csproj": {
+                "projectPath": "/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia.Entities/ProtectGaia.Entities.csproj"
               },
-              "C:\\Users\\gupta\\source\\repos\\ProtectGaia-dev - Copy (2)\\ProtectGaia.Interface\\ProtectGaia.Interface.csproj": {
-                "projectPath": "C:\\Users\\gupta\\source\\repos\\ProtectGaia-dev - Copy (2)\\ProtectGaia.Interface\\ProtectGaia.Interface.csproj"
+              "/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia.Interface/ProtectGaia.Interface.csproj": {
+                "projectPath": "/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia.Interface/ProtectGaia.Interface.csproj"
               }
             }
           }
@@ -65,28 +63,26 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.200/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\gupta\\source\\repos\\ProtectGaia-dev - Copy (2)\\ProtectGaia.Entities\\ProtectGaia.Entities.csproj": {
+    "/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia.Entities/ProtectGaia.Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gupta\\source\\repos\\ProtectGaia-dev - Copy (2)\\ProtectGaia.Entities\\ProtectGaia.Entities.csproj",
+        "projectUniqueName": "/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia.Entities/ProtectGaia.Entities.csproj",
         "projectName": "ProtectGaia.Entities",
-        "projectPath": "C:\\Users\\gupta\\source\\repos\\ProtectGaia-dev - Copy (2)\\ProtectGaia.Entities\\ProtectGaia.Entities.csproj",
-        "packagesPath": "C:\\Users\\gupta\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gupta\\source\\repos\\ProtectGaia-dev - Copy (2)\\ProtectGaia.Entities\\obj\\",
+        "projectPath": "/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia.Entities/ProtectGaia.Entities.csproj",
+        "packagesPath": "/Users/arsh/.nuget/packages/",
+        "outputPath": "/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia.Entities/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\gupta\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/arsh/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.1"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -123,35 +119,33 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.200/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\gupta\\source\\repos\\ProtectGaia-dev - Copy (2)\\ProtectGaia.Interface\\ProtectGaia.Interface.csproj": {
+    "/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia.Interface/ProtectGaia.Interface.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\gupta\\source\\repos\\ProtectGaia-dev - Copy (2)\\ProtectGaia.Interface\\ProtectGaia.Interface.csproj",
+        "projectUniqueName": "/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia.Interface/ProtectGaia.Interface.csproj",
         "projectName": "ProtectGaia.Interface",
-        "projectPath": "C:\\Users\\gupta\\source\\repos\\ProtectGaia-dev - Copy (2)\\ProtectGaia.Interface\\ProtectGaia.Interface.csproj",
-        "packagesPath": "C:\\Users\\gupta\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\gupta\\source\\repos\\ProtectGaia-dev - Copy (2)\\ProtectGaia.Interface\\obj\\",
+        "projectPath": "/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia.Interface/ProtectGaia.Interface.csproj",
+        "packagesPath": "/Users/arsh/.nuget/packages/",
+        "outputPath": "/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia.Interface/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\gupta\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/arsh/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.1"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netstandard2.1": {
             "projectReferences": {
-              "C:\\Users\\gupta\\source\\repos\\ProtectGaia-dev - Copy (2)\\ProtectGaia.Entities\\ProtectGaia.Entities.csproj": {
-                "projectPath": "C:\\Users\\gupta\\source\\repos\\ProtectGaia-dev - Copy (2)\\ProtectGaia.Entities\\ProtectGaia.Entities.csproj"
+              "/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia.Entities/ProtectGaia.Entities.csproj": {
+                "projectPath": "/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia.Entities/ProtectGaia.Entities.csproj"
               }
             }
           }
@@ -179,7 +173,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.200/RuntimeIdentifierGraph.json"
         }
       }
     }

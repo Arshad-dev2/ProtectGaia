@@ -2,11 +2,9 @@
 <html lang="en">
 
 
-
 <head>
-
     <!-- Required meta tags -->
-    <title>Home: Ecomorph</title>
+    <title>@ViewBag.Title: Ecomorph</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="~/assets/css/main.css" />
@@ -25,22 +23,83 @@
     <!-- Font Awesome -->
     @* <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">*@
     <link href="~/lib/font-awesome/css/all.min.css" rel="stylesheet" />
+    <link href="~/css/CustomGoogle.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="/js/geoLocation.js"></script>
 
+    <meta name="google-signin-client_id" content="440340758534-aq6c3kkn67nt2eo0345vqjrp7h29kuqu.apps.googleusercontent.com">
+    <script src="https://apis.google.com/js/api.js"></script>
+    <script src="https://apis.google.com/js/platform.js?onload=onLoad" async defer></script>
+    <script>var googleUser = {};
+        var startApp = function () {
+            gapi.load('auth2', function () {
+                // Retrieve the singleton for the GoogleAuth library and set up the client.
+
+                auth2 = gapi.auth2.init({
+                    client_id: '440340758534-aq6c3kkn67nt2eo0345vqjrp7h29kuqu.apps.googleusercontent.com',
+                    // Request scopes in addition to 'profile' and 'email'
+                    //scope: 'additional_scope'
+                });
+                attachSignin(document.getElementById('customBtn'));
+            });
+        };
+
+        function attachSignin(element) {
+            auth2.attachClickHandler(element, {},
+                function (googleUser) {
+                    sessionStorage.setItem("userName", googleUser.getBasicProfile().getName());
+                    sessionStorage.setItem("userEmail", googleUser.getBasicProfile().getEmail());
+                    sessionStorage.setItem("userImageUrl", googleUser.getBasicProfile().getImageUrl());
+                    $.ajax({
+                        url: "/home/index",
+                        type: "POST",
+                        data: { "userEmail": googleUser.getBasicProfile().getEmail(), "userName": googleUser.getBasicProfile().getName(), "userImageUrl": googleUser.getBasicProfile().getImageUrl() },
+                        cache: false,
+                        async: true,
+                        success: function (response) {
+                            window.location.href = response.newUrl;
+                        }
+                    })
+                }
+            )
+        }
+        function onLoad() {
+            gapi.load('auth2', function () {
+                gapi.auth2.init();
+            });
+        }
+
+        function signOut() {
+            gapi.auth2.init();
+            gapi.auth2.getAuthInstance();
+            auth2.signOut().then(function () {
+                $.ajax({
+                    url: "/home/signout",
+                    type: "POST",
+                    data: { "userEmail": sessionStorage.getItem("userEmail") },
+                    cache: false,
+                    async: true,
+                    success: function (response) {
+                        sessionStorage.removeItem("userName");
+                        sessionStorage.removeItem("userEmail");
+                        window.location.href = response.newUrl;
+                    }
+                })
+                //auth2.disconnect();
+            });
+
+        }</script>
 </head>
-
 <body class="homepage is-preload">
-
-    <!--START SCROLL TOP BUTTON -->
+<!--START SCROLL TOP BUTTON -->
     <a class="scrollToTop" href="#">
             <i class="fa fa-angle-up"></i>
         </a>
 
-    <!-- END SCROLL TOP BUTTON -->
-    <!-- Start Header -->
-    
+    <script>startApp();</script>
+
+
     <div id="page-wrapper">
 
         <!-- Header -->
@@ -67,9 +126,19 @@
                             <li><a asp-controller="Explainers" asp-Action="MakeAChange">Make a Change</a></li>
                         </ul>
                     </li>
-                    <li><a asp-controller="Dashboard" asp-action="Index">TakeChallenge</a></li>
-                    
-                        <li> <div class="deviceLocation"> Detecting . . .</div> </li>
+                    @if (false)
+                    {
+                        <li><a href="#" onclick="signOut();">SignOut</a></li>
+                    }
+                    else
+                    {
+                        <li>
+                            <a id="customBtn" class="customGPlusSignIn">
+                                <span class="buttonText">Take the Challenge</span>
+                            </a>
+                        </li>
+                    }
+                    <li> <div class="deviceLocation"> Detecting . . .</div> </li>
 
                 </ul>
             </nav>
@@ -119,7 +188,6 @@
                             <h2>What's this all about?</h2>
                         </header>
                         <a href="#" class="image featured"><img src="images/15.png" alt="" /></a>
-                        
                     </section>
                 </div>
 
