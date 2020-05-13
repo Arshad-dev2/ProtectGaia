@@ -249,7 +249,6 @@ C:\Users\gupta\source\repos\ProtectGaia-dev - Copy (2)\ProtectGaia\bin\Debug\net
 C:\Users\gupta\source\repos\ProtectGaia-dev - Copy (2)\ProtectGaia\bin\Debug\netcoreapp3.1\appsettings.json
 C:\Users\gupta\source\repos\ProtectGaia-dev - Copy (2)\ProtectGaia\bin\Debug\netcoreapp3.1\aws-beanstalk-tools-defaults.json
 C:\Users\gupta\source\repos\ProtectGaia-dev - Copy (2)\ProtectGaia\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
-C:\Users\gupta\source\repos\ProtectGaia-dev - Copy (2)\ProtectGaia\bin\Debug\netcoreapp3.1\Views\Blogs\Index.cshtml
 C:\Users\gupta\source\repos\ProtectGaia-dev - Copy (2)\ProtectGaia\bin\Debug\netcoreapp3.1\ProtectGaia.exe
 C:\Users\gupta\source\repos\ProtectGaia-dev - Copy (2)\ProtectGaia\bin\Debug\netcoreapp3.1\ProtectGaia.deps.json
 C:\Users\gupta\source\repos\ProtectGaia-dev - Copy (2)\ProtectGaia\bin\Debug\netcoreapp3.1\ProtectGaia.runtimeconfig.json
@@ -401,14 +400,10 @@ C:\Users\gupta\source\repos\ProtectGaia-dev - Copy (2)\ProtectGaia\obj\Debug\net
 C:\Users\gupta\source\repos\ProtectGaia-dev - Copy (2)\ProtectGaia\obj\Debug\netcoreapp3.1\ProtectGaia.TagHelpers.input.cache
 C:\Users\gupta\source\repos\ProtectGaia-dev - Copy (2)\ProtectGaia\obj\Debug\netcoreapp3.1\ProtectGaia.TagHelpers.output.cache
 C:\Users\gupta\source\repos\ProtectGaia-dev - Copy (2)\ProtectGaia\obj\Debug\netcoreapp3.1\ProtectGaia.RazorCoreGenerate.cache
-C:\Users\gupta\source\repos\ProtectGaia-dev - Copy (2)\ProtectGaia\obj\Debug\netcoreapp3.1\Razor\Views\Blogs\Index.cshtml.g.cs
-C:\Users\gupta\source\repos\ProtectGaia-dev - Copy (2)\ProtectGaia\obj\Debug\netcoreapp3.1\Razor\Views\Explore\Infographics.cshtml.g.cs
-C:\Users\gupta\source\repos\ProtectGaia-dev - Copy (2)\ProtectGaia\obj\Debug\netcoreapp3.1\Razor\Views\Explore\Visualization.cshtml.g.cs
 C:\Users\gupta\source\repos\ProtectGaia-dev - Copy (2)\ProtectGaia\obj\Debug\netcoreapp3.1\Razor\Views\Home\Contact.cshtml.g.cs
 C:\Users\gupta\source\repos\ProtectGaia-dev - Copy (2)\ProtectGaia\obj\Debug\netcoreapp3.1\Razor\Views\Home\Error.cshtml.g.cs
 C:\Users\gupta\source\repos\ProtectGaia-dev - Copy (2)\ProtectGaia\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
 C:\Users\gupta\source\repos\ProtectGaia-dev - Copy (2)\ProtectGaia\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
-C:\Users\gupta\source\repos\ProtectGaia-dev - Copy (2)\ProtectGaia\obj\Debug\netcoreapp3.1\Razor\Views\Resources\Visualization.cshtml.g.cs
 C:\Users\gupta\source\repos\ProtectGaia-dev - Copy (2)\ProtectGaia\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
 C:\Users\gupta\source\repos\ProtectGaia-dev - Copy (2)\ProtectGaia\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Index.cshtml.g.cs
 C:\Users\gupta\source\repos\ProtectGaia-dev - Copy (2)\ProtectGaia\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
@@ -425,3 +420,10 @@ C:\Users\gupta\source\repos\ProtectGaia-dev - Copy (2)\ProtectGaia\obj\Debug\net
 C:\Users\gupta\source\repos\ProtectGaia-dev - Copy (2)\ProtectGaia\obj\Debug\netcoreapp3.1\ProtectGaia.dll
 C:\Users\gupta\source\repos\ProtectGaia-dev - Copy (2)\ProtectGaia\obj\Debug\netcoreapp3.1\ProtectGaia.pdb
 C:\Users\gupta\source\repos\ProtectGaia-dev - Copy (2)\ProtectGaia\obj\Debug\netcoreapp3.1\ProtectGaia.genruntimeconfig.cache
+C:\Users\gupta\source\repos\ProtectGaia-dev - Copy (2)\ProtectGaia\obj\Debug\netcoreapp3.1\Razor\Views\Explainers\ClimateChange.cshtml.g.cs
+C:\Users\gupta\source\repos\ProtectGaia-dev - Copy (2)\ProtectGaia\obj\Debug\netcoreapp3.1\Razor\Views\Explainers\EnergyConsumption.cshtml.g.cs
+C:\Users\gupta\source\repos\ProtectGaia-dev - Copy (2)\ProtectGaia\obj\Debug\netcoreapp3.1\Razor\Views\Explainers\HealthImpacts.cshtml.g.cs
+C:\Users\gupta\source\repos\ProtectGaia-dev - Copy (2)\ProtectGaia\obj\Debug\netcoreapp3.1\Razor\Views\Explainers\HouseholdPractices.cshtml.g.cs
+C:\Users\gupta\source\repos\ProtectGaia-dev - Copy (2)\ProtectGaia\obj\Debug\netcoreapp3.1\Razor\Views\Explainers\MakeAChange.cshtml.g.cs
+C:\Users\gupta\source\repos\ProtectGaia-dev - Copy (2)\ProtectGaia\obj\Debug\netcoreapp3.1\Razor\Views\Explainers\TransportEmissions.cshtml.g.cs
+C:\Users\gupta\source\repos\ProtectGaia-dev - Copy (2)\ProtectGaia\obj\Debug\netcoreapp3.1\Razor\Views\Dashboard\Index.cshtml.g.cs

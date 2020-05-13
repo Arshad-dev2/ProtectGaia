@@ -35,43 +35,50 @@
 
     <!--START SCROLL TOP BUTTON -->
     <a class="scrollToTop" href="#">
-            <i class="fa fa-angle-up"></i>
-        </a>
+        <i class="fa fa-angle-up"></i>
+    </a>
 
     <!-- END SCROLL TOP BUTTON -->
     <!-- Start Header -->
+
+
     
     <div id="page-wrapper">
+        <section>
+        <div class="deviceLocation" style="background-color:#fff !important;text-align: right; margin-right: 1rem;"> Detecting . . .</div>
+        </section>
 
         <!-- Header -->
         <section id="header">
             <!-- Logo -->
+
             <h1>
-                <a asp-controller="Home" asp-action="Index">
+                <a asp-controller="Home" asp-action="Index" style="text-decoration:none;">
                     <img src="~/images/logo.jpeg" alt="ecoMorph" style="width:4rem;height:4rem;" />EcoMorph
                 </a>
+
             </h1>
 
             <!-- Nav -->
             <nav id="nav">
                 <ul>
-                    <li class="current"><a asp-controller="Home" asp-action="Index">Home</a></li>
+                    <li class="current"><a asp-controller="Home" asp-action="Index">Home</a></li>&nbsp;
                     <li>
-                        <a href="#">Explainers</a>
+                        <a href="#" stye>Explainers</a>
                         <ul>
-                            <li><a asp-controller="Explainers" asp-Action="EnergyConsumption">Energy Consumption</a></li>
-                            <li><a asp-controller="Explainers" asp-Action="TransportEmissions">Transport Emissions</a></li>
-                            <li><a asp-controller="Explainers" asp-Action="HouseholdPractices">Household Practices</a></li>
-                            <li><a asp-controller="Explainers" asp-Action="ClimateChange">Climate Change</a></li>
-                            <li><a asp-controller="Explainers" asp-Action="HealthImpacts">Health Impacts</a></li>
-                            <li><a asp-controller="Explainers" asp-Action="MakeAChange">Make a Change</a></li>
+                            <li><a asp-controller="Explainers" asp-Action="EnergyConsumption" style="text-decoration:none;">Energy Consumption</a></li>
+                            <li><a asp-controller="Explainers" asp-Action="TransportEmissions" style="text-decoration:none;">Transport Emissions</a></li>
+                            <li><a asp-controller="Explainers" asp-Action="HouseholdPractices" style="text-decoration:none;">Household Practices</a></li>
+                            <li><a asp-controller="Explainers" asp-Action="ClimateChange" style="text-decoration:none;">Climate Change</a></li>
+                            <li><a asp-controller="Explainers" asp-Action="HealthImpacts" style="text-decoration:none;">Health Impacts</a></li>
+                            <li><a asp-controller="Explainers" asp-Action="MakeAChange" style="text-decoration:none;">Make a Change</a></li>
                         </ul>
-                    </li>
+                    </li> 
                     <li><a asp-controller="Dashboard" asp-action="Index">TakeChallenge</a></li>
-                    
-                        <li> <div class="deviceLocation"> Detecting . . .</div> </li>
+
 
                 </ul>
+
             </nav>
         </section>
     </div>
@@ -82,59 +89,46 @@
     </main>
     <!-- End main content -->
     <!-- Start footer -->
-    <section id="footer" style="filter: brightness(100%)">
-        <div class="container">
+    <section id="footer" style="filter: brightness(100%); height:50%">        
             <div class="row">
-                <div class="col-8 col-12-medium">
-
-                    <section>
-                        <header>
-                            <h2>Contact Us</h2>
-                        </header>
-
-                        <ul class="dates">
-                            <li>
-                                <span class="date"><strong><i class="fas fa-map-marker-alt"></i>&nbsp</strong></span>
-                                <br />
-                                <p>Address: Melbourne, Australia</p>
-                            </li>
-                            <li>
-                                <span class="date"><strong><i class="fa fa-envelope"></i></strong></span>
-                                <br />
-                                <p>Email: environs@gmail.com</p>
-                            </li>
-
-                            <li>
-                                <span class="date"><strong><i class="fa fa-mobile"></i>&nbsp</strong></span>
-                                <br />
-                                <p>Phone: (800) 000-0000</p>
-                            </li>
-
-                        </ul>
-                    </section>
-                </div>
-                <div class="col-4 col-12-medium">
-                    <section>
-                        <header>
-                            <h2>What's this all about?</h2>
-                        </header>
-                        <a href="#" class="image featured"><img src="images/15.png" alt="" /></a>
-                        
-                    </section>
-                </div>
-
-
                 <div class="col-12">
+
                     <!-- Copyright -->
                     <div id="copyright">
                         <ul class="links">
                             <li>Designed by Environs. All rights reserved.</li>
                         </ul>
                     </div>
+                    
+                    <div id="copyright">
+                        <ul class="links" style="color:#c5c4c4">
+                            <li>
+                                <i class="fas fa-map-marker-alt"></i> Melbourne, Australia
+
+                            </li>
+                            <li>
+                                <i class="fa fa-envelope" style="color:#c5c4c4"></i> environs@gmail.com
+
+                            </li>
+
+                            <li>
+                                <i class="fa fa-mobile" style="color:#c5c4c4"></i> (800) 000-0000
+
+                            </li>
+
+
+                        </ul>
+                    </div>
+
 
                 </div>
+
+
+
+
+
             </div>
-        </div>
+        
     </section>
 
 
