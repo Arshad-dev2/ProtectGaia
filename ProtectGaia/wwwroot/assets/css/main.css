@@ -2711,6 +2711,8 @@ br.clear {
 				-webkit-transform: translateX(0);
 				-ms-transform: translateX(0);
 				transform: translateX(0);
+                background-color:black;
+                z-index:999;
 			}
 
 	}
@@ -2986,140 +2988,137 @@ br.clear {
 		}
 */
 
-	/*widgets*/
+/*widgets*/
 
-	.currentTemp {
-		display: block;
-		text-align: center;
-		font-family: Verdana,sans-serif;
-		font-weight: 400;
-		margin: 10px 0;
-		color: #252122 !important;
+.currentTemp {
+	display: block;	
+	text-align: center;
+	font-family: Verdana,sans-serif;
+	font-weight: 400;
+	margin: 10px 0;
+	color: #252122 !important;
+}
+.AqiValue {
+	display: block;
+	text-align: center;
+	font-family: Verdana,sans-serif;
+	font-weight: 400;
+	margin: 10px 0;
+	color: #252122 !important;
+}
+.OzoneValue {
+	display: block;
+	text-align: center;
+	font-family: Verdana,sans-serif;
+	font-weight: 400;
+	margin: 10px 0;
+	color: #252122 !important;
+}
+
+
+
+
+.deviceLocation {
+	background-color: whitesmoke;
+	color: #5d5d5d;
+}
+
+.card {
+	position: relative;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	min-width: 0;
+	word-wrap: break-word;
+	background-color: #fff;
+	background-clip: border-box;
+	border: 1px solid rgba(0,0,0,.125);
+	border-radius: .25rem;
+}
+
+/*scroll to top*/
+
+.scrollToTop {
+	background-color: #292929;
+	bottom: 55px;
+	color: #ffffff;
+	display: none;
+	font-size: 30px;
+	line-height: 50px;
+	position: fixed;
+	right: 1px;
+	text-align: center;
+	text-decoration: none;
+	width: 55px;
+	z-index: 999;
+	-webkit-transition: all 0.5s ease 0s;
+	transition: all 0.5s ease 0s;
+	height: 55px;
+}
+
+	.scrollToTop:hover,
+	.scrollToTop:focus {
+		color: #fff;
 	}
+.mu-single-slide:before {
+	background-color: #282828;
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=1,startColorstr=#282828, endColorstr=#282828);
+	background-image: -moz-linear-gradient(left, #282828 55%, #282828 22%,#282828 100%);
+	background-image: linear-gradient(left, #282828 55%, #282828 22%,#282828 100%);
+	background-image: -webkit-linear-gradient(left, #282828 55%, #282828 22%,#282828 100%);
+	background-image: -o-linear-gradient(left, #282828 55%, #282828 22%,#282828 100%);
+	background-image: -ms-linear-gradient(left, #282828 55%, #282828 22%,#282828 100%);
+	background-image: -webkit-gradient(linear, left bottom, right bottom, color-stop(55%,#282828), color-stop(22%,#282828),color-stop(100%,#282828));
+}
 
-	.AqiValue {
-		display: block;
-		text-align: center;
-		font-family: Verdana,sans-serif;
-		font-weight: 400;
-		margin: 10px 0;
-		color: #252122 !important;
-	}
-
-	.OzoneValue {
-		display: block;
-		text-align: center;
-		font-family: Verdana,sans-serif;
-		font-weight: 400;
-		margin: 10px 0;
-		color: #252122 !important;
-	}
-
-
-
-
-	.deviceLocation {
-		background-color: whitesmoke;
-		color: #5d5d5d;
-	}
-
-	.card {
-		position: relative;
-		display: -ms-flexbox;
-		display: flex;
-		-ms-flex-direction: column;
-		flex-direction: column;
-		min-width: 0;
-		word-wrap: break-word;
-		background-color: #fff;
-		background-clip: border-box;
-		border: 1px solid rgba(0,0,0,.125);
-		border-radius: .25rem;
-	}
-
-	/*scroll to top*/
-
-	.scrollToTop {
-		background-color: #292929;
-		bottom: 55px;
-		color: #ffffff;
-		display: none;
-		font-size: 30px;
-		line-height: 50px;
-		position: fixed;
-		right: 1px;
-		text-align: center;
-		text-decoration: none;
-		width: 55px;
-		z-index: 999;
-		-webkit-transition: all 0.5s ease 0s;
-		transition: all 0.5s ease 0s;
-		height: 55px;
-	}
-
-		.scrollToTop:hover,
-		.scrollToTop:focus {
-			color: #fff;
-		}
-
-	.mu-single-slide:before {
-		background-color: #282828;
-		filter: progid:DXImageTransform.Microsoft.gradient(GradientType=1,startColorstr=#282828, endColorstr=#282828);
-		background-image: -moz-linear-gradient(left, #282828 55%, #282828 22%,#282828 100%);
-		background-image: linear-gradient(left, #282828 55%, #282828 22%,#282828 100%);
-		background-image: -webkit-linear-gradient(left, #282828 55%, #282828 22%,#282828 100%);
-		background-image: -o-linear-gradient(left, #282828 55%, #282828 22%,#282828 100%);
-		background-image: -ms-linear-gradient(left, #282828 55%, #282828 22%,#282828 100%);
-		background-image: -webkit-gradient(linear, left bottom, right bottom, color-stop(55%,#282828), color-stop(22%,#282828),color-stop(100%,#282828));
-	}
-
-	a:h
-	over,
-	a:focus,
-	.mu-book-now-btn,
-	.mu-copy-right a:hover,
-	.mu-copy-right a:focus,
-	.mu-send-msg-btn:hover,
-	.mu-send-msg-btn:focus,
-	.mu-logo,
-	.mu-logo:hover,
-	.mu-logo:focus,
-	.mu-client-quote,
-	.mu-clients-slider .slick-prev,
-	.mu-clients-slider .slick-next,
-	.mu-clients-slider .slick-prev::before,
-	.mu-clients-slider .slick-next::before,
-	.my-why-us-single-icon {
-		color: #808080;
-	}
+a:h
+over,
+a:focus,
+.mu-book-now-btn,
+.mu-copy-right a:hover,
+.mu-copy-right a:focus,
+.mu-send-msg-btn:hover,
+.mu-send-msg-btn:focus,
+.mu-logo,
+.mu-logo:hover,
+.mu-logo:focus,
+.mu-client-quote,
+.mu-clients-slider .slick-prev,
+.mu-clients-slider .slick-next,
+.mu-clients-slider .slick-prev::before,
+.mu-clients-slider .slick-next::before,
+.my-why-us-single-icon {
+	color: #808080;
+}
 
 
-	.scrollToTop,
-	.mu-testimonial-slide .slick-dots li.slick-active,
-	#mu-callto-action {
-		background-color: #292929;
-	}
+.scrollToTop,
+.mu-testimonial-slide .slick-dots li.slick-active,
+#mu-callto-action {
+	background-color: #292929;
+}
 
-	.mu-social-media a:hover,
-	.mu-social-media a:focus {
-		border: 1px solid #808080;
-		color: #808080;
-	}
+.mu-social-media a:hover,
+.mu-social-media a:focus {
+	border: 1px solid #808080;
+	color: #808080;
+}
 
-	.mu-contact-form .form-control:focus,
-	.mu-featured-tours-single-info .mu-book-now-btn {
-		border: 1px solid #808080;
-	}
+.mu-contact-form .form-control:focus,
+.mu-featured-tours-single-info .mu-book-now-btn {
+	border: 1px solid #808080;
+}
 
-	.mu-send-msg-btn,
-	.mu-send-msg-btn:focus,
-	.mu-register-btn:hover,
-	.mu-register-btn:focus {
-		border: 1px solid #808080;
-		background-color: #808080;
-	}
+.mu-send-msg-btn,
+.mu-send-msg-btn:focus,
+.mu-register-btn:hover,
+.mu-register-btn:focus {
+	border: 1px solid #808080;
+	background-color: #808080;
+}
 
-	.mu-clients-slider .slick-prev,
-	.mu-clients-slider .slick-next {
-		border: 2px solid #808080;
-	}
+.mu-clients-slider .slick-prev,
+.mu-clients-slider .slick-next {
+	border: 2px solid #808080;
+}

@@ -2,19 +2,6 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v3.1": {
-      "MetOfficeDataPoint/2.1.0": {
-        "type": "package",
-        "dependencies": {
-          "NETStandard.Library": "1.6.1",
-          "Newtonsoft.Json": "12.0.3"
-        },
-        "compile": {
-          "lib/netstandard1.6/MetOfficeDataPoint.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard1.6/MetOfficeDataPoint.dll": {}
-        }
-      },
       "Microsoft.AspNetCore.Authentication.Abstractions/2.2.0": {
         "type": "package",
         "dependencies": {
@@ -3090,19 +3077,6 @@
     }
   },
   "libraries": {
-    "MetOfficeDataPoint/2.1.0": {
-      "sha512": "9sbfVEhWBXvlDXTn3iUvymTaaqbnMcC/n37I+11aSFhXiHj/xqBe2jNcvcGKACYSg84UBqNfEEh8KK0gFvSVeg==",
-      "type": "package",
-      "path": "metofficedatapoint/2.1.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/net461/MetOfficeDataPoint.dll",
-        "lib/netstandard1.6/MetOfficeDataPoint.dll",
-        "metofficedatapoint.2.1.0.nupkg.sha512",
-        "metofficedatapoint.nuspec"
-      ]
-    },
     "Microsoft.AspNetCore.Authentication.Abstractions/2.2.0": {
       "sha512": "VloMLDJMf3n/9ic5lCBOa42IBYJgyB1JhzLsL68Zqg+2bEPWfGBj/xCJy/LrKTArN0coOcZp3wyVTZlx0y9pHQ==",
       "type": "package",
@@ -9445,7 +9419,6 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
-      "MetOfficeDataPoint >= 2.1.0",
       "Microsoft.AspNetCore.Authentication.Google >= 3.1.3",
       "Microsoft.AspNetCore.Mvc.Core >= 2.2.5",
       "Microsoft.AspNetCore.Session >= 2.2.0",
@@ -9454,45 +9427,44 @@
       "Microsoft.EntityFrameworkCore.Sqlite >= 3.1.2",
       "Microsoft.EntityFrameworkCore.Tools >= 3.1.2",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 3.1.2",
+      "Newtonsoft.Json >= 12.0.3",
       "ProtectGaia.DataAccess >= 1.0.0",
       "ProtectGaia.Entities >= 1.0.0",
       "ProtectGaia.Interface >= 1.0.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\gupta\\.nuget\\packages\\": {}
+    "/Users/arsh/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\gupta\\source\\repos\\ProtectGaia-dev - Copy (2)\\ProtectGaia\\ProtectGaia.csproj",
+      "projectUniqueName": "/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/ProtectGaia.csproj",
       "projectName": "ProtectGaia",
-      "projectPath": "C:\\Users\\gupta\\source\\repos\\ProtectGaia-dev - Copy (2)\\ProtectGaia\\ProtectGaia.csproj",
-      "packagesPath": "C:\\Users\\gupta\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\gupta\\source\\repos\\ProtectGaia-dev - Copy (2)\\ProtectGaia\\obj\\",
+      "projectPath": "/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/ProtectGaia.csproj",
+      "packagesPath": "/Users/arsh/.nuget/packages/",
+      "outputPath": "/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\gupta\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/arsh/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\gupta\\source\\repos\\ProtectGaia-dev - Copy (2)\\ProtectGaia.DataAccess\\ProtectGaia.DataAccess.csproj": {
-              "projectPath": "C:\\Users\\gupta\\source\\repos\\ProtectGaia-dev - Copy (2)\\ProtectGaia.DataAccess\\ProtectGaia.DataAccess.csproj"
+            "/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia.DataAccess/ProtectGaia.DataAccess.csproj": {
+              "projectPath": "/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia.DataAccess/ProtectGaia.DataAccess.csproj"
             },
-            "C:\\Users\\gupta\\source\\repos\\ProtectGaia-dev - Copy (2)\\ProtectGaia.Entities\\ProtectGaia.Entities.csproj": {
-              "projectPath": "C:\\Users\\gupta\\source\\repos\\ProtectGaia-dev - Copy (2)\\ProtectGaia.Entities\\ProtectGaia.Entities.csproj"
+            "/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia.Entities/ProtectGaia.Entities.csproj": {
+              "projectPath": "/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia.Entities/ProtectGaia.Entities.csproj"
             },
-            "C:\\Users\\gupta\\source\\repos\\ProtectGaia-dev - Copy (2)\\ProtectGaia.Interface\\ProtectGaia.Interface.csproj": {
-              "projectPath": "C:\\Users\\gupta\\source\\repos\\ProtectGaia-dev - Copy (2)\\ProtectGaia.Interface\\ProtectGaia.Interface.csproj"
+            "/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia.Interface/ProtectGaia.Interface.csproj": {
+              "projectPath": "/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia.Interface/ProtectGaia.Interface.csproj"
             }
           }
         }
@@ -9506,10 +9478,6 @@
     "frameworks": {
       "netcoreapp3.1": {
         "dependencies": {
-          "MetOfficeDataPoint": {
-            "target": "Package",
-            "version": "[2.1.0, )"
-          },
           "Microsoft.AspNetCore.Authentication.Google": {
             "target": "Package",
             "version": "[3.1.3, )"
@@ -9543,6 +9511,10 @@
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
             "target": "Package",
             "version": "[3.1.2, )"
+          },
+          "Newtonsoft.Json": {
+            "target": "Package",
+            "version": "[12.0.3, )"
           }
         },
         "imports": [
@@ -9563,7 +9535,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.200/RuntimeIdentifierGraph.json"
       }
     }
   }

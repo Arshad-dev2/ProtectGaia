@@ -10,6 +10,7 @@ namespace ProtectGaia.Models
         public string ChallengeId { get; set; }
         public int LevelId { get; set; }
         public string ChallengeTitle { get; set; }
+        public string Sector { get; set; }
         public int CarbonScore { get; set; }
         public ChallengeModel()
         {

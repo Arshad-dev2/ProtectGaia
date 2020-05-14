@@ -31,6 +31,9 @@ namespace ProtectGaia.Migrations
                     b.Property<int>("LevelId")
                         .HasColumnType("INTEGER");
 
+                    b.Property<string>("Sector")
+                        .HasColumnType("TEXT");
+
                     b.HasKey("ChallengeId");
 
                     b.ToTable("ChallengeData");
@@ -46,6 +49,9 @@ namespace ProtectGaia.Migrations
                         .HasColumnType("INTEGER");
 
                     b.Property<string>("Activity")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("CarbonActivity")
                         .HasColumnType("TEXT");
 
                     b.Property<int>("CarbonScore")

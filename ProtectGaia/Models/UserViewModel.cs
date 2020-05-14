@@ -7,6 +7,8 @@ namespace ProtectGaia.Models
     {
 		public UserModel userModel { get; set; }
 		public List<string> ChallengeTitle { get; set; }
+        public bool IsErrorException { get; set; }
+        public bool IsPost { get; set; }
         public UserViewModel()
         {
             userModel = new UserModel();

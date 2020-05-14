@@ -22,6 +22,7 @@ namespace ProtectGaia.Models
         public int TotalPointScored { get; set; }
         public int CarbonScore { get; set; }
         public string Activity { get; set; }
+        public string CarbonActivity { get; set; }
         public DateTime LastModified { get; set; }
         [Display(Name = "Task 1")]
         public bool IsTask1Completed { get; set; }

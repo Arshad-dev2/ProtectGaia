@@ -6,16 +6,16 @@
 @model ProtectGaia.Models.UserViewModel
 
 
-
-
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 <title>Dashboard - Brand</title>
 <link rel="stylesheet" href="~/assets2/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="~/assets2/bootstrap/css/print.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">
 <link rel="stylesheet" href="~/assets2/fonts/fontawesome-all.min.css">
 <link rel="stylesheet" href="~/assets2/fonts/font-awesome.min.css">
 <link rel="stylesheet" href="~/assets2/fonts/fontawesome5-overrides.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
 
 
 <!-- Main -->
@@ -23,273 +23,284 @@
     <div id="wrapper">
         <div class="d-flex flex-column" id="content-wrapper">
             <div id="content">
-                <img class="border rounded-circle img-profile" src="@Model.userModel.UserImageUrl" style="height: 5REM;margin-left: 25px;margin-top: 12px;"><span class="d-none d-lg-inline mr-2 text-gray-600 small" style="margin-left: 16px;height: 25px;font-size: 26px;margin-top: 0px;padding-top: 0px;">@Model.userModel.UserName</span>
+                <img class="border rounded-circle img-profile" src="@Model.userModel.UserImageUrl" style="height: 8REM;margin-left: 25px;margin-top: 12px;">
+                <span class="d-lg-inline mr-2 text-gray-600 small" style="margin-left: 16px;height: 25px;font-size: 26px;margin-top: 0px;padding-top: 0px;">
+                    @Model.userModel.UserName
+                </span>
+               
                 <div class="d-sm-flex justify-content-between align-items-center mb-4" style="margin-top: 32px;">
-                    <h3 class="text-dark mb-0">Dashboard</h3><a class="btn btn-primary btn-sm d-none d-sm-inline-block" role="button" href="#" style="background-color: rgb(47,194,162);border-color: #2fc2a2 !important;"><i class="fas fa-download fa-sm text-white-50"></i>&nbsp;Generate Report</a>
+                    <h3 class="text-dark mb-0">Dashboard</h3>
+                    <a class="btn btn-primary btn-sm d-sm-inline-block d-print-none" role="button" href="#" style="background-color: rgb(47,194,162);border-color: #2fc2a2 !important;z-index:5;" onclick="window.print();">
+                        <i class="fas fa-download fa-sm text-white-50"></i>&nbsp;Print Report
+                    </a>
                 </div>
                 <div class="container-fluid">
-
-                    <div class="row">
-                        <div class="col-md-6 col-xl-3 mb-4">
-                            <div class="card shadow border-left-primary py-2">
-                                <div class="card-body" style="padding: 20px;font-size: 24px;">
-                                    <div class="row align-items-center no-gutters" style="margin-top: 0px;">
-                                        <div class="col mr-2">
-                                            <div class="text-nowrap text-uppercase text-primary font-weight-bold text-xs mb-1" style="height: 41px;width: 114px;">
-                                                <h6 class="text-nowrap text-break" style="font-size: 16px;padding-top: 11px;width: 128px;margin-bottom: 8px;"><strong>CURRENT LEVEL</strong></h6>
-                                            </div>
-                                        </div>
-                                        <div class="col-auto"><span class="badge badge-primary" style="color: rgb(0,0,0);font-size: 28px;background-color: rgb(255,255,255);width: 67px;height: 46px;">@Model.userModel.LevelId</span></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-xl-3 mb-4">
-                            <div class="card shadow border-left-success py-2">
-                                <div class="card-body">
-                                    <div class="row align-items-center no-gutters" style="margin-top: 0px;">
-                                        <div class="col mr-2">
-                                            <div class="text-nowrap text-uppercase text-primary font-weight-bold text-xs mb-1" style="height: 41px;width: 114px;">
-                                                <h6 class="text-nowrap text-break" style="font-size: 16px;color: rgb(28,200,138);padding-top: 11px;width: 128px;"><strong>Completed tasks</strong>&nbsp;</h6>
-                                            </div>
-                                        </div>
-                                        <div class="col-auto"><span class="badge badge-primary" style="color: rgb(0,0,0);font-size: 28px;background-color: rgb(255,255,255);width: 67px;height: 46px;">@Model.userModel.TotalTaskCompleted</span></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-xl-3 mb-4">
-                            <div class="card shadow border-left-info py-2">
-                                <div class="card-body">
-                                    <div class="row align-items-center no-gutters" style="margin-top: 0px;">
-                                        <div class="col mr-2">
-                                            <div class="text-nowrap text-uppercase text-primary font-weight-bold text-xs mb-1" style="height: 41px;width: 114px;">
-                                                <h6 class="text-nowrap text-break" style="font-size: 16px;color: rgb(54,185,204);padding-top: 11px;width: 128px;"><strong>PENDING tasks</strong>&nbsp;</h6>
-                                            </div>
-                                        </div>
-                                        <div class="col-auto"><span class="badge badge-primary" style="color: rgb(0,0,0);font-size: 28px;background-color: rgb(255,255,255);width: 67px;height: 46px;">@Model.userModel.PendingTask</span></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-xl-3 mb-4">
-                            <div class="card shadow border-left-warning py-2">
-                                <div class="card-body">
-                                    <div class="row align-items-center no-gutters" style="margin-top: 0px;">
-                                        <div class="col mr-2">
-                                            <div class="text-nowrap text-uppercase text-primary font-weight-bold text-xs mb-1" style="height: 41px;width: 114px;">
-                                                <h6 class="text-nowrap text-break" style="font-size: 16px;color: rgb(246,194,62);width: 128px;padding-top: 11px;"><strong>OVERALL SCORE</strong>&nbsp;</h6>
-                                            </div>
-                                        </div>
-                                        <div class="col-auto"><span class="badge badge-primary" style="color: rgb(0,0,0);font-size: 28px;background-color: rgb(255,255,255);width: 67px;height: 46px;">@Model.userModel.TotalPointScored</span></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-7 col-xl-8">
-                            <div class="card shadow mb-4">
-                                <div class="card-header d-flex justify-content-between align-items-center">
-                                    <h6 class="text-primary font-weight-bold m-0" style="color: rgb(47,194,162)!important;">PROGRESS</h6>
-                                    <div class="dropdown no-arrow">
-                                        <button class="btn btn-link btn-sm dropdown-toggle" data-toggle="dropdown" aria-expanded="false" type="button"><i class="fas fa-ellipsis-v text-gray-400"></i></button>
-                                        <div class="dropdown-menu shadow dropdown-menu-right animated--fade-in"
-                                             role="menu">
-                                            <p class="text-center dropdown-header">dropdown header:</p><a class="dropdown-item" role="presentation" href="#">&nbsp;Action</a><a class="dropdown-item" role="presentation" href="#">&nbsp;Another action</a>
-                                            <div class="dropdown-divider"></div><a class="dropdown-item" role="presentation" href="#">&nbsp;Something else here</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card-body">
-                                    <div class="chart-area"><canvas data-bs-chart="{&quot;type&quot;:&quot;line&quot;,&quot;data&quot;:{&quot;labels&quot;:[&quot;Jan&quot;,&quot;Feb&quot;,&quot;Mar&quot;,&quot;Apr&quot;,&quot;May&quot;,&quot;Jun&quot;,&quot;Jul&quot;,&quot;Aug&quot;],&quot;datasets&quot;:[{&quot;label&quot;:&quot;Earnings&quot;,&quot;fill&quot;:true,&quot;data&quot;:[&quot;0&quot;,&quot;10000&quot;,&quot;5000&quot;,&quot;15000&quot;,&quot;10000&quot;,&quot;20000&quot;,&quot;15000&quot;,&quot;25000&quot;],&quot;backgroundColor&quot;:&quot;rgba(78, 115, 223, 0.05)&quot;,&quot;borderColor&quot;:&quot;rgba(78, 115, 223, 1)&quot;}]},&quot;options&quot;:{&quot;maintainAspectRatio&quot;:false,&quot;legend&quot;:{&quot;display&quot;:false},&quot;title&quot;:{},&quot;scales&quot;:{&quot;xAxes&quot;:[{&quot;gridLines&quot;:{&quot;color&quot;:&quot;rgb(234, 236, 244)&quot;,&quot;zeroLineColor&quot;:&quot;rgb(234, 236, 244)&quot;,&quot;drawBorder&quot;:false,&quot;drawTicks&quot;:false,&quot;borderDash&quot;:[&quot;2&quot;],&quot;zeroLineBorderDash&quot;:[&quot;2&quot;],&quot;drawOnChartArea&quot;:false},&quot;ticks&quot;:{&quot;fontColor&quot;:&quot;#858796&quot;,&quot;padding&quot;:20}}],&quot;yAxes&quot;:[{&quot;gridLines&quot;:{&quot;color&quot;:&quot;rgb(234, 236, 244)&quot;,&quot;zeroLineColor&quot;:&quot;rgb(234, 236, 244)&quot;,&quot;drawBorder&quot;:false,&quot;drawTicks&quot;:false,&quot;borderDash&quot;:[&quot;2&quot;],&quot;zeroLineBorderDash&quot;:[&quot;2&quot;]},&quot;ticks&quot;:{&quot;fontColor&quot;:&quot;#858796&quot;,&quot;padding&quot;:20}}]}}}"></canvas></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-5 col-xl-4">
-                            <div class="card shadow mb-4">
-                                <div class="card-header d-flex justify-content-between align-items-center">
-                                    <h6 class="text-primary font-weight-bold m-0" style="color: rgb(47,194,162) !important;">CARBON EMISSIONS SAVED</h6>
-                                    <div class="dropdown no-arrow">
-                                        <button class="btn btn-link btn-sm dropdown-toggle" data-toggle="dropdown" aria-expanded="false" type="button"><i class="fas fa-ellipsis-v text-gray-400"></i></button>
-                                        <div class="dropdown-menu shadow dropdown-menu-right animated--fade-in"
-                                             role="menu">
-                                            <p class="text-center dropdown-header">dropdown header:</p><a class="dropdown-item" role="presentation" href="#">&nbsp;Action</a><a class="dropdown-item" role="presentation" href="#">&nbsp;Another action</a>
-                                            <div class="dropdown-divider"></div><a class="dropdown-item" role="presentation" href="#">&nbsp;Something else here</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card-body">
-                                    <div class="chart-area"><canvas data-bs-chart="{&quot;type&quot;:&quot;doughnut&quot;,&quot;data&quot;:{&quot;labels&quot;:[&quot;Direct&quot;,&quot;Social&quot;,&quot;Referral&quot;],&quot;datasets&quot;:[{&quot;label&quot;:&quot;&quot;,&quot;backgroundColor&quot;:[&quot;#4e73df&quot;,&quot;#1cc88a&quot;,&quot;#36b9cc&quot;],&quot;borderColor&quot;:[&quot;#ffffff&quot;,&quot;#ffffff&quot;,&quot;#ffffff&quot;],&quot;data&quot;:[&quot;50&quot;,&quot;30&quot;,&quot;15&quot;]}]},&quot;options&quot;:{&quot;maintainAspectRatio&quot;:false,&quot;legend&quot;:{&quot;display&quot;:false},&quot;title&quot;:{}}}"></canvas></div>
-                                    <div class="text-center small mt-4"><span class="mr-2"><i class="fas fa-circle text-primary"></i>&nbsp;Energy</span><span class="mr-2"><i class="fas fa-circle text-success"></i>&nbsp;Transport</span><span class="mr-2"><i class="fas fa-circle text-info"></i>&nbsp;Others</span></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
+                    <div class="row d-print-none">
                         <div class="col-lg-6 mb-4">
                             <div class="card shadow mb-4">
                                 <div class="card-header py-3">
                                     <h6 class="text-primary font-weight-bold m-0" style="color: rgb(47,194,162)!important;">TASKS FROM CURRENT LEVEL</h6>
                                 </div>
                                 <div class="card-body">
-                                    <form method="post" asp-controller="Dashboard" asp-action="Index">
-                                        <div class="form-check" style="height: 40px;">
-                                            @if (!Model.userModel.IsTask1Completed)
-                                            {
-                                                @Html.CheckBoxFor(m => m.userModel.IsTask1Completed)
-                                            }
-                                            else
-                                            {
-                                                @Html.CheckBoxFor(m => m.userModel.IsTask1Completed, new { @disabled = "disabled" })
-                                            }
-                                            @* <input class="form-check-input" type="checkbox" id="formCheck-4" name="@Model.userModel.IsTask1Completed" style="width: 18px;height: 18px;">*@
-                                            <label class="form-check-label" for="@Model.userModel.IsTask1Completed" style="margin-left: 19px;">
-                                                @Model.ChallengeTitle[0]&nbsp;
-                                            </label>
-                                        </div>
-                                        <div class="form-check"
-                                             style="height: 40px;">
-                                            @if (!Model.userModel.IsTask2Completed && Model.userModel.IsTask1Completed)
-                                            {
-                                                if ((DateTime.Now - Model.userModel.LastModified).TotalDays < 1)
-                                                {
-                                                    @Html.CheckBoxFor(m => m.userModel.IsTask2Completed, new { @disabled = "disabled" })
-                                                }
-                                                else
-                                                {
-                                                    @Html.CheckBoxFor(m => m.userModel.IsTask2Completed)
-                                                }
-                                            }
-                                            else
-                                            {
-                                                @Html.CheckBoxFor(m => m.userModel.IsTask2Completed, new { @disabled = "disabled" })
-                                            }
-                                            @* <input class="form-check-input" type="checkbox" id="formCheck-4" name="@Model.userModel.IsTask2Completed" style="width: 18px;height: 18px;">*@
-                                            <label class="form-check-label" for="@Model.userModel.IsTask2Completed" style="margin-left: 19px;">
-                                                @Model.ChallengeTitle[1]&nbsp;
-                                            </label>
-                                        </div>
-                                        <div class="form-check"
-                                             style="height: 40px;">
-                                            @if (!Model.userModel.IsTask3Completed && Model.userModel.IsTask2Completed)
-                                            {
-                                                if ((DateTime.Now - Model.userModel.LastModified).TotalDays < 1)
-                                                {
-                                                    @Html.CheckBoxFor(m => m.userModel.IsTask3Completed, new { @disabled = "disabled" })
-                                                }
-                                                else
-                                                {
-                                                    @Html.CheckBoxFor(m => m.userModel.IsTask3Completed)
-                                                }
-                                            }
-                                            else
-                                            {
-                                                @Html.CheckBoxFor(m => m.userModel.IsTask3Completed, new { @disabled = "disabled" })
-                                            }
-                                            @*<input class="form-check-input" type="checkbox" id="formCheck-4" name="@Model.userModel.IsTask3Completed" style="width: 18px;height: 18px;">*@
-                                            <label class="form-check-label" for="@Model.userModel.IsTask3Completed" style="margin-left: 19px;">
-                                                @Model.ChallengeTitle[2]&nbsp;
-                                            </label>
-                                        </div>
-                                        <div class="form-check"
-                                             style="height: 40px;">
-                                            @if (!Model.userModel.IsTask4Completed && Model.userModel.IsTask3Completed)
-                                            {
-                                                if ((DateTime.Now - Model.userModel.LastModified).TotalDays < 1)
-                                                {
-                                                    @Html.CheckBoxFor(m => m.userModel.IsTask4Completed, new { @disabled = "disabled" })
-                                                }
-                                                else
-                                                {
-                                                    @Html.CheckBoxFor(m => m.userModel.IsTask4Completed)
 
-                                                }
-                                            }
-                                            else
+                                    @if (Model.ChallengeTitle != null && Model.ChallengeTitle.Count > 0)
+                                    {
+                                        <form method="post" asp-controller="Dashboard" asp-action="Index">
+                                            @if (Model.IsErrorException)
                                             {
-                                                @Html.CheckBoxFor(m => m.userModel.IsTask4Completed, new { @disabled = "disabled" })
+                                                <div class="alert alert-danger" role="alert">
+                                                    <i class="far fa-times-circle">
+                                                    </i><span>
+                                                        <strong>Error Updating the Information</strong>
+                                                        <br />
+                                                    </span>
+                                                </div>
                                             }
-                                            @*<input class="form-check-input" type="checkbox" id="formCheck-4" name="@Model.userModel.IsTask4Completed" style="width: 18px;height: 18px;">*@
-                                            <label class="form-check-label" for="@Model.userModel.IsTask4Completed" style="margin-left: 19px;">
-                                                @Model.ChallengeTitle[3]
-                                            </label>
-                                        </div>
-                                        <div class="form-check" style="height: 40px;">
-                                            @if (!Model.userModel.IsTask5Completed && Model.userModel.IsTask4Completed)
+                                            @if (Model.IsPost && !Model.IsErrorException)
                                             {
+                                                <div class="alert alert-success" role="alert">
+                                                    <i class="far fa-check-circle">
+                                                    </i><span>
+                                                        <strong>Information Updated Successfully!</strong>
+                                                        <br />
+                                                    </span>
+                                                </div>
+                                            }
 
-                                                if ((DateTime.Now - Model.userModel.LastModified).TotalDays < 1)
-                                                {
-                                                    @Html.CheckBoxFor(m => m.userModel.IsTask5Completed, new { @disabled = "disabled" })
-                                                }
-                                                else
-                                                {
-                                                    @Html.CheckBoxFor(m => m.userModel.IsTask5Completed)
-                                                }
-                                            }
-                                            else
-                                            {
-                                                @Html.CheckBoxFor(m => m.userModel.IsTask5Completed, new { @disabled = "disabled" })
-                                            }
-                                            @*<input class="form-check-input" type="checkbox" id="formCheck-4" name="@Model.userModel.IsTask5Completed" style="width: 18px;height: 18px;">*@
-                                            <label class="form-check-label" for="@Model.userModel.IsTask5Completed" style="margin-left: 19px;">
-                                                @Model.ChallengeTitle[4]
-                                            </label>
+
+
+
+
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">
+                                                    <div class="row align-items-center no-gutters">
+                                                        @if (!Model.userModel.IsTask1Completed)
+                                                        {
+                                                            <div class="custom-control custom-checkbox mb-3">
+                                                                @Html.CheckBoxFor(m => m.userModel.IsTask1Completed, new { @class = "custom-control-input", @style ="z-index:7"})
+                                                                @*<input type="checkbox" class="custom-control-input" id="@Model.userModel.IsTask1Completed" name="@Model.userModel.IsTask1Completed" style="z-index:7;"/>*@
+                                                                <label class="custom-control-label" for="@Model.userModel.IsTask1Completed"> @Model.ChallengeTitle[0]</label>
+                                                            </div>
+                                                        }
+                                                        else
+                                                        {
+                                                    <div class="custom-control custom-checkbox mb-3">
+                                                        @Html.CheckBoxFor(m => m.userModel.IsTask1Completed, new { @class = "custom-control-input", @style = "z-index:7",@disabled="disabled" })
+                                                        @*<input type="checkbox" class="custom-control-input" id="@Model.userModel.IsTask1Completed" disabled="disabled" name="@Model.userModel.IsTask1Completed" />*@
+                                                        <label class="custom-control-label" for="@Model.userModel.IsTask1Completed"> @Model.ChallengeTitle[0]</label>
+                                                    </div>
+                                                        }
+                                                    </div>
+                                                </li>
+
+
+                                                <li class="list-group-item">
+                                                    <div class="row align-items-center no-gutters">
+                                                        @if (!Model.userModel.IsTask2Completed && Model.userModel.IsTask1Completed)
+                                                        {
+                                                            if ((DateTime.Now - Model.userModel.LastModified).TotalDays < 1)
+                                                            {
+                                                                <div class="custom-control custom-checkbox mb-3">
+                                                                @Html.CheckBoxFor(m => m.userModel.IsTask2Completed, new { @class = "custom-control-input", @style ="z-index:7",@disabled="disabled"})
+                                                                    @*<input type="checkbox" class="custom-control-input" id="@Model.userModel.IsTask2Completed" disabled="disabled" name="@Model.userModel.IsTask2Completed">*@
+                                                                    <label class="custom-control-label" for="@Model.userModel.IsTask2Completed"> @Model.ChallengeTitle[1]</label>
+                                                                </div>
+                                                            }
+                                                            else
+                                                            {
+                                                                <div class="custom-control custom-checkbox mb-3">
+                                                                @Html.CheckBoxFor(m => m.userModel.IsTask2Completed, new { @class = "custom-control-input", @style ="z-index:7"})
+                                                                    @*<input type="checkbox" class="custom-control-input" id="@Model.userModel.IsTask2Completed" name="@Model.userModel.IsTask2Completed" style="z-index:7;">*@
+                                                                    <label class="custom-control-label" for="@Model.userModel.IsTask2Completed"> @Model.ChallengeTitle[1]</label>
+                                                                </div>
+                                                            }
+
+
+                                                        }
+                                                        else
+                                                        {
+                                                            <div class="custom-control custom-checkbox mb-3">
+                                                                @Html.CheckBoxFor(m => m.userModel.IsTask2Completed, new { @class = "custom-control-input", @style ="z-index:7",@disabled="disabled"})
+                                                                <input type="checkbox" class="custom-control-input" id="@Model.userModel.IsTask2Completed" disabled="disabled" name="@Model.userModel.IsTask2Completed">
+                                                                <label class="custom-control-label" for="@Model.userModel.IsTask2Completed"> @Model.ChallengeTitle[1]</label>
+                                                            </div>
+                                                        }
+
+                                                    </div>
+                                                </li>
+
+
+                                                <li class="list-group-item">
+                                                    <div class="row align-items-center no-gutters">
+                                                        @if (!Model.userModel.IsTask3Completed && Model.userModel.IsTask2Completed)
+                                                        {
+                                                            if ((DateTime.Now - Model.userModel.LastModified).TotalDays < 1)
+                                                            {
+                                                                <div class="custom-control custom-checkbox mb-3">
+                                                                @Html.CheckBoxFor(m => m.userModel.IsTask3Completed, new { @class = "custom-control-input", @style ="z-index:7",@disabled="disabled"})
+                                                                    @*<input type="checkbox" class="custom-control-input" id="@Model.userModel.IsTask3Completed" disabled="disabled" name="@Model.userModel.IsTask3Completed">*@
+                                                                    <label class="custom-control-label" for="@Model.userModel.IsTask3Completed"> @Model.ChallengeTitle[2]</label>
+                                                                </div>
+                                                            }
+                                                            else
+                                                            {
+                                                                <div class="custom-control custom-checkbox mb-3">
+                                                                @Html.CheckBoxFor(m => m.userModel.IsTask3Completed, new { @class = "custom-control-input", @style ="z-index:7"})
+                                                                    @*<input type="checkbox" class="custom-control-input" id="@Model.userModel.IsTask3Completed" name="@Model.userModel.IsTask3Completed" style="z-index:7;">*@
+                                                                    <label class="custom-control-label" for="@Model.userModel.IsTask3Completed"> @Model.ChallengeTitle[2]</label>
+                                                                </div>
+                                                            }
+
+
+                                                        }
+                                                        else
+                                                        {
+                                                            <div class="custom-control custom-checkbox mb-3">
+                                                                @Html.CheckBoxFor(m => m.userModel.IsTask3Completed, new { @class = "custom-control-input", @style ="z-index:7",@disabled="disabled"})
+                                                                @*<input type="checkbox" class="custom-control-input" id="@Model.userModel.IsTask3Completed" disabled="disabled" name="@Model.userModel.IsTask3Completed">*@
+                                                                <label class="custom-control-label" for="@Model.userModel.IsTask3Completed"> @Model.ChallengeTitle[2]</label>
+                                                            </div>
+                                                        }
+
+                                                    </div>
+                                                </li>
+
+                                                <li class="list-group-item">
+                                                    <div class="row align-items-center no-gutters">
+                                                        @if (!Model.userModel.IsTask4Completed && Model.userModel.IsTask3Completed)
+                                                        {
+                                                            if ((DateTime.Now - Model.userModel.LastModified).TotalDays < 1)
+                                                            {
+                                                                <div class="custom-control custom-checkbox mb-3">
+                                                                @Html.CheckBoxFor(m => m.userModel.IsTask4Completed, new { @class = "custom-control-input", @style ="z-index:7",@disabled="disabled"})
+                                                                    @*<input type="checkbox" class="custom-control-input" id="@Model.userModel.IsTask4Completed" disabled="disabled" name="@Model.userModel.IsTask4Completed">*@
+                                                                    <label class="custom-control-label" for="@Model.userModel.IsTask4Completed"> @Model.ChallengeTitle[3]</label>
+                                                                </div>
+                                                            }
+                                                            else
+                                                            {
+                                                                <div class="custom-control custom-checkbox mb-3">
+                                                                @Html.CheckBoxFor(m => m.userModel.IsTask4Completed, new { @class = "custom-control-input", @style ="z-index:7"})
+                                                                    @*<input type="checkbox" class="custom-control-input" id="@Model.userModel.IsTask3Completed" name="@Model.userModel.IsTask4Completed" style="z-index:7;">*@
+                                                                    <label class="custom-control-label" for="@Model.userModel.IsTask3Completed"> @Model.ChallengeTitle[3]</label>
+                                                                </div>
+                                                            }
+
+
+                                                        }
+                                                        else
+                                                        {
+                                                            <div class="custom-control custom-checkbox mb-3">
+                                                                @Html.CheckBoxFor(m => m.userModel.IsTask2Completed, new { @class = "custom-control-input", @style ="z-index:7",@disabled="disabled"})
+                                                                @*<input type="checkbox" class="custom-control-input" id="@Model.userModel.IsTask4Completed" disabled="disabled" name="@Model.userModel.IsTask4Completed">*@
+                                                                <label class="custom-control-label" for="@Model.userModel.IsTask4Completed"> @Model.ChallengeTitle[3]</label>
+                                                            </div>
+                                                        }
+
+                                                    </div>
+                                                </li>
+
+
+                                                <li class="list-group-item">
+                                                    <div class="form-group form-check-inline" style="margin-bottom:2rem;align-self:center">
+                                                        <button class="btn btn-primary" id="markcomplete"
+                                                                type="submit" style="float: right;background-color: rgb(47,194,162)!important;border-color: rgb(47,194,162)!important;">
+                                                            MARK AS COMPLETED
+                                                        </button>
+                                                    </div>
+                                                </li>
+                                            </ul>
+
+                                        </form>
+                                    }
+                                    else
+                                    {
+                                        <div class="alert alert-info" role="alert">
+                                            <i class="far fa-info-circle"></i>
+                                            <span>
+                                                <strong>No Tasks to display. Please Try  again Later</strong>
+                                                <br />
+                                            </span>
                                         </div>
-                                        <button class="btn btn-primary" id="markcomplete"
-                                                type="submit" style="float: right;background-color: rgb(47,194,162)!important;border-color: rgb(47,194,162)!important;">
-                                            MARK AS COMPLETED
-                                        </button>
-                                    </form>
+                                    }
                                 </div>
                             </div>
                         </div>
+                        <input type="hidden" id="ActivityData" value="@Model.userModel.Activity" />
+                        <input type="hidden" id="CarbonActivityData" value="@Model.userModel.CarbonActivity" />
                         <div class="col">
                             <div class="row">
                                 <div class="col-lg-6 mb-4">
                                     <div class="card text-white bg-primary shadow" style="background-color: #009ea0 !important;">
-                                        <div class="card-body">
+                                        <div class="card-body" style="display:flex;">
+                                            <p class="m-0">LEVEL 1&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</p>
                                             <i class="fa fa-unlock"></i>
-                                            <p class="m-0">LEVEL 1&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-lg-6 mb-4">
                                     <div class="card text-white bg-success shadow" style="background-color: #009e60 !important;">
-                                        <div class="card-body">
+                                        <div class="card-body" style="display:flex;">
+                                            <p class="m-0">LEVEL 2</p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                           @if (Model.userModel.LevelId >= 2)
+                                           {
+                                               <i class="fa fa-unlock"></i>
+                                           }
+                                           else
+                                           {
                                             <i class="fa fa-lock"></i>
-                                            <p class="m-0">LEVEL 2</p>
+                                           }
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-lg-6 mb-4">
                                     <div class="card text-white bg-info shadow">
-                                        <div class="card-body">
-                                            <i class="fa fa-lock"></i>
-                                            <p class="m-0">LEVEL 3</p>
+                                        <div class="card-body" style="display:flex;">
+                                            <p class="m-0">LEVEL 3</p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                            @if (Model.userModel.LevelId >= 3)
+                                            {
+                                                <i class="fa fa-unlock"></i>
+                                            }
+                                            else
+                                            {
+                                                <i class="fa fa-lock"></i>
+                                            }
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-lg-6 mb-4">
                                     <div class="card text-white bg-warning shadow">
-                                        <div class="card-body">
-                                            <i class="fa fa-lock"></i>
-                                            <p class="m-0">LEVEL 4</p>
+                                        <div class="card-body" style="display:flex;">
+                                            <p class="m-0">LEVEL 4</p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp;
+                                            @if (Model.userModel.LevelId >= 4)
+                                            {
+                                                <i class="fa fa-unlock"></i>
+                                            }
+                                            else
+                                            {
+                                                <i class="fa fa-lock"></i>
+                                            }
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-lg-6 mb-4">
-                                    <div class="card text-white bg-danger shadow" style="color: #fff;background-color: #a3a8a3 !important;">
-                                        <div class="card-body">
-                                            <i class="fa fa-lock"></i>
-                                            <p class="m-0">LEVEL 5</p>
+                                    <div class="card text-white bg-danger shadow" style="color: #fff; background-color: #a3a8a3 !important;">
+                                        <div class="card-body" style="display:flex;">
+                                            <p class="m-0">LEVEL 5</p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                            @if (Model.userModel.LevelId >= 5)
+                                            {
+                                                <i class="fa fa-unlock"></i>
+                                            }
+                                            else
+                                            {
+                                                <i class="fa fa-lock"></i>
+                                            }
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-lg-6 mb-4">
                                     <div class="card text-white bg-secondary shadow" style="background-color: #ffffff !important;color: rgb(0,0,0);">
-                                        <div class="card-body">
+                                        <div class="card-body" style="display:flex;">
                                             <i class="fa fa-star" style="color: rgb(0,0,0);"></i>
                                             <p class="m-0" style="color: rgb(0,0,0);font-size: 16px;">YOU ARE A PLANET HERO&nbsp;</p>
                                         </div>
@@ -298,14 +309,101 @@
                             </div>
                         </div>
                     </div>
+                    <div class="row">
+                        <div class="col-md-6 col-xl-3 mb-4">
+                            <div class="card shadow border-left-primary py-2" style="border-left: 2rem solid #4e73df!important;">
+                                <div class="card-body">
+                                    <h3 class="text-center card-title">Current Level</h3>
+                                    <div></div>
+                                    <h2 class="display-3 text-center">@Model.userModel.LevelId</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xl-3 mb-4">
+                            <div class="card shadow border-left-primary py-2" style="border-left: 2rem solid #1cc88a!important;">
+                                <div class="card-body">
+                                    <h3 class="text-center card-title">Completed Tasks</h3>
+                                    <div></div>
+                                    <h2 class="display-3 text-center">@Model.userModel.LevelCompletedTask</h2>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-xl-3 mb-4">
+                            <div class="card shadow border-left-primary py-2" style="border-left: 2rem solid #36b9cc !important;">
+                                <div class="card-body">
+                                    <h3 class="text-center card-title">Pending Tasks</h3>
+                                    <div></div>
+                                    <h2 class="display-3 text-center">@Model.userModel.PendingTask</h2>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-xl-3 mb-4">
+                            <div class="card shadow border-left-primary py-2" style="border-left: 2rem solid #f6c23e!important;">
+                                <div class="card-body">
+                                    <h3 class="text-center card-title">OVERALL SCORE</h3>
+                                    <div></div>
+                                    <h2 class="display-3 text-center">@Model.userModel.TotalPointScored</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-7 col-xl-8">
+                            <div class="card shadow mb-4">
+                                <div class="card-header d-flex justify-content-between align-items-center">
+                                    <h6 class="text-primary font-weight-bold m-0" style="color: rgb(47,194,162)!important;">PROGRESS</h6>
+                                    @*<div class="dropdown no-arrow">
+                            <button class="btn btn-link btn-sm dropdown-toggle" data-toggle="dropdown" aria-expanded="false" type="button"><i class="fas fa-ellipsis-v text-gray-400"></i></button>
+                            <div class="dropdown-menu shadow dropdown-menu-right animated--fade-in"
+                                 role="menu">
+                                <p class="text-center dropdown-header">dropdown header:</p><a class="dropdown-item" role="presentation" href="#">&nbsp;Action</a><a class="dropdown-item" role="presentation" href="#">&nbsp;Another action</a>
+                                <div class="dropdown-divider"></div><a class="dropdown-item" role="presentation" href="#">&nbsp;Something else here</a>
+                            </div>
+                        </div>*@
+                                </div>
+                                <div class="card-body d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3 border-bottom" style="position:relative;">
+
+                                    <div class="chart-area">
+                                        <canvas id="line-chart" width="780" height="300" class="d-flex justify-content-between align-items-center"></canvas>
+                                        @* <canvas data-bs-chart="{&quot;type&quot;:&quot;line&quot;,&quot;data&quot;:{&quot;labels&quot;:[&quot;Jan&quot;,&quot;Feb&quot;,&quot;Mar&quot;,&quot;Apr&quot;,&quot;May&quot;,&quot;Jun&quot;,&quot;Jul&quot;,&quot;Aug&quot;],&quot;datasets&quot;:[{&quot;label&quot;:&quot;Earnings&quot;,&quot;fill&quot;:true,&quot;data&quot;:[&quot;0&quot;,&quot;10000&quot;,&quot;5000&quot;,&quot;15000&quot;,&quot;10000&quot;,&quot;20000&quot;,&quot;15000&quot;,&quot;25000&quot;],&quot;backgroundColor&quot;:&quot;rgba(78, 115, 223, 0.05)&quot;,&quot;borderColor&quot;:&quot;rgba(78, 115, 223, 1)&quot;}]},&quot;options&quot;:{&quot;maintainAspectRatio&quot;:false,&quot;legend&quot;:{&quot;display&quot;:false},&quot;title&quot;:{},&quot;scales&quot;:{&quot;xAxes&quot;:[{&quot;gridLines&quot;:{&quot;color&quot;:&quot;rgb(234, 236, 244)&quot;,&quot;zeroLineColor&quot;:&quot;rgb(234, 236, 244)&quot;,&quot;drawBorder&quot;:false,&quot;drawTicks&quot;:false,&quot;borderDash&quot;:[&quot;2&quot;],&quot;zeroLineBorderDash&quot;:[&quot;2&quot;],&quot;drawOnChartArea&quot;:false},&quot;ticks&quot;:{&quot;fontColor&quot;:&quot;#858796&quot;,&quot;padding&quot;:20}}],&quot;yAxes&quot;:[{&quot;gridLines&quot;:{&quot;color&quot;:&quot;rgb(234, 236, 244)&quot;,&quot;zeroLineColor&quot;:&quot;rgb(234, 236, 244)&quot;,&quot;drawBorder&quot;:false,&quot;drawTicks&quot;:false,&quot;borderDash&quot;:[&quot;2&quot;],&quot;zeroLineBorderDash&quot;:[&quot;2&quot;]},&quot;ticks&quot;:{&quot;fontColor&quot;:&quot;#858796&quot;,&quot;padding&quot;:20}}]}}}"></canvas>*@
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-5 col-xl-4">
+                            <div class="card shadow mb-4">
+                                <div class="card-header d-flex justify-content-between align-items-center">
+                                    <h6 class="text-primary font-weight-bold m-0" style="color: rgb(47,194,162) !important;">CARBON EMISSIONS SAVED</h6>
+                                    @*<div class="dropdown no-arrow">
+                            <button class="btn btn-link btn-sm dropdown-toggle" data-toggle="dropdown" aria-expanded="false" type="button"><i class="fas fa-ellipsis-v text-gray-400"></i></button>
+                            <div class="dropdown-menu shadow dropdown-menu-right animated--fade-in"
+                                 role="menu">
+                                <p class="text-center dropdown-header">dropdown header:</p><a class="dropdown-item" role="presentation" href="#">&nbsp;Action</a><a class="dropdown-item" role="presentation" href="#">&nbsp;Another action</a>
+                                <div class="dropdown-divider"></div><a class="dropdown-item" role="presentation" href="#">&nbsp;Something else here</a>
+                            </div>
+                        </div>*@
+                                </div>
+                                <div class="card-body">
+                                    <canvas id="doughnut-chart" width="800" height="450"></canvas>
+                                    @*<div class="text-center small mt-4"><span class="mr-2"><i class="fas fa-circle text-primary"></i>&nbsp;Energy</span><span class="mr-2"><i class="fas fa-circle text-success"></i>&nbsp;Transport</span><span class="mr-2"><i class="fas fa-circle text-info"></i>&nbsp;Others</span></div>*@
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
-    </div><a class="border rounded d-inline scroll-to-top" href="#page-top"><i class="fas fa-angle-up"></i></a>
-</div>
-<script src="~/assets2/js/jquery.min.js"></script>
-<script src="~/assets2/bootstrap/js/bootstrap.min.js"></script>
-<script src="~/assets2/js/chart.min.js"></script>
-<script src="~/assets2/js/bs-init.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"></script>
-<script src="~/assets2/js/theme.js"></script>
+        </div><a class="border rounded d-inline scroll-to-top d-print-none" href="#page-top"><i class="fas fa-angle-up"></i></a>
+    </div>
+    @*<script src="~/assets2/js/jquery.min.js"></script>*@
+    <script src="~/assets2/js/jquery.min.js"></script>
+    <script src="/js/analytics.js"></script>
+    <script src="~/assets2/bootstrap/js/bootstrap.min.js"></script>
+    <script src="~/assets2/js/chart.min.js"></script>
+    <script src="~/assets2/js/bs-init.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"></script>
+    <script src="~/assets2/js/theme.js"></script>
 </body>

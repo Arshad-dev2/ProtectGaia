@@ -7,7 +7,6 @@ using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using ProtectGaia.Interfaces;
 using ProtectGaia.Models;
-
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace ProtectGaia.Controllers
@@ -29,6 +28,7 @@ namespace ProtectGaia.Controllers
         [HttpGet]
         public IActionResult Index()
         {
+
             if (_session != null && _session.GetString("UserModel") != null)
             {
                 UserModel userModel = JsonConvert.DeserializeObject<UserModel>(_session.GetString("UserModel"));
@@ -42,12 +42,8 @@ namespace ProtectGaia.Controllers
                 userViewModel.ChallengeTitle = _challenge.GetChallengesByLevelIdAsync(userModel.LevelId).Select(x =>
                      x.ChallengeTitle
                 ).ToList();
-                userViewModel.ChallengeTitle.Add("Turn of Light when you go out");
-                userViewModel.ChallengeTitle.Add("Turn of tap when you go complete washing");
-                userViewModel.ChallengeTitle.Add("Plant a sapling in your  backyard");
-                userViewModel.ChallengeTitle.Add("Dont eat frozen  food for  a day");
-                userViewModel.ChallengeTitle.Add("Do not use electronic device in your spare time");
-
+                userViewModel.IsPost = false;
+                userViewModel.IsErrorException = false;
                 return View(userViewModel);
             }
             else
@@ -60,129 +56,167 @@ namespace ProtectGaia.Controllers
         public async Task<IActionResult> Index(UserModel userModel)
         {
             UserViewModel userViewModel = new UserViewModel();
-            if (_session != null && _session.GetString("UserModel") != null)
+            userViewModel.IsPost = true;
+            userViewModel.IsErrorException = false;
+            try
             {
-                var usr = JsonConvert.DeserializeObject<UserModel>(_session.GetString("UserModel"));
-                
-                var activity = JsonConvert.DeserializeObject<Dictionary<string,int>>(usr.Activity);
-                userViewModel.userModel = usr;
-                //userViewModel.userModel.Activity = usr.Activity;
-                //userViewModel.userModel.UserEmail = usr.UserEmail;
-                //userViewModel.userModel.UserName = usr.UserName;
-                //userViewModel.userModel.UserImageUrl = usr.UserImageUrl;
-                //userViewModel.userModel.TotalTaskCompleted = usr.TotalTaskCompleted;
-                //userViewModel.userModel.LevelCompletedTask = usr.LevelCompletedTask;
-                //userViewModel.userModel.PendingTask = usr.PendingTask;
-                //userViewModel.userModel.TotalPointScored = usr.TotalPointScored;
-                //userViewModel.userModel.CarbonScore = usr.CarbonScore;
-                //userViewModel.userModel.LevelId = usr.LevelId;
-                //userViewModel.userModel.LastModified = usr.LastModified;
-                //userViewModel.userModel.IsTask1Completed = usr;
-                //userViewModel.userModel.LastModified = usr.LastModified;
-                //userViewModel.userModel.LastModified = usr.LastModified;
-                //userViewModel.userModel.LastModified = usr.LastModified;
-                //userViewModel.userModel.LastModified = usr.LastModified;
-
-
-                if (_user.GetUserByLevelAsync(userViewModel.userModel.UserEmail, userViewModel.userModel.LevelId))
+                if (_session != null && _session.GetString("UserModel") != null)
                 {
-                    var challenges = _challenge.GetChallengesByLevelIdAsync(userViewModel.userModel.LevelId);
-                    userViewModel.ChallengeTitle.Add("Turn of Light when you go out");
-                    userViewModel.ChallengeTitle.Add("Turn of tap when you go complete washing");
-                    userViewModel.ChallengeTitle.Add("Plant a sapling in your  backyard");
-                    userViewModel.ChallengeTitle.Add("Dont eat frozen  food for  a day");
-                    userViewModel.ChallengeTitle.Add("Do not use electronic device in your spare time");
-                    //Points Update done here
-                    if (userModel.IsTask1Completed)
-                    {
-                        userViewModel.userModel.IsTask1Completed = true;
-                        userViewModel.userModel.PendingTask -= 1;
-                        userViewModel.userModel.TotalPointScored += 2;
-                        userViewModel.userModel.TotalTaskCompleted += 1;
-                        userViewModel.userModel.LastModified = DateTime.Now;
+                    var usr = JsonConvert.DeserializeObject<UserModel>(_session.GetString("UserModel"));
 
-                        if (activity.ContainsKey(DateTime.Now.ToShortDateString())){
-                            activity[DateTime.Now.ToShortDateString()] = userViewModel.userModel.TotalPointScored;
+                    var activity = JsonConvert.DeserializeObject<Dictionary<string, int>>(usr.Activity);
+                    userViewModel.userModel = usr;
+
+                    if (_user.GetUserByLevelAsync(userViewModel.userModel.UserEmail, userViewModel.userModel.LevelId))
+                    {
+                        var challenges = _challenge.GetChallengesByLevelIdAsync(userViewModel.userModel.LevelId);
+                        userViewModel.ChallengeTitle = _challenge.GetChallengesByLevelIdAsync(userViewModel.userModel.LevelId).Select(x =>
+                             x.ChallengeTitle
+                        ).ToList();
+                        Dictionary<string, int> Carb_Obj = JsonConvert.DeserializeObject<Dictionary<string, int>>(userViewModel.userModel.CarbonActivity);
+
+                        if (Carb_Obj == null)
+                        {
+                            Carb_Obj = new Dictionary<string, int>();
                         }
-                        userViewModel.userModel = await _user.UpdateMembershipAsync(userViewModel.userModel);
+                        //Points Update done here
+                        if (userModel.IsTask1Completed)
+                        {
+                            userViewModel.userModel.IsTask1Completed = true;
+                            userViewModel.userModel.PendingTask -= 1;
+                            userViewModel.userModel.TotalPointScored += 2;
+                            userViewModel.userModel.TotalTaskCompleted += 1;
+                            userViewModel.userModel.LevelCompletedTask += 1;
+                            userViewModel.userModel.LastModified = DateTime.Now;
+                            if (Carb_Obj != null && Carb_Obj.ContainsKey(challenges[0].Sector))
+                            {
+                                Carb_Obj[challenges[0].Sector] += challenges[0].CarbonScore;
+                            }
+                            else
+                            {
+                                Carb_Obj.Add(challenges[0].Sector, challenges[0].CarbonScore);
+                            }
+                            userViewModel.userModel.CarbonActivity = JsonConvert.SerializeObject(Carb_Obj);
+                            if (activity.ContainsKey(DateTime.Now.ToShortDateString()))
+                            {
+                                activity[DateTime.Now.ToShortDateString()] = userViewModel.userModel.TotalPointScored;
+                            }
+                            userViewModel.userModel.Activity = JsonConvert.SerializeObject(activity);
+                            userViewModel.userModel = await _user.UpdateMembershipAsync(userViewModel.userModel);
+                        }
+                        if (Carb_Obj != null && userModel.IsTask2Completed)
+                        {
+                            userViewModel.userModel.IsTask2Completed = true;
+                            userViewModel.userModel.PendingTask -= 1;
+                            userViewModel.userModel.TotalPointScored += 3;
+                            userViewModel.userModel.LevelCompletedTask += 1;
+                            userViewModel.userModel.TotalTaskCompleted += 1;
+                            userViewModel.userModel.LastModified = DateTime.Now;
+                            activity.Add(userViewModel.userModel.LastModified.ToShortDateString(), userViewModel.userModel.TotalPointScored);
+                            userViewModel.userModel.Activity = JsonConvert.SerializeObject(activity);
+                            if (Carb_Obj != null && Carb_Obj.ContainsKey(challenges[1].Sector))
+                            {
+                                Carb_Obj[challenges[1].Sector] += challenges[1].CarbonScore;
+                            }
+                            else
+                            {
+                                Carb_Obj.Add(challenges[1].Sector, challenges[1].CarbonScore);
+                            }
+                            userViewModel.userModel.Activity = JsonConvert.SerializeObject(activity);
+                            userViewModel.userModel.CarbonActivity = JsonConvert.SerializeObject(Carb_Obj);
+                            userViewModel.userModel = await _user.UpdateMembershipAsync(userViewModel.userModel);
+                        }
+                        if (Carb_Obj != null && userModel.IsTask3Completed)
+                        {
+                            userViewModel.userModel.IsTask3Completed = true;
+                            userViewModel.userModel.PendingTask -= 1;
+                            userViewModel.userModel.TotalPointScored += 4;
+                            userViewModel.userModel.LevelCompletedTask += 1;
+                            userViewModel.userModel.TotalTaskCompleted += 1;
+                            userViewModel.userModel.LastModified = DateTime.Now;
+                            activity.Add(userViewModel.userModel.LastModified.ToShortDateString(), userViewModel.userModel.TotalPointScored);
+                            userViewModel.userModel.Activity = JsonConvert.SerializeObject(activity);
+                            if (Carb_Obj != null && Carb_Obj.ContainsKey(challenges[2].Sector))
+                            {
+                                Carb_Obj[challenges[2].Sector] += challenges[2].CarbonScore;
+                            }
+                            else
+                            {
+                                Carb_Obj.Add(challenges[2].Sector, challenges[2].CarbonScore);
+                            }
+                            userViewModel.userModel.CarbonActivity = JsonConvert.SerializeObject(Carb_Obj);
+                            userViewModel.userModel = await _user.UpdateMembershipAsync(userViewModel.userModel);
+                        }
+                        if (Carb_Obj != null && userModel.IsTask4Completed)
+                        {
+                            userViewModel.userModel.IsTask4Completed = true;
+                            userViewModel.userModel.PendingTask -= 1;
+                            userViewModel.userModel.TotalPointScored += 5;
+                            userViewModel.userModel.TotalTaskCompleted += 1;
+                            userViewModel.userModel.LevelCompletedTask += 1;
+                            userViewModel.userModel.LastModified = DateTime.Now;
+                            activity.Add(userViewModel.userModel.LastModified.ToShortDateString(), userViewModel.userModel.TotalPointScored);
+                            userViewModel.userModel.Activity = JsonConvert.SerializeObject(activity);
+                            if (Carb_Obj != null && Carb_Obj.ContainsKey(challenges[3].Sector))
+                            {
+                                Carb_Obj[challenges[3].Sector] += challenges[3].CarbonScore;
+                            }
+                            else
+                            {
+                                Carb_Obj.Add(challenges[3].Sector, challenges[3].CarbonScore);
+                            }
+                            userViewModel.userModel.CarbonActivity = JsonConvert.SerializeObject(Carb_Obj);
+                            userViewModel.userModel = await _user.UpdateMembershipAsync(userViewModel.userModel);
+                        }
+                        //if (userModel.IsTask5Completed)
+                        //{
+                        //    userViewModel.userModel.IsTask5Completed = true;
+                        //    userViewModel.userModel.PendingTask -= 1;
+                        //    userViewModel.userModel.TotalPointScored += 6;
+                        //    userViewModel.userModel.TotalTaskCompleted += 1;
+                        //    userViewModel.userModel.LastModified = DateTime.Now;
+                        //    activity.Add(userViewModel.userModel.LastModified.ToShortDateString(), userViewModel.userModel.TotalTaskCompleted);
+                        //    userViewModel.userModel.Activity = JsonConvert.SerializeObject(activity);
+                        //    userViewModel.userModel = await _user.UpdateMembershipAsync(userViewModel.userModel);
+                        //}
+                        //Keycheck  if existing
                     }
-                    if (userModel.IsTask2Completed)
+                    else
                     {
-                        userViewModel.userModel.IsTask2Completed = true;
-                        userViewModel.userModel.PendingTask -= 1;
-                        userViewModel.userModel.TotalPointScored += 3;
-                        userViewModel.userModel.TotalTaskCompleted += 1;
-                        userViewModel.userModel.LastModified = DateTime.Now;
-                        activity.Add(userViewModel.userModel.LastModified.ToShortDateString(), userViewModel.userModel.TotalTaskCompleted);
+                        activity.Add(userViewModel.userModel.LastModified.ToShortDateString(), userViewModel.userModel.TotalPointScored);
                         userViewModel.userModel.Activity = JsonConvert.SerializeObject(activity);
-                        userViewModel.userModel = await _user.UpdateMembershipAsync(userViewModel.userModel);
-                    }
-                    if (userModel.IsTask3Completed)
-                    {
-                        userViewModel.userModel.IsTask3Completed = true;
-                        userViewModel.userModel.PendingTask -= 1;
-                        userViewModel.userModel.TotalPointScored += 4;
-                        userViewModel.userModel.TotalTaskCompleted += 1;
-                        userViewModel.userModel.LastModified = DateTime.Now;
-                        activity.Add(userViewModel.userModel.LastModified.ToShortDateString(), userViewModel.userModel.TotalTaskCompleted);
-                        userViewModel.userModel.Activity = JsonConvert.SerializeObject(activity);
-                        userViewModel.userModel = await _user.UpdateMembershipAsync(userViewModel.userModel);
-                    }
-                    if (userModel.IsTask4Completed)
-                    {
-                        userViewModel.userModel.IsTask4Completed = true;
-                        userViewModel.userModel.PendingTask -= 1;
-                        userViewModel.userModel.TotalPointScored += 5;
-                        userViewModel.userModel.TotalTaskCompleted += 1;
-                        userViewModel.userModel.LastModified = DateTime.Now;
-                        activity.Add(userViewModel.userModel.LastModified.ToShortDateString(), userViewModel.userModel.TotalTaskCompleted);
-                        userViewModel.userModel.Activity = JsonConvert.SerializeObject(activity);
-                        userViewModel.userModel = await _user.UpdateMembershipAsync(userViewModel.userModel);
-                    }
-                    //if (userModel.IsTask5Completed)
-                    //{
-                    //    userViewModel.userModel.IsTask5Completed = true;
-                    //    userViewModel.userModel.PendingTask -= 1;
-                    //    userViewModel.userModel.TotalPointScored += 6;
-                    //    userViewModel.userModel.TotalTaskCompleted += 1;
-                    //    userViewModel.userModel.LastModified = DateTime.Now;
-                    //    activity.Add(userViewModel.userModel.LastModified.ToShortDateString(), userViewModel.userModel.TotalTaskCompleted);
-                    //    userViewModel.userModel.Activity = JsonConvert.SerializeObject(activity);
-                    //    userViewModel.userModel = await _user.UpdateMembershipAsync(userViewModel.userModel);
-                    //}
-                    //Keycheck  if existing
-                }
-                else
-                {
-                    activity.Add(userViewModel.userModel.LastModified.ToShortDateString(), userViewModel.userModel.TotalTaskCompleted);
-                    userViewModel.userModel = await _user.CreateUserAsync(userViewModel.userModel);
+                        userViewModel.userModel = await _user.CreateUserAsync(userViewModel.userModel);
 
-                }
-                if (userViewModel.userModel.IsTask1Completed && userViewModel.userModel.IsTask2Completed
-                    && userViewModel.userModel.IsTask3Completed && userViewModel.userModel.IsTask4Completed && userViewModel.userModel.IsTask5Completed)
-                {
-                    userViewModel.userModel.LevelId += 1;
-                    userViewModel.userModel.LevelCompletedTask = 0;
-                    userViewModel.userModel.PendingTask = 5;
-                    userViewModel.userModel.IsTask1Completed = false;
-                    userViewModel.userModel.IsTask2Completed = false;
-                    userViewModel.userModel.IsTask3Completed = false;
-                    userViewModel.userModel.IsTask4Completed = false;
-                    userViewModel.userModel.IsTask5Completed = false;
+                    }
+                    if (userViewModel.userModel.IsTask1Completed && userViewModel.userModel.IsTask2Completed
+                        && userViewModel.userModel.IsTask3Completed && userViewModel.userModel.IsTask4Completed)
+                    {
+                        userViewModel.userModel.LevelId += 1;
+                        userViewModel.userModel.LevelCompletedTask = 0;
+                        userViewModel.userModel.PendingTask = 5;
+                        userViewModel.userModel.IsTask1Completed = false;
+                        userViewModel.userModel.IsTask2Completed = false;
+                        userViewModel.userModel.IsTask3Completed = false;
+                        userViewModel.userModel.IsTask4Completed = false;
+                        userViewModel.userModel.IsTask5Completed = false;
 
-                    userViewModel.userModel = await _user.CreateUserAsync(userViewModel.userModel);
-                    var new_challenges = _challenge.GetChallengesByLevelIdAsync(userViewModel.userModel.LevelId);
-                    userViewModel.ChallengeTitle = _challenge.GetChallengesByLevelIdAsync(userViewModel.userModel.LevelId).Select(x =>
-                         x.ChallengeTitle
-                    ).ToList();
-                    userViewModel.ChallengeTitle.Add("Turn of Light when you go out");
-                    userViewModel.ChallengeTitle.Add("Turn of tap when you go complete washing");
-                    return View(userViewModel);
-                }
-                }
-                
+                        userViewModel.userModel = await _user.CreateUserAsync(userViewModel.userModel);
+                        var new_challenges = _challenge.GetChallengesByLevelIdAsync(userViewModel.userModel.LevelId);
+                        userViewModel.ChallengeTitle = _challenge.GetChallengesByLevelIdAsync(userViewModel.userModel.LevelId).Select(x =>
+                             x.ChallengeTitle
+                        ).ToList();
+
+                        return View(userViewModel);
+                    }
+            }
+            }
+            catch (Exception ex)
+            {
+                userViewModel.IsErrorException = true;
+            }
             return View(userViewModel);
         }
+
     }
 }
 

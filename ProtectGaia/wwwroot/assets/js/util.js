@@ -12,22 +12,24 @@
 
 		$a.each(function() {
 
-			var	$this = $(this),
+			var $this = $(this),
 				indent = Math.max(0, $this.parents('li').length - 1),
 				href = $this.attr('href'),
-				target = $this.attr('target');
-
+				target = $this.attr('target'),
+				id = $this.attr('id');
+				
 			b.push(
 				'<a ' +
 					'class="link depth-' + indent + '"' +
 					( (typeof target !== 'undefined' && target != '') ? ' target="' + target + '"' : '') +
-					( (typeof href !== 'undefined' && href != '') ? ' href="' + href + '"' : '') +
+				((typeof href !== 'undefined' && href != '') ? ' href="' + href + '"' : '') +
+				((typeof id !== 'undefined' && id!='')?' id="'+id+'1"':'')+
 				'>' +
 					'<span class="indent-' + indent + '"></span>' +
 					$this.text() +
 				'</a>'
 			);
-
+			
 		});
 
 		return b.join('');
@@ -583,5 +585,9 @@
 			});
 
 	};
+	$('#signOut1').click(function () {
+		$(this).attr('onclick', 'signOut();');
 
+		return false;
+	});
 })(jQuery);

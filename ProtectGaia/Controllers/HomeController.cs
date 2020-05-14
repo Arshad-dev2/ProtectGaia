@@ -116,6 +116,7 @@ namespace ProtectGaia.Controllers
                     userModel.TotalPointScored=0;
                     userModel.CarbonScore=0;
                     userModel.LastModified = DateTime.Now;
+                    userModel.CarbonActivity = string.Empty;
                     IDictionary<string, int> Activity_dict = new Dictionary<string, int>();
                     //IDictionary<string, string> Task_dict = new Dictionary<string, string>();
                    
@@ -218,7 +219,7 @@ namespace ProtectGaia.Controllers
         {
             string days;
             TimeSpan diff2 = cDate - pDate;
-            if (diff2.TotalDays > 0)
+            if (diff2.TotalDays > 1)
             {
                 days = string.Format("{0} days ago", Convert.ToUInt32(diff2.TotalDays).ToString());
             }

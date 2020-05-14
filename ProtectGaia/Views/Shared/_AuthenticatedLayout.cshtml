@@ -40,8 +40,10 @@
                     client_id: '440340758534-aq6c3kkn67nt2eo0345vqjrp7h29kuqu.apps.googleusercontent.com',
                     // Request scopes in addition to 'profile' and 'email'
                     //scope: 'additional_scope'
+
                 });
                 attachSignin(document.getElementById('customBtn'));
+                attachSignin(document.getElementById('customBtn1'));
             });
         };
 
@@ -90,7 +92,7 @@
 </head>
 <body class="homepage is-preload">
 
-    <div id="page-wrapper">
+    <div id="page-wrapper" class="d-print-none">
 
         <!-- Header -->
         <section id="header">
@@ -116,11 +118,9 @@
                             <li><a asp-controller="Explainers" asp-Action="MakeAChange">Make a Change</a></li>
                         </ul>
                     </li>
-                  
-                        <li><a href="#" onclick="signOut();">SignOut</a></li>
-                        <li><a href="/dashboard/index">Profile</a></li>
-                    <li> <div class="deviceLocation"> Detecting . . .</div> </li>
 
+                    <li><a href="#" id="signOut" onclick="signOut();">SignOut</a></li>
+                    <li><a href="/dashboard/index">Profile</a></li>
                 </ul>
             </nav>
         </section>
@@ -132,58 +132,41 @@
     </main>
     <!-- End main content -->
     <!-- Start footer -->
-    <section id="footer" style="filter: brightness(100%)">
-        <div class="container">
-            <div class="row">
-                <div class="col-8 col-12-medium">
+    <section id="footer" style="filter: brightness(100%); height:50%">
+        <div class="row">
+            <div class="col-12">
 
-                    <section>
-                        <header>
-                            <h2>Contact Us</h2>
-                        </header>
-
-                        <ul class="dates">
-                            <li>
-                                <span class="date"><strong><i class="fas fa-map-marker-alt"></i>&nbsp</strong></span>
-                                <br />
-                                <p>Address: Melbourne, Australia</p>
-                            </li>
-                            <li>
-                                <span class="date"><strong><i class="fa fa-envelope"></i></strong></span>
-                                <br />
-                                <p>Email: environs@gmail.com</p>
-                            </li>
-
-                            <li>
-                                <span class="date"><strong><i class="fa fa-mobile"></i>&nbsp</strong></span>
-                                <br />
-                                <p>Phone: (800) 000-0000</p>
-                            </li>
-
-                        </ul>
-                    </section>
+                <!-- Copyright -->
+                <div id="copyright">
+                    <ul class="links">
+                        <li>Designed by Environs. All rights reserved.</li>
+                    </ul>
                 </div>
-                <div class="col-4 col-12-medium">
-                    <section>
-                        <header>
-                            <h2>What's this all about?</h2>
-                        </header>
-                        <a href="#" class="image featured"><img src="images/15.png" alt="" /></a>
-                    </section>
+
+                <div id="copyright">
+                    <ul class="links" style="color:#c5c4c4">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i> Melbourne, Australia
+
+                        </li>
+                        <li>
+                            <i class="fa fa-envelope" style="color:#c5c4c4"></i> environs@gmail.com
+
+                        </li>
+
+                        <li>
+                            <i class="fa fa-mobile" style="color:#c5c4c4"></i> (800) 000-0000
+
+                        </li>
+
+                    </ul>
                 </div>
 
 
-                <div class="col-12">
-                    <!-- Copyright -->
-                    <div id="copyright">
-                        <ul class="links">
-                            <li>Designed by Environs. All rights reserved.</li>
-                        </ul>
-                    </div>
-
-                </div>
             </div>
+
         </div>
+
     </section>
 
 
@@ -212,12 +195,12 @@
     <script type="text/javascript" src="/js/custom.js"></script>
 
 
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery.dropotron.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
+    <script src="/assets/js/jquery.min.js"></script>
+    <script src="/assets/js/jquery.dropotron.min.js"></script>
+    <script src="/assets/js/browser.min.js"></script>
+    <script src="/assets/js/breakpoints.min.js"></script>
+    <script src="/assets/js/util.js"></script>
+    <script src="/assets/js/main.js"></script>
 
 
 

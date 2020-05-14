@@ -41,6 +41,7 @@ namespace ProtectGaia.Implementations
         }
         public async Task<UserModel> UpdateMembershipAsync(UserModel userModel)
         {
+            
             var user = _dbContext.Update(userModel);
             await _dbContext.SaveChangesAsync();
             return userModel;
