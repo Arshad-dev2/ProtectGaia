@@ -10,6 +10,8 @@ using ProtectGaia.DataAccess;
 using ProtectGaia.Interface;
 using Microsoft.EntityFrameworkCore;
 using ProtectGaia.DataContexts;
+using ProtectGaia.Interfaces;
+using ProtectGaia.Implementations;
 
 namespace ProtectGaia
 {
@@ -29,6 +31,9 @@ namespace ProtectGaia
 
             services.AddControllersWithViews();
             //services.AddDbContextPool<ChallengeDB>(options => options.UseSqlServer(Configuration.GetConnectionString("EcoMorphConnection")));
+            services.AddDbContext<ChallengeDB>(options =>
+                options.UseSqlite(
+                    Configuration.GetConnectionString("DefaultConnection")));
 
             services.AddDistributedMemoryCache();
 
@@ -42,6 +47,9 @@ namespace ProtectGaia
 
             services.AddScoped<INewsApi, NewsApi>();
             services.AddScoped<IWeatherApi, WeatherApi>();
+            services.AddScoped<IUser, UserRepository>();
+            services.AddScoped<IChallenge, ChallengeRepository >();
+
             services.TryAddSingleton<IHttpContextAccessor, HttpContextAccessor>();
             services.AddAuthentication()
             .AddGoogle(options =>
@@ -73,7 +81,7 @@ namespace ProtectGaia
             app.UseStaticFiles();
 
             app.UseRouting();
-
+            app.UseAuthentication();
             app.UseAuthorization();
            
 

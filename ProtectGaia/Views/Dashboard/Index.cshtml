@@ -1,9 +1,9 @@
 ﻿@{
-    Layout = "_Layout";
+    Layout = "_AuthenticatedLayout";
     ViewBag.Title = "TakeChallenge";
 }
 
-
+@model ProtectGaia.Models.UserViewModel
 
 
 
@@ -23,11 +23,12 @@
     <div id="wrapper">
         <div class="d-flex flex-column" id="content-wrapper">
             <div id="content">
-                <img class="border rounded-circle img-profile" src="~/assets2/img/avatars/avatar1.jpeg" style="height: 5REM;margin-left: 25px;margin-top: 12px;"><span class="d-none d-lg-inline mr-2 text-gray-600 small" style="margin-left: 16px;height: 25px;font-size: 26px;margin-top: 0px;padding-top: 0px;">Valerie Luna</span>
+                <img class="border rounded-circle img-profile" src="@Model.userModel.UserImageUrl" style="height: 5REM;margin-left: 25px;margin-top: 12px;"><span class="d-none d-lg-inline mr-2 text-gray-600 small" style="margin-left: 16px;height: 25px;font-size: 26px;margin-top: 0px;padding-top: 0px;">@Model.userModel.UserName</span>
+                <div class="d-sm-flex justify-content-between align-items-center mb-4" style="margin-top: 32px;">
+                    <h3 class="text-dark mb-0">Dashboard</h3><a class="btn btn-primary btn-sm d-none d-sm-inline-block" role="button" href="#" style="background-color: rgb(47,194,162);border-color: #2fc2a2 !important;"><i class="fas fa-download fa-sm text-white-50"></i>&nbsp;Generate Report</a>
+                </div>
                 <div class="container-fluid">
-                    <div class="d-sm-flex justify-content-between align-items-center mb-4" style="margin-top: 32px;">
-                        <h3 class="text-dark mb-0">Dashboard</h3><a class="btn btn-primary btn-sm d-none d-sm-inline-block" role="button" href="#" style="background-color: rgb(47,194,162);border-color: #2fc2a2 !important;"><i class="fas fa-download fa-sm text-white-50"></i>&nbsp;Generate Report</a>
-                    </div>
+
                     <div class="row">
                         <div class="col-md-6 col-xl-3 mb-4">
                             <div class="card shadow border-left-primary py-2">
@@ -38,7 +39,7 @@
                                                 <h6 class="text-nowrap text-break" style="font-size: 16px;padding-top: 11px;width: 128px;margin-bottom: 8px;"><strong>CURRENT LEVEL</strong></h6>
                                             </div>
                                         </div>
-                                        <div class="col-auto"><span class="badge badge-primary" style="color: rgb(0,0,0);font-size: 28px;background-color: rgb(255,255,255);width: 67px;height: 46px;">1</span></div>
+                                        <div class="col-auto"><span class="badge badge-primary" style="color: rgb(0,0,0);font-size: 28px;background-color: rgb(255,255,255);width: 67px;height: 46px;">@Model.userModel.LevelId</span></div>
                                     </div>
                                 </div>
                             </div>
@@ -52,7 +53,7 @@
                                                 <h6 class="text-nowrap text-break" style="font-size: 16px;color: rgb(28,200,138);padding-top: 11px;width: 128px;"><strong>Completed tasks</strong>&nbsp;</h6>
                                             </div>
                                         </div>
-                                        <div class="col-auto"><span class="badge badge-primary" style="color: rgb(0,0,0);font-size: 28px;background-color: rgb(255,255,255);width: 67px;height: 46px;">3</span></div>
+                                        <div class="col-auto"><span class="badge badge-primary" style="color: rgb(0,0,0);font-size: 28px;background-color: rgb(255,255,255);width: 67px;height: 46px;">@Model.userModel.TotalTaskCompleted</span></div>
                                     </div>
                                 </div>
                             </div>
@@ -66,7 +67,7 @@
                                                 <h6 class="text-nowrap text-break" style="font-size: 16px;color: rgb(54,185,204);padding-top: 11px;width: 128px;"><strong>PENDING tasks</strong>&nbsp;</h6>
                                             </div>
                                         </div>
-                                        <div class="col-auto"><span class="badge badge-primary" style="color: rgb(0,0,0);font-size: 28px;background-color: rgb(255,255,255);width: 67px;height: 46px;">1</span></div>
+                                        <div class="col-auto"><span class="badge badge-primary" style="color: rgb(0,0,0);font-size: 28px;background-color: rgb(255,255,255);width: 67px;height: 46px;">@Model.userModel.PendingTask</span></div>
                                     </div>
                                 </div>
                             </div>
@@ -80,7 +81,7 @@
                                                 <h6 class="text-nowrap text-break" style="font-size: 16px;color: rgb(246,194,62);width: 128px;padding-top: 11px;"><strong>OVERALL SCORE</strong>&nbsp;</h6>
                                             </div>
                                         </div>
-                                        <div class="col-auto"><span class="badge badge-primary" style="color: rgb(0,0,0);font-size: 28px;background-color: rgb(255,255,255);width: 67px;height: 46px;">7</span></div>
+                                        <div class="col-auto"><span class="badge badge-primary" style="color: rgb(0,0,0);font-size: 28px;background-color: rgb(255,255,255);width: 67px;height: 46px;">@Model.userModel.TotalPointScored</span></div>
                                     </div>
                                 </div>
                             </div>
@@ -132,17 +133,115 @@
                                     <h6 class="text-primary font-weight-bold m-0" style="color: rgb(47,194,162)!important;">TASKS FROM CURRENT LEVEL</h6>
                                 </div>
                                 <div class="card-body">
-                                    <div class="form-check" style="height: 40px;"><input class="form-check-input" type="checkbox" id="formCheck-4" style="width: 18px;height: 18px;"><label class="form-check-label" for="formCheck-4" style="margin-left: 19px;">TITLE 1&nbsp;</label></div>
-                                    <div class="form-check"
-                                         style="height: 40px;"><input class="form-check-input" type="checkbox" id="formCheck-4" style="width: 18px;height: 18px;"><label class="form-check-label" for="formCheck-4" style="margin-left: 19px;">TITLE 2&nbsp;</label></div>
-                                    <div class="form-check"
-                                         style="height: 40px;"><input class="form-check-input" type="checkbox" id="formCheck-4" style="width: 18px;height: 18px;"><label class="form-check-label" for="formCheck-4" style="margin-left: 19px;">TITLE 3&nbsp;</label></div>
-                                    <div class="form-check"
-                                         style="height: 40px;"><input class="form-check-input" type="checkbox" id="formCheck-4" style="width: 18px;height: 18px;"><label class="form-check-label" for="formCheck-4" style="margin-left: 19px;">TITLE 4</label></div>
-                                    <div class="form-check" style="height: 40px;"><input class="form-check-input" type="checkbox" id="formCheck-4" style="width: 18px;height: 18px;"><label class="form-check-label" for="formCheck-4" style="margin-left: 19px;">TITLE 5</label></div><button class="btn btn-primary"
-                                                                                                                                                                                                                                                                                               type="button" style="float: right;background-color: rgb(47,194,162)!important;border-color: rgb(47,194,162)!important;">
-                                        MARK AS COMPLETED
-                                    </button>
+                                    <form method="post" asp-controller="Dashboard" asp-action="Index">
+                                        <div class="form-check" style="height: 40px;">
+                                            @if (!Model.userModel.IsTask1Completed)
+                                            {
+                                                @Html.CheckBoxFor(m => m.userModel.IsTask1Completed)
+                                            }
+                                            else
+                                            {
+                                                @Html.CheckBoxFor(m => m.userModel.IsTask1Completed, new { @disabled = "disabled" })
+                                            }
+                                            @* <input class="form-check-input" type="checkbox" id="formCheck-4" name="@Model.userModel.IsTask1Completed" style="width: 18px;height: 18px;">*@
+                                            <label class="form-check-label" for="@Model.userModel.IsTask1Completed" style="margin-left: 19px;">
+                                                @Model.ChallengeTitle[0]&nbsp;
+                                            </label>
+                                        </div>
+                                        <div class="form-check"
+                                             style="height: 40px;">
+                                            @if (!Model.userModel.IsTask2Completed && Model.userModel.IsTask1Completed)
+                                            {
+                                                if ((DateTime.Now - Model.userModel.LastModified).TotalDays < 1)
+                                                {
+                                                    @Html.CheckBoxFor(m => m.userModel.IsTask2Completed, new { @disabled = "disabled" })
+                                                }
+                                                else
+                                                {
+                                                    @Html.CheckBoxFor(m => m.userModel.IsTask2Completed)
+                                                }
+                                            }
+                                            else
+                                            {
+                                                @Html.CheckBoxFor(m => m.userModel.IsTask2Completed, new { @disabled = "disabled" })
+                                            }
+                                            @* <input class="form-check-input" type="checkbox" id="formCheck-4" name="@Model.userModel.IsTask2Completed" style="width: 18px;height: 18px;">*@
+                                            <label class="form-check-label" for="@Model.userModel.IsTask2Completed" style="margin-left: 19px;">
+                                                @Model.ChallengeTitle[1]&nbsp;
+                                            </label>
+                                        </div>
+                                        <div class="form-check"
+                                             style="height: 40px;">
+                                            @if (!Model.userModel.IsTask3Completed && Model.userModel.IsTask2Completed)
+                                            {
+                                                if ((DateTime.Now - Model.userModel.LastModified).TotalDays < 1)
+                                                {
+                                                    @Html.CheckBoxFor(m => m.userModel.IsTask3Completed, new { @disabled = "disabled" })
+                                                }
+                                                else
+                                                {
+                                                    @Html.CheckBoxFor(m => m.userModel.IsTask3Completed)
+                                                }
+                                            }
+                                            else
+                                            {
+                                                @Html.CheckBoxFor(m => m.userModel.IsTask3Completed, new { @disabled = "disabled" })
+                                            }
+                                            @*<input class="form-check-input" type="checkbox" id="formCheck-4" name="@Model.userModel.IsTask3Completed" style="width: 18px;height: 18px;">*@
+                                            <label class="form-check-label" for="@Model.userModel.IsTask3Completed" style="margin-left: 19px;">
+                                                @Model.ChallengeTitle[2]&nbsp;
+                                            </label>
+                                        </div>
+                                        <div class="form-check"
+                                             style="height: 40px;">
+                                            @if (!Model.userModel.IsTask4Completed && Model.userModel.IsTask3Completed)
+                                            {
+                                                if ((DateTime.Now - Model.userModel.LastModified).TotalDays < 1)
+                                                {
+                                                    @Html.CheckBoxFor(m => m.userModel.IsTask4Completed, new { @disabled = "disabled" })
+                                                }
+                                                else
+                                                {
+                                                    @Html.CheckBoxFor(m => m.userModel.IsTask4Completed)
+
+                                                }
+                                            }
+                                            else
+                                            {
+                                                @Html.CheckBoxFor(m => m.userModel.IsTask4Completed, new { @disabled = "disabled" })
+                                            }
+                                            @*<input class="form-check-input" type="checkbox" id="formCheck-4" name="@Model.userModel.IsTask4Completed" style="width: 18px;height: 18px;">*@
+                                            <label class="form-check-label" for="@Model.userModel.IsTask4Completed" style="margin-left: 19px;">
+                                                @Model.ChallengeTitle[3]
+                                            </label>
+                                        </div>
+                                        <div class="form-check" style="height: 40px;">
+                                            @if (!Model.userModel.IsTask5Completed && Model.userModel.IsTask4Completed)
+                                            {
+
+                                                if ((DateTime.Now - Model.userModel.LastModified).TotalDays < 1)
+                                                {
+                                                    @Html.CheckBoxFor(m => m.userModel.IsTask5Completed, new { @disabled = "disabled" })
+                                                }
+                                                else
+                                                {
+                                                    @Html.CheckBoxFor(m => m.userModel.IsTask5Completed)
+                                                }
+                                            }
+                                            else
+                                            {
+                                                @Html.CheckBoxFor(m => m.userModel.IsTask5Completed, new { @disabled = "disabled" })
+                                            }
+                                            @*<input class="form-check-input" type="checkbox" id="formCheck-4" name="@Model.userModel.IsTask5Completed" style="width: 18px;height: 18px;">*@
+                                            <label class="form-check-label" for="@Model.userModel.IsTask5Completed" style="margin-left: 19px;">
+                                                @Model.ChallengeTitle[4]
+                                            </label>
+                                        </div>
+                                        <button class="btn btn-primary" id="markcomplete"
+                                                type="submit" style="float: right;background-color: rgb(47,194,162)!important;border-color: rgb(47,194,162)!important;">
+                                            MARK AS COMPLETED
+                                        </button>
+                                    </form>
                                 </div>
                             </div>
                         </div>
@@ -201,12 +300,12 @@
                     </div>
                 </div>
             </div>
-        </div><a class="border rounded d-inline scroll-to-top" href="#page-top"><i class="fas fa-angle-up"></i></a>
-    </div>
-    <script src="~/assets2/js/jquery.min.js"></script>
-    <script src="~/assets2/bootstrap/js/bootstrap.min.js"></script>
-    <script src="~/assets2/js/chart.min.js"></script>
-    <script src="~/assets2/js/bs-init.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"></script>
-    <script src="~/assets2/js/theme.js"></script>
+    </div><a class="border rounded d-inline scroll-to-top" href="#page-top"><i class="fas fa-angle-up"></i></a>
+</div>
+<script src="~/assets2/js/jquery.min.js"></script>
+<script src="~/assets2/bootstrap/js/bootstrap.min.js"></script>
+<script src="~/assets2/js/chart.min.js"></script>
+<script src="~/assets2/js/bs-init.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"></script>
+<script src="~/assets2/js/theme.js"></script>
 </body>
