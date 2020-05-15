@@ -24,7 +24,6 @@
     ".NETCoreApp,Version=v3.1": {
       "ProtectGaia/1.0.0": {
         "dependencies": {
-          "MetOfficeDataPoint": "2.1.0",
           "Microsoft.AspNetCore.Authentication.Google": "3.1.3",
           "Microsoft.AspNetCore.Mvc.Core": "2.2.5",
           "Microsoft.AspNetCore.Session": "2.2.0",
@@ -33,6 +32,7 @@
           "Microsoft.EntityFrameworkCore.Sqlite": "3.1.2",
           "Microsoft.EntityFrameworkCore.Tools": "3.1.2",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "3.1.2",
+          "Newtonsoft.Json": "12.0.3",
           "ProtectGaia.DataAccess": "1.0.0",
           "ProtectGaia.Entities": "1.0.0",
           "ProtectGaia.Interface": "1.0.0",
@@ -312,21 +312,6 @@
         },
         "compile": {
           "ProtectGaia.dll": {}
-        }
-      },
-      "MetOfficeDataPoint/2.1.0": {
-        "dependencies": {
-          "NETStandard.Library": "1.6.1",
-          "Newtonsoft.Json": "12.0.3"
-        },
-        "runtime": {
-          "lib/netstandard1.6/MetOfficeDataPoint.dll": {
-            "assemblyVersion": "2.0.0.0",
-            "fileVersion": "2.1.0.0"
-          }
-        },
-        "compile": {
-          "lib/netstandard1.6/MetOfficeDataPoint.dll": {}
         }
       },
       "Microsoft.AspNetCore.Authentication.Abstractions/2.2.0": {
@@ -4143,13 +4128,6 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
-    },
-    "MetOfficeDataPoint/2.1.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-9sbfVEhWBXvlDXTn3iUvymTaaqbnMcC/n37I+11aSFhXiHj/xqBe2jNcvcGKACYSg84UBqNfEEh8KK0gFvSVeg==",
-      "path": "metofficedatapoint/2.1.0",
-      "hashPath": "metofficedatapoint.2.1.0.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Authentication.Abstractions/2.2.0": {
       "type": "package",

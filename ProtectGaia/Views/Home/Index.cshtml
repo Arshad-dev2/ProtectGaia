@@ -5,7 +5,7 @@
 <!-- Start main content -->
 <!-- Corousel -->
 
-<section id="banner" style="margin-bottom: 0px;">
+<section id="banner">
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
         <!-- Indicators -->
         <ol class="carousel-indicators">
@@ -17,23 +17,20 @@
         <!-- Wrapper for slides -->
         <div class="carousel-inner">
             <div class="item active">
-                <img src="~/images/bulb1.jpg" alt="ecoMorph" style="width: 100%; height: auto; filter: brightness(100%); opacity: 0.9;">
+                <img src="~/images/bulb1.jpg" alt="ecoMorph" style=" width: 100%;height: auto;filter: brightness(100%);opacity: 0.9;">
 
                 <header style="position: absolute;bottom:25%;left: 50%;right:auto; padding-right: 30px; padding-left: 30px;">                    
-                    <p style="color:white">Follow an interesting and eco-friendly <br/> set of tasks, to promote <br/> Greener Environment  
-                    and a Healthy Living!</p>
-		    <class ="actions">
-                            <a id="customBtn2" class="customGPlusSignIn button large">
-                                <span class="buttonText">Take the Challenge!</span>
-                            </a>
-                    </class>
+                    <p style="color:white">
+                        An interesting and eco-friendly challenge, <br /> to promote a Greener Environment <br />
+                        and a Healthy Living!
+                    </p>
                 </header>
 
             </div>
 
             <div class="item">
                 <img src="~/images/11_1.jpg" alt="ecoMorph" style="width:100%;height:auto;filter: brightness(90%); opacity:0.9;">
-                <header style="position: absolute;bottom:6.7rem;right: 11rem;">
+                <header style="position: absolute;bottom:25%;left: 50%;right:auto;">
                     <h2>GO GREEN TODAY.</h2>
                     <p>For a Better Future Tomorrow!</p>
              
@@ -67,8 +64,8 @@
 
 
 <!-- Intro -->
-<section id="intro" class="container" style="margin-bottom: 0px;" >
-    <div class="row" style="padding-bottom: 4rem;">
+<section id="intro" class="container" >
+    <div class="row" style="        padding-bottom: 4rem;">
         <div class="col-4 col-12-medium">
             <section class="first">
                 <!--<img src="logo.jpeg" alt="ecoMorph" style="width:4rem;height:4rem;"> EcoMorph</a></h1>-->
@@ -89,10 +86,7 @@
             <section class="last">
                 <i class="icon solid featured alt2"><img src="~/images/ozone.png" alt="ozone_index" style="width:4.5rem;height:4rem;"></i>
                 <div class="OzoneValue" style="margin-bottom:1rem;"><h4>Ozone Index</h4><br /><h6> Updating . . .</h6></div>
-                @*<header>
-            <h2>Ozone Index</h2>
-        </header>
-        <p>in LOCATION is</p>*@
+                
             </section>
         </div>
     </div>
@@ -117,7 +111,7 @@
                 <!-- Portfolio -->
                 <section style="margin-top:3rem;">
                     <header class="major">
-                        <h2>Explainers</h2>
+                        <h2>Explainers!</h2>
                     </header>
                     <div class="row">
                         <div class="col-4 col-6-medium col-12-small">
@@ -130,7 +124,7 @@
                                 
                                 <footer>
                                     <ul class="actions">
-                                        <li><a asp-controller="Explainers" asp-Action="EnergyConsumption" class="button alt">Find out more</a></li>
+                                        <li><a asp-controller="Explainers" asp-Action="EnergyConsumption" class="button alt">Learn More</a></li>
                                     </ul>
                                 </footer>
                             </section>
@@ -145,7 +139,7 @@
                                 
                                 <footer>
                                     <ul class="actions">
-                                        <li><a asp-controller="Explainers" asp-Action="TransportEmissions" class="button alt">Find out more</a></li>
+                                        <li><a asp-controller="Explainers" asp-Action="TransportEmissions" class="button alt">Learn More</a></li>
                                     </ul>
                                 </footer>
                             </section>
@@ -160,7 +154,7 @@
                                
                                 <footer>
                                     <ul class="actions">
-                                        <li><a asp-controller="Explainers" asp-Action="HouseholdPractices" class="button alt">Find out more</a></li>
+                                        <li><a asp-controller="Explainers" asp-Action="HouseholdPractices" class="button alt">Learn More</a></li>
                                     </ul>
                                 </footer>
                             </section>
@@ -171,11 +165,11 @@
                                 <header>
                                     <h3>Climate Change</h3>
                                 </header>
-                                <p>Excess emissions of greenhouse gases in Australia are leading to a rapid change in our environment. It is high time that we take appropriate steps before it is too late!</p>
+                                <p>Excess emissions of greenhouse gases in Australia are leading to a rapid change in our environment. It is high time that we take appropriate steps!</p>
                                 
                                 <footer>
                                     <ul class="actions">
-                                        <li><a asp-controller="Explainers" asp-Action="ClimateChange" class="button alt">Find out more</a></li>
+                                        <li><a asp-controller="Explainers" asp-Action="ClimateChange" class="button alt">Learn More</a></li>
                                     </ul>
                                 </footer>
                             </section>
@@ -186,10 +180,10 @@
                                 <header>
                                     <h3>Health Impacts</h3>
                                 </header>
-                                <p>It is not only our environment that is being affected, human health is in grave danger too! Understand about the health impacts of these emissions!</p>
+                                <p>It is not only our environment that is being affected, human health is in grave danger too! Understand about the health impacts of these gas emissions!</p>
                                 <footer>
                                     <ul class="actions">
-                                        <li><a asp-controller="Explainers" asp-Action="HealthImpacts" class="button alt">Find out more</a></li>
+                                        <li><a asp-controller="Explainers" asp-Action="HealthImpacts" class="button alt">Learn More</a></li>
                                     </ul>
                                 </footer>
                             </section>
@@ -203,7 +197,7 @@
                                 <p>Small effort makes a big impact and together, all of us can make a difference. Know how you can contribute towards reducing greenhouse emissions! </p>
                                 <footer>
                                     <ul class="actions">
-                                        <li><a asp-controller="Explainers" asp-Action="MakeAChange" class="button alt">Find out more</a></li>
+                                        <li><a asp-controller="Explainers" asp-Action="MakeAChange" class="button alt">Learn More</a></li>
                                     </ul>
                                 </footer>
                             </section>
@@ -228,7 +222,7 @@
 
                 <section>
                     <header class="major">
-                        <h2>Understand the Impact</h2>
+                        <h2>Understand the Impact!</h2>
                         <p style="text-align:center; font-style: normal !important">
                             Watch the video below to realize which sector contributes the maximum towards greenhouse emissions in Australia.
                             You can now imagine how frightening the situation is and how unprepared we are as a country against this crisis.
@@ -274,13 +268,13 @@
                                 <class="actions" style="float:right" target="_blank">
                                     <a href=@each.Url class="button">Read More</a>
 
-                                
-                                @*<a href=@each.Url class="w3-button w3-black" style="float:right" target="_blank">Read More&nbsp;<i class="fas fa-angle-double-right"></i></a>*@
+
+                                        @*<a href=@each.Url class="w3-button w3-black" style="float:right" target="_blank">Read More&nbsp;<i class="fas fa-angle-double-right"></i></a>*@
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
             }
         </div>

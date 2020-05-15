@@ -57,29 +57,29 @@ function makeCall(location) {
 
 function CategoryAqi(value) {
     if (value >= 0 && value <= 50) {
-        return "Good and Healthy";
+        return "Good";
     }
     else if (value > 50 && value <= 100) {
-        return "Moderate and Healthy";
+        return "Moderate";
     }
     else if (value > 100 && value <= 150) {
-        return "Unhealthy to Sensitivite groups";
+        return "Unhealthy for Sensitivite groups";
     }
     else {
-        return "Bad and Unhealthy";
+        return "Unhealthy";
     }
 }
 function CategoryOzone(value) {
     if (value >= 0 && value <= 59) {
-        return "Good and Healthy";
+        return "Good";
     }
     else if (value > 60 && value <= 75) {
-        return "Moderate and Healthy";
+        return "Moderate";
     }
     else if (value > 76 && value <= 95) {
-        return "Unhealthy to Sensitivite groups";
+        return "Unhealthy for Sensitivite groups";
     }
     else {
-        return "Bad and Unhealthy";
+        return "Unhealthy";
     }
 }

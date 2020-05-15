@@ -659,7 +659,7 @@ br.clear {
 				}
 
 					.row > * {
-						padding: 50px 0 0 50px;
+						padding: 50px 0 0 20px;
 					}
 
 					.row.gtr-uniform {
@@ -1394,7 +1394,7 @@ br.clear {
 				}
 
 					.row > * {
-						padding: 20px 0 0 20px;
+						padding: 20px 0 0 8px;
 					}
 
 					.row.gtr-uniform {
@@ -2711,8 +2711,6 @@ br.clear {
 				-webkit-transform: translateX(0);
 				-ms-transform: translateX(0);
 				transform: translateX(0);
-                background-color:black;
-                z-index:999;
 			}
 
 	}
@@ -2988,7 +2986,7 @@ br.clear {
 		}
 */
 
-/*widgets*/
+	/*widgets*/
 
 .currentTemp {
 	display: block;	

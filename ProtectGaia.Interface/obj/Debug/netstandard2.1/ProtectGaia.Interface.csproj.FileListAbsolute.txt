@@ -46,3 +46,15 @@ C:\Users\gupta\source\repos\ProtectGaia-dev - Copy (2)\ProtectGaia.Interface\obj
 C:\Users\gupta\source\repos\ProtectGaia-dev - Copy (2)\ProtectGaia.Interface\obj\Debug\netstandard2.1\ProtectGaia.Interface.csproj.CopyComplete
 C:\Users\gupta\source\repos\ProtectGaia-dev - Copy (2)\ProtectGaia.Interface\obj\Debug\netstandard2.1\ProtectGaia.Interface.dll
 C:\Users\gupta\source\repos\ProtectGaia-dev - Copy (2)\ProtectGaia.Interface\obj\Debug\netstandard2.1\ProtectGaia.Interface.pdb
+C:\Users\gupta\source\repos\ProtectGaia-dev-1.0.1\ProtectGaia.Interface\bin\Debug\netstandard2.1\ProtectGaia.Interface.deps.json
+C:\Users\gupta\source\repos\ProtectGaia-dev-1.0.1\ProtectGaia.Interface\bin\Debug\netstandard2.1\ProtectGaia.Interface.dll
+C:\Users\gupta\source\repos\ProtectGaia-dev-1.0.1\ProtectGaia.Interface\bin\Debug\netstandard2.1\ProtectGaia.Interface.pdb
+C:\Users\gupta\source\repos\ProtectGaia-dev-1.0.1\ProtectGaia.Interface\bin\Debug\netstandard2.1\ProtectGaia.Entities.dll
+C:\Users\gupta\source\repos\ProtectGaia-dev-1.0.1\ProtectGaia.Interface\bin\Debug\netstandard2.1\ProtectGaia.Entities.pdb
+C:\Users\gupta\source\repos\ProtectGaia-dev-1.0.1\ProtectGaia.Interface\obj\Debug\netstandard2.1\ProtectGaia.Interface.csprojAssemblyReference.cache
+C:\Users\gupta\source\repos\ProtectGaia-dev-1.0.1\ProtectGaia.Interface\obj\Debug\netstandard2.1\ProtectGaia.Interface.csproj.CoreCompileInputs.cache
+C:\Users\gupta\source\repos\ProtectGaia-dev-1.0.1\ProtectGaia.Interface\obj\Debug\netstandard2.1\ProtectGaia.Interface.AssemblyInfoInputs.cache
+C:\Users\gupta\source\repos\ProtectGaia-dev-1.0.1\ProtectGaia.Interface\obj\Debug\netstandard2.1\ProtectGaia.Interface.AssemblyInfo.cs
+C:\Users\gupta\source\repos\ProtectGaia-dev-1.0.1\ProtectGaia.Interface\obj\Debug\netstandard2.1\ProtectGaia.Interface.csproj.CopyComplete
+C:\Users\gupta\source\repos\ProtectGaia-dev-1.0.1\ProtectGaia.Interface\obj\Debug\netstandard2.1\ProtectGaia.Interface.dll
+C:\Users\gupta\source\repos\ProtectGaia-dev-1.0.1\ProtectGaia.Interface\obj\Debug\netstandard2.1\ProtectGaia.Interface.pdb
