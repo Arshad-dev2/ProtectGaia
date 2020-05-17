@@ -26,9 +26,9 @@
     <link href="~/css/CustomGoogle.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="/js/geoLocation.js"></script>
+    
 
-    <meta name="google-signin-client_id" content="440340758534-mm6kit63hlnc7g1tfo12gj197g3sfoic.apps.googleusercontent.com">
+    <meta name="google-signin-client_id" content="440340758534-aq6c3kkn67nt2eo0345vqjrp7h29kuqu.apps.googleusercontent.com">
     <script src="https://apis.google.com/js/api.js"></script>
     <script src="https://apis.google.com/js/platform.js?onload=onLoad" async defer></script>
     <script>var googleUser = {};
@@ -37,7 +37,7 @@
                 // Retrieve the singleton for the GoogleAuth library and set up the client.
 
                 auth2 = gapi.auth2.init({
-                    client_id: '440340758534-mm6kit63hlnc7g1tfo12gj197g3sfoic.apps.googleusercontent.com',
+                    client_id: '440340758534-aq6c3kkn67nt2eo0345vqjrp7h29kuqu.apps.googleusercontent.com',
                     // Request scopes in addition to 'profile' and 'email'
                     //scope: 'additional_scope'
 
@@ -87,6 +87,11 @@
                 })
                 //auth2.disconnect();
             });
+            $(function () {
+                $('#signOut1').click(function (e) {
+                    signOut();
+                });
+            });
 
         }</script>
 </head>
@@ -98,15 +103,15 @@
         <section id="header">
             <!-- Logo -->
             <h1>
-                <a href="/home/index">
-                    <img src="~/images/logo.jpeg" alt="ecoMorph" style="width:4rem;height:4rem;"> EcoMorph
+                <a asp-controller="Home" asp-action="Index" style="text-decoration:none;color:black; font-weight:600">
+                    <img src="~/images/logo.jpeg" alt="ecoMorph" style="width:4rem;height:4rem;" />EcoMorph
                 </a>
             </h1>
 
             <!-- Nav -->
-            <nav id="nav">
+            <nav id="nav" style="margin-bottom:1em;">
                 <ul>
-                    <li class="current"><a href="/home/index">Home</a></li>
+                    <li><a href="/">Home</a></li>
                     <li>
                         <a href="#">Explainers</a>
                         <ul>
@@ -119,8 +124,8 @@
                         </ul>
                     </li>
 
-                    <li><a href="#" id="signOut" onclick="signOut();">SignOut</a></li>
-                    <li><a href="/dashboard/index">Profile</a></li>
+                    <li><a id="signOut" onclick="signOut();">SignOut</a></li>
+                    <li  class="current"><a href="/dashboard/index">Profile</a></li>
                 </ul>
             </nav>
         </section>
@@ -132,7 +137,7 @@
     </main>
     <!-- End main content -->
     <!-- Start footer -->
-    <section id="footer" style="filter: brightness(100%); height:50%">
+    <section id="footer" style="filter: brightness(100%); height:50%" class="my-5 d-print-none">
         <div class="row">
             <div class="col-12">
 
@@ -201,7 +206,6 @@
     <script src="/assets/js/breakpoints.min.js"></script>
     <script src="/assets/js/util.js"></script>
     <script src="/assets/js/main.js"></script>
-
 
 
 </body>

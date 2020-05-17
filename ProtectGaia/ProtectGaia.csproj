@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
@@ -17,16 +17,9 @@
     <Content Remove="wwwroot\fonts\fontawesome-webfont.eot" />
     <Content Remove="wwwroot\js\.DS_Store" />
     <Content Remove="Views\Shared\_Web_Layout.cshtml" />
-    <Content Remove="wwwroot\images\explainers\0_house3.PNG" />
-    <Content Remove="wwwroot\images\explainers\0_climate2.png" />
-    <Content Remove="wwwroot\images\explainers\0_house2.PNG" />
-    <Content Remove="wwwroot\images\explainers\0_health.png" />
-    <Content Remove="wwwroot\images\explainers\0_health2.jpg" />
-    <Content Remove="wwwroot\images\explainers\0_climate.png" />
-    <Content Remove="wwwroot\images\explainers\0_transport_stats.PNG" />
-    <Content Remove="wwwroot\images\explainers\0_energy.png" />
-    <Content Remove="wwwroot\images\explainers\0_house.PNG" />
-    <Content Remove="wwwroot\images\explainers\0_transport.png" />
+
+	  <Item Include="app.db" />
+	  <Content Include="app.db" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ProtectGaia.DataAccess\ProtectGaia.DataAccess.csproj">

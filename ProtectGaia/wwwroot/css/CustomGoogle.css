@@ -9,6 +9,21 @@
     /*box-shadow: 1px 1px 1px grey;*/
     /* white-space: nowrap;*/
 }
+#customBtn5 {
+    display: inline-block;
+    cursor: pointer;
+    /*background: white;*/
+    /*color: #444;
+    /*width: 190px;*/
+    /*border-radius: 5px;
+    border: 0;*/
+    /*box-shadow: 1px 1px 1px grey;*/
+    /* white-space: nowrap;*/
+}
+#customBtn5:hover {
+    cursor: pointer;
+}
+
 
     #customBtn:hover {
         cursor: pointer;

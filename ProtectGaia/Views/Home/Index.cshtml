@@ -19,10 +19,20 @@
             <div class="item active">
                 <img src="~/images/bulb1.jpg" alt="ecoMorph" style=" width: 100%;height: auto;filter: brightness(100%);opacity: 0.9;">
 
-                <header style="position: absolute;bottom:25%;left: 50%;right:auto; padding-right: 30px; padding-left: 30px;">                    
-                    <p style="color:white">
+                <header style="position: absolute;bottom:25%;left: 50%;right:auto; padding:0.625em 1.250em 0.625em 1.250em;">
+                    <p style="text-align:center;color:white">
                         An interesting and eco-friendly challenge, <br /> to promote a Greener Environment <br />
                         and a Healthy Living!
+                    </p>
+                    <br />
+                    <p style="text-align:center; font-size:smaller">
+                        <class ="actions">
+                            <a id="customBtn2" class="customGPlusSignIn button large" style="align-self:center ;filter: brightness(0.8);text-decoration:none; padding: 0.4em 0.8em 0.4em 0.8em;">
+                                <span class="buttonText">Take the Challenge!</span>
+                            </a>
+                        </class>
+
+                      @* <a id="customBtn2" class="button" style="align-self:center ;filter: brightness(0.8);text-decoration:none; padding: 0.4em 0.8em 0.4em 0.8em;">Take the Challenge</a> *@
                     </p>
                 </header>
 
@@ -31,18 +41,18 @@
             <div class="item">
                 <img src="~/images/11_1.jpg" alt="ecoMorph" style="width:100%;height:auto;filter: brightness(90%); opacity:0.9;">
                 <header style="position: absolute;bottom:25%;left: 50%;right:auto;">
-                    <h2>GO GREEN TODAY.</h2>
-                    <p>For a Better Future Tomorrow!</p>
-             
+                    <h2 style="text-align:center;">GO GREEN TODAY.</h2>
+                    <p style="text-align:center;">For a Better Future Tomorrow!</p>
+
                 </header>
             </div>
 
             <div class="item">
                 <img src="~/images/transport.png" alt="ecoMorph" style="width:100%;height:auto; filter: brightness(70%); opacity:0.9;">
                 <header style="position: absolute;bottom:25%;left: 50%;right:auto;z-index:9; padding-right: 30px; padding-left: 30px;">
-                    <h2>HEALTH IS WEALTH!</h2>
-                    <p>Healthy life comes from Healthy Lifestyle!</p>
-                   
+                    <h2 style="text-align:center;">HEALTH IS WEALTH!</h2>
+                    <p style="text-align:center;">Healthy life comes from Healthy Lifestyle!</p>
+
                 </header>
             </div>
         </div>
@@ -61,43 +71,39 @@
 
 
 
+<!--Widgets-->
+<section id="main" style="margin-bottom: 0px; margin-top: 2em; background-color: white">
+    <div class="container">
+        <div class="row">
 
+            <div class="col-4 col-6-medium col-12-small">
+                <section class="first">
+                    <div class="w-card">
+                        <div class="currentTemp"><h2 style="color: black; font-weight: bold;">Current Temperature</h2><br /><h6> Updating . . .</h6></div>
+                    </div>
+                </section>
+            </div>
 
-<!-- Intro -->
-<section id="intro" class="container" >
-    <div class="row" style="        padding-bottom: 4rem;">
-        <div class="col-4 col-12-medium">
-            <section class="first">
-                <!--<img src="logo.jpeg" alt="ecoMorph" style="width:4rem;height:4rem;"> EcoMorph</a></h1>-->
-                <i class="icon solid featured"><img src="~/images/weather.png" alt="weather" style="width:4rem;height:4rem;"></i>
-                <div class="currentTemp"><h4>Current Temperature</h4><br /><h6> Updating . . .</h6></div>
-            </section>         
-        </div>
+            <div class="col-4 col-6-medium col-12-small">
+                <section class="middle">
+                    <div class="w-card">
+                        <p style="text-align: center"><img src="~/images/air_quality.png" style="height:5em; width:5em; margin-top:1.2em;" /></p>
+                        <div class="AqiValue" style="margin-bottom:1rem;"><h2 style="color: black; font-weight: bold;"><br /></h2><h6> Updating . . .</h6></div>
+                    </div>
+                </section>
+            </div>
 
-        <div class="col-4 col-12-medium">
-            <section class="middle">
-                <i class="icon solid featured alt"><img src="~/images/air_quality.png" alt="air_quality" style="width:4rem;height:4rem;"></i>
-                <div class="AqiValue" style="margin-bottom:1rem;"><h4>Air Quality Index</h4><br /><h6> Updating . . .</h6></div>
-              
-            </section>
-        </div>
+            <div class="col-4 col-6-medium col-12-small">
+                <section class="last">
+                    <div class="w-card">
+                        <p style="text-align: center"><img src="~/images/ozone.png" style="height:5em; width:5em; margin-top:1.5em;" /></p>
+                        <div class="OzoneValue" style="margin-bottom:1rem;"><h2 style="color: black; font-weight: bold;"><br /></h2><h6>Updating . . .</h6></div>
+                    </div>
+                </section>
+            </div>
 
-        <div class="col-4 col-12-medium">
-            <section class="last">
-                <i class="icon solid featured alt2"><img src="~/images/ozone.png" alt="ozone_index" style="width:4.5rem;height:4rem;"></i>
-                <div class="OzoneValue" style="margin-bottom:1rem;"><h4>Ozone Index</h4><br /><h6> Updating . . .</h6></div>
-                
-            </section>
         </div>
     </div>
-    <!--
-    <footer>
-        <ul class="actions">
-            <li><a href="#" class="button large">Get Started</a></li>
-            <li><a href="#" class="button alt large">Learn More</a></li>
-        </ul>
-    </footer>
-    -->
 </section>
 
 
@@ -106,22 +112,22 @@
 <section id="main" style="margin-bottom: 0px;">
     <div class="container">
         <div class="row">
-            <div class="col-12">
+            <div class="col-12" style="margin-left:-11px;">
 
                 <!-- Portfolio -->
                 <section style="margin-top:3rem;">
                     <header class="major">
-                        <h2>Explainers!</h2>
+                        <h2>Explainers</h2>
                     </header>
                     <div class="row">
                         <div class="col-4 col-6-medium col-12-small">
                             <section class="box">
-                                <a href="#" class="image featured"><img src="~/images/energy_consumption.jpg" alt="EnergyConsumption" /></a>
+                                <a href="#" class="image featured"><img src="~/images/energy_consumption1.jpeg" alt="EnergyConsumption" /></a>
                                 <header>
                                     <h3>Energy Consumption</h3>
                                 </header>
                                 <p>Energy sector is the largest contributor of greenhouse gases in Australia. It accounts for more than 33 percent of total GHG emissions.</p>
-                                
+
                                 <footer>
                                     <ul class="actions">
                                         <li><a asp-controller="Explainers" asp-Action="EnergyConsumption" class="button alt">Learn More</a></li>
@@ -131,12 +137,12 @@
                         </div>
                         <div class="col-4 col-6-medium col-12-small">
                             <section class="box">
-                                <a href="#" class="image featured"><img src="~/images/car-pollution.jpg" alt="transportEmissions" /></a>
+                                <a href="#" class="image featured"><img src="~/images/car-pollution1.jpeg" alt="transportEmissions" style="height: 16.5em;"/></a>
                                 <header>
                                     <h3>Transport Emissions</h3>
                                 </header>
                                 <p>Australia’s transport infrastructure is failing in terms of its carbon contribution. It is bound to get worse if we do not act now! </p>
-                                
+
                                 <footer>
                                     <ul class="actions">
                                         <li><a asp-controller="Explainers" asp-Action="TransportEmissions" class="button alt">Learn More</a></li>
@@ -146,12 +152,12 @@
                         </div>
                         <div class="col-4 col-6-medium col-12-small">
                             <section class="box">
-                                <a href="#" class="image featured"><img src="~/images/household_chores.jpg" alt="householdPractices" /></a>
+                                <a href="#" class="image featured"><img src="~/images/household_chores1.jpeg" alt="householdPractices" style="height: 16.5em;"/></a>
                                 <header>
                                     <h3>Household Practices</h3>
                                 </header>
                                 <p>Did you know an average Australian household generates more than 7 tons of greenhouse gases which can be reduced, know how you can help! </p>
-                               
+
                                 <footer>
                                     <ul class="actions">
                                         <li><a asp-controller="Explainers" asp-Action="HouseholdPractices" class="button alt">Learn More</a></li>
@@ -161,12 +167,12 @@
                         </div>
                         <div class="col-4 col-6-medium col-12-small">
                             <section class="box">
-                                <a href="#" class="image featured"><img src="~/images/climatechange.jpg" alt="climateChange" /></a>
+                                <a href="#" class="image featured"><img src="~/images/climatechange1.jpeg" alt="climateChange" /></a>
                                 <header>
                                     <h3>Climate Change</h3>
                                 </header>
                                 <p>Excess emissions of greenhouse gases in Australia are leading to a rapid change in our environment. It is high time that we take appropriate steps!</p>
-                                
+
                                 <footer>
                                     <ul class="actions">
                                         <li><a asp-controller="Explainers" asp-Action="ClimateChange" class="button alt">Learn More</a></li>
@@ -176,7 +182,7 @@
                         </div>
                         <div class="col-4 col-6-medium col-12-small">
                             <section class="box">
-                                <a href="#" class="image featured"><img src="~/images/health_impact.jpg" alt="HealthImpacts" /></a>
+                                <a href="#" class="image featured"><img src="~/images/health_impact1.jpeg" alt="HealthImpacts" style="height: 16.5em;" /></a>
                                 <header>
                                     <h3>Health Impacts</h3>
                                 </header>
@@ -190,7 +196,7 @@
                         </div>
                         <div class="col-4 col-6-medium col-12-small">
                             <section class="box">
-                                <a href="#" class="image featured"><img src="~/images/bring_change.jpg" alt="Bring_change" /></a>
+                                <a href="#" class="image featured"><img src="~/images/bring_change1.jpeg" alt="Bring_change" /></a>
                                 <header>
                                     <h3>Make a Change</h3>
                                 </header>
@@ -228,9 +234,9 @@
                             You can now imagine how frightening the situation is and how unprepared we are as a country against this crisis.
                         </p>
                     </header>
-                    <iframe src="https://www.youtube.com/embed/SYCv-cfJwYk" style="width:100%;height:35rem; filter: brightness(100%); opacity:0.9;">                       
+                    <iframe src="https://www.youtube.com/embed/SYCv-cfJwYk" style="width:100%;height:35rem; filter: brightness(100%); opacity:0.9;">
                     </iframe>
-                    
+
                 </section>
             </div>
         </div>
@@ -252,21 +258,19 @@
             @foreach (Article each in Model)
             {
                 <div class="col-6 col-6-medium col-12-small" style="margin-bottom:1rem;">
-                    <div class="card" style="        padding: 0.5rem 0 1rem 0;
-        box-shadow: 0px 0px 14px #ededed">
-                        <div class="row" style="        line-height: normal
-">
+                    <div class="card" style="padding: 0.5rem 0 1rem 0;box-shadow: 0px 0px 14px #ededed">
+                        <div class="row" style="        line-height: normal">
                             <div class="container">
                                 <div class="col-md-4 my-2">
                                     <img src=@each.ImageUrl alt="Image" style="width:85%;" />
 
-                            </div>
-                            <div class="col-md-7">
-                                <h5 style="color:black"><b>@each.Title</b></h5>
-                                <p style="color:#2fc2a2">@each.Source  - @each.PublishedDate</p>
-                                <br>
-                                <class="actions" style="float:right" target="_blank">
-                                    <a href=@each.Url class="button">Read More</a>
+                                </div>
+                                <div class="col-md-7">
+                                    <h5 style="color:black"><b>@each.Title</b></h5>
+                                    <p style="color:#2fc2a2">@each.Source  - @each.PublishedDate</p>
+                                    <br>
+                                    <class ="actions" style="float:right" target="_blank">
+                                        <a href=@each.Url class="button">Read More</a>
 
 
                                         @*<a href=@each.Url class="w3-button w3-black" style="float:right" target="_blank">Read More&nbsp;<i class="fas fa-angle-double-right"></i></a>*@

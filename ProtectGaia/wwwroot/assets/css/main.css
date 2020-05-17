@@ -116,6 +116,14 @@ input, select, textarea {
 		font-style: italic;
 	}
 
+@media screen and (max-width: 767.98px) {
+	i {
+		font-size: 1em;
+		line-height: unset;
+	}
+}
+
+
 	sub {
 		position: relative;
 		top: 0.5em;
@@ -153,7 +161,7 @@ input, select, textarea {
 	}
 
 	a {
-		color: #2fc2a2;
+		color: blue;
 		text-decoration: underline;
 	}
 
@@ -2097,7 +2105,7 @@ br.clear {
 			#nav > ul > li {
 				display: inline-block;
 				
-				margin: 0 0.35em 0 0.35em;
+				margin: 0 0.35em 0 0;
 			}
 
 				#nav > ul > li > ul {
@@ -2656,7 +2664,7 @@ br.clear {
 					line-height: 44px;
 					border-top: solid 1px rgba(255, 255, 255, 0.05);
 					padding: 0 1em 0 1em;
-					font-style: italic;
+					
 				}
 
 					#navPanel .link:first-child {
@@ -2711,6 +2719,7 @@ br.clear {
 				-webkit-transform: translateX(0);
 				-ms-transform: translateX(0);
 				transform: translateX(0);
+				background-color:black;
 			}
 
 	}
@@ -2893,12 +2902,10 @@ br.clear {
 
 
 				#banner header {
-					padding: 0em 0em 0em 0em;
+					
 					display: block;
 					border-radius: 0;
-					font-size: small ;
-					margin-top: 20%;
-					margin-bottom: 4%;					
+					font-size: xx-small;				
 					margin-left: -32%;
 				}
 
@@ -2940,8 +2947,8 @@ br.clear {
 			display: block;
 			border-radius: 0;
 			font-size: smaller;
-			margin-top: 10%;
-			margin-bottom: 5%;
+			margin-top: 10%;		
+			margin-right: 6em;
 		}
 
 			#banner header h2 {
@@ -3030,6 +3037,22 @@ br.clear {
 	min-width: 0;
 	word-wrap: break-word;
 	background-color: #fff;
+	background-clip: border-box;
+	border: 1px solid rgba(0,0,0,.125);
+	border-radius: .25rem;
+}
+
+.w-card {
+	height: 16em;
+	background-color: #c8e0db;
+	filter: brightness(1.05);
+	position: relative;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	min-width: 0;
+	word-wrap: break-word;
 	background-clip: border-box;
 	border: 1px solid rgba(0,0,0,.125);
 	border-radius: .25rem;

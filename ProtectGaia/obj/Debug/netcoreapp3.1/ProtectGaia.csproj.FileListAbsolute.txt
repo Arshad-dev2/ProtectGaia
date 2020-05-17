@@ -798,3 +798,4 @@ C:\Users\gupta\source\repos\ProtectGaia-dev-1.0.1\ProtectGaia\obj\Debug\netcorea
 C:\Users\gupta\source\repos\ProtectGaia-dev-1.0.1\ProtectGaia\obj\Debug\netcoreapp3.1\ProtectGaia.dll
 C:\Users\gupta\source\repos\ProtectGaia-dev-1.0.1\ProtectGaia\obj\Debug\netcoreapp3.1\ProtectGaia.pdb
 C:\Users\gupta\source\repos\ProtectGaia-dev-1.0.1\ProtectGaia\obj\Debug\netcoreapp3.1\ProtectGaia.genruntimeconfig.cache
+C:\Users\gupta\source\repos\ProtectGaia-dev-1.0.1\ProtectGaia\obj\Debug\netcoreapp3.1\Razor\Views\Dashboard\TaskRenderer.cshtml.g.cs

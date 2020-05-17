@@ -27,8 +27,8 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="/js/geoLocation.js"></script>
-    <meta name="google-site-verification" content="SmnIZ2JFXLujQWZJjcHBM5B5dDdBYtJ4WGymVVEDlFg" />
-    <meta name="google-signin-client_id" content="440340758534-mm6kit63hlnc7g1tfo12gj197g3sfoic.apps.googleusercontent.com">
+
+    <meta name="google-signin-client_id" content="440340758534-aq6c3kkn67nt2eo0345vqjrp7h29kuqu.apps.googleusercontent.com">
     <script src="https://apis.google.com/js/api.js"></script>
     <script src="https://apis.google.com/js/platform.js?onload=onLoad" async defer></script>
     <script>var googleUser = {};
@@ -37,7 +37,7 @@
                 // Retrieve the singleton for the GoogleAuth library and set up the client.
 
                 auth2 = gapi.auth2.init({
-                    client_id: '440340758534-mm6kit63hlnc7g1tfo12gj197g3sfoic.apps.googleusercontent.com',
+                    client_id: '440340758534-aq6c3kkn67nt2eo0345vqjrp7h29kuqu.apps.googleusercontent.com',
                     // Request scopes in addition to 'profile' and 'email'
                     //scope: 'additional_scope'
                 });
@@ -92,27 +92,26 @@
                 //auth2.disconnect();
             });
 
-        }</script>
+        }
+    </script>
 </head>
 <body class="homepage is-preload">
 <!--START SCROLL TOP BUTTON -->
     <a class="scrollToTop" href="#">
             <i class="fa fa-angle-up"></i>
-        </a>
+    </a>
 
     <script>startApp();</script>
 
 
     <div id="page-wrapper">
-        <section>
-        <div class="deviceLocation" style="background-color:#fff !important;text-align: right; margin-right: 1rem;"> Detecting . . .</div>
-        </section>
 
+        <div class="deviceLocation" style="background-color:#fff !important;text-align: right; margin-right: 1rem;"> Detecting . . .</div>
         <!-- Header -->
-        <section id="header">
+        <section id="header" style="margin-top:0em">
             <!-- Logo -->
             <h1>
-                <a asp-controller="Home" asp-action="Index" style="text-decoration:none;">
+                <a asp-controller="Home" asp-action="Index" style="text-decoration:none;color:black; font-weight:600">
                     <img src="~/images/logo.jpeg" alt="ecoMorph" style="width:4rem;height:4rem;" />EcoMorph
                 </a>
             </h1>
@@ -122,7 +121,7 @@
                 <ul>
                     <li class="current"><a asp-controller="Home" asp-action="Index">Home</a></li>&nbsp;
                     <li>
-                        <a href="#" style="padding-left: 2.5em;">Explainers</a>
+                        <a href="#">Explainers</a>
                         <ul>
                             <li><a asp-controller="Explainers" asp-Action="EnergyConsumption" style="text-decoration:none;">Energy Consumption</a></li>
                             <li><a asp-controller="Explainers" asp-Action="TransportEmissions" style="text-decoration:none;">Transport Emissions</a></li>
@@ -132,14 +131,14 @@
                             <li><a asp-controller="Explainers" asp-Action="MakeAChange" style="text-decoration:none;">Make a Change</a></li>
                         </ul>
                     </li>
-                    
-                        <li>
-                            <a id="customBtn" class="customGPlusSignIn">
-                                <span class="buttonText">Take the Challenge</span>
-                            </a>
-                        </li>
-                    
-                   
+
+                    <li>
+                        <a id="customBtn" class="customGPlusSignIn">
+                            <span class="buttonText">Take the Challenge</span>
+                        </a>
+                    </li>
+
+
 
                 </ul>
             </nav>
@@ -162,6 +161,7 @@
                             <li>Designed by Environs. All rights reserved.</li>
                         </ul>
                     </div>
+                    <br/>
                     
                     <div id="copyright">
                         <ul class="links" style="color:#c5c4c4">
@@ -215,12 +215,12 @@
     <script type="text/javascript" src="/js/custom.js"></script>
 
 
-    <script src="/assets/js/jquery.min.js"></script>
-    <script src="/assets/js/jquery.dropotron.min.js"></script>
-    <script src="/assets/js/browser.min.js"></script>
-    <script src="/assets/js/breakpoints.min.js"></script>
-    <script src="/assets/js/util.js"></script>
-    <script src="/assets/js/main.js"></script>
+    <script src="~/assets/js/jquery.min.js"></script>
+    <script src="~/assets/js/jquery.dropotron.min.js"></script>
+    <script src="~/assets/js/browser.min.js"></script>
+    <script src="~/assets/js/breakpoints.min.js"></script>
+    <script src="~/assets/js/util.js"></script>
+    <script src="~/assets/js/main.js"></script>
 
 
 

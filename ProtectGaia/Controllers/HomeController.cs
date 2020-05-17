@@ -20,7 +20,7 @@ namespace ProtectGaia.Controllers
     /// <summary>
     /// Home Contrller Navigates through all  pages
     /// </summary>
-    ///[BasicAuthenticationAttribute("ecoMorph", "Password123", BasicRealm = "ecoMorph")]
+    [BasicAuthenticationAttribute("ecoMorph", "Password123", BasicRealm = "ecoMorph")]
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
@@ -112,7 +112,7 @@ namespace ProtectGaia.Controllers
                     userModel.LevelId = 1;
                     userModel.TotalTaskCompleted=0;
                     userModel.LevelCompletedTask= 0;
-                    userModel.PendingTask = 5;
+                    userModel.PendingTask = 4;
                     userModel.TotalPointScored=0;
                     userModel.CarbonScore=0;
                     userModel.LastModified = DateTime.Now;
@@ -136,7 +136,7 @@ namespace ProtectGaia.Controllers
             }
             else
             {
-                return Redirect("/home/index");
+                return Redirect("/");
             }
             return Json(new { newUrl = Url.Action("Index", "Dashboard") });
 

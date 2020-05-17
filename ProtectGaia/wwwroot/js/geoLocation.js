@@ -38,9 +38,9 @@ function makeCall(location) {
                 var aqi_category = CategoryAqi(response.location.aqi);
                 var ozone_category = CategoryOzone(response.location.ozone);
                 $(".deviceLocation").html("<p><i class=\"fa fa-map-marker\" style=\"color: #ff3333\"></i>&nbsp;" + response.location.address + "</p>");
-                $(".currentTemp").html("<h3>Current Temperature</h3><p style=\"font-size:1.5em;\">" + response.location.temp + "&#8451" + "<b>/</b>" + response.location.feelsLikeTemp + "&#8451;</p>");
-                $(".AqiValue").html("<h3>Air Quality Index</h3><p style=\"font-size:1.5em;\"> " + response.location.aqi + "&nbsp;</h1 >μg/m<superscript>3</superscript><p style=\"color:black\"><b>" + aqi_category + "</b></p>");
-                $(".OzoneValue").html("<h3>Ozone Index</h3><p style=\"font-size:1.5em;\"> " + response.location.ozone + "&nbsp;</h1 >ppb<p style=\"color:black;\"> <b>" + ozone_category + "</b></p>");
+                $(".currentTemp").html("<img src=\"" + response.location.icon + "\" > <h3>Current Temperature</h3><b style=\"font-size:1.5em; color: black\">" + response.location.temp + "&#8451" + "</b> <p style=\"color:black\"> Feels Like " + response.location.feelsLikeTemp + "&#8451;</p>");
+                $(".AqiValue").html("<h3>Air Quality Index</h3><b style=\"font-size:1.5em;\"> " + response.location.aqi + "&nbsp;</h1 >μg/m<superscript>3</superscript></b><p style=\"color:black\">" + aqi_category + "</p>");
+                $(".OzoneValue").html("<h3>Ozone Index</h3><b style=\"font-size:1.5em;\"> " + response.location.ozone + "&nbsp;</h1 >ppb</b><p style=\"color:black\">" + ozone_category + "</p>");
             }
 
             else {
@@ -71,15 +71,15 @@ function CategoryAqi(value) {
 }
 function CategoryOzone(value) {
     if (value >= 0 && value <= 59) {
-        return "Good";
+        return "Low";
     }
     else if (value > 60 && value <= 75) {
         return "Moderate";
     }
     else if (value > 76 && value <= 95) {
-        return "Unhealthy for Sensitivite groups";
+        return "Bad for Sensitivite groups";
     }
     else {
-        return "Unhealthy";
+        return "High";
     }
 }
