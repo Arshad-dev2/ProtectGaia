@@ -117,6 +117,7 @@ namespace ProtectGaia.Controllers
                     userModel.CarbonScore=0;
                     userModel.LastModified = DateTime.Now;
                     userModel.CarbonActivity = string.Empty;
+                    userModel.IsFirstTimeLogin = true;
                     IDictionary<string, int> Activity_dict = new Dictionary<string, int>();
                     //IDictionary<string, string> Task_dict = new Dictionary<string, string>();
                    

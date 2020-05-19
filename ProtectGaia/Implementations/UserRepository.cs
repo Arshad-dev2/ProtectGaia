@@ -35,6 +35,10 @@ namespace ProtectGaia.Implementations
         {
             return await _dbContext.User.Where(m => m.UserEmail.ToLower().Equals(userEmail)).OrderByDescending(z=>z.LevelId).FirstOrDefaultAsync();
         }
+        public UserModel FetchUserByLevel(string userEmail,int LevelId)
+        {
+            return  _dbContext.User.Where(m => m.UserEmail.ToLower().Equals(userEmail)&& m.LevelId==LevelId).FirstOrDefault();
+        }
         public bool GetUserByLevelAsync(string userEmail,int LevelId)
         {
             return  _dbContext.User.Any(m => m.UserEmail.ToLower().Equals(userEmail) && m.LevelId==LevelId);

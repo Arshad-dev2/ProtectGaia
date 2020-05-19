@@ -1,5 +1,5 @@
 ﻿@model ProtectGaia.Models.UserViewModel
-
+<script src="/assets2/js/form-val.js"></script>
 <input type="hidden" name="time" id="time" value="@Model.userModel.LastModified.AddDays(1)" />
 <script>
 // Set the date we're counting down to
@@ -148,44 +148,43 @@ var x = setInterval(function() {
                             <p class="m-0" style="color:#fff;font-size: 16px;margin-top: 4rem;
     float: right;
     margin-right: 4rem;">YOU ARE A PLANET HERO </p>
-                            <i class="fas fa-trophy" style="color:rgb(255,215,0);left: 16.5rem;position: absolute;"></i>
-                        </div>
+                        <i class="fas fa-trophy" style="color:rgb(255,215,0);position: relative;left: 4rem;"></i>
                     </div>
                 </div>
             </div>
         </div>
-
-        <div class="col-lg-6 mb-4">
-            <div class="card shadow mb-4">
-                <div class="card-header py-3">
-                    <h6 class="text-primary font-weight-bold m-0" style="color: black!important;text-align:center;">TASKS FROM CURRENT LEVEL</h6>
-                </div>
-                <div class="card-body">
-
-
-                    @if (Model.ChallengeTitle != null && Model.ChallengeTitle.Count > 0)
-                    {
-                        <form method="post" asp-controller="Dashboard" asp-action="Index">
-                            @if (Model.IsErrorException)
-                            {
-                                <div class="alert alert-danger" role="alert">
-                                    <i class="far fa-times-circle">
-                                    </i><span>
-                                        <strong>Error Updating the Information</strong>
-                                        <br />
-                                    </span>
-                                </div>
-                            }
-                            @if (Model.IsPost && !Model.IsErrorException)
-                            {
-                                <div class="alert alert-success" role="alert">
-                                    <i class="far fa-check-circle">
-                                    </i><span>
-                                        <strong>Information Updated Successfully!</strong>
-                                        <br />
-                                    </span>
-                                </div>
-                            }
+    </div>
+   @* @await Html.PartialAsync("~/Views/Dashboard/TaskDisplayPartialView.cshtml", Model)*@
+    <div class="col-lg-6 mb-4">
+        <div class="card shadow mb-4 dynamic">
+            <div class="card-header py-3">
+                <h6 class="text-primary font-weight-bold m-0" style="color: black!important;text-align:center;">TASKS FROM CURRENT LEVEL</h6>
+            </div>
+            <div class="card-body">
+                <p id="demo" style="text-align:center;font-size: 18px; margin-top: 0px;"></p>
+                @if (Model.ChallengeTitle != null && Model.ChallengeTitle.Count > 0)
+                {
+                    <form method="post" asp-controller="Dashboard" asp-action="Index">
+                        @if (Model.IsErrorException)
+                        {
+                            <div class="alert alert-danger" role="alert">
+                                <i class="far fa-times-circle">
+                                </i><span>
+                                    <strong>Error Updating the Information</strong>
+                                    <br />
+                                </span>
+                            </div>
+                        }
+                        @if (Model.IsPost && !Model.IsErrorException)
+                        {
+                            <div class="alert alert-success" role="alert">
+                                <i class="far fa-check-circle">
+                                </i><span>
+                                    <strong>Information Updated Successfully!</strong>
+                                    <br />
+                                </span>
+                            </div>
+                        }
 
                             <ul class="list-group list-group-flush">
                                 <li class="list-group-item">
@@ -235,28 +234,28 @@ var x = setInterval(function() {
                                         }
                                         else
                                         {
-                                            <div class="custom-control custom-checkbox mb-3">
-                                                @Html.CheckBoxFor(m => m.userModel.IsTask2Completed, new { @class = "custom-control-input", @style = "z-index:7", @disabled = "disabled" })
-                                                <input type="checkbox" class="custom-control-input" id="@Model.userModel.IsTask2Completed" disabled="disabled" name="@Model.userModel.IsTask2Completed">
-                                                <label class="custom-control-label" for="@Model.userModel.IsTask2Completed"> @Model.ChallengeTitle[1]</label>
-                                            </div>
-                                        }
+                                    <div class="custom-control custom-checkbox mb-3">
+                                        @Html.CheckBoxFor(m => m.userModel.IsTask2Completed, new { @class = "custom-control-input", @style = "z-index:7", @disabled = "disabled" })
+                                        @*<input type="checkbox" class="custom-control-input" id="@Model.userModel.IsTask2Completed" disabled="disabled" name="@Model.userModel.IsTask2Completed">*@
+                        <label class="custom-control-label" for="@Model.userModel.IsTask2Completed"> @Model.ChallengeTitle[1]</label>
+                    </div>
+                }
 
+            </div>
+        </li>
+
+
+        <li class="list-group-item">
+            <div class="row align-items-center no-gutters">
+                @if (!Model.userModel.IsTask3Completed && Model.userModel.IsTask2Completed)
+                {
+                    if ((DateTime.Now - Model.userModel.LastModified).TotalDays < 1)
+                    {
+                        <div class="custom-control custom-checkbox mb-3">
+                            @Html.CheckBoxFor(m => m.userModel.IsTask3Completed, new { @class = "custom-control-input", @style = "z-index:7", @disabled = "disabled" })
+                            @*<input type="checkbox" class="custom-control-input" id="@Model.userModel.IsTask3Completed" disabled="disabled" name="@Model.userModel.IsTask3Completed">*@
+                                        <label class="custom-control-label" for="@Model.userModel.IsTask3Completed"> @Model.ChallengeTitle[2]</label>
                                     </div>
-                                </li>
-
-
-                                <li class="list-group-item">
-                                    <div class="row align-items-center no-gutters">
-                                        @if (!Model.userModel.IsTask3Completed && Model.userModel.IsTask2Completed)
-                                        {
-                                            if ((DateTime.Now - Model.userModel.LastModified).TotalDays < 1)
-                                            {
-                                                <div class="custom-control custom-checkbox mb-3">
-                                                    @Html.CheckBoxFor(m => m.userModel.IsTask3Completed, new { @class = "custom-control-input", @style = "z-index:7", @disabled = "disabled" })
-                                                    @*<input type="checkbox" class="custom-control-input" id="@Model.userModel.IsTask3Completed" disabled="disabled" name="@Model.userModel.IsTask3Completed">*@
-                                                    <label class="custom-control-label" for="@Model.userModel.IsTask3Completed"> @Model.ChallengeTitle[2]</label>
-                                                </div>
                                             }
                                             else
                                             {
@@ -298,7 +297,7 @@ var x = setInterval(function() {
                                                 <div class="custom-control custom-checkbox mb-3">
                                                     @Html.CheckBoxFor(m => m.userModel.IsTask4Completed, new { @class = "custom-control-input", @style = "z-index:7" })
                                                     @*<input type="checkbox" class="custom-control-input" id="@Model.userModel.IsTask3Completed" name="@Model.userModel.IsTask4Completed" style="z-index:7;">*@
-                                                    <label class="custom-control-label" for="@Model.userModel.IsTask3Completed"> @Model.ChallengeTitle[3]</label>
+                                                    <label class="custom-control-label" for="@Model.userModel.IsTask4Completed"> @Model.ChallengeTitle[3]</label>
                                                 </div>
                                             }
 

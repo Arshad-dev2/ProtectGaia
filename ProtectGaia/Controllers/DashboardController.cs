@@ -88,6 +88,8 @@ namespace ProtectGaia.Controllers
                             userViewModel.userModel.TotalTaskCompleted += 1;
                             userViewModel.userModel.LevelCompletedTask += 1;
                             userViewModel.userModel.LastModified = DateTime.Now;
+                            userViewModel.IndividualCarbonScore = challenges[0].CarbonScore;
+                            userViewModel.userModel.CarbonScore += challenges[0].CarbonScore;
                             if (Carb_Obj != null && Carb_Obj.ContainsKey(challenges[0].Sector))
                             {
                                 Carb_Obj[challenges[0].Sector] += challenges[0].CarbonScore;
@@ -106,6 +108,8 @@ namespace ProtectGaia.Controllers
                         }
                         if (Carb_Obj != null && userModel.IsTask2Completed)
                         {
+                            userViewModel.IndividualCarbonScore = challenges[1].CarbonScore;
+                            userViewModel.userModel.CarbonScore += challenges[1].CarbonScore;
                             userViewModel.userModel.IsTask2Completed = true;
                             userViewModel.userModel.PendingTask -= 1;
                             userViewModel.userModel.TotalPointScored += 3;
@@ -128,6 +132,8 @@ namespace ProtectGaia.Controllers
                         }
                         if (Carb_Obj != null && userModel.IsTask3Completed)
                         {
+                            userViewModel.IndividualCarbonScore = challenges[2].CarbonScore;
+                            userViewModel.userModel.CarbonScore += challenges[2].CarbonScore;
                             userViewModel.userModel.IsTask3Completed = true;
                             userViewModel.userModel.PendingTask -= 1;
                             userViewModel.userModel.TotalPointScored += 4;
@@ -149,6 +155,8 @@ namespace ProtectGaia.Controllers
                         }
                         if (Carb_Obj != null && userModel.IsTask4Completed)
                         {
+                            userViewModel.IndividualCarbonScore = challenges[3].CarbonScore;
+                            userViewModel.userModel.CarbonScore += challenges[3].CarbonScore;
                             userViewModel.userModel.IsTask4Completed = true;
                             userViewModel.userModel.PendingTask -= 1;
                             userViewModel.userModel.TotalPointScored += 5;
@@ -193,7 +201,7 @@ namespace ProtectGaia.Controllers
                     {
                         userViewModel.userModel.LevelId += 1;
                         userViewModel.userModel.LevelCompletedTask = 0;
-                        userViewModel.userModel.PendingTask = 5;
+                        userViewModel.userModel.PendingTask = 4;
                         userViewModel.userModel.IsTask1Completed = false;
                         userViewModel.userModel.IsTask2Completed = false;
                         userViewModel.userModel.IsTask3Completed = false;
@@ -205,7 +213,7 @@ namespace ProtectGaia.Controllers
                         userViewModel.ChallengeTitle = _challenge.GetChallengesByLevelIdAsync(userViewModel.userModel.LevelId).Select(x =>
                              x.ChallengeTitle
                         ).ToList();
-
+                        _session.SetString("UserModel", JsonConvert.SerializeObject(userViewModel.userModel));
                         return View(userViewModel);
                     }
             }
@@ -215,6 +223,35 @@ namespace ProtectGaia.Controllers
                 userViewModel.IsErrorException = true;
             }
             return View(userViewModel);
+        }
+
+        [HttpPost]
+        public IActionResult GetChallenges(int LevelId)
+        {
+            UserViewModel userViewModel = new UserViewModel();
+
+            if (_session != null && _session.GetString("userEmail") != null)
+            {
+                var userModel = _user.FetchUserByLevel(_session.GetString("userEmail"), LevelId);
+                var challenges = _challenge.GetChallengesByLevelIdAsync(LevelId);
+                var ChallengeTitle = _challenge.GetChallengesByLevelIdAsync(LevelId).Select(x =>
+                     x.ChallengeTitle
+                ).ToList();
+                userViewModel.userModel = userModel!=null?userModel:new UserModel();
+                userViewModel.ChallengeTitle = ChallengeTitle;
+                //return Json(new { userModel = userModel, challenges = ChallengeTitle }) ;
+            }
+
+            else
+            {
+                var userModel = new UserModel();
+                var challenges = _challenge.GetChallengesByLevelIdAsync(LevelId);
+                var ChallengeTitle = _challenge.GetChallengesByLevelIdAsync(LevelId).Select(x =>
+                     x.ChallengeTitle
+                ).ToList();
+            }
+            return PartialView("~/Views/Dashboard/TaskDisplayPartialView.cshtml", userViewModel);
+
         }
 
     }

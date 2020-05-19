@@ -17,11 +17,30 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
 
 <!-- Main -->
-<body id="page-top">
+<div class="col-12 d-none d-print-block" style="margin-top:8rem;">
+    <h1 class="text-center" style="font-size:90px">
+        <img src="~/images/logo.jpeg" alt="ecoMorph" style="width:8rem;height:8rem;"> EcoMorph
+    </h1>
+    <br />
+    <h2 class="text-center" style="margin-top:5rem;font-size:40px;color:#303030">
+        The report documents that
+    </h2>
+    <p style="text-align:center;">
+        <img class="border rounded-circle img-profile" src="@Model.userModel.UserImageUrl" style="padding:0;height: 8REM;">
+    </p>
+    <h1 class="text-center" style="margin-top:2rem;color:#20c9a6">
+        <b style="font-weight:600;font-size:60px;color:#20c9a6"> @Model.userModel.UserName</b>
+    </h1>
+    <h4 class="text-center" style="margin-top:2rem;font-size:40px;color:#303030">
+
+        has reduced <b style="font-weight:900;font-size:40px;color:#303030">@Model.userModel.CarbonScore grams</b>  of Carbon  from our Environment.
+    </h4>
+</div>
+
     <div id="wrapper">
         <div class="d-flex flex-column" id="content-wrapper">
             <div id="content">
-                <div class="row" style="display:block;margin-top:0rem;">
+                <div class="row d-print-none" style="display:block;margin-top:0rem;">
                     <img class="border rounded-circle img-profile" src="@Model.userModel.UserImageUrl" style="padding:0;height: 8REM;margin-left: 25px;margin-top: 12px;">
                     <span class="d-lg-inline mr-2 text-gray-600 small" style="margin-left: 16px;height: 25px;font-size: 26px;margin-top: 0px;padding-top: 0px;">
                         @Model.userModel.UserName
@@ -32,12 +51,12 @@
                         <i class="fas fa-download fa-sm text-white-50"></i>&nbsp;Print Report
                     </a>
                 </div>
-                <div class="align-items-center mb-4" style="margin-top: 32px;">
+                <div class="align-items-center mb-4 d-print-none" style="margin-top: 32px;">
                     <h3 class="text-dark mb-0" style="text-align:center;">EcoBoard</h3>
                 </div>
                 <div class="container-fluid">
                     @await Html.PartialAsync("~/Views/Dashboard/TaskRenderer.cshtml", Model)
-                    <div class="row">
+                    <div class="row d-print-none">
                         <div class="col-md-6 col-xl-3 mb-4">
                             <div class="card shadow border-left-primary py-2" style="border-left: 2rem solid #4e73df!important;">
                                 <div class="card-body">
@@ -47,7 +66,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6 col-xl-3 mb-4">
+                        <div class="col-md-6 col-xl-3 mb-4 d-print-none">
                             <div class="card shadow border-left-primary py-2" style="border-left: 2rem solid #1cc88a!important;">
                                 <div class="card-body">
                                     <h3 class="text-center card-title">Completed Tasks</h3>
@@ -57,7 +76,7 @@
                             </div>
                         </div>
 
-                        <div class="col-md-6 col-xl-3 mb-4">
+                        <div class="col-md-6 col-xl-3 mb-4 d-print-none">
                             <div class="card shadow border-left-primary py-2" style="        border-left: 2rem solid #36b9cc !important;
 ">
                                 <div class="card-body">
@@ -68,7 +87,7 @@
                             </div>
                         </div>
 
-                        <div class="col-md-6 col-xl-3 mb-4">
+                        <div class="col-md-6 col-xl-3 mb-4 d-print-none">
                             <div class="card shadow border-left-primary py-2" style="border-left: 2rem solid #f6c23e!important;">
                                 <div class="card-body">
                                     <h3 class="text-center card-title">Overall Score</h3>
@@ -81,17 +100,17 @@
 
                     <div class="row">
                         <div class="col-lg-7 col-xl-8 col-sm-6">
-                            <div class="card shadow mb-4" style="padding-bottom:1rem;" >
+                            <div class="card shadow mb-4" style="padding-bottom:1rem;">
                                 <div class="card-header">
                                     <h6 class="text-primary font-weight-bold m-0" style="color: rgb(47,194,162)!important;text-align:center;color:black!important">PROGRESS</h6>
                                     @*<div class="dropdown no-arrow">
-                                            <button class="btn btn-link btn-sm dropdown-toggle" data-toggle="dropdown" aria-expanded="false" type="button"><i class="fas fa-ellipsis-v text-gray-400"></i></button>
-                                            <div class="dropdown-menu shadow dropdown-menu-right animated--fade-in"
-                                                 role="menu">
-                                                <p class="text-center dropdown-header">dropdown header:</p><a class="dropdown-item" role="presentation" href="#">&nbsp;Action</a><a class="dropdown-item" role="presentation" href="#">&nbsp;Another action</a>
-                                                <div class="dropdown-divider"></div><a class="dropdown-item" role="presentation" href="#">&nbsp;Something else here</a>
-                                            </div>
-                                        </div>*@
+                            <button class="btn btn-link btn-sm dropdown-toggle" data-toggle="dropdown" aria-expanded="false" type="button"><i class="fas fa-ellipsis-v text-gray-400"></i></button>
+                            <div class="dropdown-menu shadow dropdown-menu-right animated--fade-in"
+                                 role="menu">
+                                <p class="text-center dropdown-header">dropdown header:</p><a class="dropdown-item" role="presentation" href="#">&nbsp;Action</a><a class="dropdown-item" role="presentation" href="#">&nbsp;Another action</a>
+                                <div class="dropdown-divider"></div><a class="dropdown-item" role="presentation" href="#">&nbsp;Something else here</a>
+                            </div>
+                        </div>*@
                                 </div>
                                 <div class="card-body d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3 border-bottom" style="position:relative;">
 
@@ -107,28 +126,39 @@
                                 <div class="card-header">
                                     <h6 class="text-primary font-weight-bold m-0" style="color: rgb(47,194,162) !important;text-align:center;color:black!important">CARBON EMISSIONS SAVED</h6>
                                     @*<div class="dropdown no-arrow">
-                                            <button class="btn btn-link btn-sm dropdown-toggle" data-toggle="dropdown" aria-expanded="false" type="button"><i class="fas fa-ellipsis-v text-gray-400"></i></button>
-                                            <div class="dropdown-menu shadow dropdown-menu-right animated--fade-in"
-                                                 role="menu">
-                                                <p class="text-center dropdown-header">dropdown header:</p><a class="dropdown-item" role="presentation" href="#">&nbsp;Action</a><a class="dropdown-item" role="presentation" href="#">&nbsp;Another action</a>
-                                                <div class="dropdown-divider"></div><a class="dropdown-item" role="presentation" href="#">&nbsp;Something else here</a>
-                                            </div>
-                                        </div>*@
+                            <button class="btn btn-link btn-sm dropdown-toggle" data-toggle="dropdown" aria-expanded="false" type="button"><i class="fas fa-ellipsis-v text-gray-400"></i></button>
+                            <div class="dropdown-menu shadow dropdown-menu-right animated--fade-in"
+                                 role="menu">
+                                <p class="text-center dropdown-header">dropdown header:</p><a class="dropdown-item" role="presentation" href="#">&nbsp;Action</a><a class="dropdown-item" role="presentation" href="#">&nbsp;Another action</a>
+                                <div class="dropdown-divider"></div><a class="dropdown-item" role="presentation" href="#">&nbsp;Something else here</a>
+                            </div>
+                        </div>*@
                                 </div>
                                 <div class="card-body">
                                     <canvas id="doughnut-chart" width="800" height="450"></canvas>
-                                    @*<div class="text-center small mt-4"><span class="mr-2"><i class="fas fa-circle text-primary"></i>&nbsp;Energy</span><span class="mr-2"><i class="fas fa-circle text-success"></i>&nbsp;Transport</span><span class="mr-2"><i class="fas fa-circle text-info"></i>&nbsp;Others</span></div>*@
+                                    <div class="text-center small mt-4">
+                                        <h6 class="mr-2">
+                                            Be proud of yourself,<br /> you have reduced @Model.userModel.CarbonScore grams of carbon till now!
+                                        </h6>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-
+                    <div class="col-12 d-none d-print-block" style="margin-top:5rem;color: rgb(255,215,0);">
+                        <p class="text-center" style="color: rgb(255,215,0);font-size:30px;">
+                            <i class="fa fa-star" style="color: #ffd700;"></i><br />
+                            Keep up the good work and continue contributing towards a Greener Environment
+                        </p>
+                    </div>
                 </div>
             </div>
         </div><a class="border rounded d-inline scroll-to-top d-print-none" href="#page-top"><i class="fas fa-angle-up"></i></a>
     </div>
+
+
     @*<script src="~/assets2/js/jquery.min.js"></script>*@
-    <script src="~/assets2/js/jquery.min.js"></script>
+    <script src="~/assets2/js/jquery.min.js">window</script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
     <script src="/js/analytics.js"></script>
     <script src="~/assets2/bootstrap/js/bootstrap.min.js"></script>
@@ -137,4 +167,3 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"></script>
     <script src="~/assets2/js/theme.js"></script>
     <script src="~/assets2/js/form-val.js"></script>
-</body>

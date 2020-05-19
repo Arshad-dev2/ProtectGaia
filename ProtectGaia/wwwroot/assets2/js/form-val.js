@@ -12,21 +12,21 @@ $('input:checkbox').click(function () {
 
 
 
-$("#level_1").ready(function () {
+$("#level_1").click(function () {
    getchallenge(1);
 });
 
-$("#level_2").ready(function () {
+$("#level_2").click(function () {
    getchallenge(2);
 });
 
-$("#level_3").ready(function () {
+$("#level_3").click(function () {
     getchallenge(3);
 });
-$("#level_4").ready(function () {
+$("#level_4").click(function () {
     getchallenge(4);
 });
-$("#level_5").ready(function () {
+$("#level_5").click(function () {
     getchallenge(5);
 })
 
@@ -38,10 +38,14 @@ function getchallenge(data) {
         cache: false,
         async: false,
         success: function (response) {
-            $('#level' + data).html("<ul class=\"leaf\"><li>" + response.challenges[0] + "</li><li>" + response.challenges[1] + "</li><li>" + response.challenges[2] + "</li><li>" + response.challenges[3] +"</li>");
+            console.log(response);
+            $('.dynamic').html("");
+            $('.dynamic').html(response);
+            //$('#level' + data).html("<ul class=\"leaf\"><li>" + response.challenges[0] + "</li><li>" + response.challenges[1] + "</li><li>" + response.challenges[2] + "</li><li>" + response.challenges[3] +"</li>");
         }
     })
 }
+
 
 $(document).ready(function () {
     $(".set > a").on("click", function () {

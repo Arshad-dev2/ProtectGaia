@@ -87,13 +87,12 @@
                 })
                 //auth2.disconnect();
             });
-            $(function () {
-                $('#signOut1').click(function (e) {
-                    signOut();
-                });
+        }
+        $(function () {
+            $('#signOut1').click(function (e) {
+                signOut();
             });
-
-        }</script>
+        });</script>
 </head>
 <body class="homepage is-preload">
 
@@ -102,7 +101,7 @@
         <!-- Header -->
         <section id="header">
             <!-- Logo -->
-            <h1>
+            <h1 class="d-print-block">
                 <a asp-controller="Home" asp-action="Index" style="text-decoration:none;color:black; font-weight:600">
                     <img src="~/images/logo.jpeg" alt="ecoMorph" style="width:4rem;height:4rem;" />EcoMorph
                 </a>
@@ -111,7 +110,7 @@
             <!-- Nav -->
             <nav id="nav" style="margin-bottom:1em;">
                 <ul>
-                    <li><a href="/">Home</a></li>
+                    <li><a asp-controller="Home" asp-action="Index">Home</a></li>
                     <li>
                         <a href="#">Explainers</a>
                         <ul>

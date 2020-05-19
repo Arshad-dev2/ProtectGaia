@@ -30,10 +30,13 @@ namespace ProtectGaia
 
 
             services.AddControllersWithViews();
+
+            services.AddDbContextPool<ChallengeDB>(options => options.UseSqlServer(Configuration.GetConnectionString("EcoMorphConnection")));
+
             //services.AddDbContextPool<ChallengeDB>(options => options.UseSqlServer(Configuration.GetConnectionString("EcoMorphConnection")));
-            services.AddDbContext<ChallengeDB>(options =>
-                options.UseSqlite(
-                    Configuration.GetConnectionString("DefaultConnection")));
+            //services.AddDbContextPool<ChallengeDB>(options =>
+            //    options.UseSqlServer(
+            //        Configuration.GetConnectionString("EcoMorphConnection")));
 
             services.AddDistributedMemoryCache();
 

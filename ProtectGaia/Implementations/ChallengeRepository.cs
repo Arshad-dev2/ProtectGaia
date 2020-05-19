@@ -18,7 +18,7 @@ namespace ProtectGaia.Implementations
             this._dbContext = _dbContext;
         }
 
-        public bool ChallengesExists(string ChallengeId)
+        public bool ChallengesExists(int ChallengeId)
         {
             return _dbContext.ChallengeData.Any();
 
@@ -37,7 +37,7 @@ namespace ProtectGaia.Implementations
             throw new NotImplementedException();
         }
 
-        public Task<List<ChallengeModel>> GetChallengesByChallengeIdAsync(string challengeId)
+        public Task<List<ChallengeModel>> GetChallengesByChallengeIdAsync(int challengeId)
         {
             throw new NotImplementedException();
         }

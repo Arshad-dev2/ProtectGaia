@@ -8,11 +8,11 @@ namespace ProtectGaia.Interfaces
     public interface IChallenge
     {
         Task<ChallengeModel> CreateChallengeAsync(ChallengeModel challengeModel);
-        Task<List<ChallengeModel>> GetChallengesByChallengeIdAsync(string challengeId);
+        Task<List<ChallengeModel>> GetChallengesByChallengeIdAsync(int challengeId);
         List<ChallengeModel> GetChallengesByLevelIdAsync(int LevelId);
         Task<ChallengeModel> UpdateMembershipAsync(ChallengeModel challengeModel);
         Task<List<ChallengeModel>> GetAllChallengesAsync();
         int TotalTaskInLevel(int LevelId);
-        bool ChallengesExists(string ChallengeId);
+        bool ChallengesExists(int ChallengeId);
     }
 }

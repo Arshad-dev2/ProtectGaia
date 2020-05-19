@@ -34,6 +34,8 @@ namespace ProtectGaia.Models
         public bool IsTask4Completed { get; set; }
         [Display(Name = "Task 5")]
         public bool IsTask5Completed { get; set; }
+        public bool IsFirstTimeLogin { get; set; }
+
         public UserModel()
         {
         }

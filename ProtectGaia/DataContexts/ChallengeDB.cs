@@ -15,7 +15,13 @@ namespace ProtectGaia.DataContexts
         {
             modelBuilder.Entity<UserModel>()
                 .HasKey(o => new { o.UserEmail, o.LevelId });
-        }
+
+            modelBuilder.Entity<ChallengeModel>(eb =>
+            {
+                eb.HasNoKey();
+            });
+
+            }
 
         public DbSet<UserModel> User { get; set; }
         public DbSet<ChallengeModel> ChallengeData { get; set; }
