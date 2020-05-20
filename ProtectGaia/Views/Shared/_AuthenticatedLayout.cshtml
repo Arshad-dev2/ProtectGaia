@@ -110,9 +110,9 @@
             <!-- Nav -->
             <nav id="nav" style="margin-bottom:1em;">
                 <ul>
-                    <li><a asp-controller="Home" asp-action="Index">Home</a></li>
-                    <li>
-                        <a href="#">Explainers</a>
+                    <li  id="home"><a asp-controller="Home" asp-action="Index">Home</a></li>
+                    <li id="explainers">
+                        <a href="#" >Explainers</a>
                         <ul>
                             <li><a asp-controller="Explainers" asp-Action="EnergyConsumption">Energy Consumption</a></li>
                             <li><a asp-controller="Explainers" asp-Action="TransportEmissions">Transport Emissions</a></li>
@@ -124,7 +124,7 @@
                     </li>
 
                     <li><a id="signOut" onclick="signOut();">SignOut</a></li>
-                    <li  class="current"><a href="/dashboard/index">Profile</a></li>
+                    <li  class="current" id="profile"><a href="/dashboard/index">Profile</a></li>
                 </ul>
             </nav>
         </section>
@@ -192,7 +192,6 @@
     <script type="text/javascript" src="/js/counter.js"></script>-->
     <!-- Ajax contact form  -->
     <script type="text/javascript" src="/js/app.js"></script>
-    <script type="text/javascript" src="/js/header.js"></script>
 
 
     <!-- Custom js -->
@@ -205,7 +204,7 @@
     <script src="/assets/js/breakpoints.min.js"></script>
     <script src="/assets/js/util.js"></script>
     <script src="/assets/js/main.js"></script>
-
+    <script src="/js/contact.js"></script>
 
 </body>
 </html>

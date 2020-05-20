@@ -58,6 +58,7 @@ namespace ProtectGaia.Controllers
             UserViewModel userViewModel = new UserViewModel();
             userViewModel.IsPost = true;
             userViewModel.IsErrorException = false;
+            userViewModel.userModel.IsFirstTimeLogin = false;
             try
             {
                 if (_session != null && _session.GetString("UserModel") != null)
@@ -214,6 +215,7 @@ namespace ProtectGaia.Controllers
                              x.ChallengeTitle
                         ).ToList();
                         _session.SetString("UserModel", JsonConvert.SerializeObject(userViewModel.userModel));
+
                         return View(userViewModel);
                     }
             }

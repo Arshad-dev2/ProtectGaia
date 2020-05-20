@@ -132,6 +132,7 @@ namespace ProtectGaia.Controllers
                 else
                 {
                     userModel = await _user.GetUserAsync(userEmail);
+                    userModel.IsFirstTimeLogin=false;
                     _session.SetString("UserModel", JsonConvert.SerializeObject(userModel));
                 }
             }
