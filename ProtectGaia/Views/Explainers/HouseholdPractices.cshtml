@@ -1,8 +1,16 @@
-﻿@{
-    Layout = "_WebLayout";
+﻿@using Microsoft.AspNetCore.Http
+@inject IHttpContextAccessor HttpContextAccessor
+@{
     ViewBag.Title = "HouseholdPractices";
 }
-
+@if (HttpContextAccessor.HttpContext.Session.GetString("IsLoggedIn") == "true")
+{
+    Layout = "_AuthenticatedLayout";
+}
+else
+{
+    Layout = "_WebLayout";
+}
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 <link rel="stylesheet" href="/assets/css/main.css" />
@@ -11,7 +19,7 @@
 <!-- Main -->
 <section id="main" style="background-color:white">
     <div class="container">
-        <a href="#" class="image featured"><img src="~/images/explainers/household_bg.png" alt="household_practices" style="width: 100%; height: auto"/></a>
+        <a href="#" class="image featured"><img src="~/images/explainers/household_bg.png" alt="household_practices" style="width: 100%; height: auto" /></a>
         <div class="post-content">
             <h2 style="text-align:center">Household Practices</h2>
             <p style="font-size: 1rem; font-family: Archivo Narrow, sans-serif;text-align:center">Written by: Environs</p>
@@ -59,20 +67,22 @@
                         <h3> Did You Know..? </h3>
                         <p style="text-align: center;">
                             <span>
-                                <b><h4t>
-                                    <i style="color: #00b3b3;">
-                                        “Australian households generate at least one-fifth of Australia&#39;s greenhouse gases, more that
-                                        18 tons per household each year.”<br />
-                                    </i></h4t>
+                                <b>
+                                    <h4t>
+                                        <i style="color: #00b3b3;">
+                                            “Australian households generate at least one-fifth of Australia&#39;s greenhouse gases, more that
+                                            18 tons per household each year.”<br />
+                                        </i>
+                                    </h4t>
                                 </b>
                             </span>
-                            <span><i style="font-size: 0.8em">(Source – <a href="https://apps.epa.vic.gov.au/AGC/home.html"> Australian Greenhouse Calculator</a>) </i></span>
+                            <span><i style="font-size: 0.8em">(Source – <a href="https://apps.epa.vic.gov.au/AGC/home.html" target="_blank"> Australian Greenhouse Calculator</a>) </i></span>
                         </p>
                     </div><br /><br />
 
                     <p style="text-align: center;">
                         <img src="~/images/explainers/0_house2.png" alt="Household Emissions" width="700" height="774" sizes="(max-width: 700px) 100vw, 700px"><br>
-                        <em>(Source – <a href="https://apps.epa.vic.gov.au/AGC/home.html"> Australian Greenhouse Calculator</a>)</em>
+                        <em>(Source – <a href="https://apps.epa.vic.gov.au/AGC/home.html" target="_blank"> Australian Greenhouse Calculator</a>)</em>
                     </p>
 
                     <p style="text-align:left">
@@ -83,8 +93,12 @@
                     </p>
 
                     <p style="text-align:left">
-                        Our Household Waste can be divided into five waste forms which include <strong><i style="color: #008080">liquid waste, solid garbage,
-                        industrial waste, toxic waste and recyclable waste.</i></strong>
+                        Our Household Waste can be divided into five waste forms which include <strong>
+                            <i style="color: #008080">
+                                liquid waste, solid garbage,
+                                industrial waste, toxic waste and recyclable waste.
+                            </i>
+                        </strong>
                         We should make sure that we split the waste into these different forms to ensure proper handling of the waste.
                         It is the duty of each of us  to organize and to schedule their waste disposal.<br />
                         Learn to practice proper and efficient waste management from the following infographic:

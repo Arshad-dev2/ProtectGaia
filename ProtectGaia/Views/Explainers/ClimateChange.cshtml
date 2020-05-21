@@ -1,8 +1,17 @@
-﻿@{
-    Layout = "_WebLayout";
+﻿@using Microsoft.AspNetCore.Http
+@inject IHttpContextAccessor HttpContextAccessor
+@{
+
     ViewBag.Title = "ClimateChange";
 }
-
+@if (HttpContextAccessor.HttpContext.Session.GetString("IsLoggedIn") == "true")
+{
+    Layout = "_AuthenticatedLayout";
+}
+else
+{
+    Layout = "_WebLayout";
+}
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 <link rel="stylesheet" href="/assets/css/main.css" />
@@ -11,7 +20,7 @@
 <!-- Main -->
 <section id="main" style="background-color:#fff !important">
     <div class="container">
-        <a href="#" class="image featured"><img src="~/images/explainers/climate_bg.png" alt="climate_change" style="width: 100%; height: auto"/></a>
+        <a href="#" class="image featured"><img src="~/images/explainers/climate_bg.png" alt="climate_change" style="width: 100%; height: auto" /></a>
         <div class="post-content">
             <h2 style="text-align:center">Climate Change</h2>
             <p style="font-size: 1rem; font-family: Archivo Narrow, sans-serif;text-align:center">Written by: Environs</p>
@@ -19,10 +28,12 @@
                 <article style="position: relative;left: 19.5%;">
                     <p style="text-align: center;">
                         <span>
-                            <b><h5t>
-                                <i style="color: #008080">
-                                    Climate change is happening, and it is happening now!<br />
-                                </i></h5t>
+                            <b>
+                                <h5t>
+                                    <i style="color: #008080">
+                                        Climate change is happening, and it is happening now!<br />
+                                    </i>
+                                </h5t>
                             </b>
                         </span>
                     </p>
@@ -41,7 +52,7 @@
                         and do not understand what Greenhouse Effect is? <br /><br /> In a few words,
                         <i style="color: #008080">“Gases that trap heat in the atmosphere are called <strong><i style="color: #008080">Greenhouse Gases</i></strong>”</i>. <br /><br />There are mainly <strong>four types of Greenhouse Gases: </strong><b><i style="color: #008080">Carbon dioxide (CO2), Methane (CH4), Nitrous oxide (N2O), Fluorinated gases</i></b>.<br />
                         For making things simpler to understand, the infographic provided below will explain what greenhouse effect is:
-</p>
+                    </p>
 
                     <p style="text-align: center;">
                         <img src="~/images/explainers/0_climate.png" alt="The Greenhouse Effect" width="700" height="774" sizes="(max-width: 700px) 100vw, 700px"><br>
@@ -58,23 +69,25 @@
                         <h3> Did You Know..? </h3>
                         <p style="text-align: center;">
                             <span>
-                                <b> <h4t>
-                                    <i style="color: #00b3b3;">
-                                        “Climate change could be irreversible by 2030, According to a report conducted by the UN
-                                        Intergovernmental Panel on Climate Change (IPCC), urgent action is needed to avoid the catastrophic
-                                        effects of global warming.”<br />
-                                    </i> </h4t>
+                                <b>
+                                    <h4t>
+                                        <i style="color: #00b3b3;">
+                                            “Climate change could be irreversible by 2030, According to a report conducted by the UN
+                                            Intergovernmental Panel on Climate Change (IPCC), urgent action is needed to avoid the catastrophic
+                                            effects of global warming.”<br />
+                                        </i>
+                                    </h4t>
                                 </b>
                             </span>
                             <span><i style="font-size: 0.8em"> (Source - <a href="https://www.ipcc.ch/">UN Intergovernmental Panel on Climate Change (IPCC)</a></i></span>
                         </p>
                     </div><br />
 
-                          <p style="text-align:left">
-                              That’s not it, <strong>our glaciers are melting, forests are clearing and wildlife is dying.</strong><br /> For all the people who
-                              have these questions in their head, why should I even care? How can these gases even impact our planet?<br /><br />
-                                                                                                                                           <i>Hold on mate!</i><br /><br /> We have an answer to all your questions, highilighted through the infographic below:
-                          </p>
+                    <p style="text-align:left">
+                        That’s not it, <strong>our glaciers are melting, forests are clearing and wildlife is dying.</strong><br /> For all the people who
+                        have these questions in their head, why should I even care? How can these gases even impact our planet?<br /><br />
+                        <i>Hold on mate!</i><br /><br /> We have an answer to all your questions, highilighted through the infographic below:
+                    </p>
 
                     <p style="text-align: center;">
                         <img src="~/images/explainers/0_climate2.png" alt="Climate Change and its effects on Environment" width="700" height="774" sizes="(max-width: 700px) 100vw, 700px"><br>
@@ -83,8 +96,10 @@
 
                     <p style="text-align:left">
                         This is a collective issue and before we even try to stop the climate change, we need to understand it properly. Our vision at
-                        EcoMorph is to create awareness amongst people so that they understand that <strong>Greenhouse emissions are fueling climate change and
-                        making our earth and human health suffer.</strong>
+                        EcoMorph is to create awareness amongst people so that they understand that <strong>
+                            Greenhouse emissions are fueling climate change and
+                            making our earth and human health suffer.
+                        </strong>
                     </p>
                 </article>
             </center>

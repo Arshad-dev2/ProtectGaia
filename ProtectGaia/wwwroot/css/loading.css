@@ -1,0 +1,162 @@
+﻿/* Loading screen animation
+-------------------------------------------------- */
+#loading {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 100;
+}
+
+#loadContainer {
+    width: 35%;
+    margin: auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    justify-content: center;
+    transform: translate(-50%, -50%);
+    background-color: #fdfdfd;
+    border-radius: 10px;
+    padding: 35px;
+    overflow: hidden;
+}
+
+    #loadContainer h6 {
+        display: inline-block;
+    }
+
+#loader {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+}
+
+.dot {
+    display: block;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    left: calc(50% - 5px);
+    border-radius: 5px;
+    background-color: #2fc2a2;
+    transform-origin: 5px 35px;
+    animation: rotate;
+    animation-iteration-count: infinite;
+    animation-duration: 1.5s;
+}
+
+.d2 {
+    animation-delay: 0.1s;
+}
+
+.d3 {
+    animation-delay: 0.2s;
+}
+
+.d4 {
+    animation-delay: 0.3s;
+}
+
+.d5 {
+    animation-delay: 0.4s;
+}
+
+
+#setting {
+    display: none;
+    width: 60px;
+    height: 60px;
+    -webkit-animation: spin 2.5s linear infinite;
+    animation: spin 2.5s linear infinite;
+}
+
+.setting-body {
+    display: block;
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    border: 14px solid #5cb85c;
+    border-radius: 50%;
+    box-sizing: border-box;
+    left: calc(50% - 27.5px);
+    top: calc(50% - 27.5px);
+}
+
+.setting-tooth {
+    position: absolute;
+    display: block;
+    width: 15px;
+    height: 17px;
+    background: #5cb85c;
+    left: calc(50% - 10px);
+    top: calc(50% - 33px);
+    transform-origin: 10px 33px;
+}
+
+.t1 {
+    transform: rotateZ(0deg);
+}
+
+.t2 {
+    transform: rotateZ(45deg);
+}
+
+.t3 {
+    transform: rotateZ(90deg);
+}
+
+.t4 {
+    transform: rotateZ(135deg);
+}
+
+.t5 {
+    transform: rotateZ(180deg);
+}
+
+.t6 {
+    transform: rotateZ(225deg);
+}
+
+.t7 {
+    transform: rotateZ(270deg);
+}
+
+.t8 {
+    transform: rotateZ(315deg);
+}
+
+
+@-webkit-keyframes spin {
+    from {
+        -webkit-transform: rotateZ(0deg);
+    }
+
+    to {
+        -webkit-transform: rotateZ(359deg);
+    }
+}
+
+@keyframes spin {
+    from {
+        transform: rotateZ(0deg);
+    }
+
+    to {
+        transform: rotateZ(359deg);
+    }
+}
+
+@keyframes rotate {
+    from {
+        transform: rotateZ(0deg);
+    }
+
+    to {
+        transform: rotateZ(359deg);
+    }
+}

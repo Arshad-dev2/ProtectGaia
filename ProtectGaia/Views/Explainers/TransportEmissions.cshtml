@@ -1,8 +1,16 @@
-﻿@{
-    Layout = "_WebLayout";
+﻿@using Microsoft.AspNetCore.Http
+@inject IHttpContextAccessor HttpContextAccessor
+@{
     ViewBag.Title = "TransportEmissions";
 }
-
+@if (HttpContextAccessor.HttpContext.Session.GetString("IsLoggedIn") == "true")
+{
+    Layout = "_AuthenticatedLayout";
+}
+else
+{
+    Layout = "_WebLayout";
+}
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 <link rel="stylesheet" href="/assets/css/main.css" />
@@ -11,7 +19,7 @@
 <!-- Main -->
 <section id="main" style="background-color:white">
     <div class="container">
-        <a href="#" class="image featured"><img src="~/images/explainers/transport_bg.gif" alt="transport" style="width: 100%; height: 25em"/></a>
+        <a href="#" class="image featured"><img src="~/images/explainers/transport_bg.gif" alt="transport" style="width: 100%; height: 25em" /></a>
         <div class="post-content">
             <h2 style="text-align:center">Transport Emissions</h2>
             <p style="font-size: 1rem; font-family: Archivo Narrow, sans-serif;text-align:center">Written by: Environs</p>
@@ -43,14 +51,16 @@
                         <h3> Did You Know..? </h3>
                         <p style="text-align: center;">
                             <span>
-                                <b> <h4t>
-                                    <i style="color: #00b3b3; ">
-                                        “Transport emissions have the highest rate of growth of any sector since 1990.
-                                        With no action, transport emissions are expected to reach 111 MtCO2 by 2030.”<br />
-                                    </i></h4t>
+                                <b>
+                                    <h4t>
+                                        <i style="color: #00b3b3; ">
+                                            “Transport emissions have the highest rate of growth of any sector since 1990.
+                                            With no action, transport emissions are expected to reach 111 MtCO2 by 2030.”<br />
+                                        </i>
+                                    </h4t>
                                 </b>
                             </span>
-                            <span><i style="font-size: 0.8em">(Source – <a href="www.Climatecouncil.org">Climate Council, Australia</a>)</i></span>
+                            <span><i style="font-size: 0.8em">(Source – <a href="https://www.climatecouncil.org.au/" target="_blank">Climate Council, Australia</a>)</i></span>
                         </p>
                     </div><br />
                     <p style="text-align:left">
@@ -64,7 +74,7 @@
                         Drifting towards healthier practices such as <strong><i style="color: #008080">cycling, jogging and walking to smaller distances</i></strong>
                         would also be a very viable action in fighting climate change and would also be very good for your health.
                         Slowly and steadily we can win this race against greenhouse emissions.
-</p>
+                    </p>
                 </article>
             </center>
         </div>

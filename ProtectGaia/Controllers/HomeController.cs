@@ -77,12 +77,12 @@ namespace ProtectGaia.Controllers
                 }
             }
             // If the newsAPI is retrieves, status will be ok
-            if (newsResponse.Status.ToLower() == "ok" && newsResponse.Articles != null && newsResponse.Articles.Count() > 0)
+            if (newsResponse!=null && newsResponse.Status.ToLower() == "ok" && newsResponse.Articles != null && newsResponse.Articles.Count() > 0)
             {
                 indexViewModel.ArticleList = newsResponse.Articles.Select(x => new Models.Article()
                 {
                     Title = x.Title,
-                    ImageUrl = x.UrlToImage != null ? x.UrlToImage.ToString() : string.Empty,
+                    ImageUrl = x.UrlToImage != null ? x.UrlToImage.OriginalString : string.Empty,
                     PublishedDate = TimeCalculator(DateTime.UtcNow, x.PublishedAt.UtcDateTime),
                     Source = x.Source.Name,
                     Url = x.Url.AbsoluteUri
@@ -119,13 +119,11 @@ namespace ProtectGaia.Controllers
                     userModel.CarbonActivity = string.Empty;
                     userModel.IsFirstTimeLogin = true;
                     IDictionary<string, int> Activity_dict = new Dictionary<string, int>();
-                    //IDictionary<string, string> Task_dict = new Dictionary<string, string>();
-                   
                     // Activity will have currenttimestamp and total points scored
-                    Activity_dict.Add(DateTime.Now.ToShortDateString(), userModel.TotalPointScored);
-                   
-                    var activity_str = JsonConvert.SerializeObject(Activity_dict);
+                    Activity_dict.Add(DateTime.Now.ToString(), userModel.TotalPointScored);
+                     var activity_str = JsonConvert.SerializeObject(Activity_dict);
                     userModel.Activity= activity_str;
+                    userModel.CarbonActivity = string.Empty;
                     userModel = await _user.CreateUserAsync(userModel);
                     _session.SetString("UserModel", JsonConvert.SerializeObject(userModel));
                 }

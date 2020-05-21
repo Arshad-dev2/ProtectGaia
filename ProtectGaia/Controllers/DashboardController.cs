@@ -83,6 +83,7 @@ namespace ProtectGaia.Controllers
                         //Points Update done here
                         if (userModel.IsTask1Completed)
                         {
+                            userViewModel.userModel.IsFirstTimeLogin = false;
                             userViewModel.userModel.IsTask1Completed = true;
                             userViewModel.userModel.PendingTask -= 1;
                             userViewModel.userModel.TotalPointScored += 2;
@@ -100,10 +101,11 @@ namespace ProtectGaia.Controllers
                                 Carb_Obj.Add(challenges[0].Sector, challenges[0].CarbonScore);
                             }
                             userViewModel.userModel.CarbonActivity = JsonConvert.SerializeObject(Carb_Obj);
-                            if (activity.ContainsKey(DateTime.Now.ToShortDateString()))
-                            {
-                                activity[DateTime.Now.ToShortDateString()] = userViewModel.userModel.TotalPointScored;
-                            }
+                           // if (activity.ContainsKey(DateTime.Now.ToLongDateString()))
+                            //{
+                                activity.Add(DateTime.Now.ToString() , userViewModel.userModel.TotalPointScored);
+                           // }
+                            
                             userViewModel.userModel.Activity = JsonConvert.SerializeObject(activity);
                             userViewModel.userModel = await _user.UpdateMembershipAsync(userViewModel.userModel);
                         }
@@ -117,7 +119,7 @@ namespace ProtectGaia.Controllers
                             userViewModel.userModel.LevelCompletedTask += 1;
                             userViewModel.userModel.TotalTaskCompleted += 1;
                             userViewModel.userModel.LastModified = DateTime.Now;
-                            activity.Add(userViewModel.userModel.LastModified.ToShortDateString(), userViewModel.userModel.TotalPointScored);
+                            activity.Add(userViewModel.userModel.LastModified.ToString(), userViewModel.userModel.TotalPointScored);
                             userViewModel.userModel.Activity = JsonConvert.SerializeObject(activity);
                             if (Carb_Obj != null && Carb_Obj.ContainsKey(challenges[1].Sector))
                             {
@@ -141,7 +143,7 @@ namespace ProtectGaia.Controllers
                             userViewModel.userModel.LevelCompletedTask += 1;
                             userViewModel.userModel.TotalTaskCompleted += 1;
                             userViewModel.userModel.LastModified = DateTime.Now;
-                            activity.Add(userViewModel.userModel.LastModified.ToShortDateString(), userViewModel.userModel.TotalPointScored);
+                            activity.Add(userViewModel.userModel.LastModified.ToString(), userViewModel.userModel.TotalPointScored);
                             userViewModel.userModel.Activity = JsonConvert.SerializeObject(activity);
                             if (Carb_Obj != null && Carb_Obj.ContainsKey(challenges[2].Sector))
                             {
@@ -164,7 +166,7 @@ namespace ProtectGaia.Controllers
                             userViewModel.userModel.TotalTaskCompleted += 1;
                             userViewModel.userModel.LevelCompletedTask += 1;
                             userViewModel.userModel.LastModified = DateTime.Now;
-                            activity.Add(userViewModel.userModel.LastModified.ToShortDateString(), userViewModel.userModel.TotalPointScored);
+                            activity.Add(userViewModel.userModel.LastModified.ToString(), userViewModel.userModel.TotalPointScored);
                             userViewModel.userModel.Activity = JsonConvert.SerializeObject(activity);
                             if (Carb_Obj != null && Carb_Obj.ContainsKey(challenges[3].Sector))
                             {
@@ -192,8 +194,9 @@ namespace ProtectGaia.Controllers
                     }
                     else
                     {
-                        activity.Add(userViewModel.userModel.LastModified.ToShortDateString(), userViewModel.userModel.TotalPointScored);
+                        activity.Add(userViewModel.userModel.LastModified.ToString(), userViewModel.userModel.TotalPointScored);
                         userViewModel.userModel.Activity = JsonConvert.SerializeObject(activity);
+                        userViewModel.userModel.IsFirstTimeLogin = false;
                         userViewModel.userModel = await _user.CreateUserAsync(userViewModel.userModel);
 
                     }
@@ -224,6 +227,8 @@ namespace ProtectGaia.Controllers
             {
                 userViewModel.IsErrorException = true;
             }
+            _session.SetString("UserModel", JsonConvert.SerializeObject(userViewModel.userModel));
+
             return View(userViewModel);
         }
 
@@ -246,7 +251,7 @@ namespace ProtectGaia.Controllers
 
             else
             {
-                var userModel = new UserModel();
+                userViewModel.userModel = new UserModel();
                 var challenges = _challenge.GetChallengesByLevelIdAsync(LevelId);
                 var ChallengeTitle = _challenge.GetChallengesByLevelIdAsync(LevelId).Select(x =>
                      x.ChallengeTitle

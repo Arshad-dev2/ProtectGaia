@@ -1,8 +1,16 @@
-﻿@{
-    Layout = "_WebLayout";
+﻿@using Microsoft.AspNetCore.Http
+@inject IHttpContextAccessor HttpContextAccessor
+@{
     ViewBag.Title = "HealthImpacts";
 }
-
+@if (HttpContextAccessor.HttpContext.Session.GetString("IsLoggedIn") == "true")
+{
+    Layout = "_AuthenticatedLayout";
+}
+else
+{
+    Layout = "_WebLayout";
+}
 
 
 <meta charset="utf-8" />
@@ -21,10 +29,12 @@
                 <article style="position: relative; left: 19.5%;">
                     <p style="text-align: center;">
                         <span>
-                            <b><h5t>
-                                <i style="color: #008080">
-                                    It is just not our Earth which is getting unwell, but you too!<br />
-                                </i></h5t>
+                            <b>
+                                <h5t>
+                                    <i style="color: #008080">
+                                        It is just not our Earth which is getting unwell, but you too!<br />
+                                    </i>
+                                </h5t>
                             </b>
                         </span>
                     </p>
@@ -63,11 +73,13 @@
                         <h3> Did You Know..? </h3>
                         <p style="text-align: center;">
                             <span>
-                                <b><h4t>
-                                    <i style="color: #00b3b3; ">
-                                        “Australia’s mortality data indicate that over the past four decades there has been a steady increase in the number of deaths in summer,
-                                        compared to those in winter suggesting that climate change may already be affecting mortality rates.”<br />
-                                    </i> </h4t>
+                                <b>
+                                    <h4t>
+                                        <i style="color: #00b3b3; ">
+                                            “Australia’s mortality data indicate that over the past four decades there has been a steady increase in the number of deaths in summer,
+                                            compared to those in winter suggesting that climate change may already be affecting mortality rates.”<br />
+                                        </i>
+                                    </h4t>
                                 </b>
                             </span>
                             <span><i style="font-size: 0.8em">(Source – <a href="www.Climatecouncil.org">Climate Council, Australia</a>)</i></span>
@@ -82,7 +94,7 @@
 
                     <p style="text-align: center;">
                         <img src="~/images/explainers/0_health2.jpg" alt="Transport Emissions in Australia" width="700" height="774" sizes="(max-width: 700px) 100vw, 700px"><br>
-                        <em>Impacts on Physical and Mental Health - <a href="https://www.climatecouncil.org.au/">Climate Council, Australia</a></em>
+                        <em>Impacts on Physical and Mental Health - <a href="https://www.climatecouncil.org.au/" target="_blank">Climate Council, Australia</a></em>
                     </p>
 
                     <p style="text-align:left">

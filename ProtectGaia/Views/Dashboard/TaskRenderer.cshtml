@@ -1,7 +1,9 @@
 ﻿@model ProtectGaia.Models.UserViewModel
 <script src="/assets2/js/form-val.js"></script>
-<input type="hidden" name="time" id="time" value="@Model.userModel.LastModified.AddDays(1)" />
+<input type="hidden" name="time" id="time" value="@Model.userModel.LastModified.AddMinutes(2)" />
 <script>// Set the date we're counting down to
+
+
     var elem = document.getElementById('time');
     console.log(elem.value);
     var countDownDate = new Date(elem.value).getTime();
@@ -46,7 +48,7 @@
         <br />
         <div class="row">
             <div class="col-lg-6 mb-4" style="margin-top: -1rem!important;">
-                <div class="card text-white bg-primary shadow" style="color: #fff; background-color: #00b3b3 !important;">
+                <div class="card text-white bg-primary shadow" style="color: #fff; background-color: #00b3b3 !important;cursor:pointer">
                     <div class="card-body" id="level_1" style="display:inline-flex;padding:2rem;">
                         <p class="m-0" style="font-size: 16px">LEVEL 1</p>
                         @if (Model.userModel.LevelId == 1)
@@ -62,7 +64,7 @@
                 </div>
             </div>
             <div class="col-lg-6 mb-4" style="margin-top: -1rem!important;">
-                <div class="card text-white bg-success shadow" style="color: #fff; background-color: #00b3b3 !important;">
+                <div class="card text-white bg-success shadow" style="color: #fff; background-color: #00b3b3 !important;cursor:pointer">
                     <div class="card-body" id="level_2" style="display:inline-flex;padding:2rem;">
                         <p class="m-0" style="font-size:16px">LEVEL 2</p>
                         @if (Model.userModel.LevelId == 2)
@@ -81,7 +83,7 @@
                 </div>
             </div>
             <div class="col-lg-6 mb-4" style="margin-top: -1rem!important;">
-                <div class="card text-white bg-info shadow" style="color: #fff; background-color: #00b3b3 !important;">
+                <div class="card text-white bg-info shadow" style="color: #fff; background-color: #00b3b3 !important;cursor:pointer">
                     <div class="card-body" id="level_3" style="display:inline-flex;padding:2rem;">
                         <p class="m-0" style="font-size:16px">LEVEL 3</p>
                         @if (Model.userModel.LevelId == 3)
@@ -101,7 +103,7 @@
                 </div>
             </div>
             <div class="col-lg-6 mb-4" style="margin-top: -1rem!important;">
-                <div class="card text-white bg-warning shadow" style="color: #fff; background-color: #00b3b3 !important;">
+                <div class="card text-white bg-warning shadow" style="color: #fff; background-color: #00b3b3 !important;cursor:pointer">
                     <div class="card-body" id="level_4" style="display:inline-flex;padding:2rem;">
                         <p class="m-0" style="font-size: 16px">LEVEL 4</p>
                         @if (Model.userModel.LevelId == 4)
@@ -120,7 +122,7 @@
                 </div>
             </div>
             <div class="col-lg-6 mb-4" style="margin-top: -1rem!important;">
-                <div class="card text-white bg-danger shadow" style="color: #fff; background-color: #00b3b3 !important;">
+                <div class="card text-white bg-danger shadow" style="color: #fff; background-color: #00b3b3 !important;cursor:pointer">
                     <div class="card-body" id="level_5" style="display:inline-flex;padding:2rem;">
                         <p class="m-0" style="font-size:16px">LEVEL 5</p>
                         @if (Model.userModel.LevelId == 5)
@@ -139,9 +141,7 @@
                 </div>
             </div>
             <div class="col-lg-6 mb-4" style="margin-top: -1rem!important;">
-                <div class="card text-white bg-secondary shadow" style=" background-color: #00b3b3 !important;
-        color: rgb(0,0,0);
-">
+                <div class="card text-white bg-secondary shadow" style=" background-color: #00b3b3 !important;cursor:pointer;color: rgb(0,0,0);">
                     <div class="card-body" style="display:inline-flex;padding:2rem;">
 
                         <p class="m-0" style="color:#fff;font-size: 16px;margin-top: 4rem;
@@ -197,7 +197,7 @@
                                             Smash the next task when it unlocks!
                                         </p>
 
-                                        <span class="close text-center" style="font-size:16px;color:black">Continue</span>
+                                        <span class="btn btn-primary close text-center" style="font-size:16px;color:black;cursor:pointer;border:1px solid;border-radius:2rem;">Continue</span>
 
                                     </div>
 
@@ -217,7 +217,7 @@
                                             Do your best when the next level unlocks!
                                         </p>
 
-                                        <span class="close text-center" style="font-size:16px;color:black">Continue</span>
+                                        <span class="btn btn-primary close text-center" style="font-size:16px;color:black;cursor:pointer;border:1px solid;border-radius:2rem;">Continue</span>
 
                                     </div>
                                 </div>
@@ -251,7 +251,7 @@
                                 <div class="row align-items-center no-gutters">
                                     @if (!Model.userModel.IsTask2Completed && Model.userModel.IsTask1Completed)
                                     {
-                                        if ((DateTime.Now - Model.userModel.LastModified).TotalDays < 1)
+                                        if ((DateTime.Now - Model.userModel.LastModified).TotalMinutes <= 2)
                                         {
                                             <div class="custom-control custom-checkbox mb-3">
                                                 @Html.CheckBoxFor(m => m.userModel.IsTask2Completed, new { @class = "custom-control-input", @style = "z-index:7", @disabled = "disabled" })
@@ -287,7 +287,7 @@
                                 <div class="row align-items-center no-gutters">
                                     @if (!Model.userModel.IsTask3Completed && Model.userModel.IsTask2Completed)
                                     {
-                                        if ((DateTime.Now - Model.userModel.LastModified).TotalDays < 1)
+                                        if ((DateTime.Now - Model.userModel.LastModified).TotalMinutes <= 2)
                                         {
                                             <div class="custom-control custom-checkbox mb-3">
                                                 @Html.CheckBoxFor(m => m.userModel.IsTask3Completed, new { @class = "custom-control-input", @style = "z-index:7", @disabled = "disabled" })
@@ -322,7 +322,7 @@
                                 <div class="row align-items-center no-gutters">
                                     @if (!Model.userModel.IsTask4Completed && Model.userModel.IsTask3Completed)
                                     {
-                                        if ((DateTime.Now - Model.userModel.LastModified).TotalDays < 1)
+                                        if ((DateTime.Now - Model.userModel.LastModified).TotalMinutes <= 2)
                                         {
                                             <div class="custom-control custom-checkbox mb-3">
                                                 @Html.CheckBoxFor(m => m.userModel.IsTask4Completed, new { @class = "custom-control-input", @style = "z-index:7", @disabled = "disabled" })

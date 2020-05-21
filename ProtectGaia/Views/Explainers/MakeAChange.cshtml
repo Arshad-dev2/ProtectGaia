@@ -1,9 +1,17 @@
-﻿@{
-    Layout = "_WebLayout";
+﻿@using Microsoft.AspNetCore.Http
+@inject IHttpContextAccessor HttpContextAccessor
+@{
     ViewBag.Title = "MakeAChange";
 }
 
-
+@if (HttpContextAccessor.HttpContext.Session.GetString("IsLoggedIn") == "true")
+{
+    Layout = "_AuthenticatedLayout";
+}
+else
+{
+    Layout = "_WebLayout";
+}
 
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
@@ -21,10 +29,12 @@
                 <article style="position: relative;left: 19.5%;">
                     <p style="text-align: center;">
                         <span>
-                            <b><h5t>
-                                <i style="font-size: 1.8em; font-weight: 400;color: #008080">
-                                    No effort is too small. All your actions will help Australia reduce its greenhouse emissions.<br />
-                                </i></h5t>
+                            <b>
+                                <h5t>
+                                    <i style="font-size: 1.8em; font-weight: 400;color: #008080">
+                                        No effort is too small. All your actions will help Australia reduce its greenhouse emissions.<br />
+                                    </i>
+                                </h5t>
                             </b>
                         </span>
                     </p>
@@ -55,14 +65,16 @@
                         <h3> Did You Know..? </h3>
                         <p style="text-align: center;">
                             <span>
-                                <b> <h4t>
-                                    <i style="color: #00b3b3;">
-                                        “An average Australians Carbon emission per capita is around 20.6 tones a year,
-                                        this is because of Australia’s heavy reliance on coal for producing energy!”<br />
-                                    </i></h4t>
+                                <b>
+                                    <h4t>
+                                        <i style="color: #00b3b3;">
+                                            “An average Australians Carbon emission per capita is around 20.6 tones a year,
+                                            this is because of Australia’s heavy reliance on coal for producing energy!”<br />
+                                        </i>
+                                    </h4t>
                                 </b>
                             </span>
-                            <span><i style="font-size: 0.8em">(Source – <a href="https://www.theguardian.com/uk">The Guardian</a>)</i></span>
+                            <span><i style="font-size: 0.8em">(Source – <a href="https://www.theguardian.com/uk" target="_blank">The Guardian</a>)</i></span>
                         </p>
                     </div><br />
 
@@ -91,7 +103,7 @@
                         The motive behind our
                         <strong><i style="color: #008080"> EcoMorph challenge </i></strong>
                         is to <i style="color: #008080">influence and motivate the young generation to try and get used to live a low-carbon and a healthier lifestyle.</i>
-                        </p>
+                    </p>
                     <p style="text-align: center;">
                         <i><strong>Would you like to begin a new life?</strong></i>
                     </p>

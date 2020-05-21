@@ -28,7 +28,7 @@
                     <p style="text-align:center; font-size:smaller">
                         <class ="actions">
                             <a id="customBtn2" class="customGPlusSignIn button large" style="align-self:center ;filter: brightness(0.8);text-decoration:none; padding: 0.4em 0.8em 0.4em 0.8em;">
-                                <span class="buttonText">Take the Challenge!</span>
+                                <span class="buttonText" style="cursor:pointer">Take the Challenge!</span>
                             </a>
                         </class>
 
@@ -130,7 +130,7 @@
 
                                 <footer>
                                     <ul class="actions">
-                                        <li><a asp-controller="Explainers" asp-Action="EnergyConsumption" class="button alt">Learn More</a></li>
+                                        <li><a asp-controller="Explainers" asp-Action="EnergyConsumption" class="button alt" target="_blank">Learn More</a></li>
                                     </ul>
                                 </footer>
                             </section>
@@ -145,7 +145,7 @@
 
                                 <footer>
                                     <ul class="actions">
-                                        <li><a asp-controller="Explainers" asp-Action="TransportEmissions" class="button alt">Learn More</a></li>
+                                        <li><a asp-controller="Explainers" asp-Action="TransportEmissions" class="button alt" target="_blank">Learn More</a></li>
                                     </ul>
                                 </footer>
                             </section>
@@ -160,7 +160,7 @@
 
                                 <footer>
                                     <ul class="actions">
-                                        <li><a asp-controller="Explainers" asp-Action="HouseholdPractices" class="button alt">Learn More</a></li>
+                                        <li><a asp-controller="Explainers" asp-Action="HouseholdPractices" class="button alt" target="_blank">Learn More</a></li>
                                     </ul>
                                 </footer>
                             </section>
@@ -175,7 +175,7 @@
 
                                 <footer>
                                     <ul class="actions">
-                                        <li><a asp-controller="Explainers" asp-Action="ClimateChange" class="button alt">Learn More</a></li>
+                                        <li><a asp-controller="Explainers" asp-Action="ClimateChange" class="button alt" target="_blank">Learn More</a></li>
                                     </ul>
                                 </footer>
                             </section>
@@ -189,7 +189,7 @@
                                 <p>It is not only our environment that is being affected, human health is in grave danger too! Understand about the health impacts of these gas emissions!</p>
                                 <footer>
                                     <ul class="actions">
-                                        <li><a asp-controller="Explainers" asp-Action="HealthImpacts" class="button alt">Learn More</a></li>
+                                        <li><a asp-controller="Explainers" asp-Action="HealthImpacts" class="button alt" target="_blank">Learn More</a></li>
                                     </ul>
                                 </footer>
                             </section>
@@ -203,7 +203,7 @@
                                 <p>Small effort makes a big impact and together, all of us can make a difference. Know how you can contribute towards the cause! </p>
                                 <footer>
                                     <ul class="actions">
-                                        <li><a asp-controller="Explainers" asp-Action="MakeAChange" class="button alt">Learn More</a></li>
+                                        <li><a asp-controller="Explainers" asp-Action="MakeAChange" class="button alt"  target="_blank">Learn More</a></li>
                                     </ul>
                                 </footer>
                             </section>
@@ -259,7 +259,7 @@
             {
                 <div class="col-6 col-6-medium col-12-small" style="margin-bottom:1rem;">
                     <div class="card" style="padding: 0.5rem 0 1rem 0;box-shadow: 0px 0px 14px #ededed">
-                        <div class="row" style="        line-height: normal">
+                        <div class="row" style="line-height: normal">
                             <div class="container">
                                 <div class="col-md-4 my-2">
                                     <img src=@each.ImageUrl alt="Image" style="width:85%;" />
@@ -270,7 +270,7 @@
                                     <p style="color:#2fc2a2">@each.Source  - @each.PublishedDate</p>
                                     <br>
                                     <class ="actions" style="float:right" target="_blank">
-                                        <a href=@each.Url class="button">Read More</a>
+                                        <a href=@each.Url class="button" target="_blank">Read More</a>
 
 
                                         @*<a href=@each.Url class="w3-button w3-black" style="float:right" target="_blank">Read More&nbsp;<i class="fas fa-angle-double-right"></i></a>*@
