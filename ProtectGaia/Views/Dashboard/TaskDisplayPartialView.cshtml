@@ -27,7 +27,7 @@
                 <br />
             </span>
         </div>
-        @if (Model.userModel.IsTask1Completed && Model.userModel.IsTask2Completed && Model.userModel.IsTask3Completed)
+        @if (Model.userModel.IsTask1Completed || Model.userModel.IsTask2Completed || Model.userModel.IsTask3Completed)
         {
             <div id="taskPopupModal" class="modal">
 

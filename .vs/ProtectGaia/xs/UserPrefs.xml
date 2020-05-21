@@ -1,15 +1,24 @@
-﻿<Properties StartupConfiguration="{3FA95DA7-42EF-40D9-B8D3-C08257AAA405}|Default">
+﻿<Properties GitUserInfo="UsingMD" StartupConfiguration="{3FA95DA7-42EF-40D9-B8D3-C08257AAA405}|Default">
   <MonoDevelop.Ide.Workbench>
     <Files>
-      <File FileName="ProtectGaia/Views/Home/Index.cshtml" />
-      <File FileName="ProtectGaia/wwwroot/css/style.css" />
-      <File FileName="ProtectGaia/wwwroot/css/infographics.css" Line="138" Column="1" />
-      <File FileName="../../../../usr/local/share/dotnet/sdk/3.1.200/Sdks/Microsoft.NET.Sdk/targets/Microsoft.PackageDependencyResolution.targets" Line="14" Column="7" />
+      <File FileName="ProtectGaia/Controllers/DashboardController.cs" Line="166" Column="57" />
+      <File FileName="ProtectGaia/Controllers/HomeController.cs" Line="118" Column="55" />
+      <File FileName="ProtectGaia/Views/Dashboard/Index.cshtml" Line="175" Column="42" />
+      <File FileName="ProtectGaia/Views/Dashboard/TaskRenderer.cshtml" Line="17" Column="43" />
+      <File FileName="ProtectGaia/Views/Dashboard/TaskDisplayPartialView.cshtml" Line="30" Column="49" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="ProtectGaia" expanded="True" selected="True" />
+          <Node name="ProtectGaia" expanded="True" selected="True">
+            <Node name="ProtectGaia" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="Dashboard" expanded="True" />
+              </Node>
+            </Node>
+            <Node name="ProtectGaia.DataAccess" expanded="True" />
+          </Node>
         </State>
       </Pad>
     </Pads>
@@ -18,7 +27,9 @@
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/arsh/FIT5120/ProtectGaia/Controllers/DashboardController.cs" relfile="ProtectGaia/Controllers/DashboardController.cs" line="69" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
 </Properties>
