@@ -36,12 +36,12 @@
 
         if (distance < 0) {
             clearInterval(x);
-            document.getElementById("demo").innerHTML = "Next Task Available";
+            document.getElementById("demo").innerHTML = "Next Task Available<br>";
         }
     }, 1000);</script>
 
 <div class="row d-print-none">
-    <div class="col">
+    <div class="col  levelcol">
         <div class="container" style="border-style: solid; border-width: 1px; border-radius: 10px; border-color: #00b3b3 !important">
             <p id="demo" style="text-align:center;font-size: 20px; margin-top: 0px;padding-top:1rem"></p>
         </div>
@@ -155,7 +155,7 @@
     </div>
     @* @await Html.PartialAsync("~/Views/Dashboard/TaskDisplayPartialView.cshtml", Model)*@
     <div class="col-lg-6 mb-4">
-        <div class="card shadow mb-4 dynamic">
+        <div class="card shadow mb-4 dynamic taskcol">
             <div class="card-header py-3">
                 <h6 class="text-primary font-weight-bold m-0" style="color: black!important;text-align:center;">TASKS FROM CURRENT LEVEL</h6>
             </div>
@@ -203,7 +203,7 @@
 
                                 </div>
                             }
-                            else if (Model.userModel.IsTask4Completed)
+                            else if (!(Model.userModel.IsTask1Completed && Model.userModel.IsTask2Completed && Model.userModel.IsTask3Completed&&Model.userModel.IsTask4Completed))
                             {
                                 <div id="levelCompleted" class="modal">
 

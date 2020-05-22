@@ -46,7 +46,7 @@
                 <span class="d-lg-inline mr-2 text-gray-600 small" style="margin-left: 16px;height: 25px;font-size: 26px;margin-top: 0px;padding-top: 0px;">
                     @Model.userModel.UserName
                 </span>
-                <a class="btn btn-primary btn-lg btn-sm d-sm-inline-block d-print-none" role="button" href="#"
+                <a class="btn btn-primary btn-lg btn-sm d-sm-inline-block d-print-none  printer" role="button" href="#"
                    style="background-color: rgb(47,194,162);border-color: #2fc2a2 !important;z-index:5;margin-top: 4rem; float: right; margin-right: 4rem;padding:.75rem;"
                    onclick="window.print();">
                     <i class="fas fa-download fa-sm text-white-50"></i>&nbsp;Print Report
@@ -57,7 +57,7 @@
             </div>
             <div class="container-fluid">
                 @await Html.PartialAsync("~/Views/Dashboard/TaskRenderer.cshtml", Model)
-                <div class="row d-print-none">
+                <div class="row d-print-none prog">
                     <div class="col-md-6 col-xl-3 mb-4">
                         <div class="card shadow border-left-primary py-2" style="border-left: 2rem solid #4e73df!important;">
                             <div class="card-body">
@@ -102,7 +102,7 @@
                 <div class="row">
                     <div class="col-lg-7 col-xl-8 col-sm-6">
                         <div class="card shadow mb-4" style="padding-bottom:1rem;">
-                            <div class="card-header">
+                            <div class="card-header  linc">
                                 <h6 class="text-primary font-weight-bold m-0" style="color: rgb(47,194,162)!important;text-align:center;color:black!important">PROGRESS</h6>
                                 @*<div class="dropdown no-arrow">
                                         <button class="btn btn-link btn-sm dropdown-toggle" data-toggle="dropdown" aria-expanded="false" type="button"><i class="fas fa-ellipsis-v text-gray-400"></i></button>
@@ -124,7 +124,7 @@
                     </div>
                     <div class="col-lg-5 col-xl-4 col-sm-6">
                         <div class="card shadow mb-4" style="padding-bottom:1rem;">
-                            <div class="card-header">
+                            <div class="card-header carbc">
                                 <h6 class="text-primary font-weight-bold m-0" style="color: rgb(47,194,162) !important;text-align:center;color:black!important">CARBON EMISSIONS SAVED</h6>
                             </div>
                             <div class="card-body">
@@ -141,7 +141,7 @@
                 <div class="col-12 d-none d-print-block" style="margin-top:5rem;color: rgb(255,215,0);">
                     <p class="text-center" style="color: rgb(255,215,0);font-size:30px;">
                         <i class="fa fa-star" style="color: #ffd700;"></i>
-                         &nbsp;Keep up the good work and continue contributing towards a Greener Environment
+                        &nbsp;Keep up the good work and continue contributing towards a Greener Environment
                     </p>
                 </div>
             </div>
@@ -163,18 +163,18 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
 
-@if (Model.userModel.IsFirstTimeLogin)
-{
-<div id="firstTimeModal" class="modal">
+@*if (Model.userModel.IsFirstTimeLogin)
+    {
+        <div id="firstTimeModal" class="modal">
 
-    <!-- Modal content -->
-    <div class="modal-content">
-        <span class="close">&times;</span>
-        <h2>Welcome to the Dashboard</h2>
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Welcome to the Dashboard</h2>
 
-        <p>Content to be written here</p>
-    </div>
+                <p>Content to be written here</p>
+            </div>
 
-</div>
-}
-<script src="~/js/popup.js"></script>
+        </div>
+    }*@
+

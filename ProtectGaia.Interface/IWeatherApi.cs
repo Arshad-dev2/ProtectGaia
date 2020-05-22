@@ -5,6 +5,6 @@ namespace ProtectGaia.Interface
 {
     public interface IWeatherApi
     {
-        public WidgetResponse GetWeather(WeatherRequest weatherRequest);
+       WidgetResponse GetWeather(WeatherRequest weatherRequest);
     }
 }

@@ -41,13 +41,13 @@
                                 Smash the next task when it unlocks!
                             </p>
 
-                            <span class="close text-center" style="font-size:16px;color:black">Continue</span>
+                            <a class="close text-center" style="font-size:14px;color:white">Continue</a>
 
                         </div>
 
                     </div>
                 }
-                else if (Model.userModel.IsTask4Completed)
+                else if (!(Model.userModel.IsTask1Completed && Model.userModel.IsTask2Completed && Model.userModel.IsTask3Completed && Model.userModel.IsTask4Completed))
                 {
                     <div id="levelCompleted" class="modal">
 
@@ -99,7 +99,7 @@
                     <div class="row align-items-center no-gutters">
                         @if (!Model.userModel.IsTask2Completed && Model.userModel.IsTask1Completed)
                         {
-                            if ((DateTime.Now - Model.userModel.LastModified).TotalDays < 1)
+                            if ((DateTime.Now - Model.userModel.LastModified).TotalMinutes <= 2)
                             {
                                 <div class="custom-control custom-checkbox mb-3">
                                     @if (Model.userModel.LevelId > 0)
@@ -142,7 +142,7 @@
                     <div class="row align-items-center no-gutters">
                         @if (!Model.userModel.IsTask3Completed && Model.userModel.IsTask2Completed)
                         {
-                            if ((DateTime.Now - Model.userModel.LastModified).TotalDays < 1)
+                            if ((DateTime.Now - Model.userModel.LastModified).TotalMinutes <= 2)
                             {
                                 <div class="custom-control custom-checkbox mb-3">
                                     @if (Model.userModel.LevelId > 0)
@@ -186,7 +186,7 @@
                     <div class="row align-items-center no-gutters">
                         @if (!Model.userModel.IsTask4Completed && Model.userModel.IsTask3Completed)
                         {
-                            if ((DateTime.Now - Model.userModel.LastModified).TotalDays < 1)
+                            if ((DateTime.Now - Model.userModel.LastModified).TotalMinutes <= 2)
                             {
                                 <div class="custom-control custom-checkbox mb-3">
                                     @if (Model.userModel.LevelId > 0)
