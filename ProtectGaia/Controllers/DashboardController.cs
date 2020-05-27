@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
 using ProtectGaia.Interfaces;
 using ProtectGaia.Models;
@@ -13,13 +14,14 @@ namespace ProtectGaia.Controllers
 {
     public class DashboardController : Controller
     {
-
+        private readonly ILogger<DashboardController> _logger;
         private readonly IHttpContextAccessor _httpContextAccessor;
         private ISession _session => _httpContextAccessor.HttpContext.Session;
         private readonly IUser _user;
         private readonly IChallenge _challenge;
-        public DashboardController(IHttpContextAccessor httpContextAccessor, IUser _user, IChallenge _challenge)
+        public DashboardController(ILogger<DashboardController> _logger, IHttpContextAccessor httpContextAccessor, IUser _user, IChallenge _challenge)
         {
+            this._logger = _logger;
             this._httpContextAccessor = httpContextAccessor;
             this._user = _user;
             this._challenge = _challenge;
@@ -42,14 +44,14 @@ namespace ProtectGaia.Controllers
                 userViewModel.ChallengeTitle = _challenge.GetChallengesByLevelIdAsync(userModel.LevelId).Select(x =>
                      x.ChallengeTitle
                 ).ToList();
-                userViewModel.IsPost = false;
-                userViewModel.IsErrorException = false;
+                _logger.LogInformation(_session.GetString("UserModel"));
                 return View(userViewModel);
             }
             else
             {
                 return Redirect("/home/index");
             }
+
         }
 
         [HttpPost]
@@ -59,6 +61,7 @@ namespace ProtectGaia.Controllers
             userViewModel.IsPost = true;
             userViewModel.IsErrorException = false;
             userViewModel.userModel.IsFirstTimeLogin = false;
+            TempData["isPost"] = true.ToString();
             try
             {
                 if (_session != null && _session.GetString("UserModel") != null)
@@ -101,11 +104,11 @@ namespace ProtectGaia.Controllers
                                 Carb_Obj.Add(challenges[0].Sector, challenges[0].CarbonScore);
                             }
                             userViewModel.userModel.CarbonActivity = JsonConvert.SerializeObject(Carb_Obj);
-                           // if (activity.ContainsKey(DateTime.Now.ToLongDateString()))
+                            // if (activity.ContainsKey(DateTime.Now.ToLongDateString()))
                             //{
-                                activity.Add(DateTime.Now.ToString() , userViewModel.userModel.TotalPointScored);
-                           // }
-                            
+                            activity.Add(DateTime.Now.ToString(), userViewModel.userModel.TotalPointScored);
+                            // }
+
                             userViewModel.userModel.Activity = JsonConvert.SerializeObject(activity);
                             userViewModel.userModel = await _user.UpdateMembershipAsync(userViewModel.userModel);
                         }
@@ -161,7 +164,7 @@ namespace ProtectGaia.Controllers
                             userViewModel.IndividualCarbonScore = challenges[3].CarbonScore;
                             userViewModel.userModel.CarbonScore += challenges[3].CarbonScore;
                             userViewModel.userModel.IsTask4Completed = true;
-                            userViewModel.userModel.PendingTask -= 1;
+                            userViewModel.userModel.PendingTask = 0;
                             userViewModel.userModel.TotalPointScored += 5;
                             userViewModel.userModel.TotalTaskCompleted += 1;
                             userViewModel.userModel.LevelCompletedTask += 1;
@@ -178,19 +181,21 @@ namespace ProtectGaia.Controllers
                             }
                             userViewModel.userModel.CarbonActivity = JsonConvert.SerializeObject(Carb_Obj);
                             userViewModel.userModel = await _user.UpdateMembershipAsync(userViewModel.userModel);
+                            userViewModel.userModel.LevelId += 1;
+                            userViewModel.userModel.LevelCompletedTask = 0;
+                            userViewModel.userModel.PendingTask = 4;
+                            userViewModel.userModel.IsTask1Completed = false;
+                            userViewModel.userModel.IsTask2Completed = false;
+                            userViewModel.userModel.IsTask3Completed = false;
+                            userViewModel.userModel.IsTask4Completed = false;
+                            userViewModel.userModel.IsTask5Completed = false;
+
+                            userViewModel.userModel = await _user.CreateUserAsync(userViewModel.userModel);
+                            var new_challenges = _challenge.GetChallengesByLevelIdAsync(userViewModel.userModel.LevelId);
+                            userViewModel.ChallengeTitle = _challenge.GetChallengesByLevelIdAsync(userViewModel.userModel.LevelId).Select(x =>
+                                 x.ChallengeTitle
+                            ).ToList();
                         }
-                        //if (userModel.IsTask5Completed)
-                        //{
-                        //    userViewModel.userModel.IsTask5Completed = true;
-                        //    userViewModel.userModel.PendingTask -= 1;
-                        //    userViewModel.userModel.TotalPointScored += 6;
-                        //    userViewModel.userModel.TotalTaskCompleted += 1;
-                        //    userViewModel.userModel.LastModified = DateTime.Now;
-                        //    activity.Add(userViewModel.userModel.LastModified.ToShortDateString(), userViewModel.userModel.TotalTaskCompleted);
-                        //    userViewModel.userModel.Activity = JsonConvert.SerializeObject(activity);
-                        //    userViewModel.userModel = await _user.UpdateMembershipAsync(userViewModel.userModel);
-                        //}
-                        //Keycheck  if existing
                     }
                     else
                     {
@@ -200,36 +205,19 @@ namespace ProtectGaia.Controllers
                         userViewModel.userModel = await _user.CreateUserAsync(userViewModel.userModel);
 
                     }
-                    if (userViewModel.userModel.IsTask1Completed && userViewModel.userModel.IsTask2Completed
-                        && userViewModel.userModel.IsTask3Completed && userViewModel.userModel.IsTask4Completed)
-                    {
-                        userViewModel.userModel.LevelId += 1;
-                        userViewModel.userModel.LevelCompletedTask = 0;
-                        userViewModel.userModel.PendingTask = 4;
-                        userViewModel.userModel.IsTask1Completed = false;
-                        userViewModel.userModel.IsTask2Completed = false;
-                        userViewModel.userModel.IsTask3Completed = false;
-                        userViewModel.userModel.IsTask4Completed = false;
-                        userViewModel.userModel.IsTask5Completed = false;
-
-                        userViewModel.userModel = await _user.CreateUserAsync(userViewModel.userModel);
-                        var new_challenges = _challenge.GetChallengesByLevelIdAsync(userViewModel.userModel.LevelId);
-                        userViewModel.ChallengeTitle = _challenge.GetChallengesByLevelIdAsync(userViewModel.userModel.LevelId).Select(x =>
-                             x.ChallengeTitle
-                        ).ToList();
                         _session.SetString("UserModel", JsonConvert.SerializeObject(userViewModel.userModel));
-
+                        ModelState.Clear();
                         return View(userViewModel);
                     }
-            }
             }
             catch (Exception ex)
             {
                 userViewModel.IsErrorException = true;
             }
             _session.SetString("UserModel", JsonConvert.SerializeObject(userViewModel.userModel));
-
+            ModelState.Clear();
             return View(userViewModel);
+            //return View(userViewModel);
         }
 
         [HttpPost]
@@ -244,7 +232,7 @@ namespace ProtectGaia.Controllers
                 var ChallengeTitle = _challenge.GetChallengesByLevelIdAsync(LevelId).Select(x =>
                      x.ChallengeTitle
                 ).ToList();
-                userViewModel.userModel = userModel!=null?userModel:new UserModel();
+                userViewModel.userModel = userModel != null ? userModel : new UserModel();
                 userViewModel.ChallengeTitle = ChallengeTitle;
                 //return Json(new { userModel = userModel, challenges = ChallengeTitle }) ;
             }

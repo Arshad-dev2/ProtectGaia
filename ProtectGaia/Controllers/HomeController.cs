@@ -83,7 +83,7 @@ namespace ProtectGaia.Controllers
                 {
                     Title = x.Title,
                     ImageUrl = x.UrlToImage != null ? x.UrlToImage.OriginalString : string.Empty,
-                    PublishedDate = TimeCalculator(DateTime.UtcNow, x.PublishedAt.UtcDateTime),
+                    PublishedDate = TimeCalculator(DateTime.Now, x.PublishedAt.DateTime),
                     Source = x.Source.Name,
                     Url = x.Url.AbsoluteUri
                 }).ToList();

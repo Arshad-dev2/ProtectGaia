@@ -24,7 +24,7 @@ namespace ProtectGaia.DataAccess
                                             newsRequest.APiKey);
             string jsonString = new WebClient().DownloadString(requestParameter);
             newsResponse = JsonConvert.DeserializeObject<NewsResponse>(jsonString);
-            var filteredArticles = newsResponse.Articles.Where(y => y.UrlToImage!=null && y.Title.Length<=60).Select(x => new Article()
+            var filteredArticles = newsResponse.Articles.Where(y => y.UrlToImage!=null && y.UrlToImage.OriginalString.Contains("https:") && y.Title.Length<=60).Select(x => new Article()
             {
                 Author = x.Author,
                 Title = x.Title,

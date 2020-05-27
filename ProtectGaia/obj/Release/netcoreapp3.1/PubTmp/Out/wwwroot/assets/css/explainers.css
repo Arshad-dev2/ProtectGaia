@@ -1,0 +1,76 @@
+﻿
+h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: "Archivo Narrow", sans-serif;
+    line-height: 1.5;
+    letter-spacing: 0em;
+    margin-top: 0;
+    text-align:center;
+}
+
+.post-content article {
+    display: block;
+    float: left;
+    width: 65%;
+    margin-right: 0;
+    margin-left: 0%;
+    max-width: 70em;
+}
+
+    .post-content article p {
+        color: #453f3c;
+        font-family: "PT Sans", sans-serif;
+        font-size: 1.20em;
+        margin-top: 1em;
+    }
+
+.post-content article img {
+    max-width: 100%;
+    height: auto;
+}
+
+h3 {
+    font-size: 2em;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-family: "museo", serif;
+    line-height: 1.1;
+    margin-top: 1em;
+    text-align: center;
+    color: #453f3c;
+}
+
+strong {
+    font-weight: bold;
+}
+
+h4t {
+    font-size: 1.8em;
+    font-weight: 400;
+    line-height: 1.5em;    
+}
+h5t {
+    font-size: 1.8em;
+    font-weight: 400;
+   
+}
+
+
+@media screen and (max-width: 767.98px) {
+    h2, h3 {
+        font-size: 1.25em;
+    }
+    h4t {
+        font-size: 0.8em;
+        font-weight: 200;
+        line-height:unset;
+    }
+    h5t {
+        font-size: 1em;
+        font-weight: 300;
+        
+    }
+}
+

@@ -18,7 +18,7 @@ else
 <link rel="stylesheet" href="/assets/css/explainers.css" />
 
 <!-- Main -->
-<section id="main" style="background-color:#fff !important">
+<section id="main" style="background-color:#fff !important; top:-0.5rem;">
     <div class="container">
         <a href="#" class="image featured"><img src="~/images/explainers/climate_bg.png" alt="climate_change" style="width: 100%; height: auto" /></a>
         <div class="post-content">
@@ -61,7 +61,7 @@ else
 
                     <p style="text-align:left">
                         Due to the increased water carrying capacity of a warmer atmosphere, the world average water vapor
-                        content increases rapidly in response to an rise in air temperature. Because the water vapor is a
+                        content increases rapidly in response to a rise in air temperature. Because the water vapor is a
                         greenhouse gas, the original heat is increased. This phenomenon is known as <strong>positive feedback.</strong>
                     </p>
 
@@ -71,7 +71,7 @@ else
                             <span>
                                 <b>
                                     <h4t>
-                                        <i style="color: #00b3b3;">
+                                        <i style="color: #00b3b3;filter: brightness(.9);">
                                             “Climate change could be irreversible by 2030, According to a report conducted by the UN
                                             Intergovernmental Panel on Climate Change (IPCC), urgent action is needed to avoid the catastrophic
                                             effects of global warming.”<br />
@@ -79,7 +79,7 @@ else
                                     </h4t>
                                 </b>
                             </span>
-                            <span><i style="font-size: 0.8em"> (Source - <a href="https://www.ipcc.ch/">UN Intergovernmental Panel on Climate Change (IPCC)</a></i></span>
+                            <span><i style="font-size: 0.8em"> (Source - <a href="https://www.ipcc.ch/" target="_blank">UN Intergovernmental Panel on Climate Change (IPCC)</a></i></span>
                         </p>
                     </div><br />
 
@@ -105,5 +105,17 @@ else
             </center>
         </div>
     </div>
+    <div class="container" style="margin-top:1.5em;">
+        
+        <div class="post-content">
+            <center>
+
+                <a asp-controller="Explainers" asp-Action="HouseholdPractices" class="button alt">&laquo; Previous</a>
+                <a asp-controller="Explainers" asp-Action="HealthImpacts" class="button">Next &raquo;</a>
+
+            </center>
+        </div>
+    </div>
+
 </section>
 

@@ -424,6 +424,8 @@
     <None Remove="wwwroot\images\explainers\0_energy.png" />
     <None Remove="wwwroot\images\explainers\0_house.PNG" />
     <None Remove="wwwroot\images\explainers\0_transport.png" />
+    <None Remove="obj\Debug\netcoreapp3.1\Razor\Views\Dashboard\TaskRenderer.cshtml.g.cs" />
+    <None Remove="obj\Debug\netcoreapp3.1\Razor\Views\Dashboard\TaskDisplayPartialView.cshtml.g.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Update="Views\Blogs\Index.cshtml">

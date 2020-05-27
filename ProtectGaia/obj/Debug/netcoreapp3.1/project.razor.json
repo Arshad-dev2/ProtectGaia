@@ -1,5 +1,5 @@
 {
-  "FilePath": "/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/ProtectGaia.csproj",
+  "FilePath": "/Users/arsh/FIT5120/ProtectGaia/ProtectGaia.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "3.0",
@@ -20521,88 +20521,128 @@
   "RootNamespace": "ProtectGaia",
   "Documents": [
     {
-      "FilePath": "/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/Views/Home/Index.cshtml",
-      "TargetPath": "Views\\Home\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/Views/Shared/_Layout.cshtml",
-      "TargetPath": "Views\\Shared\\_Layout.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/Views/Resources/Visualization.cshtml",
-      "TargetPath": "Views\\Resources\\Visualization.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/Views/Explore/Infographics.cshtml",
-      "TargetPath": "Views\\Explore\\Infographics.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/Views/Home/Error.cshtml",
-      "TargetPath": "Views\\Home\\Error.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/Views/_ViewImports.cshtml",
-      "TargetPath": "Views\\_ViewImports.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/Views/Shared/Index.cshtml",
-      "TargetPath": "Views\\Shared\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/Views/Shared/_WebLayout.cshtml",
+      "FilePath": "/Users/arsh/FIT5120/ProtectGaia/Views/Shared/_WebLayout.cshtml",
       "TargetPath": "Views\\Shared\\_WebLayout.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/Views/Shared/_AuthenticatedLayout.cshtml",
-      "TargetPath": "Views\\Shared\\_AuthenticatedLayout.cshtml",
+      "FilePath": "/Users/arsh/FIT5120/ProtectGaia/Views/Explainers/ClimateChange.cshtml",
+      "TargetPath": "Views\\Explainers\\ClimateChange.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/Views/Shared/Error.cshtml",
+      "FilePath": "/Users/arsh/FIT5120/ProtectGaia/Views/Dashboard/TaskDisplayPartialView.cshtml",
+      "TargetPath": "Views\\Dashboard\\TaskDisplayPartialView.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/arsh/FIT5120/ProtectGaia/Views/Shared/Error.cshtml",
       "TargetPath": "Views\\Shared\\Error.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/Views/Home/Contact.cshtml",
-      "TargetPath": "Views\\Home\\Contact.cshtml",
+      "FilePath": "/Users/arsh/FIT5120/ProtectGaia/Views/Shared/_Layout.cshtml",
+      "TargetPath": "Views\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/Views/Home/Privacy.cshtml",
-      "TargetPath": "Views\\Home\\Privacy.cshtml",
+      "FilePath": "/Users/arsh/FIT5120/ProtectGaia/Views/Home/Index.cshtml",
+      "TargetPath": "Views\\Home\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/Views/_ViewStart.cshtml",
+      "FilePath": "/Users/arsh/FIT5120/ProtectGaia/Views/Resources/Visualization.cshtml",
+      "TargetPath": "Views\\Resources\\Visualization.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/arsh/FIT5120/ProtectGaia/Views/_ViewImports.cshtml",
+      "TargetPath": "Views\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/arsh/FIT5120/ProtectGaia/Views/Explore/Infographics.cshtml",
+      "TargetPath": "Views\\Explore\\Infographics.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/arsh/FIT5120/ProtectGaia/Views/Explainers/HealthImpacts.cshtml",
+      "TargetPath": "Views\\Explainers\\HealthImpacts.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/arsh/FIT5120/ProtectGaia/Views/Explainers/HouseholdPractices.cshtml",
+      "TargetPath": "Views\\Explainers\\HouseholdPractices.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/arsh/FIT5120/ProtectGaia/Views/_ViewStart.cshtml",
       "TargetPath": "Views\\_ViewStart.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/Views/Explore/Visualization.cshtml",
-      "TargetPath": "Views\\Explore\\Visualization.cshtml",
+      "FilePath": "/Users/arsh/FIT5120/ProtectGaia/Views/Explainers/MakeAChange.cshtml",
+      "TargetPath": "Views\\Explainers\\MakeAChange.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/Views/Shared/_ValidationScriptsPartial.cshtml",
-      "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/Views/Blogs/Index.cshtml",
+      "FilePath": "/Users/arsh/FIT5120/ProtectGaia/Views/Blogs/Index.cshtml",
       "TargetPath": "Views\\Blogs\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/Views/Dashboard/Index.cshtml",
+      "FilePath": "/Users/arsh/FIT5120/ProtectGaia/Views/Home/Privacy.cshtml",
+      "TargetPath": "Views\\Home\\Privacy.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/arsh/FIT5120/ProtectGaia/Views/Shared/_ValidationScriptsPartial.cshtml",
+      "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/arsh/FIT5120/ProtectGaia/Views/Explore/Visualization.cshtml",
+      "TargetPath": "Views\\Explore\\Visualization.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/arsh/FIT5120/ProtectGaia/Views/Explainers/TransportEmissions.cshtml",
+      "TargetPath": "Views\\Explainers\\TransportEmissions.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/arsh/FIT5120/ProtectGaia/Views/Dashboard/Index.cshtml",
       "TargetPath": "Views\\Dashboard\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/arsh/FIT5120/ProtectGaia/Views/Dashboard/TaskRenderer.cshtml",
+      "TargetPath": "Views\\Dashboard\\TaskRenderer.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/arsh/FIT5120/ProtectGaia/Views/Shared/Index.cshtml",
+      "TargetPath": "Views\\Shared\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/arsh/FIT5120/ProtectGaia/Views/Explainers/EnergyConsumption.cshtml",
+      "TargetPath": "Views\\Explainers\\EnergyConsumption.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/arsh/FIT5120/ProtectGaia/Views/Home/Contact.cshtml",
+      "TargetPath": "Views\\Home\\Contact.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/arsh/FIT5120/ProtectGaia/Views/Home/Error.cshtml",
+      "TargetPath": "Views\\Home\\Error.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/arsh/FIT5120/ProtectGaia/Views/Shared/_AuthenticatedLayout.cshtml",
+      "TargetPath": "Views\\Shared\\_AuthenticatedLayout.cshtml",
       "FileKind": "mvc"
     }
   ],

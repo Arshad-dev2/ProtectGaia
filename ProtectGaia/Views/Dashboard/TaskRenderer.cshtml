@@ -1,32 +1,36 @@
 ﻿@model ProtectGaia.Models.UserViewModel
 <script src="/assets2/js/form-val.js"></script>
-<input type="hidden" name="time" id="time" value="@Model.userModel.LastModified.AddMinutes(2)" />
-<script>// Set the date we're counting down to
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.26.0/moment.min.js"></script>
+<script src="/js/moment-with-locales.js"></script>
+<input type="hidden" name="time" id="time" value="@Model.userModel.LastModified.AddMinutes(1)" />
+
+
+<script>
+    // Set the date we're counting down to
 
 
     var elem = document.getElementById('time');
-    console.log(elem.value);
-    var countDownDate = new Date(elem.value).getTime();
-    console.log(countDownDate);
+
+    // var countDownDate = new Date(Date.parse(elem.value)).getTime());
+        var now = moment.utc(new Date()); //todays date    var end = moment.utc(elem.value).format("MMM D "); // another date    console.log('end');    console.log(end);    //var distance = moment.duration(end.diff(now));    console.log(moment.utc(elem.value).format("MMM D") + "," + moment.utc(elem.value).format("YYYY") + " " + moment.utc(elem.value).format("HH") + ":" + moment.utc(elem.value).format("mm") + ":" + moment.utc(elem.value).format("ss"))    var countDownDate = new Date(moment.utc(elem.value).format("MMM D") + "," + moment.utc(elem.value).format("YYYY") + " " + moment.utc(elem.value).format("HH") + ":" + moment.utc(elem.value).format("mm") + ":" + moment.utc(elem.value).format("ss")).getTime();    console.log("countDownDate");    console.log(countDownDate);
+
     // Update the count down every 1 second
     var x = setInterval(function () {
 
         // Get today's date and time
+
         var now = new Date().getTime();
 
         // Find the distance between now and the count down date//
 
         var distance = countDownDate - now;
-
+        console.log(distance);
         // Time calculations for days, hours, minutes and seconds//
 
         var days = Math.floor(distance / (1000 * 60 * 60 * 24));
         var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
         var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
         var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-        console.log(hours);
-        console.log(minutes);
-        console.log(seconds);
         // Output the result in an element with id="demo"
 
         document.getElementById("demo").innerHTML = "Next Task Available in<br/> <b>" + hours + "h "
@@ -36,17 +40,17 @@
 
         if (distance < 0) {
             clearInterval(x);
-            document.getElementById("demo").innerHTML = "Next Task Available<br>";
+            document.getElementById("demo").innerHTML = 'Next Task Available<br> Please refresh your profile!';
         }
     }, 1000);</script>
 
 <div class="row d-print-none">
-    <div class="col  levelcol">
+    <div class="col">
         <div class="container" style="border-style: solid; border-width: 1px; border-radius: 10px; border-color: #00b3b3 !important">
-            <p id="demo" style="text-align:center;font-size: 20px; margin-top: 0px;padding-top:1rem"></p>
+            <p id="demo" style="text-align:center;font-size: 20px; margin-top: 0px;padding-top:1rem"></p><br />
         </div>
         <br />
-        <div class="row">
+        <div class="row levelcol">
             <div class="col-lg-6 mb-4" style="margin-top: -1rem!important;">
                 <div class="card text-white bg-primary shadow" style="color: #fff; background-color: #00b3b3 !important;cursor:pointer">
                     <div class="card-body" id="level_1" style="display:inline-flex;padding:2rem;">
@@ -88,8 +92,7 @@
                         <p class="m-0" style="font-size:16px">LEVEL 3</p>
                         @if (Model.userModel.LevelId == 3)
                         {
-                            <i class="fa fa-unlock" style="        left: 17rem;
-        position: absolute;"></i>
+                            <i class="fa fa-unlock" style="left: 17rem; position: absolute;"></i>
                         }
                         else if (Model.userModel.LevelId > 3)
                         {
@@ -155,15 +158,16 @@
     </div>
     @* @await Html.PartialAsync("~/Views/Dashboard/TaskDisplayPartialView.cshtml", Model)*@
     <div class="col-lg-6 mb-4">
-        <div class="card shadow mb-4 dynamic taskcol">
-            <div class="card-header py-3">
+        <div class="card shadow mb-4 dynamic">
+            <div class="card-header py-3 taskcol">
                 <h6 class="text-primary font-weight-bold m-0" style="color: black!important;text-align:center;">TASKS FROM CURRENT LEVEL</h6>
             </div>
             <div class="card-body">
-                <p id="demo" style="text-align:center;font-size: 18px; margin-top: 0px;"></p>
+
                 @if (Model.ChallengeTitle != null && Model.ChallengeTitle.Count > 0)
                 {
-                    <form method="post" asp-controller="Dashboard" asp-action="Index">
+                    @using (Html.BeginForm("Index", "Dashboard", FormMethod.Post))
+                    {
                         @if (Model.IsErrorException)
                         {
                             <div class="alert alert-danger" role="alert">
@@ -183,7 +187,7 @@
                                     <br />
                                 </span>
                             </div>
-                            @if (Model.userModel.IsTask1Completed || Model.userModel.IsTask2Completed || Model.userModel.IsTask3Completed)
+                            @if (Model.userModel.IsTask1Completed || Model.userModel.IsTask2Completed || Model.userModel.IsTask3Completed||  Model.userModel.IsTask4Completed )
                             {
                                 <div id="taskPopupModal" class="modal">
 
@@ -194,16 +198,18 @@
                                         <h2 class="text-center" style="color:black">Congratulations</h2>
                                         <p class="text-center">
                                             You did it. You reduced <b>@Model.IndividualCarbonScore grams </b>of carbon.<br />
-                                            Smash the next task when it unlocks!
+                                            Smash the next task when it unlocks!<br />
+                                            Next Task available in 1 minute.
                                         </p>
 
-                                        <span class="btn btn-primary close text-center" style="font-size:16px;color:black;cursor:pointer;border:1px solid;border-radius:2rem;">Continue</span>
+                                        <span class="btn btn-primary close1 text-center" style="font-size:16px;background: #2fc2a2!important;border-color:#2fc2a2!important;color:white;cursor:pointer;border:1px solid;border-radius:2rem;">
+                                        Continue</span>
 
                                     </div>
 
                                 </div>
                             }
-                            else if (!(Model.userModel.IsTask1Completed && Model.userModel.IsTask2Completed && Model.userModel.IsTask3Completed&&Model.userModel.IsTask4Completed))
+                            else if (!Model.userModel.IsTask1Completed && !Model.userModel.IsTask2Completed && !Model.userModel.IsTask3Completed && !Model.userModel.IsTask4Completed)
                             {
                                 <div id="levelCompleted" class="modal">
 
@@ -217,7 +223,7 @@
                                             Do your best when the next level unlocks!
                                         </p>
 
-                                        <span class="btn btn-primary close text-center" style="font-size:16px;color:black;cursor:pointer;border:1px solid;border-radius:2rem;">Continue</span>
+                                        <span class="btn btn-primary close1 text-center" style="font-size:16px;color:black;cursor:pointer;border:1px solid;border-radius:2rem;">Continue</span>
 
                                     </div>
                                 </div>
@@ -251,7 +257,7 @@
                                 <div class="row align-items-center no-gutters">
                                     @if (!Model.userModel.IsTask2Completed && Model.userModel.IsTask1Completed)
                                     {
-                                        if ((DateTime.Now - Model.userModel.LastModified).TotalMinutes <= 2)
+                                        if ((DateTime.Now - Model.userModel.LastModified).TotalMinutes <= 1)
                                         {
                                             <div class="custom-control custom-checkbox mb-3">
                                                 @Html.CheckBoxFor(m => m.userModel.IsTask2Completed, new { @class = "custom-control-input", @style = "z-index:7", @disabled = "disabled" })
@@ -287,7 +293,7 @@
                                 <div class="row align-items-center no-gutters">
                                     @if (!Model.userModel.IsTask3Completed && Model.userModel.IsTask2Completed)
                                     {
-                                        if ((DateTime.Now - Model.userModel.LastModified).TotalMinutes <= 2)
+                                        if ((DateTime.Now - Model.userModel.LastModified).TotalMinutes <= 1)
                                         {
                                             <div class="custom-control custom-checkbox mb-3">
                                                 @Html.CheckBoxFor(m => m.userModel.IsTask3Completed, new { @class = "custom-control-input", @style = "z-index:7", @disabled = "disabled" })
@@ -322,7 +328,7 @@
                                 <div class="row align-items-center no-gutters">
                                     @if (!Model.userModel.IsTask4Completed && Model.userModel.IsTask3Completed)
                                     {
-                                        if ((DateTime.Now - Model.userModel.LastModified).TotalMinutes <= 2)
+                                        if ((DateTime.Now - Model.userModel.LastModified).TotalMinutes <= 1)
                                         {
                                             <div class="custom-control custom-checkbox mb-3">
                                                 @Html.CheckBoxFor(m => m.userModel.IsTask4Completed, new { @class = "custom-control-input", @style = "z-index:7", @disabled = "disabled" })
@@ -364,7 +370,7 @@
                             </li>
                         </ul>
 
-                    </form>
+                    }
                 }
                 else
                 {

@@ -6,3 +6,12 @@
 /Users/arsh/Desktop/IE/EcoMorph/ProtectGaia.Entities/obj/Release/netstandard2.1/ProtectGaia.Entities.AssemblyInfo.cs
 /Users/arsh/Desktop/IE/EcoMorph/ProtectGaia.Entities/obj/Release/netstandard2.1/ProtectGaia.Entities.dll
 /Users/arsh/Desktop/IE/EcoMorph/ProtectGaia.Entities/obj/Release/netstandard2.1/ProtectGaia.Entities.pdb
+C:\Users\gupta\source\repos\ProtectGaia-dev-1.0.1\ProtectGaia.Entities\bin\Release\netstandard2.1\ProtectGaia.Entities.deps.json
+C:\Users\gupta\source\repos\ProtectGaia-dev-1.0.1\ProtectGaia.Entities\bin\Release\netstandard2.1\ProtectGaia.Entities.dll
+C:\Users\gupta\source\repos\ProtectGaia-dev-1.0.1\ProtectGaia.Entities\bin\Release\netstandard2.1\ProtectGaia.Entities.pdb
+C:\Users\gupta\source\repos\ProtectGaia-dev-1.0.1\ProtectGaia.Entities\obj\Release\netstandard2.1\ProtectGaia.Entities.csprojAssemblyReference.cache
+C:\Users\gupta\source\repos\ProtectGaia-dev-1.0.1\ProtectGaia.Entities\obj\Release\netstandard2.1\ProtectGaia.Entities.csproj.CoreCompileInputs.cache
+C:\Users\gupta\source\repos\ProtectGaia-dev-1.0.1\ProtectGaia.Entities\obj\Release\netstandard2.1\ProtectGaia.Entities.AssemblyInfoInputs.cache
+C:\Users\gupta\source\repos\ProtectGaia-dev-1.0.1\ProtectGaia.Entities\obj\Release\netstandard2.1\ProtectGaia.Entities.AssemblyInfo.cs
+C:\Users\gupta\source\repos\ProtectGaia-dev-1.0.1\ProtectGaia.Entities\obj\Release\netstandard2.1\ProtectGaia.Entities.dll
+C:\Users\gupta\source\repos\ProtectGaia-dev-1.0.1\ProtectGaia.Entities\obj\Release\netstandard2.1\ProtectGaia.Entities.pdb
