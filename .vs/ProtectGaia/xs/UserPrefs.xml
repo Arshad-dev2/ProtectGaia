@@ -1,0 +1,26 @@
+﻿<Properties StartupConfiguration="{3FA95DA7-42EF-40D9-B8D3-C08257AAA405}|Default">
+  <MonoDevelop.Ide.Workbench>
+    <Files>
+      <File FileName="ProtectGaia/Views/Shared/NotFound.cshtml" Line="18" Column="6" />
+      <File FileName="ProtectGaia/Controllers/ErrorController.cs" Line="6" Column="32" />
+      <File FileName="ProtectGaia/Views/Dashboard/Index.cshtml" Line="1" Column="1" />
+      <File FileName="ProtectGaia/wwwroot/assets2/js/form-val.js" Line="55" Column="16" />
+      <File FileName="ProtectGaia/Controllers/DashboardController.cs" Line="162" Column="61" />
+      <File FileName="ProtectGaia/Views/Dashboard/TaskRenderer.cshtml" Line="21" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="ProtectGaia" expanded="True" selected="True" />
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.ProtectGaia PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
