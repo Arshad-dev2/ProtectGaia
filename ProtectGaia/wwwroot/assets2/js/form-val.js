@@ -52,7 +52,7 @@ $("#level_5").click(function () {
 
 function getchallenge(data) {
     $.ajax({
-        url: "Dashboard/GetChallenges",
+        url: "/Dashboard/GetChallenges",
         type: "POST",
         data: { LevelId: data },
         cache: false,

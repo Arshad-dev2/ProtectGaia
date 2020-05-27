@@ -4,6 +4,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Web;
+using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
@@ -197,9 +198,7 @@ namespace ProtectGaia.Controllers
 
         public IActionResult SignOut(string userEmail)
         {
-            _session.Remove("UserName");
-            _session.Remove("UserEmail");
-            _session.SetString("IsLoggedIn","false");
+            _session.Clear();
             return Json(new { newUrl = Url.Action("Index", "Home") });
         }
 
@@ -244,5 +243,8 @@ namespace ProtectGaia.Controllers
             }
             return days;
         }
+
+
+
     }
 }

@@ -1,20 +1,17 @@
 ﻿@model ProtectGaia.Models.UserViewModel
 <script src="/assets2/js/form-val.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.26.0/moment.min.js"></script>
-<script src="/js/moment-with-locales.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.26.0/moment-with-locales.min.js"></script>
 <input type="hidden" name="time" id="time" value="@Model.userModel.LastModified.AddMinutes(1)" />
 
 
 <script>
-    // Set the date we're counting down to
-
 
     var elem = document.getElementById('time');
 
-    // var countDownDate = new Date(Date.parse(elem.value)).getTime());
-        var now = moment.utc(new Date()); //todays date    var end = moment.utc(elem.value).format("MMM D "); // another date    console.log('end');    console.log(end);    //var distance = moment.duration(end.diff(now));    console.log(moment.utc(elem.value).format("MMM D") + "," + moment.utc(elem.value).format("YYYY") + " " + moment.utc(elem.value).format("HH") + ":" + moment.utc(elem.value).format("mm") + ":" + moment.utc(elem.value).format("ss"))    var countDownDate = new Date(moment.utc(elem.value).format("MMM D") + "," + moment.utc(elem.value).format("YYYY") + " " + moment.utc(elem.value).format("HH") + ":" + moment.utc(elem.value).format("mm") + ":" + moment.utc(elem.value).format("ss")).getTime();    console.log("countDownDate");    console.log(countDownDate);
-
+        var now = moment.utc(new Date()); //todays date    var end = moment.utc(elem.value).format("MMM D "); // another date       console.log(moment.utc(elem.value).format("MMM D") + "," + moment.utc(elem.value).format("YYYY") + " " + moment.utc(elem.value).format("HH") + ":" + moment.utc(elem.value).format("mm") + ":" + moment.utc(elem.value).format("ss"))    var countDownDate = new Date(moment.utc(elem.value).format("MMM D") + "," + moment.utc(elem.value).format("YYYY") + " " + moment.utc(elem.value).format("HH") + ":" + moment.utc(elem.value).format("mm") + ":" + moment.utc(elem.value).format("ss")).getTime();
     // Update the count down every 1 second
+
     var x = setInterval(function () {
 
         // Get today's date and time

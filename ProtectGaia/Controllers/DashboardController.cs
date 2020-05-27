@@ -44,7 +44,7 @@ namespace ProtectGaia.Controllers
                 userViewModel.ChallengeTitle = _challenge.GetChallengesByLevelIdAsync(userModel.LevelId).Select(x =>
                      x.ChallengeTitle
                 ).ToList();
-                _logger.LogInformation(_session.GetString("UserModel"));
+                
                 return View(userViewModel);
             }
             else
@@ -84,7 +84,7 @@ namespace ProtectGaia.Controllers
                             Carb_Obj = new Dictionary<string, int>();
                         }
                         //Points Update done here
-                        if (userModel.IsTask1Completed)
+                        if (!usr.IsTask1Completed && userModel.IsTask1Completed)
                         {
                             userViewModel.userModel.IsFirstTimeLogin = false;
                             userViewModel.userModel.IsTask1Completed = true;
@@ -112,7 +112,7 @@ namespace ProtectGaia.Controllers
                             userViewModel.userModel.Activity = JsonConvert.SerializeObject(activity);
                             userViewModel.userModel = await _user.UpdateMembershipAsync(userViewModel.userModel);
                         }
-                        if (Carb_Obj != null && userModel.IsTask2Completed)
+                        if (Carb_Obj != null && !usr.IsTask2Completed && userModel.IsTask2Completed)
                         {
                             userViewModel.IndividualCarbonScore = challenges[1].CarbonScore;
                             userViewModel.userModel.CarbonScore += challenges[1].CarbonScore;
@@ -136,7 +136,7 @@ namespace ProtectGaia.Controllers
                             userViewModel.userModel.CarbonActivity = JsonConvert.SerializeObject(Carb_Obj);
                             userViewModel.userModel = await _user.UpdateMembershipAsync(userViewModel.userModel);
                         }
-                        if (Carb_Obj != null && userModel.IsTask3Completed)
+                        if (Carb_Obj != null && !usr.IsTask3Completed && userModel.IsTask3Completed)
                         {
                             userViewModel.IndividualCarbonScore = challenges[2].CarbonScore;
                             userViewModel.userModel.CarbonScore += challenges[2].CarbonScore;
@@ -159,7 +159,7 @@ namespace ProtectGaia.Controllers
                             userViewModel.userModel.CarbonActivity = JsonConvert.SerializeObject(Carb_Obj);
                             userViewModel.userModel = await _user.UpdateMembershipAsync(userViewModel.userModel);
                         }
-                        if (Carb_Obj != null && userModel.IsTask4Completed)
+                        if (Carb_Obj != null && !usr.IsTask4Completed && userModel.IsTask4Completed)
                         {
                             userViewModel.IndividualCarbonScore = challenges[3].CarbonScore;
                             userViewModel.userModel.CarbonScore += challenges[3].CarbonScore;
@@ -209,6 +209,10 @@ namespace ProtectGaia.Controllers
                         ModelState.Clear();
                         return View(userViewModel);
                     }
+                else
+                {
+                    return Redirect("/home/index");
+                }
             }
             catch (Exception ex)
             {
