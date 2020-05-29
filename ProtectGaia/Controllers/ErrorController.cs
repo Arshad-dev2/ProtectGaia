@@ -16,7 +16,7 @@ namespace ProtectGaia.Controllers
         [Route("Error/{statusCode}")]
         public IActionResult Index(int statusCode)
         {
-            var statusCodeResult = HttpContext.Features.Get<IStatusCodeReExecuteFeature>();
+            //var statusCodeResult = HttpContext.Features.Get<IStatusCodeReExecuteFeature>();
             switch (statusCode)
             {
                 case 404:

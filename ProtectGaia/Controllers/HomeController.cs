@@ -203,9 +203,23 @@ namespace ProtectGaia.Controllers
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
+        public IActionResult Error(int statusCode)
         {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+           // return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+
+         var statusCodeResult = HttpContext.Features.Get<IStatusCodeReExecuteFeature>();
+            switch (statusCode)
+            {
+                case 404:
+                    ViewBag.Title = "404 Page not Found";
+                    ViewBag.ErrorMessage = "Oops, The Page you are looking for can't be found!";
+                    break;
+                case 500:
+                    ViewBag.Title = "500 Internal Server Error";
+                    ViewBag.ErrorMessage = "The requested url is temporarily unavailable";
+                    break;
+            }
+            return View("NotFound");
         }
 
         /// <summary>

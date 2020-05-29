@@ -1,26 +1,42 @@
 ﻿<Properties StartupConfiguration="{3FA95DA7-42EF-40D9-B8D3-C08257AAA405}|Default">
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="ProtectGaia/Properties/launchSettings.json">
     <Files>
-      <File FileName="ProtectGaia/Views/Shared/NotFound.cshtml" Line="18" Column="6" />
-      <File FileName="ProtectGaia/Controllers/ErrorController.cs" Line="6" Column="32" />
+      <File FileName="ProtectGaia/Views/Shared/NotFound.cshtml" Line="12" Column="1" />
       <File FileName="ProtectGaia/Views/Dashboard/Index.cshtml" Line="1" Column="1" />
-      <File FileName="ProtectGaia/wwwroot/assets2/js/form-val.js" Line="55" Column="16" />
-      <File FileName="ProtectGaia/Controllers/DashboardController.cs" Line="162" Column="61" />
-      <File FileName="ProtectGaia/Views/Dashboard/TaskRenderer.cshtml" Line="21" Column="1" />
+      <File FileName="ProtectGaia/wwwroot/assets2/js/form-val.js" Line="1" Column="1" />
+      <File FileName="ProtectGaia/Controllers/DashboardController.cs" Line="52" Column="48" />
+      <File FileName="ProtectGaia/Startup.cs" Line="76" Column="14" />
+      <File FileName="ProtectGaia/Models/UserViewModel.cs" Line="1" Column="1" />
+      <File FileName="ProtectGaia/appsettings.json" Line="1" Column="1" />
+      <File FileName="ProtectGaia/Views/Shared/Error.cshtml" />
+      <File FileName="ProtectGaia/Controllers/BlogsController.cs" Line="1" Column="1" />
+      <File FileName="ProtectGaia/Controllers/HomeController.cs" Line="217" Column="26" />
+      <File FileName="ProtectGaia/Properties/launchSettings.json" Line="22" Column="46" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="ProtectGaia" expanded="True" selected="True" />
+          <Node name="ProtectGaia" expanded="True">
+            <Node name="ProtectGaia" expanded="True">
+              <Node name="Properties" expanded="True" />
+              <Node name="appsettings.json" expanded="True" />
+              <Node name="ProtectGaia.csproj" selected="True" />
+            </Node>
+          </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.ProtectGaia PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/arsh/GaiaGit/ProtectGaia/ProtectGaia/Startup.cs" relfile="ProtectGaia/Startup.cs" line="70" column="1" />
+      <Breakpoint file="/Users/arsh/GaiaGit/ProtectGaia/ProtectGaia/Controllers/HomeController.cs" relfile="ProtectGaia/Controllers/HomeController.cs" line="210" column="1" />
+      <Breakpoint file="/Users/arsh/GaiaGit/ProtectGaia/ProtectGaia/Controllers/HomeController.cs" relfile="ProtectGaia/Controllers/HomeController.cs" line="207" column="1" />
+      <Breakpoint file="/Users/arsh/GaiaGit/ProtectGaia/ProtectGaia/Controllers/HomeController.cs" relfile="ProtectGaia/Controllers/HomeController.cs" line="212" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
 </Properties>

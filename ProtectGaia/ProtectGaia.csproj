@@ -427,6 +427,9 @@
     <None Remove="obj\Debug\netcoreapp3.1\Razor\Views\Dashboard\TaskRenderer.cshtml.g.cs" />
     <None Remove="obj\Debug\netcoreapp3.1\Razor\Views\Dashboard\TaskDisplayPartialView.cshtml.g.cs" />
     <None Remove="obj\Debug\netcoreapp3.1\Razor\Views\Shared\NotFound.cshtml.g.cs" />
+    <None Remove="obj\Release\netcoreapp3.1\Razor\Views\Shared\NotFound.cshtml.g.cs" />
+    <None Remove="obj\Release\netcoreapp3.1\Razor\Views\Dashboard\TaskRenderer.cshtml.g.cs" />
+    <None Remove="obj\Release\netcoreapp3.1\Razor\Views\Dashboard\TaskDisplayPartialView.cshtml.g.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Update="Views\Blogs\Index.cshtml">
