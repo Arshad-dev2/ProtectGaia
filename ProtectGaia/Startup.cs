@@ -47,6 +47,10 @@ namespace ProtectGaia
                 options.Cookie.HttpOnly = true;
                 options.Cookie.IsEssential = true;
             });
+            services.ConfigureApplicationCookie(options =>
+            {
+                options.Cookie.SameSite = SameSiteMode.None;
+            });
 
             services.AddScoped<INewsApi, NewsApi>();
             services.AddScoped<IWeatherApi, WeatherApi>();

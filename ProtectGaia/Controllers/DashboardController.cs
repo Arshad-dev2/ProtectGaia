@@ -30,7 +30,7 @@ namespace ProtectGaia.Controllers
         [HttpGet]
         public IActionResult Index()
         {
-
+            TempData["isUpdate"] = false.ToString();
             if (_session != null && _session.GetString("UserModel") != null)
             {
                 UserModel userModel = JsonConvert.DeserializeObject<UserModel>(_session.GetString("UserModel"));
@@ -62,6 +62,14 @@ namespace ProtectGaia.Controllers
             userViewModel.IsErrorException = false;
             userViewModel.userModel.IsFirstTimeLogin = false;
             TempData["isPost"] = true.ToString();
+            if (TempData.ContainsKey("isUpdate") && !string.IsNullOrEmpty(TempData["isUpdate"].ToString() ) && TempData["isUpdate"].ToString().ToLower()=="true")
+            {
+                return RedirectToAction("Index");
+            }
+            else
+            {
+                TempData["isUpdate"] = false.ToString();
+            }
             try
             {
                 if (_session != null && _session.GetString("UserModel") != null)
@@ -111,6 +119,7 @@ namespace ProtectGaia.Controllers
 
                             userViewModel.userModel.Activity = JsonConvert.SerializeObject(activity);
                             userViewModel.userModel = await _user.UpdateMembershipAsync(userViewModel.userModel);
+                            TempData["isUpdate"] = true.ToString();
                         }
                         if (Carb_Obj != null && !usr.IsTask2Completed && userModel.IsTask2Completed)
                         {
@@ -135,6 +144,8 @@ namespace ProtectGaia.Controllers
                             userViewModel.userModel.Activity = JsonConvert.SerializeObject(activity);
                             userViewModel.userModel.CarbonActivity = JsonConvert.SerializeObject(Carb_Obj);
                             userViewModel.userModel = await _user.UpdateMembershipAsync(userViewModel.userModel);
+                            TempData["isUpdate"] = true.ToString();
+
                         }
                         if (Carb_Obj != null && !usr.IsTask3Completed && userModel.IsTask3Completed)
                         {
@@ -158,6 +169,8 @@ namespace ProtectGaia.Controllers
                             }
                             userViewModel.userModel.CarbonActivity = JsonConvert.SerializeObject(Carb_Obj);
                             userViewModel.userModel = await _user.UpdateMembershipAsync(userViewModel.userModel);
+                            TempData["isUpdate"] = true.ToString();
+
                         }
                         if (Carb_Obj != null && !usr.IsTask4Completed && userModel.IsTask4Completed)
                         {
@@ -195,6 +208,8 @@ namespace ProtectGaia.Controllers
                             userViewModel.ChallengeTitle = _challenge.GetChallengesByLevelIdAsync(userViewModel.userModel.LevelId).Select(x =>
                                  x.ChallengeTitle
                             ).ToList();
+                            TempData["isUpdate"] = true.ToString();
+
                         }
                     }
                     else
@@ -203,9 +218,9 @@ namespace ProtectGaia.Controllers
                         userViewModel.userModel.Activity = JsonConvert.SerializeObject(activity);
                         userViewModel.userModel.IsFirstTimeLogin = false;
                         userViewModel.userModel = await _user.CreateUserAsync(userViewModel.userModel);
-
+                        TempData["isUpdate"] = true.ToString();
                     }
-                        _session.SetString("UserModel", JsonConvert.SerializeObject(userViewModel.userModel));
+                    _session.SetString("UserModel", JsonConvert.SerializeObject(userViewModel.userModel));
                         ModelState.Clear();
                         return View(userViewModel);
                     }

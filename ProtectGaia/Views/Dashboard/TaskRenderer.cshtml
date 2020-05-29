@@ -54,11 +54,11 @@
                         <p class="m-0" style="font-size: 16px">LEVEL 1</p>
                         @if (Model.userModel.LevelId == 1)
                         {
-                            <i class="fa fa-unlock" style="left: 17rem;position: absolute;"></i>
+                            <i class="fa fa-unlock fa-lg" style="left: 17rem;position: absolute;"></i>
                         }
                         else
                         {
-                            <i class="fa fa-star" style="left: 17rem;position: absolute;color: rgb(255,215,0);"></i>
+                            <i class="fa fa-star fa-lg" style="left: 17rem;position: absolute;color: rgb(255,215,0);"></i>
                         }
 
                     </div>
@@ -70,15 +70,15 @@
                         <p class="m-0" style="font-size:16px">LEVEL 2</p>
                         @if (Model.userModel.LevelId == 2)
                         {
-                            <i class="fa fa-unlock" style="left: 17rem;position: absolute;"></i>
+                            <i class="fa fa-unlock fa-lg" style="left: 17rem;position: absolute;"></i>
                         }
                         else if (Model.userModel.LevelId > 2)
                         {
-                            <i class="fa fa-star" style="left: 17rem;position: absolute;color: rgb(255,215,0)"></i>
+                            <i class="fa fa-star fa-lg" style="left: 17rem;position: absolute;color: rgb(255,215,0)"></i>
                         }
                         else
                         {
-                            <i class="fa fa-lock" style="left: 17rem;position: absolute;"></i>
+                            <i class="fa fa-lock fa-lg" style="left: 17rem;position: absolute;"></i>
                         }
                     </div>
                 </div>
@@ -89,15 +89,15 @@
                         <p class="m-0" style="font-size:16px">LEVEL 3</p>
                         @if (Model.userModel.LevelId == 3)
                         {
-                            <i class="fa fa-unlock" style="left: 17rem; position: absolute;"></i>
+                            <i class="fa fa-unlock fa-lg" style="left: 17rem; position: absolute;"></i>
                         }
                         else if (Model.userModel.LevelId > 3)
                         {
-                            <i class="fa fa-star" style="left: 17rem;position: absolute;color: rgb(255,215,0);"></i>
+                            <i class="fa fa-star fa-lg" style="left: 17rem;position: absolute;color: rgb(255,215,0);"></i>
                         }
                         else
                         {
-                            <i class="fa fa-lock" style="left: 17rem;position: absolute;"></i>
+                            <i class="fa fa-lock fa-lg" style="left: 17rem;position: absolute;"></i>
                         }
                     </div>
                 </div>
@@ -108,15 +108,15 @@
                         <p class="m-0" style="font-size: 16px">LEVEL 4</p>
                         @if (Model.userModel.LevelId == 4)
                         {
-                            <i class="fa fa-unlock" style="left: 17rem;position: absolute;"></i>
+                            <i class="fa fa-unlock fa-lg" style="left: 17rem;position: absolute;"></i>
                         }
                         else if (Model.userModel.LevelId > 4)
                         {
-                            <i class="fa fa-star" style="left: 17rem;position: absolute;color: rgb(255,215,0)"></i>
+                            <i class="fa fa-star fa-lg" style="left: 17rem;position: absolute;color: rgb(255,215,0)"></i>
                         }
                         else
                         {
-                            <i class="fa fa-lock" style="left: 17rem;position: absolute;"></i>
+                            <i class="fa fa-lock fa-lg" style="left: 17rem;position: absolute;"></i>
                         }
                     </div>
                 </div>
@@ -127,15 +127,15 @@
                         <p class="m-0" style="font-size:16px">LEVEL 5</p>
                         @if (Model.userModel.LevelId == 5)
                         {
-                            <i class="fa fa-unlock" style="left: 17rem;position: absolute;"></i>
+                            <i class="fa fa-unlock fa-lg" style="left: 17rem;position: absolute;"></i>
                         }
                         else if (Model.userModel.LevelId > 5)
                         {
-                            <i class="fa fa-star" style="left: 17rem;position: absolute;color: rgb(255,215,0)"></i>
+                            <i class="fa fa-star fa-lg" style="left: 17rem;position: absolute;color: rgb(255,215,0)"></i>
                         }
                         else
                         {
-                            <i class="fa fa-lock" style="left: 17rem;position: absolute;"></i>
+                            <i class="fa fa-lock fa-lg" style="left: 17rem;position: absolute;"></i>
                         }
                     </div>
                 </div>
@@ -147,7 +147,7 @@
                         <p class="m-0" style="color:#fff;font-size: 16px;margin-top: 4rem;
     float: right;
     margin-right: 4rem;">YOU ARE A PLANET HERO </p>
-                        <i class="fas fa-trophy" style="color:rgb(255,215,0);position: relative;left: 4rem;"></i>
+                        <i class="fas fa-trophy fa-lg" style="color:rgb(255,215,0);position: relative;left: 4rem;"></i>
                     </div>
                 </div>
             </div>
@@ -184,7 +184,7 @@
                                     <br />
                                 </span>
                             </div>
-                            @if (Model.userModel.IsTask1Completed || Model.userModel.IsTask2Completed || Model.userModel.IsTask3Completed||  Model.userModel.IsTask4Completed )
+                            @if (Model.userModel.IsTask1Completed || Model.userModel.IsTask2Completed || Model.userModel.IsTask3Completed || Model.userModel.IsTask4Completed)
                             {
                                 <div id="taskPopupModal" class="modal">
 
@@ -200,7 +200,8 @@
                                         </p>
 
                                         <span class="btn btn-primary close1 text-center" style="font-size:16px;background: #2fc2a2!important;border-color:#2fc2a2!important;color:white;cursor:pointer;border:1px solid;border-radius:2rem;">
-                                        Continue</span>
+                                            Continue
+                                        </span>
 
                                     </div>
 
@@ -371,13 +372,26 @@
                 }
                 else
                 {
-                    <div class="alert alert-info" role="alert">
-                        <i class="far fa-info-circle"></i>
-                        <span>
-                            <strong>No Tasks to display. Please try  again later</strong>
-                            <br />
-                        </span>
-                    </div>
+                    if (Model.userModel.LevelId>5)
+                    {
+                        <div class="alert alert-info" role="alert">
+                            <i class="far fa-info-circle  fa-lg"></i>
+                            <span>
+                        <strong>You are now  a Planet HERO! Be Proud and continue doing the same !</strong>
+                                <br />
+                            </span>
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="alert alert-info" role="alert">
+                            <i class="far fa-info-circle fa-lg"></i>
+                            <span>
+                                <strong>No Tasks to display. Please try  again later</strong>
+                                <br />
+                            </span>
+                        </div>
+                    }
                 }
             </div>
         </div>
