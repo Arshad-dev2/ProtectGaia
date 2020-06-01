@@ -82,3 +82,15 @@ C:/Users/gupta/source/repos/ProtectGaia-dev-1.0.1/ProtectGaia.Interface/obj/Debu
 /Users/arsh/GaiaGit/ProtectGaia/ProtectGaia.Interface/obj/Debug/netstandard2.1/ProtectGaia.Interface.csproj.CopyComplete
 /Users/arsh/GaiaGit/ProtectGaia/ProtectGaia.Interface/obj/Debug/netstandard2.1/ProtectGaia.Interface.dll
 /Users/arsh/GaiaGit/ProtectGaia/ProtectGaia.Interface/obj/Debug/netstandard2.1/ProtectGaia.Interface.pdb
+C:\Users\gupta\Downloads\GaiaGit 2\GaiaGit\ProtectGaia\ProtectGaia.Interface\bin\Debug\netstandard2.1\ProtectGaia.Interface.deps.json
+C:\Users\gupta\Downloads\GaiaGit 2\GaiaGit\ProtectGaia\ProtectGaia.Interface\bin\Debug\netstandard2.1\ProtectGaia.Interface.dll
+C:\Users\gupta\Downloads\GaiaGit 2\GaiaGit\ProtectGaia\ProtectGaia.Interface\bin\Debug\netstandard2.1\ProtectGaia.Interface.pdb
+C:\Users\gupta\Downloads\GaiaGit 2\GaiaGit\ProtectGaia\ProtectGaia.Interface\bin\Debug\netstandard2.1\ProtectGaia.Entities.dll
+C:\Users\gupta\Downloads\GaiaGit 2\GaiaGit\ProtectGaia\ProtectGaia.Interface\bin\Debug\netstandard2.1\ProtectGaia.Entities.pdb
+C:\Users\gupta\Downloads\GaiaGit 2\GaiaGit\ProtectGaia\ProtectGaia.Interface\obj\Debug\netstandard2.1\ProtectGaia.Interface.csprojAssemblyReference.cache
+C:\Users\gupta\Downloads\GaiaGit 2\GaiaGit\ProtectGaia\ProtectGaia.Interface\obj\Debug\netstandard2.1\ProtectGaia.Interface.csproj.CoreCompileInputs.cache
+C:\Users\gupta\Downloads\GaiaGit 2\GaiaGit\ProtectGaia\ProtectGaia.Interface\obj\Debug\netstandard2.1\ProtectGaia.Interface.AssemblyInfoInputs.cache
+C:\Users\gupta\Downloads\GaiaGit 2\GaiaGit\ProtectGaia\ProtectGaia.Interface\obj\Debug\netstandard2.1\ProtectGaia.Interface.AssemblyInfo.cs
+C:\Users\gupta\Downloads\GaiaGit 2\GaiaGit\ProtectGaia\ProtectGaia.Interface\obj\Debug\netstandard2.1\ProtectGaia.Interface.csproj.CopyComplete
+C:\Users\gupta\Downloads\GaiaGit 2\GaiaGit\ProtectGaia\ProtectGaia.Interface\obj\Debug\netstandard2.1\ProtectGaia.Interface.dll
+C:\Users\gupta\Downloads\GaiaGit 2\GaiaGit\ProtectGaia\ProtectGaia.Interface\obj\Debug\netstandard2.1\ProtectGaia.Interface.pdb

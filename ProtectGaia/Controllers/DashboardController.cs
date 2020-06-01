@@ -221,8 +221,13 @@ namespace ProtectGaia.Controllers
                         TempData["isUpdate"] = true.ToString();
                     }
                     _session.SetString("UserModel", JsonConvert.SerializeObject(userViewModel.userModel));
-                        ModelState.Clear();
-                        return View(userViewModel);
+                    //ModelState.Clear();
+                    ModelState.Remove("userModel.isTask1Completed");
+                    ModelState.Remove("userModel.isTask2Completed");
+                    ModelState.Remove("userModel.isTask3Completed");
+                    ModelState.Remove("userModel.isTask4Completed");
+
+                    return View(userViewModel);
                     }
                 else
                 {
@@ -234,7 +239,12 @@ namespace ProtectGaia.Controllers
                 userViewModel.IsErrorException = true;
             }
             _session.SetString("UserModel", JsonConvert.SerializeObject(userViewModel.userModel));
-            ModelState.Clear();
+            //ModelState.Clear();
+            ModelState.Remove("userModel.isTask1Completed");
+            ModelState.Remove("userModel.isTask2Completed");
+            ModelState.Remove("userModel.isTask3Completed");
+            ModelState.Remove("userModel.isTask4Completed");
+
             return View(userViewModel);
             //return View(userViewModel);
         }

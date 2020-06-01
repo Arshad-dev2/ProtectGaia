@@ -211,11 +211,13 @@ namespace ProtectGaia.Controllers
             switch (statusCode)
             {
                 case 404:
-                    ViewBag.Title = "404 Page not Found";
+                    ViewBag.ErrorTitle = "404";
+                    ViewBag.ErrorTitleNext = "Page not Found";
                     ViewBag.ErrorMessage = "Oops, The Page you are looking for can't be found!";
                     break;
                 case 500:
-                    ViewBag.Title = "500 Internal Server Error";
+                    ViewBag.ErrorTitle = "500";
+                    ViewBag.ErrorTitleNext = "Internal Server Error";
                     ViewBag.ErrorMessage = "The requested url is temporarily unavailable";
                     break;
             }

@@ -78,7 +78,7 @@
                         @if (Model.userModel.LevelId > 0)
                         {
                             @Html.CheckBoxFor(m => m.userModel.IsTask1Completed, new { @class = "custom-control-input", @style = "z-index:7" })}
-                        <label class="custom-control-label" for="@Model.userModel.IsTask1Completed"> @Model.ChallengeTitle[0]</label>
+                        <label class="custom-control-label" for="@Model.userModel.IsTask1Completed"> @Model.ChallengeTitle[0] (2points)</label>
                     </div>
                 }
                 else
@@ -88,7 +88,7 @@
                         {
                             @Html.CheckBoxFor(m => m.userModel.IsTask1Completed, new { @class = "custom-control-input", @style = "z-index:7", @disabled = "disabled" })
                         }
-                        <label class="custom-control-label" for="@Model.userModel.IsTask1Completed"> @Model.ChallengeTitle[0]</label>
+                        <label class="custom-control-label" for="@Model.userModel.IsTask1Completed"> @Model.ChallengeTitle[0] (2points)</label>
                     </div>
                 }
             </div>
@@ -106,7 +106,7 @@
                             {
                                 @Html.CheckBoxFor(m => m.userModel.IsTask2Completed, new { @class = "custom-control-input", @style = "z-index:7", @disabled = "disabled" })}
                             @*<input type="checkbox" class="custom-control-input" id="@Model.userModel.IsTask2Completed" disabled="disabled" name="@Model.userModel.IsTask2Completed">*@
-                            <label class="custom-control-label" for="@Model.userModel.IsTask2Completed"> @Model.ChallengeTitle[1]</label>
+                            <label class="custom-control-label" for="@Model.userModel.IsTask2Completed"> @Model.ChallengeTitle[1] (3points)</label>
                         </div>
                     }
                     else
@@ -116,7 +116,7 @@
                             {
                                 @Html.CheckBoxFor(m => m.userModel.IsTask2Completed, new { @class = "custom-control-input", @style = "z-index:7" })}
                             @*<input type="checkbox" class="custom-control-input" id="@Model.userModel.IsTask2Completed" name="@Model.userModel.IsTask2Completed" style="z-index:7;">*@
-                            <label class="custom-control-label" for="@Model.userModel.IsTask2Completed"> @Model.ChallengeTitle[1]</label>
+                            <label class="custom-control-label" for="@Model.userModel.IsTask2Completed"> @Model.ChallengeTitle[1] (3points)</label>
                         </div>
                     }
 
@@ -130,7 +130,7 @@
                             @Html.CheckBoxFor(m => m.userModel.IsTask2Completed, new { @class = "custom-control-input", @style = "z-index:7", @disabled = "disabled" })
                         }
                         @*<input type="checkbox" class="custom-control-input" id="@Model.userModel.IsTask2Completed" disabled="disabled" name="@Model.userModel.IsTask2Completed">*@
-                        <label class="custom-control-label" for="@Model.userModel.IsTask2Completed"> @Model.ChallengeTitle[1]</label>
+                        <label class="custom-control-label" for="@Model.userModel.IsTask2Completed"> @Model.ChallengeTitle[1] (3points)</label>
                     </div>
                 }
 
@@ -150,7 +150,7 @@
                                 @Html.CheckBoxFor(m => m.userModel.IsTask3Completed, new { @class = "custom-control-input", @style = "z-index:7", @disabled = "disabled" })
                             }
                             @*<input type="checkbox" class="custom-control-input" id="@Model.userModel.IsTask3Completed" disabled="disabled" name="@Model.userModel.IsTask3Completed">*@
-                            <label class="custom-control-label" for="@Model.userModel.IsTask3Completed"> @Model.ChallengeTitle[2]</label>
+                            <label class="custom-control-label" for="@Model.userModel.IsTask3Completed"> @Model.ChallengeTitle[2] (4points)</label>
                         </div>
                     }
                     else
@@ -161,7 +161,7 @@
                                 @Html.CheckBoxFor(m => m.userModel.IsTask3Completed, new { @class = "custom-control-input", @style = "z-index:7" })
                             }
                             @*<input type="checkbox" class="custom-control-input" id="@Model.userModel.IsTask3Completed" name="@Model.userModel.IsTask3Completed" style="z-index:7;">*@
-                            <label class="custom-control-label" for="@Model.userModel.IsTask3Completed"> @Model.ChallengeTitle[2]</label>
+                            <label class="custom-control-label" for="@Model.userModel.IsTask3Completed"> @Model.ChallengeTitle[2] (4points)</label>
                         </div>
                     }
 
@@ -175,7 +175,7 @@
                             @Html.CheckBoxFor(m => m.userModel.IsTask3Completed, new { @class = "custom-control-input", @style = "z-index:7", @disabled = "disabled" })
                         }
                         @*<input type="checkbox" class="custom-control-input" id="@Model.userModel.IsTask3Completed" disabled="disabled" name="@Model.userModel.IsTask3Completed">*@
-                        <label class="custom-control-label" for="@Model.userModel.IsTask3Completed"> @Model.ChallengeTitle[2]</label>
+                        <label class="custom-control-label" for="@Model.userModel.IsTask3Completed"> @Model.ChallengeTitle[2] (4points)</label>
                     </div>
                 }
 
@@ -194,7 +194,7 @@
                                 @Html.CheckBoxFor(m => m.userModel.IsTask4Completed, new { @class = "custom-control-input", @style = "z-index:7", @disabled = "disabled" })
                             }
                             @*<input type="checkbox" class="custom-control-input" id="@Model.userModel.IsTask4Completed" disabled="disabled" name="@Model.userModel.IsTask4Completed">*@
-                            <label class="custom-control-label" for="@Model.userModel.IsTask4Completed"> @Model.ChallengeTitle[3]</label>
+                            <label class="custom-control-label" for="@Model.userModel.IsTask4Completed"> @Model.ChallengeTitle[3] (5points)</label>
                         </div>
                     }
                     else
@@ -205,7 +205,7 @@
                                 @Html.CheckBoxFor(m => m.userModel.IsTask4Completed, new { @class = "custom-control-input", @style = "z-index:7" })
                             }
                             @*<input type="checkbox" class="custom-control-input" id="@Model.userModel.IsTask3Completed" name="@Model.userModel.IsTask4Completed" style="z-index:7;">*@
-                            <label class="custom-control-label" for="@Model.userModel.IsTask4Completed"> @Model.ChallengeTitle[3]</label>
+                            <label class="custom-control-label" for="@Model.userModel.IsTask4Completed"> @Model.ChallengeTitle[3] (5points)</label>
                         </div>
                     }
 
@@ -219,7 +219,7 @@
                             @Html.CheckBoxFor(m => m.userModel.IsTask4Completed, new { @class = "custom-control-input", @style = "z-index:7", @disabled = "disabled" })
                         }
                         @*<input type="checkbox" class="custom-control-input" id="@Model.userModel.IsTask4Completed" disabled="disabled" name="@Model.userModel.IsTask4Completed">*@
-                        <label class="custom-control-label" for="@Model.userModel.IsTask4Completed"> @Model.ChallengeTitle[3]</label>
+                        <label class="custom-control-label" for="@Model.userModel.IsTask4Completed"> @Model.ChallengeTitle[3] (5points)</label>
                     </div>
                 }
 

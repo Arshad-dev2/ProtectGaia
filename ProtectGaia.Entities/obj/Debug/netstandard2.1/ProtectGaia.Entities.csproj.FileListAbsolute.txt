@@ -54,9 +54,17 @@ C:/Users/gupta/source/repos/ProtectGaia-dev-1.0.1/ProtectGaia.Entities/obj/Debug
 /Users/arsh/GaiaGit/ProtectGaia/ProtectGaia.Entities/bin/Debug/netstandard2.1/ProtectGaia.Entities.deps.json
 /Users/arsh/GaiaGit/ProtectGaia/ProtectGaia.Entities/bin/Debug/netstandard2.1/ProtectGaia.Entities.dll
 /Users/arsh/GaiaGit/ProtectGaia/ProtectGaia.Entities/bin/Debug/netstandard2.1/ProtectGaia.Entities.pdb
-/Users/arsh/GaiaGit/ProtectGaia/ProtectGaia.Entities/obj/Debug/netstandard2.1/ProtectGaia.Entities.csprojAssemblyReference.cache
 /Users/arsh/GaiaGit/ProtectGaia/ProtectGaia.Entities/obj/Debug/netstandard2.1/ProtectGaia.Entities.AssemblyInfoInputs.cache
 /Users/arsh/GaiaGit/ProtectGaia/ProtectGaia.Entities/obj/Debug/netstandard2.1/ProtectGaia.Entities.AssemblyInfo.cs
 /Users/arsh/GaiaGit/ProtectGaia/ProtectGaia.Entities/obj/Debug/netstandard2.1/ProtectGaia.Entities.csproj.CoreCompileInputs.cache
 /Users/arsh/GaiaGit/ProtectGaia/ProtectGaia.Entities/obj/Debug/netstandard2.1/ProtectGaia.Entities.dll
 /Users/arsh/GaiaGit/ProtectGaia/ProtectGaia.Entities/obj/Debug/netstandard2.1/ProtectGaia.Entities.pdb
+C:\Users\gupta\Downloads\GaiaGit 2\GaiaGit\ProtectGaia\ProtectGaia.Entities\bin\Debug\netstandard2.1\ProtectGaia.Entities.deps.json
+C:\Users\gupta\Downloads\GaiaGit 2\GaiaGit\ProtectGaia\ProtectGaia.Entities\bin\Debug\netstandard2.1\ProtectGaia.Entities.dll
+C:\Users\gupta\Downloads\GaiaGit 2\GaiaGit\ProtectGaia\ProtectGaia.Entities\bin\Debug\netstandard2.1\ProtectGaia.Entities.pdb
+C:\Users\gupta\Downloads\GaiaGit 2\GaiaGit\ProtectGaia\ProtectGaia.Entities\obj\Debug\netstandard2.1\ProtectGaia.Entities.csprojAssemblyReference.cache
+C:\Users\gupta\Downloads\GaiaGit 2\GaiaGit\ProtectGaia\ProtectGaia.Entities\obj\Debug\netstandard2.1\ProtectGaia.Entities.csproj.CoreCompileInputs.cache
+C:\Users\gupta\Downloads\GaiaGit 2\GaiaGit\ProtectGaia\ProtectGaia.Entities\obj\Debug\netstandard2.1\ProtectGaia.Entities.AssemblyInfoInputs.cache
+C:\Users\gupta\Downloads\GaiaGit 2\GaiaGit\ProtectGaia\ProtectGaia.Entities\obj\Debug\netstandard2.1\ProtectGaia.Entities.AssemblyInfo.cs
+C:\Users\gupta\Downloads\GaiaGit 2\GaiaGit\ProtectGaia\ProtectGaia.Entities\obj\Debug\netstandard2.1\ProtectGaia.Entities.dll
+C:\Users\gupta\Downloads\GaiaGit 2\GaiaGit\ProtectGaia\ProtectGaia.Entities\obj\Debug\netstandard2.1\ProtectGaia.Entities.pdb

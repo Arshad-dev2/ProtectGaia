@@ -8,6 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="~/assets/css/main.css" />
+    
 
     <noscript><link rel="stylesheet" href="/css/noscript.css" /></noscript>
 
@@ -39,7 +40,8 @@
     <meta name="google-signin-client_id" content="440340758534-aq6c3kkn67nt2eo0345vqjrp7h29kuqu.apps.googleusercontent.com">
     <script src="https://apis.google.com/js/api.js"></script>
     <script src="https://apis.google.com/js/platform.js?onload=onLoad" async defer></script>
-    <script>$(document).ready(function () {
+    <script>
+    $(document).ready(function () {
             $("#loading").hide();
             $("#loader").hide();
         });
@@ -146,6 +148,9 @@
             </div>
         </div>
     </div>
+    <a class="scrollToTop" href="#">
+        <i class="fa fa-angle-up"></i>
+    </a>
     <div id="page-wrapper" class="d-print-none">
 
         <!-- Header -->
@@ -196,7 +201,7 @@
                         <li>Designed by Environs. All rights reserved.</li>
                     </ul>
                 </div>
-                <br/>
+                <br />
 
                 <div id="copyright">
                     <ul class="links" style="color:#c5c4c4">
@@ -246,7 +251,7 @@
         /* OR jQuery >= 1.7 */
         $(document).off("keydown", disableF5);
     </script>
-
+    <script type="text/javascript" src="~/js/custom.js"></script>
     <script src="/assets/js/jquery.min.js"></script>
     <script src="/assets/js/jquery.dropotron.min.js"></script>
     <script src="/assets/js/browser.min.js"></script>

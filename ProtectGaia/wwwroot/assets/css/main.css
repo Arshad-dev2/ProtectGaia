@@ -1652,7 +1652,7 @@ br.clear {
 		input[type="reset"]:active,
 		button:active,
 		.button:active {
-			background: #c51349;
+			background: #2fc2a2;
 		}
 
 		input[type="button"].alt,
@@ -1660,7 +1660,7 @@ br.clear {
 		input[type="reset"].alt,
 		button.alt,
 		.button.alt {
-			background: #252122;
+			background: grey;
 		}
 
 			input[type="button"].alt:hover,
@@ -3093,8 +3093,7 @@ br.clear {
 	background-image: -webkit-gradient(linear, left bottom, right bottom, color-stop(55%,#282828), color-stop(22%,#282828),color-stop(100%,#282828));
 }
 
-a:h
-over,
+a:hover,
 a:focus,
 .mu-book-now-btn,
 .mu-copy-right a:hover,

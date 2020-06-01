@@ -1,6 +1,6 @@
 ﻿#notfound {
     position: relative;
-    height: 50vh;
+    height: 32em;
 }
 
     #notfound .notfound {
@@ -27,19 +27,29 @@
 
         .notfound .notfound-404 h1 {
             font-family: 'Fredoka One', cursive;
-            font-size: 100px;
+            font-size: 7em;
             margin: 0px;
             color: #2fc2a2;
             text-transform: uppercase;
+            font-weight: 900;
+        }
+
+        .notfound .notfound-404 h3 {
+            font-family: 'Fredoka One', cursive;
+            font-size: 4em;
+            margin: 0px;
+            color: #2fc2a2;
+            text-transform: uppercase;
+            font-weight: bold;
         }
 
     .notfound h2 {
         font-family: 'Raleway', sans-serif;
-        font-size: 22px;
+        font-size: 1.2em;
         font-weight: 400;
         text-transform: uppercase;
         color: #222;
-        margin: 0;
+        margin: 1em;
     }
 
     .notfound a {
@@ -51,17 +61,6 @@
         color: #2fc2a2;
     }
 
-        .notfound a > .arrow {
-            position: relative;
-            top: -2px;
-            border: solid #2fc2a2;
-            border-width: 0 3px 3px 0;
-            display: inline-block;
-            padding: 3px;
-            -webkit-transform: rotate(135deg);
-            -ms-transform: rotate(135deg);
-            transform: rotate(135deg);
-        }
 
 @media only screen and (max-width: 767px) {
     .notfound .notfound-404 {
@@ -70,6 +69,10 @@
     }
 
         .notfound .notfound-404 h1 {
-            font-size: 122px;
+            font-size: 4em;
+        }
+
+        .notfound .notfound-404 h3 {
+            font-size: 2em;
         }
 }
