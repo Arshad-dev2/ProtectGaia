@@ -1,0 +1,94 @@
+﻿@using Microsoft.AspNetCore.Http
+@inject IHttpContextAccessor HttpContextAccessor
+@{
+    ViewBag.Title = "TransportEmissions";
+}
+@if (HttpContextAccessor.HttpContext.Session.GetString("IsLoggedIn") == "true")
+{
+    Layout = "_AuthenticatedLayout";
+}
+else
+{
+    Layout = "_WebLayout";
+}
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+<link rel="stylesheet" href="/assets/css/main.css" />
+<link rel="stylesheet" href="/assets/css/explainers.css" />
+
+<!-- Main -->
+<section id="main" style="background-color:white; top:-0.5rem;">
+    <div class="container">
+        <a href="#" class="image featured"><img src="~/images/explainers/transport_bg.gif" alt="transport" style="width: 100%; height: 25em" /></a>
+        <div class="post-content">
+            <h2 style="text-align:center">Transport Emissions</h2>
+            <p style="font-size: 1rem; font-family: Archivo Narrow, sans-serif;text-align:center">Written by: Environs</p>
+            <center>
+                <article style="position: relative;left: 19.5%;">
+                    <p style="text-align:left">
+                        It is not just Energy and Electricity emissions that have been causing problems for Australia,
+                        but <strong>inefficient and poor standards of transport sector have made this sector the third largest contributor of greenhouse gases</strong> in the country.
+                        The Infographic below educates us about why Australia is at the back of the pack:
+                    </p>
+                    <p style="text-align: center;">
+                        <img src="~/images/explainers/0_transport.png" alt="Transport Emissions in Australia" width="700" height="774" sizes="(max-width: 700px) 100vw, 700px"><br>
+                        <em>Transport Emissions in Australia - Third Largest Source Accounting to 17% of GHG Emissions</em>
+                    </p>
+                    <p style="text-align:left">
+                        The transport sector includes Trucks, Buses, Public and Private vehicles.
+                        Transport emissions are a very high concern for the country because of its high growth rate.
+                        For Australia, this sector is not good as it is not efficient on the international level.
+                        High usage of personal vehicles leads to even more adverse emissions of these greenhouse gases.
+                    </p>
+                    <p style="text-align:left">
+                        Some of the reasons for Australia's bad transport sector can be well understood from the diagram below:
+                    </p>
+                    <p style="text-align: center;">
+                        <img src="~/images/explainers/0_transport_stats.png" alt="Transport Emissions in Australia" width="700" height="774" sizes="(max-width: 700px) 100vw, 700px"><br>
+                        <em>Reasons for Australia's Bad Transport Standards</em>
+                    </p>
+                    <div class="container" style="border-style: solid; border-width: 1px; border-radius: 10px; border-color: #453f3c">
+                        <h3> Did You Know..? </h3>
+                        <p style="text-align: center;">
+                            <span>
+                                <b>
+                                    <h4t>
+                                        <i style="color: #00b3b3; filter: brightness(.9); ">
+                                            “Transport emissions have the highest rate of growth of any sector since 1990.
+                                            With no action, transport emissions are expected to reach 111 MtCO2 by 2030.”<br />
+                                        </i>
+                                    </h4t>
+                                </b>
+                            </span>
+                            <span><i style="font-size: 0.8em">(Source – <a href="https://www.climatecouncil.org.au/" target="_blank">Climate Council, Australia</a>)</i></span>
+                        </p>
+                    </div><br />
+                    <p style="text-align:left">
+                        If no measures are taken, this problem will increase at an alarming rate
+                        and cause even more effects to our environment and human health.
+                        With many solutions available to counter this issue we can tap on these emissions.
+                    </p>
+                    <p style="text-align:left">
+                        Using Public transport often will reduce high usage of private vehicles on Australian
+                        roads and will help in reducing carbon emissions altogether.<br /><br />
+                        Drifting towards healthier practices such as <strong><i style="color: #008080">cycling, jogging and walking to smaller distances</i></strong>
+                        will also be a very viable action in fighting climate change and will also be very good for your health.
+                        Slowly and steadily we can win this race against greenhouse emissions.
+                    </p>
+                </article>
+            </center>
+        </div>
+    </div>
+    <div class="container" style="margin-top:1.5em;">
+        
+        <div class="post-content">
+            <center>
+                
+                <a asp-controller="Explainers" asp-Action="EnergyConsumption" class="button alt">&laquo; Previous</a>
+                <a asp-controller="Explainers" asp-Action="HouseholdPractices" class="button">Next &raquo;</a>
+
+            </center>
+        </div>
+    </div>
+</section>
+

@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "e2vIExYvOxC6d9RZQPRCbX/WLl0cNonYmq08BbxyRy8BP6S1T83EAJS2RpN0kn2nmLZfGJFC6N1DMOeH0282rQ==",
+  "success": true,
+  "projectFilePath": "/Users/arsh/GaiaGit/ProtectGaia/ProtectGaia.Interface/ProtectGaia.Interface.csproj",
+  "expectedPackageFiles": [
+    "/Users/arsh/.nuget/packages/newtonsoft.json/12.0.3/newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,82 +1,191 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
+
+
 <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Home - Eco Morph</title>
+    <title>@ViewBag.Title: Ecomorph</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="~/assets/css/main.css" />
+
+    <noscript><link rel="stylesheet" href="/css/noscript.css" /></noscript>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+
+    <title>@ViewBag.Title - Eco Morph</title>
     <!-- Favicon -->
-    <link rel="shortcut icon" type="/image/icon" href="/images/favicon.ico" />
+    <link rel="shortcut icon" type="/image/icon" href="/favicon.ico" />
     <!-- Font Awesome -->
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-    <!-- Slick slider -->
-    <link href="~/css/slick.css" rel="stylesheet">
-    <!-- Gallery Lightbox -->
-    <link href="~/css/magnific-popup.css" rel="stylesheet">
-    <!-- Skills Circle CSS  -->
-    <link rel="stylesheet" type="text/css" href="https://unpkg.com/circlebars@1.0.3/dist/circle.css">
+    @* <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">*@
+    <link href="~/lib/font-awesome/css/all.min.css" rel="stylesheet" />
+    <link href="~/css/CustomGoogle.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="/js/geoLocation.js"></script>
 
+    <meta name="google-signin-client_id" content="440340758534-aq6c3kkn67nt2eo0345vqjrp7h29kuqu.apps.googleusercontent.com">
+    <script src="https://apis.google.com/js/api.js"></script>
+    <script src="https://apis.google.com/js/platform.js?onload=onLoad" async defer></script>
+    <script>
+    var googleUser = {};
+        var startApp = function () {
+            gapi.load('auth2', function () {
+                // Retrieve the singleton for the GoogleAuth library and set up the client.
 
-    <!-- Main Style -->
-    <link href="~/css/style.css" rel="stylesheet">
+                auth2 = gapi.auth2.init({
+                    client_id: '440340758534-aq6c3kkn67nt2eo0345vqjrp7h29kuqu.apps.googleusercontent.com',
+                    // Request scopes in addition to 'profile' and 'email'
+                    //scope: 'additional_scope'
+                });
+                attachSignin(document.getElementById('customBtn'));
+                attachSignin(document.getElementById('customBtn1'));
+                attachSignin(document.getElementById('customBtn2'));
 
-    <!-- Fonts -->
-    <!-- Google Fonts Raleway -->
-    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,400i,500,500i,600,700" rel="stylesheet">
-    <!-- Google Fonts Open sans -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,700,800" rel="stylesheet">
+            });
+        };
 
+        function attachSignin(element) {
+            auth2.attachClickHandler(element, {},
+                function (googleUser) {
+                    sessionStorage.setItem("userName", googleUser.getBasicProfile().getName());
+                    sessionStorage.setItem("userEmail", googleUser.getBasicProfile().getEmail());
+                    sessionStorage.setItem("userImageUrl", googleUser.getBasicProfile().getImageUrl());
+                    $.ajax({
+                        url: "/home/index",
+                        type: "POST",
+                        data: { "userEmail": googleUser.getBasicProfile().getEmail(), "userName": googleUser.getBasicProfile().getName(), "userImageUrl": googleUser.getBasicProfile().getImageUrl() },
+                        cache: false,
+                        async: true,
+                        success: function (response) {
+                            window.location.href = response.newUrl;
+                        }
+                    })
+                }
+            )
+        }
+        function onLoad() {
+            gapi.load('auth2', function () {
+                gapi.auth2.init();
+            });
+        }
 
+        function signOut() {
+            gapi.auth2.init();
+            gapi.auth2.getAuthInstance();
+            auth2.signOut().then(function () {
+                $.ajax({
+                    url: "/home/signout",
+                    type: "POST",
+                    data: { "userEmail": sessionStorage.getItem("userEmail") },
+                    cache: false,
+                    async: true,
+                    success: function (response) {
+                        sessionStorage.removeItem("userName");
+                        sessionStorage.removeItem("userEmail");
+                        window.location.href = response.newUrl;
+                    }
+                })
+                //auth2.disconnect();
+            });
+
+        }
+    </script>
 </head>
-<body>
-
+<body class="homepage is-preload">
     <!--START SCROLL TOP BUTTON -->
     <a class="scrollToTop" href="#">
         <i class="fa fa-angle-up"></i>
     </a>
-    <!-- END SCROLL TOP BUTTON -->
-    <!-- Start Header -->
-    <header id="mu-hero">
-        <div class="top-right">
-            <nav class="navbar navbar-expand-lg navbar-light mu-navbar">
-                <div>
-                    <!-- Text based logo -->
-                    <a class="navbar-brand mu-logo" href="index.html"><img src="~/images/Home/eco_logo.png" alt="Eco Morph" style="height:70%;width:70%" /></a>
-                    <!-- image based logo -->
-                    <!-- <a class="navbar-brand mu-logo" href="index.html"><img src="assets/images/logo.png" alt="logo"></a> -->
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="fa fa-bars"></span>
-                    </button>
-                </div>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto mu-navbar-nav">
-                        <li class="nav-item active">
-                            <a asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item"><a asp-controller="Home" asp-action="Index" onclick="scrollToDiv('aboutus')">About us</a></li>
-                        <li class="nav-item"><a asp-controller="Home" asp-action="Index"  onclick="scrollToDiv('Resources')">Resources</a></li>
+    <script>startApp();</script>
+    <div id="page-wrapper">
 
-                        <li class="nav-item"><a asp-controller="Home" asp-action="Index" onclick="scrollToDiv('aboutus')">Get Involved</a></li>
+        <div class="deviceLocation" style="background-color:#fff !important;text-align: right;"> Detecting . . .</div>
+        <!-- Header -->
+        <section id="header" style="margin-top:-2em">
+            <!-- Logo -->
+            <h1>
+                <a asp-controller="Home" asp-action="Index" style="text-decoration:none;">
+                    <img src="~/images/logo.jpeg" alt="ecoMorph" style="width:4rem;height:4rem;" />EcoMorph
+                </a>
+            </h1>
 
-                        <li class="nav-item"><a asp-controller="Home" asp-action="Index"  onclick="scrollToDiv('contactus')">Contact us</a></li>
-                    </ul>
-                </div>
+            <!-- Nav -->
+            <nav id="nav">
+                <ul>
+                    <li class="current"><a asp-controller="Home" asp-action="Index">Home</a></li>&nbsp;
+                    <li>
+                        <a href="#" style="padding-left: 2.5em;">Explainers</a>
+                        <ul>
+                            <li><a asp-controller="Explainers" asp-Action="EnergyConsumption" style="text-decoration:none;">Energy Consumption</a></li>
+                            <li><a asp-controller="Explainers" asp-Action="TransportEmissions" style="text-decoration:none;">Transport Emissions</a></li>
+                            <li><a asp-controller="Explainers" asp-Action="HouseholdPractices" style="text-decoration:none;">Household Practices</a></li>
+                            <li><a asp-controller="Explainers" asp-Action="ClimateChange" style="text-decoration:none;">Climate Change</a></li>
+                            <li><a asp-controller="Explainers" asp-Action="HealthImpacts" style="text-decoration:none;">Health Impacts</a></li>
+                            <li><a asp-controller="Explainers" asp-Action="MakeAChange" style="text-decoration:none;">Make a Change</a></li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a id="customBtn" class="customGPlusSignIn">
+                            <span class="buttonText">Take the Challenge</span>
+                        </a>
+                    </li>
+                </ul>
             </nav>
-        </div>
-    </header>
-    <!-- End Header -->
-    @RenderBody()
+        </section>
+    </div>
 
+    <!-- End Header -->
+    <main>
+        @RenderBody()
+    </main>
     <!-- End main content -->
     <!-- Start footer -->
+    <section id="footer" style="filter: brightness(100%); height:50%">
+        <div class="row">
+            <div class="col-12">
 
-    <footer>
-        <div class="mu-container mu-footer-top">
-            <center><p class="mu-copy-right">&copy; Copyright <a rel="nofollow" href="http://markups.io">EcoMorph</a>.<br /> All right reserved.</p></center>
+                <!-- Copyright -->
+                <div id="copyright">
+                    <ul class="links">
+                        <li>Designed by Environs. All rights reserved.</li>
+                    </ul>
+                </div>
+                <br/>
+                <br/>
+
+                <div id="copyright">
+                    <ul class="links" style="color:#c5c4c4">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i> Melbourne, Australia
+
+                        </li>
+                        <li>
+                            <i class="fa fa-envelope" style="color:#c5c4c4"></i> environs@gmail.com
+
+                        </li>
+
+                        <li>
+                            <i class="fa fa-mobile" style="color:#c5c4c4"></i> (800) 000-0000
+
+                        </li>
+
+                    </ul>
+                </div>
+
+
+            </div>
+
         </div>
-    </footer>
+
+    </section>
+
+
     <!-- End footer -->
     <!-- JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -84,7 +193,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
     <!-- Slick slider -->
-    @* <script type="text/javascript" src="/js/slick.min.js"></script>*@
+    <script type="text/javascript" src="/js/slick.min.js"></script>
     <!-- Progress Bar -->
     <script src="https://unpkg.com/circlebars@1.0.3/dist/circle.js"></script>
     <!-- Filterable Gallery js -->
@@ -95,11 +204,18 @@
     <script type="text/javascript" src="/js/counter.js"></script>-->
     <!-- Ajax contact form  -->
     <script type="text/javascript" src="/js/app.js"></script>
-    <script type="text/javascript" src="/js/header.js"></script>
 
 
     <!-- Custom js -->
     <script type="text/javascript" src="/js/custom.js"></script>
+
+
+    <script src="~/assets/js/jquery.min.js"></script>
+    <script src="~/assets/js/jquery.dropotron.min.js"></script>
+    <script src="~/assets/js/browser.min.js"></script>
+    <script src="~/assets/js/breakpoints.min.js"></script>
+    <script src="~/assets/js/util.js"></script>
+    <script src="~/assets/js/main.js"></script>
 
 
 

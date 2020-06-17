@@ -1,0 +1,409 @@
+﻿@model ProtectGaia.Models.UserViewModel
+<script src="/assets2/js/form-val.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.26.0/moment.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.26.0/moment-with-locales.min.js"></script>
+<input type="hidden" name="time" id="time" value="@Model.userModel.LastModified.AddMinutes(1)" />
+
+
+<script>
+
+    var elem = document.getElementById('time');
+
+        var now = moment.utc(new Date()); //todays date    var end = moment.utc(elem.value).format("MMM D "); // another date       console.log(moment.utc(elem.value).format("MMM D") + "," + moment.utc(elem.value).format("YYYY") + " " + moment.utc(elem.value).format("HH") + ":" + moment.utc(elem.value).format("mm") + ":" + moment.utc(elem.value).format("ss"))    var countDownDate = new Date(moment.utc(elem.value).format("MMM D") + "," + moment.utc(elem.value).format("YYYY") + " " + moment.utc(elem.value).format("HH") + ":" + moment.utc(elem.value).format("mm") + ":" + moment.utc(elem.value).format("ss")).getTime();
+    // Update the count down every 1 second
+
+    var x = setInterval(function () {
+
+        // Get today's date and time
+
+        //var now = new Date().getTime();
+        var now = new Date();
+
+        var newnow = new Date(moment.utc(now).format("MMM D") + "," + moment.utc(now).format("YYYY") + " " + moment.utc(now).format("HH") + ":" + moment.utc(now).format("mm") + ":" + moment.utc(now).format("ss")).getTime();
+
+        // Find the distance between now and the count down date//
+
+        var distance = countDownDate - newnow;
+
+        // Find the distance between now and the count down date//
+
+        //var distance = countDownDate - now;
+        console.log(distance);
+        // Time calculations for days, hours, minutes and seconds//
+
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        // Output the result in an element with id="demo"
+
+        document.getElementById("demo").innerHTML = "Next Task Available in<br/> <b>" + hours + "h "
+            + minutes + "m " + seconds + "s </b>";
+
+        // If the count down is over, write some text//
+
+        if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("demo").innerHTML = 'Next Task Available<br> Please refresh your profile!';
+        }
+    }, 1000);</script>
+
+<div class="row d-print-none">
+    <div class="col">
+        <div class="container" style="border-style: solid; border-width: 1px; border-radius: 10px; border-color: #00b3b3 !important">
+            <p id="demo" style="text-align:center;font-size: 20px; margin-top: 0px;padding-top:1rem"></p><br />
+        </div>
+        <br />
+        <div class="row levelcol">
+            <div class="col-lg-6 mb-4" style="margin-top: -1rem!important;">
+                <div class="card text-white bg-primary shadow" style="color: #fff; background-color: #00b3b3 !important;cursor:pointer">
+                    <div class="card-body" id="level_1" style="display:inline-flex;padding:2rem;">
+                        <p class="m-0" style="font-size: 16px">LEVEL 1</p>
+                        @if (Model.userModel.LevelId == 1)
+                        {
+                            <i class="fa fa-unlock fa-lg" style="left: 17rem;position: absolute;"></i>
+                        }
+                        else
+                        {
+                            <i class="fa fa-star fa-lg" style="left: 17rem;position: absolute;color: rgb(255,215,0);"></i>
+                        }
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 mb-4" style="margin-top: -1rem!important;">
+                <div class="card text-white bg-success shadow" style="color: #fff; background-color: #00b3b3 !important;cursor:pointer">
+                    <div class="card-body" id="level_2" style="display:inline-flex;padding:2rem;">
+                        <p class="m-0" style="font-size:16px">LEVEL 2</p>
+                        @if (Model.userModel.LevelId == 2)
+                        {
+                            <i class="fa fa-unlock fa-lg" style="left: 17rem;position: absolute;"></i>
+                        }
+                        else if (Model.userModel.LevelId > 2)
+                        {
+                            <i class="fa fa-star fa-lg" style="left: 17rem;position: absolute;color: rgb(255,215,0)"></i>
+                        }
+                        else
+                        {
+                            <i class="fa fa-lock fa-lg" style="left: 17rem;position: absolute;"></i>
+                        }
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 mb-4" style="margin-top: -1rem!important;">
+                <div class="card text-white bg-info shadow" style="color: #fff; background-color: #00b3b3 !important;cursor:pointer">
+                    <div class="card-body" id="level_3" style="display:inline-flex;padding:2rem;">
+                        <p class="m-0" style="font-size:16px">LEVEL 3</p>
+                        @if (Model.userModel.LevelId == 3)
+                        {
+                            <i class="fa fa-unlock fa-lg" style="left: 17rem; position: absolute;"></i>
+                        }
+                        else if (Model.userModel.LevelId > 3)
+                        {
+                            <i class="fa fa-star fa-lg" style="left: 17rem;position: absolute;color: rgb(255,215,0);"></i>
+                        }
+                        else
+                        {
+                            <i class="fa fa-lock fa-lg" style="left: 17rem;position: absolute;"></i>
+                        }
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 mb-4" style="margin-top: -1rem!important;">
+                <div class="card text-white bg-warning shadow" style="color: #fff; background-color: #00b3b3 !important;cursor:pointer">
+                    <div class="card-body" id="level_4" style="display:inline-flex;padding:2rem;">
+                        <p class="m-0" style="font-size: 16px">LEVEL 4</p>
+                        @if (Model.userModel.LevelId == 4)
+                        {
+                            <i class="fa fa-unlock fa-lg" style="left: 17rem;position: absolute;"></i>
+                        }
+                        else if (Model.userModel.LevelId > 4)
+                        {
+                            <i class="fa fa-star fa-lg" style="left: 17rem;position: absolute;color: rgb(255,215,0)"></i>
+                        }
+                        else
+                        {
+                            <i class="fa fa-lock fa-lg" style="left: 17rem;position: absolute;"></i>
+                        }
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 mb-4" style="margin-top: -1rem!important;">
+                <div class="card text-white bg-danger shadow" style="color: #fff; background-color: #00b3b3 !important;cursor:pointer">
+                    <div class="card-body" id="level_5" style="display:inline-flex;padding:2rem;">
+                        <p class="m-0" style="font-size:16px">LEVEL 5</p>
+                        @if (Model.userModel.LevelId == 5)
+                        {
+                            <i class="fa fa-unlock fa-lg" style="left: 17rem;position: absolute;"></i>
+                        }
+                        else if (Model.userModel.LevelId > 5)
+                        {
+                            <i class="fa fa-star fa-lg" style="left: 17rem;position: absolute;color: rgb(255,215,0)"></i>
+                        }
+                        else
+                        {
+                            <i class="fa fa-lock fa-lg" style="left: 17rem;position: absolute;"></i>
+                        }
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 mb-4" style="margin-top: -1rem!important;">
+                <div class="card text-white bg-secondary shadow" style=" background-color: #00b3b3 !important;cursor:pointer;color: rgb(0,0,0);">
+                    <div class="card-body" style="display:inline-flex;padding:2rem;">
+
+                        <p class="m-0" style="color:#fff;font-size: 16px;margin-top: 4rem;
+    float: right;
+    margin-right: 4rem;">YOU ARE A PLANET HERO </p>
+                        <i class="fas fa-trophy fa-lg" style="color:rgb(255,215,0);position: relative;left: 4rem;"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    @* @await Html.PartialAsync("~/Views/Dashboard/TaskDisplayPartialView.cshtml", Model)*@
+    <div class="col-lg-6 mb-4">
+        <div class="card shadow mb-4 dynamic">
+            <div class="card-header py-3 taskcol">
+                <h6 class="text-primary font-weight-bold m-0" style="color: black!important;text-align:center;">TASKS FROM CURRENT LEVEL</h6>
+            </div>
+            <div class="card-body">
+
+                @if (Model.ChallengeTitle != null && Model.ChallengeTitle.Count > 0)
+                {
+                    @using (Html.BeginForm("Index", "Dashboard", FormMethod.Post))
+                    {
+                        @if (Model.IsErrorException)
+                        {
+                            <div class="alert alert-danger" role="alert">
+                                <i class="far fa-times-circle">
+                                </i><span>
+                                    <strong>Error Updating the Information</strong>
+                                    <br />
+                                </span>
+                            </div>
+                        }
+                        @if (Model.IsPost && !Model.IsErrorException)
+                        {
+                            <div class="alert alert-success" role="alert">
+                                <i class="far fa-check-circle">
+                                </i><span>
+                                    <strong>Information Updated Successfully!</strong>
+                                    <br />
+                                </span>
+                            </div>
+                            @if (Model.userModel.IsTask1Completed || Model.userModel.IsTask2Completed || Model.userModel.IsTask3Completed || Model.userModel.IsTask4Completed)
+                            {
+                                <div id="taskPopupModal" class="modal">
+
+                                    <!-- Modal content -->
+                                    <div class="modal-content " style="width: 30%">
+                                        <img class="border rounded-circle img-profile" src="/images/trophy_img.png" style="padding:0;height: 8REM;margin-top:-5rem;align-self: center;border:1px solid;">
+
+                                        <h2 class="text-center" style="color:black">Congratulations</h2>
+                                        <p class="text-center">
+                                            You did it. You reduced <b>@Model.IndividualCarbonScore grams </b>of carbon.<br />
+                                            Smash the next task when it unlocks!<br />
+                                            Next Task available in 1 minute.
+                                        </p>
+
+                                        <span class="btn btn-primary close1 text-center" style="font-size:16px;background: #2fc2a2!important;border-color:#2fc2a2!important;color:white;cursor:pointer;border:1px solid;border-radius:2rem;">
+                                            Continue
+                                        </span>
+
+                                    </div>
+
+                                </div>
+                            }
+                            else if (!Model.userModel.IsTask1Completed && !Model.userModel.IsTask2Completed && !Model.userModel.IsTask3Completed && !Model.userModel.IsTask4Completed)
+                            {
+                                <div id="levelCompleted" class="modal">
+
+                                    <!-- Modal content -->
+                                    <div class="modal-content " style="width: 30%">
+                                        <img class="border rounded-circle img-profile" src="/images/trophy_img.png" style="padding:0;height: 8REM;margin-top:-5rem;align-self: center;border:1px solid;">
+
+                                        <h2 class="text-center" style="color:black">Upgraded to Level @Model.userModel.LevelId</h2>
+                                        <p class="text-center">
+                                            You have slayed this level and earned <b>@Model.userModel.LevelId star </b>.
+                                            Do your best when the next level unlocks!
+                                        </p>
+
+                                        <span class="btn btn-primary close1 text-center" style="font-size:16px;color:black;cursor:pointer;border:1px solid;border-radius:2rem;">Continue</span>
+
+                                    </div>
+                                </div>
+                            }
+                        }
+
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                                <div class="row align-items-center no-gutters">
+                                    @if (!Model.userModel.IsTask1Completed)
+                                    {
+                                        <div class="custom-control custom-checkbox mb-3">
+                                            @Html.CheckBoxFor(m => m.userModel.IsTask1Completed, new { @class = "custom-control-input", @style = "z-index:7" })
+                                            @*<input type="checkbox" class="custom-control-input" id="@Model.userModel.IsTask1Completed" name="@Model.userModel.IsTask1Completed" style="z-index:7;"/>*@
+                                            <label class="custom-control-label" for="@Model.userModel.IsTask1Completed"> @Model.ChallengeTitle[0] (2points)</label>
+                                        </div>
+                                    }
+                                    else
+                                    {
+                                        <div class="custom-control custom-checkbox mb-3">
+                                            @Html.CheckBoxFor(m => m.userModel.IsTask1Completed, new { @class = "custom-control-input", @style = "z-index:7", @disabled = "disabled" })
+                                            @*<input type="checkbox" class="custom-control-input" id="@Model.userModel.IsTask1Completed" disabled="disabled" name="@Model.userModel.IsTask1Completed" />*@
+                                            <label class="custom-control-label" for="@Model.userModel.IsTask1Completed"> @Model.ChallengeTitle[0] (2points)</label>
+                                        </div>
+                                    }
+                                </div>
+                            </li>
+
+
+                            <li class="list-group-item">
+                                <div class="row align-items-center no-gutters">
+                                    @if (!Model.userModel.IsTask2Completed && Model.userModel.IsTask1Completed)
+                                    {
+                                        if ((DateTime.Now - Model.userModel.LastModified).TotalMinutes <= 1)
+                                        {
+                                            <div class="custom-control custom-checkbox mb-3">
+                                                @Html.CheckBoxFor(m => m.userModel.IsTask2Completed, new { @class = "custom-control-input", @style = "z-index:7", @disabled = "disabled" })
+                                                @*<input type="checkbox" class="custom-control-input" id="@Model.userModel.IsTask2Completed" disabled="disabled" name="@Model.userModel.IsTask2Completed">*@
+                                                <label class="custom-control-label" for="@Model.userModel.IsTask2Completed"> @Model.ChallengeTitle[1] (3points)</label>
+                                            </div>
+                                        }
+                                        else
+                                        {
+                                            <div class="custom-control custom-checkbox mb-3">
+                                                @Html.CheckBoxFor(m => m.userModel.IsTask2Completed, new { @class = "custom-control-input", @style = "z-index:7" })
+                                                @*<input type="checkbox" class="custom-control-input" id="@Model.userModel.IsTask2Completed" name="@Model.userModel.IsTask2Completed" style="z-index:7;">*@
+                                                <label class="custom-control-label" for="@Model.userModel.IsTask2Completed"> @Model.ChallengeTitle[1] (3points)</label>
+                                            </div>
+                                        }
+
+
+                                    }
+                                    else
+                                    {
+                                        <div class="custom-control custom-checkbox mb-3">
+                                            @Html.CheckBoxFor(m => m.userModel.IsTask2Completed, new { @class = "custom-control-input", @style = "z-index:7", @disabled = "disabled" })
+                                            @*<input type="checkbox" class="custom-control-input" id="@Model.userModel.IsTask2Completed" disabled="disabled" name="@Model.userModel.IsTask2Completed">*@
+                                            <label class="custom-control-label" for="@Model.userModel.IsTask2Completed"> @Model.ChallengeTitle[1] (3points)</label>
+                                        </div>
+                                    }
+
+                                </div>
+                            </li>
+
+
+                            <li class="list-group-item">
+                                <div class="row align-items-center no-gutters">
+                                    @if (!Model.userModel.IsTask3Completed && Model.userModel.IsTask2Completed)
+                                    {
+                                        if ((DateTime.Now - Model.userModel.LastModified).TotalMinutes <= 1)
+                                        {
+                                            <div class="custom-control custom-checkbox mb-3">
+                                                @Html.CheckBoxFor(m => m.userModel.IsTask3Completed, new { @class = "custom-control-input", @style = "z-index:7", @disabled = "disabled" })
+                                                @*<input type="checkbox" class="custom-control-input" id="@Model.userModel.IsTask3Completed" disabled="disabled" name="@Model.userModel.IsTask3Completed">*@
+                                                <label class="custom-control-label" for="@Model.userModel.IsTask3Completed"> @Model.ChallengeTitle[2] (4points)</label>
+                                            </div>
+                                        }
+                                        else
+                                        {
+                                            <div class="custom-control custom-checkbox mb-3">
+                                                @Html.CheckBoxFor(m => m.userModel.IsTask3Completed, new { @class = "custom-control-input", @style = "z-index:7" })
+                                                @*<input type="checkbox" class="custom-control-input" id="@Model.userModel.IsTask3Completed" name="@Model.userModel.IsTask3Completed" style="z-index:7;">*@
+                                                <label class="custom-control-label" for="@Model.userModel.IsTask3Completed"> @Model.ChallengeTitle[2] (4points)</label>
+                                            </div>
+                                        }
+
+
+                                    }
+                                    else
+                                    {
+                                        <div class="custom-control custom-checkbox mb-3">
+                                            @Html.CheckBoxFor(m => m.userModel.IsTask3Completed, new { @class = "custom-control-input", @style = "z-index:7", @disabled = "disabled" })
+                                            @*<input type="checkbox" class="custom-control-input" id="@Model.userModel.IsTask3Completed" disabled="disabled" name="@Model.userModel.IsTask3Completed">*@
+                                            <label class="custom-control-label" for="@Model.userModel.IsTask3Completed"> @Model.ChallengeTitle[2] (4points)</label>
+                                        </div>
+                                    }
+
+                                </div>
+                            </li>
+
+                            <li class="list-group-item">
+                                <div class="row align-items-center no-gutters">
+                                    @if (!Model.userModel.IsTask4Completed && Model.userModel.IsTask3Completed)
+                                    {
+                                        if ((DateTime.Now - Model.userModel.LastModified).TotalMinutes <= 1)
+                                        {
+                                            <div class="custom-control custom-checkbox mb-3">
+                                                @Html.CheckBoxFor(m => m.userModel.IsTask4Completed, new { @class = "custom-control-input", @style = "z-index:7", @disabled = "disabled" })
+                                                @*<input type="checkbox" class="custom-control-input" id="@Model.userModel.IsTask4Completed" disabled="disabled" name="@Model.userModel.IsTask4Completed">*@
+                                                <label class="custom-control-label" for="@Model.userModel.IsTask4Completed"> @Model.ChallengeTitle[3] (5points)</label>
+                                            </div>
+                                        }
+                                        else
+                                        {
+                                            <div class="custom-control custom-checkbox mb-3">
+                                                @Html.CheckBoxFor(m => m.userModel.IsTask4Completed, new { @class = "custom-control-input", @style = "z-index:7" })
+                                                @*<input type="checkbox" class="custom-control-input" id="@Model.userModel.IsTask3Completed" name="@Model.userModel.IsTask4Completed" style="z-index:7;">*@
+                                                <label class="custom-control-label" for="@Model.userModel.IsTask4Completed"> @Model.ChallengeTitle[3] (5points)</label>
+                                            </div>
+                                        }
+
+
+                                    }
+                                    else
+                                    {
+                                        <div class="custom-control custom-checkbox mb-3">
+                                            @Html.CheckBoxFor(m => m.userModel.IsTask4Completed, new { @class = "custom-control-input", @style = "z-index:7", @disabled = "disabled" })
+                                            @*<input type="checkbox" class="custom-control-input" id="@Model.userModel.IsTask4Completed" disabled="disabled" name="@Model.userModel.IsTask4Completed">*@
+                                            <label class="custom-control-label" for="@Model.userModel.IsTask4Completed"> @Model.ChallengeTitle[3] (5points)</label>
+                                        </div>
+                                    }
+
+                                </div>
+                            </li>
+
+
+                            <li class="list-group-item">
+                                <div class="form-group form-check-inline" style="margin-bottom:2rem;align-self:center">
+                                    <button class="btn btn-primary" id="markcomplete"
+                                            type="submit" style="float: right;background-color: rgb(47,194,162)!important;border-color: rgb(47,194,162)!important;">
+                                        MARK AS COMPLETED
+                                    </button>
+                                </div>
+                            </li>
+                        </ul>
+
+                    }
+                }
+                else
+                {
+                    if (Model.userModel.LevelId>5)
+                    {
+                        <div class="alert alert-info" role="alert">
+                            <i class="far fa-info-circle  fa-lg"></i>
+                            <span>
+                        <strong>You are now  a Planet HERO! Be Proud and continue doing the same !</strong>
+                                <br />
+                            </span>
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="alert alert-info" role="alert">
+                            <i class="far fa-info-circle fa-lg"></i>
+                            <span>
+                                <strong>No Tasks to display. Please try  again later</strong>
+                                <br />
+                            </span>
+                        </div>
+                    }
+                }
+            </div>
+        </div>
+    </div>
+    <input type="hidden" id="ActivityData" value="@Model.userModel.Activity" />
+    <input type="hidden" id="CarbonActivityData" value="@Model.userModel.CarbonActivity" />
+
+</div>

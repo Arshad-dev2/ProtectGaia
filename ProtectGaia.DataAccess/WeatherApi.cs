@@ -9,13 +9,13 @@ namespace ProtectGaia.DataAccess
     public class WeatherApi : IWeatherApi
     {
 
-        //http://api.openweathermap.org/pollution/v1/o3/0.0,10.0/2016Z.json?appid=abe86acc75901d9c33ecbd8fd859755a
-        //https://api.openweathermap.org/data/2.5/onecall?lat=-37.90233014934599&lon=145.11578149453229&appid=abe86acc75901d9c33ecbd8fd859755a
-
         public readonly string apiKey = "abe86acc75901d9c33ecbd8fd859755a";
         public readonly string BaseURL = @"https://api.openweathermap.org/data/2.5/onecall?";
+
+
         public readonly string locationURL = @"https://api.opencagedata.com/geocode/v1/json?key=";
         public readonly string locationApiKey = "5d8a908231ed4cdeb254dbc4b6ba1ffe";
+
         public readonly string ozoneUrl = @"https://api.waqi.info/feed/";
         public readonly string ozoneApikey = "4ee533727e6e053924140c344c48caa41463da4d";
 
@@ -32,7 +32,7 @@ namespace ProtectGaia.DataAccess
                 weatherResponse = JsonConvert.DeserializeObject<WeatherResponse>(jsonString);
                 widgetResponse.Temp = Convert.ToInt32(weatherResponse.Current.Temp - 273);
                 widgetResponse.FeelsLikeTemp = Convert.ToInt32(weatherResponse.Current.FeelsLike - 273);
-                widgetResponse.Icon = @"http://openweathermap.org/img/wn/" + weatherResponse.Current.Weather[0].Icon + "@2x.png";
+                widgetResponse.Icon = @"https://openweathermap.org/img/wn/" + weatherResponse.Current.Weather[0].Icon + "@2x.png";
                 // Locationfetch
 
                 string locUrl = string.Format("{0}{1}&q={2}+{3}&pretty=1&no_annotations=1", locationURL, locationApiKey, request.Latitude, request.Longitude);

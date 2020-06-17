@@ -1,0 +1,135 @@
+﻿@using Microsoft.AspNetCore.Http
+@inject IHttpContextAccessor HttpContextAccessor
+@{
+    ViewBag.Title = "HouseholdPractices";
+}
+@if (HttpContextAccessor.HttpContext.Session.GetString("IsLoggedIn") == "true")
+{
+    Layout = "_AuthenticatedLayout";
+}
+else
+{
+    Layout = "_WebLayout";
+}
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+<link rel="stylesheet" href="/assets/css/main.css" />
+<link rel="stylesheet" href="/assets/css/explainers.css" />
+
+<!-- Main -->
+<section id="main" style="background-color:white; top:-0.5rem;">
+    <div class="container">
+        <a href="#" class="image featured"><img src="~/images/explainers/household_bg.png" alt="household_practices" style="width: 100%; height: auto" /></a>
+        <div class="post-content">
+            <h2 style="text-align:center">Household Practices</h2>
+            <p style="font-size: 1rem; font-family: Archivo Narrow, sans-serif;text-align:center">Written by: Environs</p>
+            <center>
+                <article style="position: relative;left: 19.5%;">
+                    <p style="text-align:left">
+                        The fight against Greenhouse Gases starts with you. By making some changes to your household practices,
+                        you can make your house greener and also reduce your carbon footprint.
+                        This explainer suggests you on <strong>greener ways to manage your household waste and initiate an interest of backyard farming in your daily lives.</strong>
+                    </p>
+
+                    <p style="text-align:left">
+                        Growing your own food in your backyard or home garden is no rocket science.
+                        It is actually quiet easy and an interesting way to get involved in any activity which is
+                        beneficial for the environment and for you as well. So lets have a look into some of the benefits of household farming as follows:
+                    </p>
+
+                    <p style="text-align: center;">
+                        <img src="~/images/explainers/0_house.png" alt="Benefits of Household Practices" width="700" height="774" sizes="(max-width: 700px) 100vw, 700px"><br>
+                        <em>Benefits of Household/Backyard Farming</em>
+                    </p>
+
+                    <p style="text-align:left">
+                        To make things even easier, watch this video below made by our team to <strong>
+                            understand how backyard
+                            farming is helping Australia to reduce its Greenhouse emissions and making you take a step towards better health:
+                        </strong>
+                    </p>
+
+                    <p style="text-align: center;">
+                        <iframe src="https://www.youtube.com/embed/9BNDnt3wMWM" style="width:100%;height:35rem; filter: brightness(100%); opacity:0.9;">
+                        </iframe>
+                    </p>
+
+                    <p style="text-align:left">
+                        Liked the Video? That is not all, <strong>here are some tips to get you started –</strong> <br /><br />
+                        1.	Pick the right spot! The most suitable spot for growing vegetables is the place which has access to sunlight and water. <br /><br />
+                        2.	Use clean and natural soil to grow your food. <br /><br />
+                        3.	Try using an elevated garden bed that lets you monitor the soil and nutrient mixture.<br /><br />
+                        4.	Speak to other gardeners in your area to get a sense of what is growing well in your area and at what time of the year.<br /><br />
+                        5.	Start small – Grow the veggies or fruits that you love and can be grown easily.<br />
+                    </p>
+
+                    <div class="container" style="border-style: solid; border-width: 1px; border-radius: 10px; border-color: #453f3c">
+                        <h3> Did You Know..? </h3>
+                        <p style="text-align: center;">
+                            <span>
+                                <b>
+                                    <h4t>
+                                        <i style="color: #00b3b3;filter: brightness(.9);">
+                                            “Australian households generate at least one-fifth of Australia&#39;s greenhouse gases, more that
+                                            18 tons per household each year.”<br />
+                                        </i>
+                                    </h4t>
+                                </b>
+                            </span>
+                            <span><i style="font-size: 0.8em">(Source – <a href="https://apps.epa.vic.gov.au/AGC/home.html" target="_blank"> Australian Greenhouse Calculator</a>) </i></span>
+                        </p>
+                    </div><br /><br />
+
+                    <p style="text-align: center;">
+                        <img src="~/images/explainers/0_house2.png" alt="Household Emissions" width="700" height="774" sizes="(max-width: 700px) 100vw, 700px"><br>
+                        <em>(Source – <a href="https://apps.epa.vic.gov.au/AGC/home.html" target="_blank"> Australian Greenhouse Calculator</a>)</em>
+                    </p>
+
+                    <p style="text-align:left">
+                        There is another way in which you can help the environment, that is by managing your household waste
+                        properly and disposing them in the correct bins only if required. Waste disposal has been a critical
+                        concern across Australia. In the past two years, Australia has produced large amounts of garbage
+                        without a proper recycling method, despite an unprecedented population growth.
+                    </p>
+
+                    <p style="text-align:left">
+                        Our Household Waste can be divided into five waste forms which include <strong>
+                            <i style="color: #008080">
+                                liquid waste, solid garbage,
+                                industrial waste, toxic waste and recyclable waste.
+                            </i>
+                        </strong>
+                        We should make sure that we split the waste into these different forms to ensure proper handling of the waste.
+                        It is the duty of each of us  to organize and to schedule their waste disposal.<br />
+                        Learn to practice proper and efficient waste management from the following infographic:
+                    </p>
+
+                    <p style="text-align: center;">
+                        <img src="~/images/explainers/0_house3.png" alt="Household Waste Reduction" width="700" height="774" sizes="(max-width: 700px) 100vw, 700px"><br>
+                        <em> Ways to Reduce Your Household Waste </em>
+                    </p>
+
+                    <p style="text-align:left">
+                        Australian households produce a lot of greenhouse gases; primarily from food and waste. However, most
+                        of us can reduce our greenhouse gas emissions by promoting proper waste management and
+                        performing backyard farming.
+                    </p>
+
+                </article>
+            </center>
+        </div>
+    </div>
+    <div class="container" style="margin-top:1.5em;">
+        
+        <div class="post-content">
+            <center>
+
+                <a asp-controller="Explainers" asp-Action="TransportEmissions" class="button alt">&laquo; Previous</a>
+                <a asp-controller="Explainers" asp-Action="ClimateChange" class="button">Next &raquo;</a>
+
+            </center>
+        </div>
+    </div>
+
+</section>
+

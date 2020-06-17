@@ -65,72 +65,1003 @@
 /Users/sameekshaingle/Desktop/ProtectGaia/ProtectGaia/obj/Debug/netcoreapp3.1/ProtectGaia.dll
 /Users/sameekshaingle/Desktop/ProtectGaia/ProtectGaia/obj/Debug/netcoreapp3.1/ProtectGaia.pdb
 /Users/sameekshaingle/Desktop/ProtectGaia/ProtectGaia/obj/Debug/netcoreapp3.1/ProtectGaia.genruntimeconfig.cache
-C:\Users\gupta\source\repos\ProtectGaia-dev\ProtectGaia\bin\Debug\netcoreapp3.1\appsettings.Development.json
-C:\Users\gupta\source\repos\ProtectGaia-dev\ProtectGaia\bin\Debug\netcoreapp3.1\appsettings.json
-C:\Users\gupta\source\repos\ProtectGaia-dev\ProtectGaia\bin\Debug\netcoreapp3.1\aws-beanstalk-tools-defaults.json
-C:\Users\gupta\source\repos\ProtectGaia-dev\ProtectGaia\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
-C:\Users\gupta\source\repos\ProtectGaia-dev\ProtectGaia\bin\Debug\netcoreapp3.1\ProtectGaia.exe
-C:\Users\gupta\source\repos\ProtectGaia-dev\ProtectGaia\bin\Debug\netcoreapp3.1\ProtectGaia.deps.json
-C:\Users\gupta\source\repos\ProtectGaia-dev\ProtectGaia\bin\Debug\netcoreapp3.1\ProtectGaia.runtimeconfig.json
-C:\Users\gupta\source\repos\ProtectGaia-dev\ProtectGaia\bin\Debug\netcoreapp3.1\ProtectGaia.runtimeconfig.dev.json
-C:\Users\gupta\source\repos\ProtectGaia-dev\ProtectGaia\bin\Debug\netcoreapp3.1\ProtectGaia.dll
-C:\Users\gupta\source\repos\ProtectGaia-dev\ProtectGaia\bin\Debug\netcoreapp3.1\ProtectGaia.pdb
-C:\Users\gupta\source\repos\ProtectGaia-dev\ProtectGaia\bin\Debug\netcoreapp3.1\ProtectGaia.Views.dll
-C:\Users\gupta\source\repos\ProtectGaia-dev\ProtectGaia\bin\Debug\netcoreapp3.1\ProtectGaia.Views.pdb
-C:\Users\gupta\source\repos\ProtectGaia-dev\ProtectGaia\bin\Debug\netcoreapp3.1\MetOfficeDataPoint.dll
-C:\Users\gupta\source\repos\ProtectGaia-dev\ProtectGaia\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
-C:\Users\gupta\source\repos\ProtectGaia-dev\ProtectGaia\bin\Debug\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
-C:\Users\gupta\source\repos\ProtectGaia-dev\ProtectGaia\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
-C:\Users\gupta\source\repos\ProtectGaia-dev\ProtectGaia\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
-C:\Users\gupta\source\repos\ProtectGaia-dev\ProtectGaia\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
-C:\Users\gupta\source\repos\ProtectGaia-dev\ProtectGaia\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
-C:\Users\gupta\source\repos\ProtectGaia-dev\ProtectGaia\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
-C:\Users\gupta\source\repos\ProtectGaia-dev\ProtectGaia\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
-C:\Users\gupta\source\repos\ProtectGaia-dev\ProtectGaia\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Binder.dll
-C:\Users\gupta\source\repos\ProtectGaia-dev\ProtectGaia\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
-C:\Users\gupta\source\repos\ProtectGaia-dev\ProtectGaia\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
-C:\Users\gupta\source\repos\ProtectGaia-dev\ProtectGaia\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
-C:\Users\gupta\source\repos\ProtectGaia-dev\ProtectGaia\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
-C:\Users\gupta\source\repos\ProtectGaia-dev\ProtectGaia\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
-C:\Users\gupta\source\repos\ProtectGaia-dev\ProtectGaia\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
-C:\Users\gupta\source\repos\ProtectGaia-dev\ProtectGaia\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
-C:\Users\gupta\source\repos\ProtectGaia-dev\ProtectGaia\bin\Debug\netcoreapp3.1\ProtectGaia.DataAccess.dll
-C:\Users\gupta\source\repos\ProtectGaia-dev\ProtectGaia\bin\Debug\netcoreapp3.1\ProtectGaia.Entities.dll
-C:\Users\gupta\source\repos\ProtectGaia-dev\ProtectGaia\bin\Debug\netcoreapp3.1\ProtectGaia.Interface.dll
-C:\Users\gupta\source\repos\ProtectGaia-dev\ProtectGaia\bin\Debug\netcoreapp3.1\ProtectGaia.DataAccess.pdb
-C:\Users\gupta\source\repos\ProtectGaia-dev\ProtectGaia\bin\Debug\netcoreapp3.1\ProtectGaia.Entities.pdb
-C:\Users\gupta\source\repos\ProtectGaia-dev\ProtectGaia\bin\Debug\netcoreapp3.1\ProtectGaia.Interface.pdb
-C:\Users\gupta\source\repos\ProtectGaia-dev\ProtectGaia\obj\Debug\netcoreapp3.1\ProtectGaia.csprojAssemblyReference.cache
-C:\Users\gupta\source\repos\ProtectGaia-dev\ProtectGaia\obj\Debug\netcoreapp3.1\ProtectGaia.csproj.CoreCompileInputs.cache
-C:\Users\gupta\source\repos\ProtectGaia-dev\ProtectGaia\obj\Debug\netcoreapp3.1\ProtectGaia.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\gupta\source\repos\ProtectGaia-dev\ProtectGaia\obj\Debug\netcoreapp3.1\ProtectGaia.RazorAssemblyInfo.cache
-C:\Users\gupta\source\repos\ProtectGaia-dev\ProtectGaia\obj\Debug\netcoreapp3.1\ProtectGaia.RazorAssemblyInfo.cs
-C:\Users\gupta\source\repos\ProtectGaia-dev\ProtectGaia\obj\Debug\netcoreapp3.1\ProtectGaia.AssemblyInfoInputs.cache
-C:\Users\gupta\source\repos\ProtectGaia-dev\ProtectGaia\obj\Debug\netcoreapp3.1\ProtectGaia.AssemblyInfo.cs
-C:\Users\gupta\source\repos\ProtectGaia-dev\ProtectGaia\obj\Debug\netcoreapp3.1\ProtectGaia.TagHelpers.input.cache
-C:\Users\gupta\source\repos\ProtectGaia-dev\ProtectGaia\obj\Debug\netcoreapp3.1\ProtectGaia.TagHelpers.output.cache
-C:\Users\gupta\source\repos\ProtectGaia-dev\ProtectGaia\obj\Debug\netcoreapp3.1\ProtectGaia.RazorCoreGenerate.cache
-C:\Users\gupta\source\repos\ProtectGaia-dev\ProtectGaia\obj\Debug\netcoreapp3.1\Razor\Views\Explore\Blogs.cshtml.g.cs
-C:\Users\gupta\source\repos\ProtectGaia-dev\ProtectGaia\obj\Debug\netcoreapp3.1\Razor\Views\Explore\Infographics.cshtml.g.cs
-C:\Users\gupta\source\repos\ProtectGaia-dev\ProtectGaia\obj\Debug\netcoreapp3.1\Razor\Views\Explore\Visualization.cshtml.g.cs
-C:\Users\gupta\source\repos\ProtectGaia-dev\ProtectGaia\obj\Debug\netcoreapp3.1\Razor\Views\Home\Contact.cshtml.g.cs
-C:\Users\gupta\source\repos\ProtectGaia-dev\ProtectGaia\obj\Debug\netcoreapp3.1\Razor\Views\Home\Error.cshtml.g.cs
-C:\Users\gupta\source\repos\ProtectGaia-dev\ProtectGaia\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
-C:\Users\gupta\source\repos\ProtectGaia-dev\ProtectGaia\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
-C:\Users\gupta\source\repos\ProtectGaia-dev\ProtectGaia\obj\Debug\netcoreapp3.1\Razor\Views\Resources\Visualization.cshtml.g.cs
-C:\Users\gupta\source\repos\ProtectGaia-dev\ProtectGaia\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
-C:\Users\gupta\source\repos\ProtectGaia-dev\ProtectGaia\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Index.cshtml.g.cs
-C:\Users\gupta\source\repos\ProtectGaia-dev\ProtectGaia\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
-C:\Users\gupta\source\repos\ProtectGaia-dev\ProtectGaia\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
-C:\Users\gupta\source\repos\ProtectGaia-dev\ProtectGaia\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_WebLayout.cshtml.g.cs
-C:\Users\gupta\source\repos\ProtectGaia-dev\ProtectGaia\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
-C:\Users\gupta\source\repos\ProtectGaia-dev\ProtectGaia\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
-C:\Users\gupta\source\repos\ProtectGaia-dev\ProtectGaia\obj\Debug\netcoreapp3.1\ProtectGaia.RazorTargetAssemblyInfo.cache
-C:\Users\gupta\source\repos\ProtectGaia-dev\ProtectGaia\obj\Debug\netcoreapp3.1\ProtectGaia.RazorTargetAssemblyInfo.cs
-C:\Users\gupta\source\repos\ProtectGaia-dev\ProtectGaia\obj\Debug\netcoreapp3.1\ProtectGaia.Views.pdb
-C:\Users\gupta\source\repos\ProtectGaia-dev\ProtectGaia\obj\Debug\netcoreapp3.1\ProtectGaia.csproj.CopyComplete
-C:\Users\gupta\source\repos\ProtectGaia-dev\ProtectGaia\obj\Debug\netcoreapp3.1\staticwebassets\ProtectGaia.StaticWebAssets.Manifest.cache
-C:\Users\gupta\source\repos\ProtectGaia-dev\ProtectGaia\obj\Debug\netcoreapp3.1\staticwebassets\ProtectGaia.StaticWebAssets.xml
-C:\Users\gupta\source\repos\ProtectGaia-dev\ProtectGaia\obj\Debug\netcoreapp3.1\ProtectGaia.dll
-C:\Users\gupta\source\repos\ProtectGaia-dev\ProtectGaia\obj\Debug\netcoreapp3.1\ProtectGaia.pdb
-C:\Users\gupta\source\repos\ProtectGaia-dev\ProtectGaia\obj\Debug\netcoreapp3.1\ProtectGaia.genruntimeconfig.cache
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/bin/Debug/netcoreapp3.1/appsettings.Development.json
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/bin/Debug/netcoreapp3.1/appsettings.json
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/bin/Debug/netcoreapp3.1/aws-beanstalk-tools-defaults.json
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/bin/Debug/netcoreapp3.1/Properties/launchSettings.json
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/bin/Debug/netcoreapp3.1/ProtectGaia.exe
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/bin/Debug/netcoreapp3.1/ProtectGaia.deps.json
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/bin/Debug/netcoreapp3.1/ProtectGaia.runtimeconfig.json
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/bin/Debug/netcoreapp3.1/ProtectGaia.runtimeconfig.dev.json
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/bin/Debug/netcoreapp3.1/ProtectGaia.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/bin/Debug/netcoreapp3.1/ProtectGaia.pdb
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/bin/Debug/netcoreapp3.1/ProtectGaia.Views.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/bin/Debug/netcoreapp3.1/ProtectGaia.Views.pdb
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/bin/Debug/netcoreapp3.1/MetOfficeDataPoint.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.Bcl.AsyncInterfaces.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.Bcl.HashCode.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Abstractions.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Caching.Abstractions.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Caching.Memory.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Configuration.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Configuration.Abstractions.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Configuration.Binder.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.Extensions.DependencyInjection.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Logging.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Logging.Abstractions.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Options.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Primitives.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/bin/Debug/netcoreapp3.1/Newtonsoft.Json.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/bin/Debug/netcoreapp3.1/ProtectGaia.DataAccess.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/bin/Debug/netcoreapp3.1/ProtectGaia.Entities.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/bin/Debug/netcoreapp3.1/ProtectGaia.Interface.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/bin/Debug/netcoreapp3.1/ProtectGaia.DataAccess.pdb
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/bin/Debug/netcoreapp3.1/ProtectGaia.Entities.pdb
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/bin/Debug/netcoreapp3.1/ProtectGaia.Interface.pdb
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/obj/Debug/netcoreapp3.1/ProtectGaia.csprojAssemblyReference.cache
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/obj/Debug/netcoreapp3.1/ProtectGaia.csproj.CoreCompileInputs.cache
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/obj/Debug/netcoreapp3.1/ProtectGaia.MvcApplicationPartsAssemblyInfo.cache
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/obj/Debug/netcoreapp3.1/ProtectGaia.RazorAssemblyInfo.cache
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/obj/Debug/netcoreapp3.1/ProtectGaia.RazorAssemblyInfo.cs
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/obj/Debug/netcoreapp3.1/ProtectGaia.AssemblyInfoInputs.cache
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/obj/Debug/netcoreapp3.1/ProtectGaia.AssemblyInfo.cs
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/obj/Debug/netcoreapp3.1/ProtectGaia.TagHelpers.input.cache
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/obj/Debug/netcoreapp3.1/ProtectGaia.TagHelpers.output.cache
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/obj/Debug/netcoreapp3.1/ProtectGaia.RazorCoreGenerate.cache
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/obj/Debug/netcoreapp3.1/Razor/Views/Explore/Infographics.cshtml.g.cs
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/obj/Debug/netcoreapp3.1/Razor/Views/Explore/Visualization.cshtml.g.cs
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/obj/Debug/netcoreapp3.1/Razor/Views/Home/Contact.cshtml.g.cs
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/obj/Debug/netcoreapp3.1/Razor/Views/Home/Error.cshtml.g.cs
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/obj/Debug/netcoreapp3.1/Razor/Views/Home/Privacy.cshtml.g.cs
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/obj/Debug/netcoreapp3.1/Razor/Views/Resources/Visualization.cshtml.g.cs
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/obj/Debug/netcoreapp3.1/Razor/Views/Shared/Error.cshtml.g.cs
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/obj/Debug/netcoreapp3.1/Razor/Views/Shared/Index.cshtml.g.cs
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_Layout.cshtml.g.cs
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_ValidationScriptsPartial.cshtml.g.cs
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_WebLayout.cshtml.g.cs
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/obj/Debug/netcoreapp3.1/Razor/Views/_ViewImports.cshtml.g.cs
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/obj/Debug/netcoreapp3.1/Razor/Views/_ViewStart.cshtml.g.cs
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/obj/Debug/netcoreapp3.1/ProtectGaia.RazorTargetAssemblyInfo.cache
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/obj/Debug/netcoreapp3.1/ProtectGaia.RazorTargetAssemblyInfo.cs
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/obj/Debug/netcoreapp3.1/ProtectGaia.Views.pdb
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/obj/Debug/netcoreapp3.1/ProtectGaia.csproj.CopyComplete
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/obj/Debug/netcoreapp3.1/staticwebassets/ProtectGaia.StaticWebAssets.Manifest.cache
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/obj/Debug/netcoreapp3.1/staticwebassets/ProtectGaia.StaticWebAssets.xml
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/obj/Debug/netcoreapp3.1/ProtectGaia.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/obj/Debug/netcoreapp3.1/ProtectGaia.pdb
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/obj/Debug/netcoreapp3.1/ProtectGaia.genruntimeconfig.cache
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/bin/Debug/netcoreapp3.1/Views/Blogs/Index.cshtml
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Authentication.Google.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Razor.Language.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.CodeAnalysis.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.CodeAnalysis.CSharp.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.CodeAnalysis.Razor.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.CodeAnalysis.Workspaces.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.Data.SqlClient.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.Data.Sqlite.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.DotNet.PlatformAbstractions.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Design.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Relational.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Sqlite.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.SqlServer.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.Extensions.DependencyModel.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.Identity.Client.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.VisualStudio.Web.CodeGeneration.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/bin/Debug/netcoreapp3.1/dotnet-aspnet-codegenerator-design.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/bin/Debug/netcoreapp3.1/NuGet.Frameworks.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/bin/Debug/netcoreapp3.1/SQLitePCLRaw.batteries_v2.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/bin/Debug/netcoreapp3.1/SQLitePCLRaw.nativelibrary.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/bin/Debug/netcoreapp3.1/SQLitePCLRaw.core.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/bin/Debug/netcoreapp3.1/SQLitePCLRaw.provider.dynamic_cdecl.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/bin/Debug/netcoreapp3.1/System.Composition.AttributedModel.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/bin/Debug/netcoreapp3.1/System.Composition.Convention.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/bin/Debug/netcoreapp3.1/System.Composition.Hosting.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/bin/Debug/netcoreapp3.1/System.Composition.Runtime.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/bin/Debug/netcoreapp3.1/System.Composition.TypedParts.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/bin/Debug/netcoreapp3.1/System.Configuration.ConfigurationManager.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/bin/Debug/netcoreapp3.1/System.Runtime.Caching.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/bin/Debug/netcoreapp3.1/System.Security.Cryptography.ProtectedData.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/bin/Debug/netcoreapp3.1/System.Text.Json.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/bin/Debug/netcoreapp3.1/cs/Microsoft.CodeAnalysis.resources.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/bin/Debug/netcoreapp3.1/de/Microsoft.CodeAnalysis.resources.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/bin/Debug/netcoreapp3.1/es/Microsoft.CodeAnalysis.resources.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/bin/Debug/netcoreapp3.1/fr/Microsoft.CodeAnalysis.resources.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/bin/Debug/netcoreapp3.1/it/Microsoft.CodeAnalysis.resources.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/bin/Debug/netcoreapp3.1/ja/Microsoft.CodeAnalysis.resources.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/bin/Debug/netcoreapp3.1/ko/Microsoft.CodeAnalysis.resources.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/bin/Debug/netcoreapp3.1/pl/Microsoft.CodeAnalysis.resources.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/bin/Debug/netcoreapp3.1/pt-BR/Microsoft.CodeAnalysis.resources.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/bin/Debug/netcoreapp3.1/ru/Microsoft.CodeAnalysis.resources.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/bin/Debug/netcoreapp3.1/tr/Microsoft.CodeAnalysis.resources.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/bin/Debug/netcoreapp3.1/zh-Hans/Microsoft.CodeAnalysis.resources.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/bin/Debug/netcoreapp3.1/zh-Hant/Microsoft.CodeAnalysis.resources.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/bin/Debug/netcoreapp3.1/cs/Microsoft.CodeAnalysis.CSharp.resources.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/bin/Debug/netcoreapp3.1/de/Microsoft.CodeAnalysis.CSharp.resources.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/bin/Debug/netcoreapp3.1/es/Microsoft.CodeAnalysis.CSharp.resources.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/bin/Debug/netcoreapp3.1/fr/Microsoft.CodeAnalysis.CSharp.resources.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/bin/Debug/netcoreapp3.1/it/Microsoft.CodeAnalysis.CSharp.resources.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/bin/Debug/netcoreapp3.1/ja/Microsoft.CodeAnalysis.CSharp.resources.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/bin/Debug/netcoreapp3.1/ko/Microsoft.CodeAnalysis.CSharp.resources.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/bin/Debug/netcoreapp3.1/pl/Microsoft.CodeAnalysis.CSharp.resources.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/bin/Debug/netcoreapp3.1/pt-BR/Microsoft.CodeAnalysis.CSharp.resources.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/bin/Debug/netcoreapp3.1/ru/Microsoft.CodeAnalysis.CSharp.resources.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/bin/Debug/netcoreapp3.1/tr/Microsoft.CodeAnalysis.CSharp.resources.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/bin/Debug/netcoreapp3.1/zh-Hans/Microsoft.CodeAnalysis.CSharp.resources.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/bin/Debug/netcoreapp3.1/zh-Hant/Microsoft.CodeAnalysis.CSharp.resources.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/bin/Debug/netcoreapp3.1/cs/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/bin/Debug/netcoreapp3.1/de/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/bin/Debug/netcoreapp3.1/es/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/bin/Debug/netcoreapp3.1/fr/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/bin/Debug/netcoreapp3.1/it/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/bin/Debug/netcoreapp3.1/ja/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/bin/Debug/netcoreapp3.1/ko/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/bin/Debug/netcoreapp3.1/pl/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/bin/Debug/netcoreapp3.1/pt-BR/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/bin/Debug/netcoreapp3.1/ru/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/bin/Debug/netcoreapp3.1/tr/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/bin/Debug/netcoreapp3.1/zh-Hans/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/bin/Debug/netcoreapp3.1/zh-Hant/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/bin/Debug/netcoreapp3.1/cs/Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/bin/Debug/netcoreapp3.1/de/Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/bin/Debug/netcoreapp3.1/es/Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/bin/Debug/netcoreapp3.1/fr/Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/bin/Debug/netcoreapp3.1/it/Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/bin/Debug/netcoreapp3.1/ja/Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/bin/Debug/netcoreapp3.1/ko/Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/bin/Debug/netcoreapp3.1/pl/Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/bin/Debug/netcoreapp3.1/pt-BR/Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/bin/Debug/netcoreapp3.1/ru/Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/bin/Debug/netcoreapp3.1/tr/Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/bin/Debug/netcoreapp3.1/zh-Hans/Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/bin/Debug/netcoreapp3.1/zh-Hant/Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/bin/Debug/netcoreapp3.1/runtimes/unix/lib/netcoreapp2.1/Microsoft.Data.SqlClient.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/bin/Debug/netcoreapp3.1/runtimes/win/lib/netcoreapp2.1/Microsoft.Data.SqlClient.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/bin/Debug/netcoreapp3.1/runtimes/win-arm64/native/sni.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/bin/Debug/netcoreapp3.1/runtimes/win-x64/native/sni.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/bin/Debug/netcoreapp3.1/runtimes/win-x86/native/sni.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/bin/Debug/netcoreapp3.1/runtimes/alpine-x64/native/libe_sqlite3.so
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/bin/Debug/netcoreapp3.1/runtimes/linux-arm/native/libe_sqlite3.so
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/bin/Debug/netcoreapp3.1/runtimes/linux-arm64/native/libe_sqlite3.so
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/bin/Debug/netcoreapp3.1/runtimes/linux-armel/native/libe_sqlite3.so
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/bin/Debug/netcoreapp3.1/runtimes/linux-musl-x64/native/libe_sqlite3.so
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/bin/Debug/netcoreapp3.1/runtimes/linux-x64/native/libe_sqlite3.so
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/bin/Debug/netcoreapp3.1/runtimes/linux-x86/native/libe_sqlite3.so
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/bin/Debug/netcoreapp3.1/runtimes/osx-x64/native/libe_sqlite3.dylib
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/bin/Debug/netcoreapp3.1/runtimes/win-arm/native/e_sqlite3.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/bin/Debug/netcoreapp3.1/runtimes/win-arm64/native/e_sqlite3.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/bin/Debug/netcoreapp3.1/runtimes/win-x64/native/e_sqlite3.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/bin/Debug/netcoreapp3.1/runtimes/win-x86/native/e_sqlite3.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/bin/Debug/netcoreapp3.1/runtimes/unix/lib/netcoreapp2.0/System.Runtime.Caching.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/bin/Debug/netcoreapp3.1/runtimes/win/lib/netcoreapp2.0/System.Runtime.Caching.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/bin/Debug/netcoreapp3.1/runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/obj/Debug/netcoreapp3.1/Razor/Views/Blogs/Index.cshtml.g.cs
+C:/Users/gupta/source/repos/ProtectGaia-dev/ProtectGaia/obj/Debug/netcoreapp3.1/Razor/Views/Home/Index.cshtml.g.cs
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/bin/Debug/netcoreapp3.1/appsettings.Development.json
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/bin/Debug/netcoreapp3.1/appsettings.json
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/bin/Debug/netcoreapp3.1/aws-beanstalk-tools-defaults.json
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/bin/Debug/netcoreapp3.1/Properties/launchSettings.json
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/bin/Debug/netcoreapp3.1/Views/Blogs/Index.cshtml
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/bin/Debug/netcoreapp3.1/ProtectGaia.exe
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/bin/Debug/netcoreapp3.1/ProtectGaia.deps.json
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/bin/Debug/netcoreapp3.1/ProtectGaia.runtimeconfig.json
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/bin/Debug/netcoreapp3.1/ProtectGaia.runtimeconfig.dev.json
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/bin/Debug/netcoreapp3.1/ProtectGaia.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/bin/Debug/netcoreapp3.1/ProtectGaia.pdb
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/bin/Debug/netcoreapp3.1/ProtectGaia.Views.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/bin/Debug/netcoreapp3.1/ProtectGaia.Views.pdb
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/bin/Debug/netcoreapp3.1/MetOfficeDataPoint.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Authentication.Google.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Razor.Language.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.Bcl.AsyncInterfaces.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.Bcl.HashCode.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.CodeAnalysis.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.CodeAnalysis.CSharp.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.CodeAnalysis.Razor.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.CodeAnalysis.Workspaces.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.Data.SqlClient.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.Data.Sqlite.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.DotNet.PlatformAbstractions.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Abstractions.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Design.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Relational.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Sqlite.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.SqlServer.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Caching.Abstractions.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Caching.Memory.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Configuration.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Configuration.Abstractions.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Configuration.Binder.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.Extensions.DependencyInjection.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.Extensions.DependencyModel.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Logging.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Logging.Abstractions.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Options.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Primitives.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.Identity.Client.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.VisualStudio.Web.CodeGeneration.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/bin/Debug/netcoreapp3.1/dotnet-aspnet-codegenerator-design.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/bin/Debug/netcoreapp3.1/Newtonsoft.Json.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/bin/Debug/netcoreapp3.1/NuGet.Frameworks.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/bin/Debug/netcoreapp3.1/SQLitePCLRaw.batteries_v2.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/bin/Debug/netcoreapp3.1/SQLitePCLRaw.nativelibrary.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/bin/Debug/netcoreapp3.1/SQLitePCLRaw.core.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/bin/Debug/netcoreapp3.1/SQLitePCLRaw.provider.dynamic_cdecl.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/bin/Debug/netcoreapp3.1/System.Composition.AttributedModel.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/bin/Debug/netcoreapp3.1/System.Composition.Convention.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/bin/Debug/netcoreapp3.1/System.Composition.Hosting.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/bin/Debug/netcoreapp3.1/System.Composition.Runtime.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/bin/Debug/netcoreapp3.1/System.Composition.TypedParts.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/bin/Debug/netcoreapp3.1/System.Configuration.ConfigurationManager.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/bin/Debug/netcoreapp3.1/System.Runtime.Caching.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/bin/Debug/netcoreapp3.1/System.Security.Cryptography.ProtectedData.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/bin/Debug/netcoreapp3.1/System.Text.Json.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/bin/Debug/netcoreapp3.1/cs/Microsoft.CodeAnalysis.resources.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/bin/Debug/netcoreapp3.1/de/Microsoft.CodeAnalysis.resources.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/bin/Debug/netcoreapp3.1/es/Microsoft.CodeAnalysis.resources.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/bin/Debug/netcoreapp3.1/fr/Microsoft.CodeAnalysis.resources.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/bin/Debug/netcoreapp3.1/it/Microsoft.CodeAnalysis.resources.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/bin/Debug/netcoreapp3.1/ja/Microsoft.CodeAnalysis.resources.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/bin/Debug/netcoreapp3.1/ko/Microsoft.CodeAnalysis.resources.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/bin/Debug/netcoreapp3.1/pl/Microsoft.CodeAnalysis.resources.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/bin/Debug/netcoreapp3.1/pt-BR/Microsoft.CodeAnalysis.resources.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/bin/Debug/netcoreapp3.1/ru/Microsoft.CodeAnalysis.resources.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/bin/Debug/netcoreapp3.1/tr/Microsoft.CodeAnalysis.resources.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/bin/Debug/netcoreapp3.1/zh-Hans/Microsoft.CodeAnalysis.resources.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/bin/Debug/netcoreapp3.1/zh-Hant/Microsoft.CodeAnalysis.resources.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/bin/Debug/netcoreapp3.1/cs/Microsoft.CodeAnalysis.CSharp.resources.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/bin/Debug/netcoreapp3.1/de/Microsoft.CodeAnalysis.CSharp.resources.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/bin/Debug/netcoreapp3.1/es/Microsoft.CodeAnalysis.CSharp.resources.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/bin/Debug/netcoreapp3.1/fr/Microsoft.CodeAnalysis.CSharp.resources.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/bin/Debug/netcoreapp3.1/it/Microsoft.CodeAnalysis.CSharp.resources.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/bin/Debug/netcoreapp3.1/ja/Microsoft.CodeAnalysis.CSharp.resources.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/bin/Debug/netcoreapp3.1/ko/Microsoft.CodeAnalysis.CSharp.resources.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/bin/Debug/netcoreapp3.1/pl/Microsoft.CodeAnalysis.CSharp.resources.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/bin/Debug/netcoreapp3.1/pt-BR/Microsoft.CodeAnalysis.CSharp.resources.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/bin/Debug/netcoreapp3.1/ru/Microsoft.CodeAnalysis.CSharp.resources.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/bin/Debug/netcoreapp3.1/tr/Microsoft.CodeAnalysis.CSharp.resources.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/bin/Debug/netcoreapp3.1/zh-Hans/Microsoft.CodeAnalysis.CSharp.resources.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/bin/Debug/netcoreapp3.1/zh-Hant/Microsoft.CodeAnalysis.CSharp.resources.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/bin/Debug/netcoreapp3.1/cs/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/bin/Debug/netcoreapp3.1/de/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/bin/Debug/netcoreapp3.1/es/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/bin/Debug/netcoreapp3.1/fr/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/bin/Debug/netcoreapp3.1/it/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/bin/Debug/netcoreapp3.1/ja/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/bin/Debug/netcoreapp3.1/ko/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/bin/Debug/netcoreapp3.1/pl/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/bin/Debug/netcoreapp3.1/pt-BR/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/bin/Debug/netcoreapp3.1/ru/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/bin/Debug/netcoreapp3.1/tr/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/bin/Debug/netcoreapp3.1/zh-Hans/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/bin/Debug/netcoreapp3.1/zh-Hant/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/bin/Debug/netcoreapp3.1/cs/Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/bin/Debug/netcoreapp3.1/de/Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/bin/Debug/netcoreapp3.1/es/Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/bin/Debug/netcoreapp3.1/fr/Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/bin/Debug/netcoreapp3.1/it/Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/bin/Debug/netcoreapp3.1/ja/Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/bin/Debug/netcoreapp3.1/ko/Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/bin/Debug/netcoreapp3.1/pl/Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/bin/Debug/netcoreapp3.1/pt-BR/Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/bin/Debug/netcoreapp3.1/ru/Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/bin/Debug/netcoreapp3.1/tr/Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/bin/Debug/netcoreapp3.1/zh-Hans/Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/bin/Debug/netcoreapp3.1/zh-Hant/Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/bin/Debug/netcoreapp3.1/runtimes/unix/lib/netcoreapp2.1/Microsoft.Data.SqlClient.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/bin/Debug/netcoreapp3.1/runtimes/win/lib/netcoreapp2.1/Microsoft.Data.SqlClient.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/bin/Debug/netcoreapp3.1/runtimes/win-arm64/native/sni.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/bin/Debug/netcoreapp3.1/runtimes/win-x64/native/sni.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/bin/Debug/netcoreapp3.1/runtimes/win-x86/native/sni.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/bin/Debug/netcoreapp3.1/runtimes/alpine-x64/native/libe_sqlite3.so
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/bin/Debug/netcoreapp3.1/runtimes/linux-arm/native/libe_sqlite3.so
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/bin/Debug/netcoreapp3.1/runtimes/linux-arm64/native/libe_sqlite3.so
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/bin/Debug/netcoreapp3.1/runtimes/linux-armel/native/libe_sqlite3.so
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/bin/Debug/netcoreapp3.1/runtimes/linux-musl-x64/native/libe_sqlite3.so
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/bin/Debug/netcoreapp3.1/runtimes/linux-x64/native/libe_sqlite3.so
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/bin/Debug/netcoreapp3.1/runtimes/linux-x86/native/libe_sqlite3.so
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/bin/Debug/netcoreapp3.1/runtimes/osx-x64/native/libe_sqlite3.dylib
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/bin/Debug/netcoreapp3.1/runtimes/win-arm/native/e_sqlite3.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/bin/Debug/netcoreapp3.1/runtimes/win-arm64/native/e_sqlite3.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/bin/Debug/netcoreapp3.1/runtimes/win-x64/native/e_sqlite3.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/bin/Debug/netcoreapp3.1/runtimes/win-x86/native/e_sqlite3.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/bin/Debug/netcoreapp3.1/runtimes/unix/lib/netcoreapp2.0/System.Runtime.Caching.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/bin/Debug/netcoreapp3.1/runtimes/win/lib/netcoreapp2.0/System.Runtime.Caching.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/bin/Debug/netcoreapp3.1/runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/bin/Debug/netcoreapp3.1/ProtectGaia.DataAccess.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/bin/Debug/netcoreapp3.1/ProtectGaia.Entities.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/bin/Debug/netcoreapp3.1/ProtectGaia.Interface.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/bin/Debug/netcoreapp3.1/ProtectGaia.DataAccess.pdb
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/bin/Debug/netcoreapp3.1/ProtectGaia.Entities.pdb
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/bin/Debug/netcoreapp3.1/ProtectGaia.Interface.pdb
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/obj/Debug/netcoreapp3.1/ProtectGaia.csprojAssemblyReference.cache
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/obj/Debug/netcoreapp3.1/ProtectGaia.csproj.CoreCompileInputs.cache
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/obj/Debug/netcoreapp3.1/ProtectGaia.MvcApplicationPartsAssemblyInfo.cache
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/obj/Debug/netcoreapp3.1/ProtectGaia.RazorAssemblyInfo.cache
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/obj/Debug/netcoreapp3.1/ProtectGaia.RazorAssemblyInfo.cs
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/obj/Debug/netcoreapp3.1/ProtectGaia.AssemblyInfoInputs.cache
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/obj/Debug/netcoreapp3.1/ProtectGaia.AssemblyInfo.cs
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/obj/Debug/netcoreapp3.1/ProtectGaia.TagHelpers.input.cache
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/obj/Debug/netcoreapp3.1/ProtectGaia.TagHelpers.output.cache
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/obj/Debug/netcoreapp3.1/ProtectGaia.RazorCoreGenerate.cache
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/obj/Debug/netcoreapp3.1/Razor/Views/Blogs/Index.cshtml.g.cs
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/obj/Debug/netcoreapp3.1/Razor/Views/Explore/Infographics.cshtml.g.cs
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/obj/Debug/netcoreapp3.1/Razor/Views/Explore/Visualization.cshtml.g.cs
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/obj/Debug/netcoreapp3.1/Razor/Views/Home/Contact.cshtml.g.cs
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/obj/Debug/netcoreapp3.1/Razor/Views/Home/Error.cshtml.g.cs
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/obj/Debug/netcoreapp3.1/Razor/Views/Home/Index.cshtml.g.cs
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/obj/Debug/netcoreapp3.1/Razor/Views/Home/Privacy.cshtml.g.cs
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/obj/Debug/netcoreapp3.1/Razor/Views/Resources/Visualization.cshtml.g.cs
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/obj/Debug/netcoreapp3.1/Razor/Views/Shared/Error.cshtml.g.cs
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/obj/Debug/netcoreapp3.1/Razor/Views/Shared/Index.cshtml.g.cs
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_Layout.cshtml.g.cs
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_ValidationScriptsPartial.cshtml.g.cs
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_WebLayout.cshtml.g.cs
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/obj/Debug/netcoreapp3.1/Razor/Views/_ViewImports.cshtml.g.cs
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/obj/Debug/netcoreapp3.1/Razor/Views/_ViewStart.cshtml.g.cs
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/obj/Debug/netcoreapp3.1/ProtectGaia.RazorTargetAssemblyInfo.cache
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/obj/Debug/netcoreapp3.1/ProtectGaia.RazorTargetAssemblyInfo.cs
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/obj/Debug/netcoreapp3.1/ProtectGaia.Views.pdb
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/obj/Debug/netcoreapp3.1/ProtectGaia.csproj.CopyComplete
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/obj/Debug/netcoreapp3.1/staticwebassets/ProtectGaia.StaticWebAssets.Manifest.cache
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/obj/Debug/netcoreapp3.1/staticwebassets/ProtectGaia.StaticWebAssets.xml
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/obj/Debug/netcoreapp3.1/ProtectGaia.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/obj/Debug/netcoreapp3.1/ProtectGaia.pdb
+C:/Users/gupta/source/repos/ProtectGaia-dev - Copy (2)/ProtectGaia/obj/Debug/netcoreapp3.1/ProtectGaia.genruntimeconfig.cache
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/appsettings.Development.json
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/appsettings.json
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/aws-beanstalk-tools-defaults.json
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/Properties/launchSettings.json
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/Views/Blogs/Index.cshtml
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/ProtectGaia.deps.json
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/ProtectGaia.runtimeconfig.json
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/ProtectGaia.runtimeconfig.dev.json
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/ProtectGaia.dll
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/ProtectGaia.pdb
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/ProtectGaia.Views.dll
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/ProtectGaia.Views.pdb
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Authentication.Google.dll
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Razor.Language.dll
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.Bcl.AsyncInterfaces.dll
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.Bcl.HashCode.dll
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.CodeAnalysis.dll
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.CodeAnalysis.CSharp.dll
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.CodeAnalysis.Razor.dll
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.CodeAnalysis.Workspaces.dll
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.Data.SqlClient.dll
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.Data.Sqlite.dll
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.DotNet.PlatformAbstractions.dll
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.dll
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Abstractions.dll
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Design.dll
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Relational.dll
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Sqlite.dll
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.SqlServer.dll
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Caching.Abstractions.dll
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Caching.Memory.dll
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Configuration.dll
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Configuration.Abstractions.dll
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Configuration.Binder.dll
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.Extensions.DependencyInjection.dll
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.Extensions.DependencyInjection.Abstractions.dll
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.Extensions.DependencyModel.dll
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Logging.dll
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Logging.Abstractions.dll
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Options.dll
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Primitives.dll
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.Identity.Client.dll
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.VisualStudio.Web.CodeGeneration.dll
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/dotnet-aspnet-codegenerator-design.dll
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/Newtonsoft.Json.dll
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/NuGet.Frameworks.dll
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/SQLitePCLRaw.batteries_v2.dll
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/SQLitePCLRaw.nativelibrary.dll
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/SQLitePCLRaw.core.dll
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/SQLitePCLRaw.provider.dynamic_cdecl.dll
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/System.Composition.AttributedModel.dll
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/System.Composition.Convention.dll
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/System.Composition.Hosting.dll
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/System.Composition.Runtime.dll
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/System.Composition.TypedParts.dll
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/System.Configuration.ConfigurationManager.dll
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/System.Runtime.Caching.dll
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/System.Security.Cryptography.ProtectedData.dll
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/System.Text.Json.dll
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/cs/Microsoft.CodeAnalysis.resources.dll
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/de/Microsoft.CodeAnalysis.resources.dll
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/es/Microsoft.CodeAnalysis.resources.dll
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/fr/Microsoft.CodeAnalysis.resources.dll
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/it/Microsoft.CodeAnalysis.resources.dll
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/ja/Microsoft.CodeAnalysis.resources.dll
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/ko/Microsoft.CodeAnalysis.resources.dll
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/pl/Microsoft.CodeAnalysis.resources.dll
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/pt-BR/Microsoft.CodeAnalysis.resources.dll
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/ru/Microsoft.CodeAnalysis.resources.dll
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/tr/Microsoft.CodeAnalysis.resources.dll
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/zh-Hans/Microsoft.CodeAnalysis.resources.dll
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/zh-Hant/Microsoft.CodeAnalysis.resources.dll
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/cs/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/de/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/es/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/fr/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/it/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/ja/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/ko/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/pl/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/pt-BR/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/ru/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/tr/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/zh-Hans/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/zh-Hant/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/cs/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/de/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/es/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/fr/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/it/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/ja/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/ko/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/pl/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/pt-BR/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/ru/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/tr/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/zh-Hans/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/zh-Hant/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/cs/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/de/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/es/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/fr/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/it/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/ja/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/ko/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/pl/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/pt-BR/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/ru/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/tr/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/zh-Hans/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/zh-Hant/Microsoft.CodeAnalysis.Workspaces.resources.dll
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/runtimes/unix/lib/netcoreapp2.1/Microsoft.Data.SqlClient.dll
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/runtimes/win/lib/netcoreapp2.1/Microsoft.Data.SqlClient.dll
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/runtimes/win-arm64/native/sni.dll
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/runtimes/win-x64/native/sni.dll
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/runtimes/win-x86/native/sni.dll
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/runtimes/alpine-x64/native/libe_sqlite3.so
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/runtimes/linux-arm/native/libe_sqlite3.so
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/runtimes/linux-arm64/native/libe_sqlite3.so
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/runtimes/linux-armel/native/libe_sqlite3.so
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/runtimes/linux-musl-x64/native/libe_sqlite3.so
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/runtimes/linux-x64/native/libe_sqlite3.so
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/runtimes/linux-x86/native/libe_sqlite3.so
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/runtimes/osx-x64/native/libe_sqlite3.dylib
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/runtimes/win-arm/native/e_sqlite3.dll
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/runtimes/win-arm64/native/e_sqlite3.dll
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/runtimes/win-x64/native/e_sqlite3.dll
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/runtimes/win-x86/native/e_sqlite3.dll
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/runtimes/unix/lib/netcoreapp2.0/System.Runtime.Caching.dll
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/runtimes/win/lib/netcoreapp2.0/System.Runtime.Caching.dll
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/ProtectGaia.DataAccess.dll
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/ProtectGaia.Entities.dll
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/ProtectGaia.Interface.dll
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/ProtectGaia.DataAccess.pdb
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/ProtectGaia.Entities.pdb
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/ProtectGaia.Interface.pdb
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/obj/Debug/netcoreapp3.1/ProtectGaia.csprojAssemblyReference.cache
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/obj/Debug/netcoreapp3.1/ProtectGaia.csproj.CoreCompileInputs.cache
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/obj/Debug/netcoreapp3.1/ProtectGaia.MvcApplicationPartsAssemblyInfo.cache
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/obj/Debug/netcoreapp3.1/ProtectGaia.RazorAssemblyInfo.cache
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/obj/Debug/netcoreapp3.1/ProtectGaia.RazorAssemblyInfo.cs
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/obj/Debug/netcoreapp3.1/ProtectGaia.AssemblyInfoInputs.cache
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/obj/Debug/netcoreapp3.1/ProtectGaia.AssemblyInfo.cs
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/obj/Debug/netcoreapp3.1/ProtectGaia.TagHelpers.input.cache
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/obj/Debug/netcoreapp3.1/ProtectGaia.TagHelpers.output.cache
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/obj/Debug/netcoreapp3.1/ProtectGaia.RazorCoreGenerate.cache
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/obj/Debug/netcoreapp3.1/Razor/Views/Blogs/Index.cshtml.g.cs
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/obj/Debug/netcoreapp3.1/Razor/Views/Dashboard/Index.cshtml.g.cs
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/obj/Debug/netcoreapp3.1/Razor/Views/Explainers/ClimateChange.cshtml.g.cs
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/obj/Debug/netcoreapp3.1/Razor/Views/Explainers/EnergyConsumption.cshtml.g.cs
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/obj/Debug/netcoreapp3.1/Razor/Views/Explainers/HealthImpacts.cshtml.g.cs
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/obj/Debug/netcoreapp3.1/Razor/Views/Explainers/HouseholdPractices.cshtml.g.cs
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/obj/Debug/netcoreapp3.1/Razor/Views/Explainers/MakeAChange.cshtml.g.cs
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/obj/Debug/netcoreapp3.1/Razor/Views/Explainers/TransportEmissions.cshtml.g.cs
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/obj/Debug/netcoreapp3.1/Razor/Views/Explore/Infographics.cshtml.g.cs
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/obj/Debug/netcoreapp3.1/Razor/Views/Explore/Visualization.cshtml.g.cs
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/obj/Debug/netcoreapp3.1/Razor/Views/Home/Contact.cshtml.g.cs
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/obj/Debug/netcoreapp3.1/Razor/Views/Home/Error.cshtml.g.cs
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/obj/Debug/netcoreapp3.1/Razor/Views/Home/Index.cshtml.g.cs
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/obj/Debug/netcoreapp3.1/Razor/Views/Home/Privacy.cshtml.g.cs
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/obj/Debug/netcoreapp3.1/Razor/Views/Resources/Visualization.cshtml.g.cs
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/obj/Debug/netcoreapp3.1/Razor/Views/Shared/Error.cshtml.g.cs
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/obj/Debug/netcoreapp3.1/Razor/Views/Shared/Index.cshtml.g.cs
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_AuthenticatedLayout.cshtml.g.cs
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_Layout.cshtml.g.cs
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_ValidationScriptsPartial.cshtml.g.cs
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_WebLayout.cshtml.g.cs
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/obj/Debug/netcoreapp3.1/Razor/Views/_ViewImports.cshtml.g.cs
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/obj/Debug/netcoreapp3.1/Razor/Views/_ViewStart.cshtml.g.cs
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/obj/Debug/netcoreapp3.1/ProtectGaia.RazorTargetAssemblyInfo.cache
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/obj/Debug/netcoreapp3.1/ProtectGaia.RazorTargetAssemblyInfo.cs
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/obj/Debug/netcoreapp3.1/ProtectGaia.Views.pdb
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/obj/Debug/netcoreapp3.1/ProtectGaia.csproj.CopyComplete
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/obj/Debug/netcoreapp3.1/staticwebassets/ProtectGaia.StaticWebAssets.Manifest.cache
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/obj/Debug/netcoreapp3.1/staticwebassets/ProtectGaia.StaticWebAssets.xml
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/obj/Debug/netcoreapp3.1/ProtectGaia.dll
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/obj/Debug/netcoreapp3.1/ProtectGaia.pdb
+/Users/arsh/IE/ProtectGaia-dev-1.0.1/ProtectGaia/obj/Debug/netcoreapp3.1/ProtectGaia.genruntimeconfig.cache
+/Users/arsh/FIT5120/ProtectGaia/bin/Debug/netcoreapp3.1/appsettings.Development.json
+/Users/arsh/FIT5120/ProtectGaia/bin/Debug/netcoreapp3.1/appsettings.json
+/Users/arsh/FIT5120/ProtectGaia/bin/Debug/netcoreapp3.1/aws-beanstalk-tools-defaults.json
+/Users/arsh/FIT5120/ProtectGaia/bin/Debug/netcoreapp3.1/Properties/launchSettings.json
+/Users/arsh/FIT5120/ProtectGaia/bin/Debug/netcoreapp3.1/Views/Blogs/Index.cshtml
+/Users/arsh/FIT5120/ProtectGaia/bin/Debug/netcoreapp3.1/ProtectGaia.deps.json
+/Users/arsh/FIT5120/ProtectGaia/bin/Debug/netcoreapp3.1/ProtectGaia.runtimeconfig.json
+/Users/arsh/FIT5120/ProtectGaia/bin/Debug/netcoreapp3.1/ProtectGaia.runtimeconfig.dev.json
+/Users/arsh/FIT5120/ProtectGaia/bin/Debug/netcoreapp3.1/ProtectGaia.dll
+/Users/arsh/FIT5120/ProtectGaia/bin/Debug/netcoreapp3.1/ProtectGaia.pdb
+/Users/arsh/FIT5120/ProtectGaia/bin/Debug/netcoreapp3.1/ProtectGaia.Views.dll
+/Users/arsh/FIT5120/ProtectGaia/bin/Debug/netcoreapp3.1/ProtectGaia.Views.pdb
+/Users/arsh/FIT5120/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Authentication.Google.dll
+/Users/arsh/FIT5120/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.Bcl.AsyncInterfaces.dll
+/Users/arsh/FIT5120/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.Bcl.HashCode.dll
+/Users/arsh/FIT5120/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.Data.SqlClient.dll
+/Users/arsh/FIT5120/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.Data.Sqlite.dll
+/Users/arsh/FIT5120/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.DotNet.PlatformAbstractions.dll
+/Users/arsh/FIT5120/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.dll
+/Users/arsh/FIT5120/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Abstractions.dll
+/Users/arsh/FIT5120/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Design.dll
+/Users/arsh/FIT5120/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Relational.dll
+/Users/arsh/FIT5120/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Sqlite.dll
+/Users/arsh/FIT5120/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.SqlServer.dll
+/Users/arsh/FIT5120/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Caching.Abstractions.dll
+/Users/arsh/FIT5120/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Caching.Memory.dll
+/Users/arsh/FIT5120/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Configuration.dll
+/Users/arsh/FIT5120/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Configuration.Abstractions.dll
+/Users/arsh/FIT5120/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Configuration.Binder.dll
+/Users/arsh/FIT5120/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.Extensions.DependencyInjection.dll
+/Users/arsh/FIT5120/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.Extensions.DependencyInjection.Abstractions.dll
+/Users/arsh/FIT5120/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.Extensions.DependencyModel.dll
+/Users/arsh/FIT5120/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Logging.dll
+/Users/arsh/FIT5120/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Logging.Abstractions.dll
+/Users/arsh/FIT5120/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Options.dll
+/Users/arsh/FIT5120/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Primitives.dll
+/Users/arsh/FIT5120/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.Identity.Client.dll
+/Users/arsh/FIT5120/ProtectGaia/bin/Debug/netcoreapp3.1/Newtonsoft.Json.dll
+/Users/arsh/FIT5120/ProtectGaia/bin/Debug/netcoreapp3.1/SQLitePCLRaw.batteries_v2.dll
+/Users/arsh/FIT5120/ProtectGaia/bin/Debug/netcoreapp3.1/SQLitePCLRaw.nativelibrary.dll
+/Users/arsh/FIT5120/ProtectGaia/bin/Debug/netcoreapp3.1/SQLitePCLRaw.core.dll
+/Users/arsh/FIT5120/ProtectGaia/bin/Debug/netcoreapp3.1/SQLitePCLRaw.provider.dynamic_cdecl.dll
+/Users/arsh/FIT5120/ProtectGaia/bin/Debug/netcoreapp3.1/System.Configuration.ConfigurationManager.dll
+/Users/arsh/FIT5120/ProtectGaia/bin/Debug/netcoreapp3.1/System.Runtime.Caching.dll
+/Users/arsh/FIT5120/ProtectGaia/bin/Debug/netcoreapp3.1/System.Security.Cryptography.ProtectedData.dll
+/Users/arsh/FIT5120/ProtectGaia/bin/Debug/netcoreapp3.1/System.Text.Json.dll
+/Users/arsh/FIT5120/ProtectGaia/bin/Debug/netcoreapp3.1/runtimes/unix/lib/netcoreapp2.1/Microsoft.Data.SqlClient.dll
+/Users/arsh/FIT5120/ProtectGaia/bin/Debug/netcoreapp3.1/runtimes/win/lib/netcoreapp2.1/Microsoft.Data.SqlClient.dll
+/Users/arsh/FIT5120/ProtectGaia/bin/Debug/netcoreapp3.1/runtimes/win-arm64/native/sni.dll
+/Users/arsh/FIT5120/ProtectGaia/bin/Debug/netcoreapp3.1/runtimes/win-x64/native/sni.dll
+/Users/arsh/FIT5120/ProtectGaia/bin/Debug/netcoreapp3.1/runtimes/win-x86/native/sni.dll
+/Users/arsh/FIT5120/ProtectGaia/bin/Debug/netcoreapp3.1/runtimes/alpine-x64/native/libe_sqlite3.so
+/Users/arsh/FIT5120/ProtectGaia/bin/Debug/netcoreapp3.1/runtimes/linux-arm/native/libe_sqlite3.so
+/Users/arsh/FIT5120/ProtectGaia/bin/Debug/netcoreapp3.1/runtimes/linux-arm64/native/libe_sqlite3.so
+/Users/arsh/FIT5120/ProtectGaia/bin/Debug/netcoreapp3.1/runtimes/linux-armel/native/libe_sqlite3.so
+/Users/arsh/FIT5120/ProtectGaia/bin/Debug/netcoreapp3.1/runtimes/linux-musl-x64/native/libe_sqlite3.so
+/Users/arsh/FIT5120/ProtectGaia/bin/Debug/netcoreapp3.1/runtimes/linux-x64/native/libe_sqlite3.so
+/Users/arsh/FIT5120/ProtectGaia/bin/Debug/netcoreapp3.1/runtimes/linux-x86/native/libe_sqlite3.so
+/Users/arsh/FIT5120/ProtectGaia/bin/Debug/netcoreapp3.1/runtimes/osx-x64/native/libe_sqlite3.dylib
+/Users/arsh/FIT5120/ProtectGaia/bin/Debug/netcoreapp3.1/runtimes/win-arm/native/e_sqlite3.dll
+/Users/arsh/FIT5120/ProtectGaia/bin/Debug/netcoreapp3.1/runtimes/win-arm64/native/e_sqlite3.dll
+/Users/arsh/FIT5120/ProtectGaia/bin/Debug/netcoreapp3.1/runtimes/win-x64/native/e_sqlite3.dll
+/Users/arsh/FIT5120/ProtectGaia/bin/Debug/netcoreapp3.1/runtimes/win-x86/native/e_sqlite3.dll
+/Users/arsh/FIT5120/ProtectGaia/bin/Debug/netcoreapp3.1/runtimes/unix/lib/netcoreapp2.0/System.Runtime.Caching.dll
+/Users/arsh/FIT5120/ProtectGaia/bin/Debug/netcoreapp3.1/runtimes/win/lib/netcoreapp2.0/System.Runtime.Caching.dll
+/Users/arsh/FIT5120/ProtectGaia/bin/Debug/netcoreapp3.1/runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll
+/Users/arsh/FIT5120/ProtectGaia/bin/Debug/netcoreapp3.1/ProtectGaia.DataAccess.dll
+/Users/arsh/FIT5120/ProtectGaia/bin/Debug/netcoreapp3.1/ProtectGaia.Entities.dll
+/Users/arsh/FIT5120/ProtectGaia/bin/Debug/netcoreapp3.1/ProtectGaia.Interface.dll
+/Users/arsh/FIT5120/ProtectGaia/bin/Debug/netcoreapp3.1/ProtectGaia.DataAccess.pdb
+/Users/arsh/FIT5120/ProtectGaia/bin/Debug/netcoreapp3.1/ProtectGaia.Entities.pdb
+/Users/arsh/FIT5120/ProtectGaia/bin/Debug/netcoreapp3.1/ProtectGaia.Interface.pdb
+/Users/arsh/FIT5120/ProtectGaia/obj/Debug/netcoreapp3.1/ProtectGaia.csprojAssemblyReference.cache
+/Users/arsh/FIT5120/ProtectGaia/obj/Debug/netcoreapp3.1/ProtectGaia.csproj.CoreCompileInputs.cache
+/Users/arsh/FIT5120/ProtectGaia/obj/Debug/netcoreapp3.1/ProtectGaia.MvcApplicationPartsAssemblyInfo.cache
+/Users/arsh/FIT5120/ProtectGaia/obj/Debug/netcoreapp3.1/ProtectGaia.RazorAssemblyInfo.cache
+/Users/arsh/FIT5120/ProtectGaia/obj/Debug/netcoreapp3.1/ProtectGaia.RazorAssemblyInfo.cs
+/Users/arsh/FIT5120/ProtectGaia/obj/Debug/netcoreapp3.1/ProtectGaia.AssemblyInfoInputs.cache
+/Users/arsh/FIT5120/ProtectGaia/obj/Debug/netcoreapp3.1/ProtectGaia.AssemblyInfo.cs
+/Users/arsh/FIT5120/ProtectGaia/obj/Debug/netcoreapp3.1/ProtectGaia.TagHelpers.input.cache
+/Users/arsh/FIT5120/ProtectGaia/obj/Debug/netcoreapp3.1/ProtectGaia.TagHelpers.output.cache
+/Users/arsh/FIT5120/ProtectGaia/obj/Debug/netcoreapp3.1/ProtectGaia.RazorCoreGenerate.cache
+/Users/arsh/FIT5120/ProtectGaia/obj/Debug/netcoreapp3.1/Razor/Views/Blogs/Index.cshtml.g.cs
+/Users/arsh/FIT5120/ProtectGaia/obj/Debug/netcoreapp3.1/Razor/Views/Dashboard/Index.cshtml.g.cs
+/Users/arsh/FIT5120/ProtectGaia/obj/Debug/netcoreapp3.1/Razor/Views/Dashboard/TaskDisplayPartialView.cshtml.g.cs
+/Users/arsh/FIT5120/ProtectGaia/obj/Debug/netcoreapp3.1/Razor/Views/Dashboard/TaskRenderer.cshtml.g.cs
+/Users/arsh/FIT5120/ProtectGaia/obj/Debug/netcoreapp3.1/Razor/Views/Explainers/ClimateChange.cshtml.g.cs
+/Users/arsh/FIT5120/ProtectGaia/obj/Debug/netcoreapp3.1/Razor/Views/Explainers/EnergyConsumption.cshtml.g.cs
+/Users/arsh/FIT5120/ProtectGaia/obj/Debug/netcoreapp3.1/Razor/Views/Explainers/HealthImpacts.cshtml.g.cs
+/Users/arsh/FIT5120/ProtectGaia/obj/Debug/netcoreapp3.1/Razor/Views/Explainers/HouseholdPractices.cshtml.g.cs
+/Users/arsh/FIT5120/ProtectGaia/obj/Debug/netcoreapp3.1/Razor/Views/Explainers/MakeAChange.cshtml.g.cs
+/Users/arsh/FIT5120/ProtectGaia/obj/Debug/netcoreapp3.1/Razor/Views/Explainers/TransportEmissions.cshtml.g.cs
+/Users/arsh/FIT5120/ProtectGaia/obj/Debug/netcoreapp3.1/Razor/Views/Explore/Infographics.cshtml.g.cs
+/Users/arsh/FIT5120/ProtectGaia/obj/Debug/netcoreapp3.1/Razor/Views/Explore/Visualization.cshtml.g.cs
+/Users/arsh/FIT5120/ProtectGaia/obj/Debug/netcoreapp3.1/Razor/Views/Home/Contact.cshtml.g.cs
+/Users/arsh/FIT5120/ProtectGaia/obj/Debug/netcoreapp3.1/Razor/Views/Home/Error.cshtml.g.cs
+/Users/arsh/FIT5120/ProtectGaia/obj/Debug/netcoreapp3.1/Razor/Views/Home/Index.cshtml.g.cs
+/Users/arsh/FIT5120/ProtectGaia/obj/Debug/netcoreapp3.1/Razor/Views/Home/Privacy.cshtml.g.cs
+/Users/arsh/FIT5120/ProtectGaia/obj/Debug/netcoreapp3.1/Razor/Views/Resources/Visualization.cshtml.g.cs
+/Users/arsh/FIT5120/ProtectGaia/obj/Debug/netcoreapp3.1/Razor/Views/Shared/Error.cshtml.g.cs
+/Users/arsh/FIT5120/ProtectGaia/obj/Debug/netcoreapp3.1/Razor/Views/Shared/Index.cshtml.g.cs
+/Users/arsh/FIT5120/ProtectGaia/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_AuthenticatedLayout.cshtml.g.cs
+/Users/arsh/FIT5120/ProtectGaia/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_Layout.cshtml.g.cs
+/Users/arsh/FIT5120/ProtectGaia/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_ValidationScriptsPartial.cshtml.g.cs
+/Users/arsh/FIT5120/ProtectGaia/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_WebLayout.cshtml.g.cs
+/Users/arsh/FIT5120/ProtectGaia/obj/Debug/netcoreapp3.1/Razor/Views/_ViewImports.cshtml.g.cs
+/Users/arsh/FIT5120/ProtectGaia/obj/Debug/netcoreapp3.1/Razor/Views/_ViewStart.cshtml.g.cs
+/Users/arsh/FIT5120/ProtectGaia/obj/Debug/netcoreapp3.1/ProtectGaia.RazorTargetAssemblyInfo.cache
+/Users/arsh/FIT5120/ProtectGaia/obj/Debug/netcoreapp3.1/ProtectGaia.RazorTargetAssemblyInfo.cs
+/Users/arsh/FIT5120/ProtectGaia/obj/Debug/netcoreapp3.1/ProtectGaia.Views.pdb
+/Users/arsh/FIT5120/ProtectGaia/obj/Debug/netcoreapp3.1/ProtectGaia.csproj.CopyComplete
+/Users/arsh/FIT5120/ProtectGaia/obj/Debug/netcoreapp3.1/staticwebassets/ProtectGaia.StaticWebAssets.Manifest.cache
+/Users/arsh/FIT5120/ProtectGaia/obj/Debug/netcoreapp3.1/staticwebassets/ProtectGaia.StaticWebAssets.xml
+/Users/arsh/FIT5120/ProtectGaia/obj/Debug/netcoreapp3.1/ProtectGaia.dll
+/Users/arsh/FIT5120/ProtectGaia/obj/Debug/netcoreapp3.1/ProtectGaia.pdb
+/Users/arsh/FIT5120/ProtectGaia/obj/Debug/netcoreapp3.1/ProtectGaia.genruntimeconfig.cache
+C:/Users/gupta/source/repos/ProtectGaia-dev-1.0.1/ProtectGaia/obj/Debug/netcoreapp3.1/ProtectGaia.csprojAssemblyReference.cache
+C:/Users/gupta/source/repos/ProtectGaia-dev-1.0.1/ProtectGaia/obj/Debug/netcoreapp3.1/ProtectGaia.csproj.CoreCompileInputs.cache
+C:/Users/gupta/source/repos/ProtectGaia-dev-1.0.1/ProtectGaia/obj/Debug/netcoreapp3.1/ProtectGaia.MvcApplicationPartsAssemblyInfo.cache
+C:/Users/gupta/source/repos/ProtectGaia-dev-1.0.1/ProtectGaia/obj/Debug/netcoreapp3.1/ProtectGaia.RazorAssemblyInfo.cache
+C:/Users/gupta/source/repos/ProtectGaia-dev-1.0.1/ProtectGaia/obj/Debug/netcoreapp3.1/ProtectGaia.RazorAssemblyInfo.cs
+C:/Users/gupta/source/repos/ProtectGaia-dev-1.0.1/ProtectGaia/obj/Debug/netcoreapp3.1/ProtectGaia.AssemblyInfoInputs.cache
+C:/Users/gupta/source/repos/ProtectGaia-dev-1.0.1/ProtectGaia/obj/Debug/netcoreapp3.1/ProtectGaia.AssemblyInfo.cs
+C:/Users/gupta/source/repos/ProtectGaia-dev-1.0.1/ProtectGaia/obj/Debug/netcoreapp3.1/ProtectGaia.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev-1.0.1/ProtectGaia/obj/Debug/netcoreapp3.1/ProtectGaia.pdb
+C:/Users/gupta/source/repos/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/appsettings.Development.json
+C:/Users/gupta/source/repos/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/appsettings.json
+C:/Users/gupta/source/repos/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/aws-beanstalk-tools-defaults.json
+C:/Users/gupta/source/repos/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/Properties/launchSettings.json
+C:/Users/gupta/source/repos/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/ProtectGaia.exe
+C:/Users/gupta/source/repos/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/ProtectGaia.deps.json
+C:/Users/gupta/source/repos/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/ProtectGaia.runtimeconfig.json
+C:/Users/gupta/source/repos/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/ProtectGaia.runtimeconfig.dev.json
+C:/Users/gupta/source/repos/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/ProtectGaia.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/ProtectGaia.pdb
+C:/Users/gupta/source/repos/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/ProtectGaia.Views.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/ProtectGaia.Views.pdb
+C:/Users/gupta/source/repos/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Authentication.Google.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.Bcl.AsyncInterfaces.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.Bcl.HashCode.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.Data.SqlClient.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.Data.Sqlite.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.DotNet.PlatformAbstractions.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Abstractions.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Design.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Relational.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Sqlite.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.SqlServer.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Caching.Abstractions.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Caching.Memory.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Configuration.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Configuration.Abstractions.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Configuration.Binder.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.Extensions.DependencyInjection.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.Extensions.DependencyModel.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Logging.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Logging.Abstractions.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Options.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Primitives.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.Identity.Client.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/Newtonsoft.Json.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/SQLitePCLRaw.batteries_v2.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/SQLitePCLRaw.nativelibrary.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/SQLitePCLRaw.core.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/SQLitePCLRaw.provider.dynamic_cdecl.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/System.Configuration.ConfigurationManager.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/System.Runtime.Caching.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/System.Security.Cryptography.ProtectedData.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/System.Text.Json.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/runtimes/unix/lib/netcoreapp2.1/Microsoft.Data.SqlClient.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/runtimes/win/lib/netcoreapp2.1/Microsoft.Data.SqlClient.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/runtimes/win-arm64/native/sni.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/runtimes/win-x64/native/sni.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/runtimes/win-x86/native/sni.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/runtimes/alpine-x64/native/libe_sqlite3.so
+C:/Users/gupta/source/repos/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/runtimes/linux-arm/native/libe_sqlite3.so
+C:/Users/gupta/source/repos/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/runtimes/linux-arm64/native/libe_sqlite3.so
+C:/Users/gupta/source/repos/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/runtimes/linux-armel/native/libe_sqlite3.so
+C:/Users/gupta/source/repos/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/runtimes/linux-musl-x64/native/libe_sqlite3.so
+C:/Users/gupta/source/repos/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/runtimes/linux-x64/native/libe_sqlite3.so
+C:/Users/gupta/source/repos/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/runtimes/linux-x86/native/libe_sqlite3.so
+C:/Users/gupta/source/repos/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/runtimes/osx-x64/native/libe_sqlite3.dylib
+C:/Users/gupta/source/repos/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/runtimes/win-arm/native/e_sqlite3.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/runtimes/win-arm64/native/e_sqlite3.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/runtimes/win-x64/native/e_sqlite3.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/runtimes/win-x86/native/e_sqlite3.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/runtimes/unix/lib/netcoreapp2.0/System.Runtime.Caching.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/runtimes/win/lib/netcoreapp2.0/System.Runtime.Caching.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/ProtectGaia.DataAccess.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/ProtectGaia.Entities.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/ProtectGaia.Interface.dll
+C:/Users/gupta/source/repos/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/ProtectGaia.DataAccess.pdb
+C:/Users/gupta/source/repos/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/ProtectGaia.Entities.pdb
+C:/Users/gupta/source/repos/ProtectGaia-dev-1.0.1/ProtectGaia/bin/Debug/netcoreapp3.1/ProtectGaia.Interface.pdb
+C:/Users/gupta/source/repos/ProtectGaia-dev-1.0.1/ProtectGaia/obj/Debug/netcoreapp3.1/ProtectGaia.TagHelpers.input.cache
+C:/Users/gupta/source/repos/ProtectGaia-dev-1.0.1/ProtectGaia/obj/Debug/netcoreapp3.1/ProtectGaia.TagHelpers.output.cache
+C:/Users/gupta/source/repos/ProtectGaia-dev-1.0.1/ProtectGaia/obj/Debug/netcoreapp3.1/ProtectGaia.RazorCoreGenerate.cache
+C:/Users/gupta/source/repos/ProtectGaia-dev-1.0.1/ProtectGaia/obj/Debug/netcoreapp3.1/Razor/Views/Dashboard/Index.cshtml.g.cs
+C:/Users/gupta/source/repos/ProtectGaia-dev-1.0.1/ProtectGaia/obj/Debug/netcoreapp3.1/Razor/Views/Dashboard/TaskDisplayPartialView.cshtml.g.cs
+C:/Users/gupta/source/repos/ProtectGaia-dev-1.0.1/ProtectGaia/obj/Debug/netcoreapp3.1/Razor/Views/Dashboard/TaskRenderer.cshtml.g.cs
+C:/Users/gupta/source/repos/ProtectGaia-dev-1.0.1/ProtectGaia/obj/Debug/netcoreapp3.1/Razor/Views/Explainers/ClimateChange.cshtml.g.cs
+C:/Users/gupta/source/repos/ProtectGaia-dev-1.0.1/ProtectGaia/obj/Debug/netcoreapp3.1/Razor/Views/Explainers/EnergyConsumption.cshtml.g.cs
+C:/Users/gupta/source/repos/ProtectGaia-dev-1.0.1/ProtectGaia/obj/Debug/netcoreapp3.1/Razor/Views/Explainers/HealthImpacts.cshtml.g.cs
+C:/Users/gupta/source/repos/ProtectGaia-dev-1.0.1/ProtectGaia/obj/Debug/netcoreapp3.1/Razor/Views/Explainers/HouseholdPractices.cshtml.g.cs
+C:/Users/gupta/source/repos/ProtectGaia-dev-1.0.1/ProtectGaia/obj/Debug/netcoreapp3.1/Razor/Views/Explainers/MakeAChange.cshtml.g.cs
+C:/Users/gupta/source/repos/ProtectGaia-dev-1.0.1/ProtectGaia/obj/Debug/netcoreapp3.1/Razor/Views/Explainers/TransportEmissions.cshtml.g.cs
+C:/Users/gupta/source/repos/ProtectGaia-dev-1.0.1/ProtectGaia/obj/Debug/netcoreapp3.1/Razor/Views/Home/Contact.cshtml.g.cs
+C:/Users/gupta/source/repos/ProtectGaia-dev-1.0.1/ProtectGaia/obj/Debug/netcoreapp3.1/Razor/Views/Home/Error.cshtml.g.cs
+C:/Users/gupta/source/repos/ProtectGaia-dev-1.0.1/ProtectGaia/obj/Debug/netcoreapp3.1/Razor/Views/Home/Index.cshtml.g.cs
+C:/Users/gupta/source/repos/ProtectGaia-dev-1.0.1/ProtectGaia/obj/Debug/netcoreapp3.1/Razor/Views/Home/Privacy.cshtml.g.cs
+C:/Users/gupta/source/repos/ProtectGaia-dev-1.0.1/ProtectGaia/obj/Debug/netcoreapp3.1/Razor/Views/Resources/Visualization.cshtml.g.cs
+C:/Users/gupta/source/repos/ProtectGaia-dev-1.0.1/ProtectGaia/obj/Debug/netcoreapp3.1/Razor/Views/Shared/Error.cshtml.g.cs
+C:/Users/gupta/source/repos/ProtectGaia-dev-1.0.1/ProtectGaia/obj/Debug/netcoreapp3.1/Razor/Views/Shared/Index.cshtml.g.cs
+C:/Users/gupta/source/repos/ProtectGaia-dev-1.0.1/ProtectGaia/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_AuthenticatedLayout.cshtml.g.cs
+C:/Users/gupta/source/repos/ProtectGaia-dev-1.0.1/ProtectGaia/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_Layout.cshtml.g.cs
+C:/Users/gupta/source/repos/ProtectGaia-dev-1.0.1/ProtectGaia/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_ValidationScriptsPartial.cshtml.g.cs
+C:/Users/gupta/source/repos/ProtectGaia-dev-1.0.1/ProtectGaia/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_WebLayout.cshtml.g.cs
+C:/Users/gupta/source/repos/ProtectGaia-dev-1.0.1/ProtectGaia/obj/Debug/netcoreapp3.1/Razor/Views/_ViewImports.cshtml.g.cs
+C:/Users/gupta/source/repos/ProtectGaia-dev-1.0.1/ProtectGaia/obj/Debug/netcoreapp3.1/Razor/Views/_ViewStart.cshtml.g.cs
+C:/Users/gupta/source/repos/ProtectGaia-dev-1.0.1/ProtectGaia/obj/Debug/netcoreapp3.1/ProtectGaia.RazorTargetAssemblyInfo.cache
+C:/Users/gupta/source/repos/ProtectGaia-dev-1.0.1/ProtectGaia/obj/Debug/netcoreapp3.1/ProtectGaia.RazorTargetAssemblyInfo.cs
+C:/Users/gupta/source/repos/ProtectGaia-dev-1.0.1/ProtectGaia/obj/Debug/netcoreapp3.1/ProtectGaia.Views.pdb
+C:/Users/gupta/source/repos/ProtectGaia-dev-1.0.1/ProtectGaia/obj/Debug/netcoreapp3.1/ProtectGaia.csproj.CopyComplete
+C:/Users/gupta/source/repos/ProtectGaia-dev-1.0.1/ProtectGaia/obj/Debug/netcoreapp3.1/staticwebassets/ProtectGaia.StaticWebAssets.Manifest.cache
+C:/Users/gupta/source/repos/ProtectGaia-dev-1.0.1/ProtectGaia/obj/Debug/netcoreapp3.1/staticwebassets/ProtectGaia.StaticWebAssets.xml
+C:/Users/gupta/source/repos/ProtectGaia-dev-1.0.1/ProtectGaia/obj/Debug/netcoreapp3.1/ProtectGaia.genruntimeconfig.cache
+/Users/arsh/GaiaGit/ProtectGaia/ProtectGaia/bin/Debug/netcoreapp3.1/appsettings.Development.json
+/Users/arsh/GaiaGit/ProtectGaia/ProtectGaia/bin/Debug/netcoreapp3.1/appsettings.json
+/Users/arsh/GaiaGit/ProtectGaia/ProtectGaia/bin/Debug/netcoreapp3.1/aws-beanstalk-tools-defaults.json
+/Users/arsh/GaiaGit/ProtectGaia/ProtectGaia/bin/Debug/netcoreapp3.1/Properties/launchSettings.json
+/Users/arsh/GaiaGit/ProtectGaia/ProtectGaia/bin/Debug/netcoreapp3.1/ProtectGaia.deps.json
+/Users/arsh/GaiaGit/ProtectGaia/ProtectGaia/bin/Debug/netcoreapp3.1/ProtectGaia.runtimeconfig.json
+/Users/arsh/GaiaGit/ProtectGaia/ProtectGaia/bin/Debug/netcoreapp3.1/ProtectGaia.runtimeconfig.dev.json
+/Users/arsh/GaiaGit/ProtectGaia/ProtectGaia/bin/Debug/netcoreapp3.1/ProtectGaia.dll
+/Users/arsh/GaiaGit/ProtectGaia/ProtectGaia/bin/Debug/netcoreapp3.1/ProtectGaia.pdb
+/Users/arsh/GaiaGit/ProtectGaia/ProtectGaia/bin/Debug/netcoreapp3.1/ProtectGaia.Views.dll
+/Users/arsh/GaiaGit/ProtectGaia/ProtectGaia/bin/Debug/netcoreapp3.1/ProtectGaia.Views.pdb
+/Users/arsh/GaiaGit/ProtectGaia/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Authentication.Google.dll
+/Users/arsh/GaiaGit/ProtectGaia/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.Bcl.AsyncInterfaces.dll
+/Users/arsh/GaiaGit/ProtectGaia/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.Bcl.HashCode.dll
+/Users/arsh/GaiaGit/ProtectGaia/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.Data.SqlClient.dll
+/Users/arsh/GaiaGit/ProtectGaia/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.Data.Sqlite.dll
+/Users/arsh/GaiaGit/ProtectGaia/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.DotNet.PlatformAbstractions.dll
+/Users/arsh/GaiaGit/ProtectGaia/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.dll
+/Users/arsh/GaiaGit/ProtectGaia/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Abstractions.dll
+/Users/arsh/GaiaGit/ProtectGaia/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Design.dll
+/Users/arsh/GaiaGit/ProtectGaia/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Relational.dll
+/Users/arsh/GaiaGit/ProtectGaia/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Sqlite.dll
+/Users/arsh/GaiaGit/ProtectGaia/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.SqlServer.dll
+/Users/arsh/GaiaGit/ProtectGaia/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Caching.Abstractions.dll
+/Users/arsh/GaiaGit/ProtectGaia/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Caching.Memory.dll
+/Users/arsh/GaiaGit/ProtectGaia/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Configuration.dll
+/Users/arsh/GaiaGit/ProtectGaia/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Configuration.Abstractions.dll
+/Users/arsh/GaiaGit/ProtectGaia/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Configuration.Binder.dll
+/Users/arsh/GaiaGit/ProtectGaia/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.Extensions.DependencyInjection.dll
+/Users/arsh/GaiaGit/ProtectGaia/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.Extensions.DependencyInjection.Abstractions.dll
+/Users/arsh/GaiaGit/ProtectGaia/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.Extensions.DependencyModel.dll
+/Users/arsh/GaiaGit/ProtectGaia/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Logging.dll
+/Users/arsh/GaiaGit/ProtectGaia/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Logging.Abstractions.dll
+/Users/arsh/GaiaGit/ProtectGaia/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Options.dll
+/Users/arsh/GaiaGit/ProtectGaia/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Primitives.dll
+/Users/arsh/GaiaGit/ProtectGaia/ProtectGaia/bin/Debug/netcoreapp3.1/Microsoft.Identity.Client.dll
+/Users/arsh/GaiaGit/ProtectGaia/ProtectGaia/bin/Debug/netcoreapp3.1/Newtonsoft.Json.dll
+/Users/arsh/GaiaGit/ProtectGaia/ProtectGaia/bin/Debug/netcoreapp3.1/SQLitePCLRaw.batteries_v2.dll
+/Users/arsh/GaiaGit/ProtectGaia/ProtectGaia/bin/Debug/netcoreapp3.1/SQLitePCLRaw.nativelibrary.dll
+/Users/arsh/GaiaGit/ProtectGaia/ProtectGaia/bin/Debug/netcoreapp3.1/SQLitePCLRaw.core.dll
+/Users/arsh/GaiaGit/ProtectGaia/ProtectGaia/bin/Debug/netcoreapp3.1/SQLitePCLRaw.provider.dynamic_cdecl.dll
+/Users/arsh/GaiaGit/ProtectGaia/ProtectGaia/bin/Debug/netcoreapp3.1/System.Configuration.ConfigurationManager.dll
+/Users/arsh/GaiaGit/ProtectGaia/ProtectGaia/bin/Debug/netcoreapp3.1/System.Runtime.Caching.dll
+/Users/arsh/GaiaGit/ProtectGaia/ProtectGaia/bin/Debug/netcoreapp3.1/System.Security.Cryptography.ProtectedData.dll
+/Users/arsh/GaiaGit/ProtectGaia/ProtectGaia/bin/Debug/netcoreapp3.1/System.Text.Json.dll
+/Users/arsh/GaiaGit/ProtectGaia/ProtectGaia/bin/Debug/netcoreapp3.1/runtimes/unix/lib/netcoreapp2.1/Microsoft.Data.SqlClient.dll
+/Users/arsh/GaiaGit/ProtectGaia/ProtectGaia/bin/Debug/netcoreapp3.1/runtimes/win/lib/netcoreapp2.1/Microsoft.Data.SqlClient.dll
+/Users/arsh/GaiaGit/ProtectGaia/ProtectGaia/bin/Debug/netcoreapp3.1/runtimes/win-arm64/native/sni.dll
+/Users/arsh/GaiaGit/ProtectGaia/ProtectGaia/bin/Debug/netcoreapp3.1/runtimes/win-x64/native/sni.dll
+/Users/arsh/GaiaGit/ProtectGaia/ProtectGaia/bin/Debug/netcoreapp3.1/runtimes/win-x86/native/sni.dll
+/Users/arsh/GaiaGit/ProtectGaia/ProtectGaia/bin/Debug/netcoreapp3.1/runtimes/alpine-x64/native/libe_sqlite3.so
+/Users/arsh/GaiaGit/ProtectGaia/ProtectGaia/bin/Debug/netcoreapp3.1/runtimes/linux-arm/native/libe_sqlite3.so
+/Users/arsh/GaiaGit/ProtectGaia/ProtectGaia/bin/Debug/netcoreapp3.1/runtimes/linux-arm64/native/libe_sqlite3.so
+/Users/arsh/GaiaGit/ProtectGaia/ProtectGaia/bin/Debug/netcoreapp3.1/runtimes/linux-armel/native/libe_sqlite3.so
+/Users/arsh/GaiaGit/ProtectGaia/ProtectGaia/bin/Debug/netcoreapp3.1/runtimes/linux-musl-x64/native/libe_sqlite3.so
+/Users/arsh/GaiaGit/ProtectGaia/ProtectGaia/bin/Debug/netcoreapp3.1/runtimes/linux-x64/native/libe_sqlite3.so
+/Users/arsh/GaiaGit/ProtectGaia/ProtectGaia/bin/Debug/netcoreapp3.1/runtimes/linux-x86/native/libe_sqlite3.so
+/Users/arsh/GaiaGit/ProtectGaia/ProtectGaia/bin/Debug/netcoreapp3.1/runtimes/osx-x64/native/libe_sqlite3.dylib
+/Users/arsh/GaiaGit/ProtectGaia/ProtectGaia/bin/Debug/netcoreapp3.1/runtimes/win-arm/native/e_sqlite3.dll
+/Users/arsh/GaiaGit/ProtectGaia/ProtectGaia/bin/Debug/netcoreapp3.1/runtimes/win-arm64/native/e_sqlite3.dll
+/Users/arsh/GaiaGit/ProtectGaia/ProtectGaia/bin/Debug/netcoreapp3.1/runtimes/win-x64/native/e_sqlite3.dll
+/Users/arsh/GaiaGit/ProtectGaia/ProtectGaia/bin/Debug/netcoreapp3.1/runtimes/win-x86/native/e_sqlite3.dll
+/Users/arsh/GaiaGit/ProtectGaia/ProtectGaia/bin/Debug/netcoreapp3.1/runtimes/unix/lib/netcoreapp2.0/System.Runtime.Caching.dll
+/Users/arsh/GaiaGit/ProtectGaia/ProtectGaia/bin/Debug/netcoreapp3.1/runtimes/win/lib/netcoreapp2.0/System.Runtime.Caching.dll
+/Users/arsh/GaiaGit/ProtectGaia/ProtectGaia/bin/Debug/netcoreapp3.1/runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll
+/Users/arsh/GaiaGit/ProtectGaia/ProtectGaia/bin/Debug/netcoreapp3.1/ProtectGaia.DataAccess.dll
+/Users/arsh/GaiaGit/ProtectGaia/ProtectGaia/bin/Debug/netcoreapp3.1/ProtectGaia.Entities.dll
+/Users/arsh/GaiaGit/ProtectGaia/ProtectGaia/bin/Debug/netcoreapp3.1/ProtectGaia.Interface.dll
+/Users/arsh/GaiaGit/ProtectGaia/ProtectGaia/bin/Debug/netcoreapp3.1/ProtectGaia.DataAccess.pdb
+/Users/arsh/GaiaGit/ProtectGaia/ProtectGaia/bin/Debug/netcoreapp3.1/ProtectGaia.Entities.pdb
+/Users/arsh/GaiaGit/ProtectGaia/ProtectGaia/bin/Debug/netcoreapp3.1/ProtectGaia.Interface.pdb
+/Users/arsh/GaiaGit/ProtectGaia/ProtectGaia/obj/Debug/netcoreapp3.1/ProtectGaia.csprojAssemblyReference.cache
+/Users/arsh/GaiaGit/ProtectGaia/ProtectGaia/obj/Debug/netcoreapp3.1/ProtectGaia.AssemblyInfoInputs.cache
+/Users/arsh/GaiaGit/ProtectGaia/ProtectGaia/obj/Debug/netcoreapp3.1/ProtectGaia.AssemblyInfo.cs
+/Users/arsh/GaiaGit/ProtectGaia/ProtectGaia/obj/Debug/netcoreapp3.1/ProtectGaia.csproj.CoreCompileInputs.cache
+/Users/arsh/GaiaGit/ProtectGaia/ProtectGaia/obj/Debug/netcoreapp3.1/ProtectGaia.MvcApplicationPartsAssemblyInfo.cache
+/Users/arsh/GaiaGit/ProtectGaia/ProtectGaia/obj/Debug/netcoreapp3.1/ProtectGaia.RazorAssemblyInfo.cache
+/Users/arsh/GaiaGit/ProtectGaia/ProtectGaia/obj/Debug/netcoreapp3.1/ProtectGaia.RazorAssemblyInfo.cs
+/Users/arsh/GaiaGit/ProtectGaia/ProtectGaia/obj/Debug/netcoreapp3.1/ProtectGaia.TagHelpers.input.cache
+/Users/arsh/GaiaGit/ProtectGaia/ProtectGaia/obj/Debug/netcoreapp3.1/ProtectGaia.TagHelpers.output.cache
+/Users/arsh/GaiaGit/ProtectGaia/ProtectGaia/obj/Debug/netcoreapp3.1/ProtectGaia.RazorCoreGenerate.cache
+/Users/arsh/GaiaGit/ProtectGaia/ProtectGaia/obj/Debug/netcoreapp3.1/Razor/Views/Dashboard/Index.cshtml.g.cs
+/Users/arsh/GaiaGit/ProtectGaia/ProtectGaia/obj/Debug/netcoreapp3.1/Razor/Views/Dashboard/TaskDisplayPartialView.cshtml.g.cs
+/Users/arsh/GaiaGit/ProtectGaia/ProtectGaia/obj/Debug/netcoreapp3.1/Razor/Views/Dashboard/TaskRenderer.cshtml.g.cs
+/Users/arsh/GaiaGit/ProtectGaia/ProtectGaia/obj/Debug/netcoreapp3.1/Razor/Views/Explainers/ClimateChange.cshtml.g.cs
+/Users/arsh/GaiaGit/ProtectGaia/ProtectGaia/obj/Debug/netcoreapp3.1/Razor/Views/Explainers/EnergyConsumption.cshtml.g.cs
+/Users/arsh/GaiaGit/ProtectGaia/ProtectGaia/obj/Debug/netcoreapp3.1/Razor/Views/Explainers/HealthImpacts.cshtml.g.cs
+/Users/arsh/GaiaGit/ProtectGaia/ProtectGaia/obj/Debug/netcoreapp3.1/Razor/Views/Explainers/HouseholdPractices.cshtml.g.cs
+/Users/arsh/GaiaGit/ProtectGaia/ProtectGaia/obj/Debug/netcoreapp3.1/Razor/Views/Explainers/MakeAChange.cshtml.g.cs
+/Users/arsh/GaiaGit/ProtectGaia/ProtectGaia/obj/Debug/netcoreapp3.1/Razor/Views/Explainers/TransportEmissions.cshtml.g.cs
+/Users/arsh/GaiaGit/ProtectGaia/ProtectGaia/obj/Debug/netcoreapp3.1/Razor/Views/Home/Contact.cshtml.g.cs
+/Users/arsh/GaiaGit/ProtectGaia/ProtectGaia/obj/Debug/netcoreapp3.1/Razor/Views/Home/Error.cshtml.g.cs
+/Users/arsh/GaiaGit/ProtectGaia/ProtectGaia/obj/Debug/netcoreapp3.1/Razor/Views/Home/Index.cshtml.g.cs
+/Users/arsh/GaiaGit/ProtectGaia/ProtectGaia/obj/Debug/netcoreapp3.1/Razor/Views/Home/Privacy.cshtml.g.cs
+/Users/arsh/GaiaGit/ProtectGaia/ProtectGaia/obj/Debug/netcoreapp3.1/Razor/Views/Resources/Visualization.cshtml.g.cs
+/Users/arsh/GaiaGit/ProtectGaia/ProtectGaia/obj/Debug/netcoreapp3.1/Razor/Views/Shared/Error.cshtml.g.cs
+/Users/arsh/GaiaGit/ProtectGaia/ProtectGaia/obj/Debug/netcoreapp3.1/Razor/Views/Shared/NotFound.cshtml.g.cs
+/Users/arsh/GaiaGit/ProtectGaia/ProtectGaia/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_AuthenticatedLayout.cshtml.g.cs
+/Users/arsh/GaiaGit/ProtectGaia/ProtectGaia/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_Layout.cshtml.g.cs
+/Users/arsh/GaiaGit/ProtectGaia/ProtectGaia/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_ValidationScriptsPartial.cshtml.g.cs
+/Users/arsh/GaiaGit/ProtectGaia/ProtectGaia/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_WebLayout.cshtml.g.cs
+/Users/arsh/GaiaGit/ProtectGaia/ProtectGaia/obj/Debug/netcoreapp3.1/Razor/Views/_ViewImports.cshtml.g.cs
+/Users/arsh/GaiaGit/ProtectGaia/ProtectGaia/obj/Debug/netcoreapp3.1/Razor/Views/_ViewStart.cshtml.g.cs
+/Users/arsh/GaiaGit/ProtectGaia/ProtectGaia/obj/Debug/netcoreapp3.1/ProtectGaia.RazorTargetAssemblyInfo.cache
+/Users/arsh/GaiaGit/ProtectGaia/ProtectGaia/obj/Debug/netcoreapp3.1/ProtectGaia.RazorTargetAssemblyInfo.cs
+/Users/arsh/GaiaGit/ProtectGaia/ProtectGaia/obj/Debug/netcoreapp3.1/ProtectGaia.Views.pdb
+/Users/arsh/GaiaGit/ProtectGaia/ProtectGaia/obj/Debug/netcoreapp3.1/ProtectGaia.csproj.CopyComplete
+/Users/arsh/GaiaGit/ProtectGaia/ProtectGaia/obj/Debug/netcoreapp3.1/staticwebassets/ProtectGaia.StaticWebAssets.Manifest.cache
+/Users/arsh/GaiaGit/ProtectGaia/ProtectGaia/obj/Debug/netcoreapp3.1/staticwebassets/ProtectGaia.StaticWebAssets.xml
+/Users/arsh/GaiaGit/ProtectGaia/ProtectGaia/obj/Debug/netcoreapp3.1/ProtectGaia.dll
+/Users/arsh/GaiaGit/ProtectGaia/ProtectGaia/obj/Debug/netcoreapp3.1/ProtectGaia.pdb
+/Users/arsh/GaiaGit/ProtectGaia/ProtectGaia/obj/Debug/netcoreapp3.1/ProtectGaia.genruntimeconfig.cache
+C:\Users\gupta\Downloads\GaiaGit 2\GaiaGit\ProtectGaia\ProtectGaia\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\gupta\Downloads\GaiaGit 2\GaiaGit\ProtectGaia\ProtectGaia\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\gupta\Downloads\GaiaGit 2\GaiaGit\ProtectGaia\ProtectGaia\bin\Debug\netcoreapp3.1\aws-beanstalk-tools-defaults.json
+C:\Users\gupta\Downloads\GaiaGit 2\GaiaGit\ProtectGaia\ProtectGaia\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+C:\Users\gupta\Downloads\GaiaGit 2\GaiaGit\ProtectGaia\ProtectGaia\bin\Debug\netcoreapp3.1\ProtectGaia.exe
+C:\Users\gupta\Downloads\GaiaGit 2\GaiaGit\ProtectGaia\ProtectGaia\bin\Debug\netcoreapp3.1\ProtectGaia.deps.json
+C:\Users\gupta\Downloads\GaiaGit 2\GaiaGit\ProtectGaia\ProtectGaia\bin\Debug\netcoreapp3.1\ProtectGaia.runtimeconfig.json
+C:\Users\gupta\Downloads\GaiaGit 2\GaiaGit\ProtectGaia\ProtectGaia\bin\Debug\netcoreapp3.1\ProtectGaia.runtimeconfig.dev.json
+C:\Users\gupta\Downloads\GaiaGit 2\GaiaGit\ProtectGaia\ProtectGaia\bin\Debug\netcoreapp3.1\ProtectGaia.dll
+C:\Users\gupta\Downloads\GaiaGit 2\GaiaGit\ProtectGaia\ProtectGaia\bin\Debug\netcoreapp3.1\ProtectGaia.pdb
+C:\Users\gupta\Downloads\GaiaGit 2\GaiaGit\ProtectGaia\ProtectGaia\bin\Debug\netcoreapp3.1\ProtectGaia.Views.dll
+C:\Users\gupta\Downloads\GaiaGit 2\GaiaGit\ProtectGaia\ProtectGaia\bin\Debug\netcoreapp3.1\ProtectGaia.Views.pdb
+C:\Users\gupta\Downloads\GaiaGit 2\GaiaGit\ProtectGaia\ProtectGaia\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.Google.dll
+C:\Users\gupta\Downloads\GaiaGit 2\GaiaGit\ProtectGaia\ProtectGaia\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\gupta\Downloads\GaiaGit 2\GaiaGit\ProtectGaia\ProtectGaia\bin\Debug\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
+C:\Users\gupta\Downloads\GaiaGit 2\GaiaGit\ProtectGaia\ProtectGaia\bin\Debug\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\gupta\Downloads\GaiaGit 2\GaiaGit\ProtectGaia\ProtectGaia\bin\Debug\netcoreapp3.1\Microsoft.Data.Sqlite.dll
+C:\Users\gupta\Downloads\GaiaGit 2\GaiaGit\ProtectGaia\ProtectGaia\bin\Debug\netcoreapp3.1\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\gupta\Downloads\GaiaGit 2\GaiaGit\ProtectGaia\ProtectGaia\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
+C:\Users\gupta\Downloads\GaiaGit 2\GaiaGit\ProtectGaia\ProtectGaia\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\gupta\Downloads\GaiaGit 2\GaiaGit\ProtectGaia\ProtectGaia\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\gupta\Downloads\GaiaGit 2\GaiaGit\ProtectGaia\ProtectGaia\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\gupta\Downloads\GaiaGit 2\GaiaGit\ProtectGaia\ProtectGaia\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Sqlite.dll
+C:\Users\gupta\Downloads\GaiaGit 2\GaiaGit\ProtectGaia\ProtectGaia\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\gupta\Downloads\GaiaGit 2\GaiaGit\ProtectGaia\ProtectGaia\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\gupta\Downloads\GaiaGit 2\GaiaGit\ProtectGaia\ProtectGaia\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\gupta\Downloads\GaiaGit 2\GaiaGit\ProtectGaia\ProtectGaia\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
+C:\Users\gupta\Downloads\GaiaGit 2\GaiaGit\ProtectGaia\ProtectGaia\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\gupta\Downloads\GaiaGit 2\GaiaGit\ProtectGaia\ProtectGaia\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\gupta\Downloads\GaiaGit 2\GaiaGit\ProtectGaia\ProtectGaia\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\gupta\Downloads\GaiaGit 2\GaiaGit\ProtectGaia\ProtectGaia\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\gupta\Downloads\GaiaGit 2\GaiaGit\ProtectGaia\ProtectGaia\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyModel.dll
+C:\Users\gupta\Downloads\GaiaGit 2\GaiaGit\ProtectGaia\ProtectGaia\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
+C:\Users\gupta\Downloads\GaiaGit 2\GaiaGit\ProtectGaia\ProtectGaia\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\gupta\Downloads\GaiaGit 2\GaiaGit\ProtectGaia\ProtectGaia\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
+C:\Users\gupta\Downloads\GaiaGit 2\GaiaGit\ProtectGaia\ProtectGaia\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+C:\Users\gupta\Downloads\GaiaGit 2\GaiaGit\ProtectGaia\ProtectGaia\bin\Debug\netcoreapp3.1\Microsoft.Identity.Client.dll
+C:\Users\gupta\Downloads\GaiaGit 2\GaiaGit\ProtectGaia\ProtectGaia\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\gupta\Downloads\GaiaGit 2\GaiaGit\ProtectGaia\ProtectGaia\bin\Debug\netcoreapp3.1\SQLitePCLRaw.batteries_v2.dll
+C:\Users\gupta\Downloads\GaiaGit 2\GaiaGit\ProtectGaia\ProtectGaia\bin\Debug\netcoreapp3.1\SQLitePCLRaw.nativelibrary.dll
+C:\Users\gupta\Downloads\GaiaGit 2\GaiaGit\ProtectGaia\ProtectGaia\bin\Debug\netcoreapp3.1\SQLitePCLRaw.core.dll
+C:\Users\gupta\Downloads\GaiaGit 2\GaiaGit\ProtectGaia\ProtectGaia\bin\Debug\netcoreapp3.1\SQLitePCLRaw.provider.dynamic_cdecl.dll
+C:\Users\gupta\Downloads\GaiaGit 2\GaiaGit\ProtectGaia\ProtectGaia\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+C:\Users\gupta\Downloads\GaiaGit 2\GaiaGit\ProtectGaia\ProtectGaia\bin\Debug\netcoreapp3.1\System.Runtime.Caching.dll
+C:\Users\gupta\Downloads\GaiaGit 2\GaiaGit\ProtectGaia\ProtectGaia\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+C:\Users\gupta\Downloads\GaiaGit 2\GaiaGit\ProtectGaia\ProtectGaia\bin\Debug\netcoreapp3.1\System.Text.Json.dll
+C:\Users\gupta\Downloads\GaiaGit 2\GaiaGit\ProtectGaia\ProtectGaia\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+C:\Users\gupta\Downloads\GaiaGit 2\GaiaGit\ProtectGaia\ProtectGaia\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+C:\Users\gupta\Downloads\GaiaGit 2\GaiaGit\ProtectGaia\ProtectGaia\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+C:\Users\gupta\Downloads\GaiaGit 2\GaiaGit\ProtectGaia\ProtectGaia\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+C:\Users\gupta\Downloads\GaiaGit 2\GaiaGit\ProtectGaia\ProtectGaia\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+C:\Users\gupta\Downloads\GaiaGit 2\GaiaGit\ProtectGaia\ProtectGaia\bin\Debug\netcoreapp3.1\runtimes\alpine-x64\native\libe_sqlite3.so
+C:\Users\gupta\Downloads\GaiaGit 2\GaiaGit\ProtectGaia\ProtectGaia\bin\Debug\netcoreapp3.1\runtimes\linux-arm\native\libe_sqlite3.so
+C:\Users\gupta\Downloads\GaiaGit 2\GaiaGit\ProtectGaia\ProtectGaia\bin\Debug\netcoreapp3.1\runtimes\linux-arm64\native\libe_sqlite3.so
+C:\Users\gupta\Downloads\GaiaGit 2\GaiaGit\ProtectGaia\ProtectGaia\bin\Debug\netcoreapp3.1\runtimes\linux-armel\native\libe_sqlite3.so
+C:\Users\gupta\Downloads\GaiaGit 2\GaiaGit\ProtectGaia\ProtectGaia\bin\Debug\netcoreapp3.1\runtimes\linux-musl-x64\native\libe_sqlite3.so
+C:\Users\gupta\Downloads\GaiaGit 2\GaiaGit\ProtectGaia\ProtectGaia\bin\Debug\netcoreapp3.1\runtimes\linux-x64\native\libe_sqlite3.so
+C:\Users\gupta\Downloads\GaiaGit 2\GaiaGit\ProtectGaia\ProtectGaia\bin\Debug\netcoreapp3.1\runtimes\linux-x86\native\libe_sqlite3.so
+C:\Users\gupta\Downloads\GaiaGit 2\GaiaGit\ProtectGaia\ProtectGaia\bin\Debug\netcoreapp3.1\runtimes\osx-x64\native\libe_sqlite3.dylib
+C:\Users\gupta\Downloads\GaiaGit 2\GaiaGit\ProtectGaia\ProtectGaia\bin\Debug\netcoreapp3.1\runtimes\win-arm\native\e_sqlite3.dll
+C:\Users\gupta\Downloads\GaiaGit 2\GaiaGit\ProtectGaia\ProtectGaia\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\e_sqlite3.dll
+C:\Users\gupta\Downloads\GaiaGit 2\GaiaGit\ProtectGaia\ProtectGaia\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\e_sqlite3.dll
+C:\Users\gupta\Downloads\GaiaGit 2\GaiaGit\ProtectGaia\ProtectGaia\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\e_sqlite3.dll
+C:\Users\gupta\Downloads\GaiaGit 2\GaiaGit\ProtectGaia\ProtectGaia\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
+C:\Users\gupta\Downloads\GaiaGit 2\GaiaGit\ProtectGaia\ProtectGaia\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
+C:\Users\gupta\Downloads\GaiaGit 2\GaiaGit\ProtectGaia\ProtectGaia\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\gupta\Downloads\GaiaGit 2\GaiaGit\ProtectGaia\ProtectGaia\bin\Debug\netcoreapp3.1\ProtectGaia.DataAccess.dll
+C:\Users\gupta\Downloads\GaiaGit 2\GaiaGit\ProtectGaia\ProtectGaia\bin\Debug\netcoreapp3.1\ProtectGaia.Entities.dll
+C:\Users\gupta\Downloads\GaiaGit 2\GaiaGit\ProtectGaia\ProtectGaia\bin\Debug\netcoreapp3.1\ProtectGaia.Interface.dll
+C:\Users\gupta\Downloads\GaiaGit 2\GaiaGit\ProtectGaia\ProtectGaia\bin\Debug\netcoreapp3.1\ProtectGaia.DataAccess.pdb
+C:\Users\gupta\Downloads\GaiaGit 2\GaiaGit\ProtectGaia\ProtectGaia\bin\Debug\netcoreapp3.1\ProtectGaia.Entities.pdb
+C:\Users\gupta\Downloads\GaiaGit 2\GaiaGit\ProtectGaia\ProtectGaia\bin\Debug\netcoreapp3.1\ProtectGaia.Interface.pdb
+C:\Users\gupta\Downloads\GaiaGit 2\GaiaGit\ProtectGaia\ProtectGaia\obj\Debug\netcoreapp3.1\ProtectGaia.csprojAssemblyReference.cache
+C:\Users\gupta\Downloads\GaiaGit 2\GaiaGit\ProtectGaia\ProtectGaia\obj\Debug\netcoreapp3.1\ProtectGaia.csproj.CoreCompileInputs.cache
+C:\Users\gupta\Downloads\GaiaGit 2\GaiaGit\ProtectGaia\ProtectGaia\obj\Debug\netcoreapp3.1\ProtectGaia.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\gupta\Downloads\GaiaGit 2\GaiaGit\ProtectGaia\ProtectGaia\obj\Debug\netcoreapp3.1\ProtectGaia.RazorAssemblyInfo.cache
+C:\Users\gupta\Downloads\GaiaGit 2\GaiaGit\ProtectGaia\ProtectGaia\obj\Debug\netcoreapp3.1\ProtectGaia.RazorAssemblyInfo.cs
+C:\Users\gupta\Downloads\GaiaGit 2\GaiaGit\ProtectGaia\ProtectGaia\obj\Debug\netcoreapp3.1\ProtectGaia.AssemblyInfoInputs.cache
+C:\Users\gupta\Downloads\GaiaGit 2\GaiaGit\ProtectGaia\ProtectGaia\obj\Debug\netcoreapp3.1\ProtectGaia.AssemblyInfo.cs
+C:\Users\gupta\Downloads\GaiaGit 2\GaiaGit\ProtectGaia\ProtectGaia\obj\Debug\netcoreapp3.1\ProtectGaia.TagHelpers.input.cache
+C:\Users\gupta\Downloads\GaiaGit 2\GaiaGit\ProtectGaia\ProtectGaia\obj\Debug\netcoreapp3.1\ProtectGaia.TagHelpers.output.cache
+C:\Users\gupta\Downloads\GaiaGit 2\GaiaGit\ProtectGaia\ProtectGaia\obj\Debug\netcoreapp3.1\ProtectGaia.RazorCoreGenerate.cache
+C:\Users\gupta\Downloads\GaiaGit 2\GaiaGit\ProtectGaia\ProtectGaia\obj\Debug\netcoreapp3.1\Razor\Views\Dashboard\Index.cshtml.g.cs
+C:\Users\gupta\Downloads\GaiaGit 2\GaiaGit\ProtectGaia\ProtectGaia\obj\Debug\netcoreapp3.1\Razor\Views\Dashboard\TaskDisplayPartialView.cshtml.g.cs
+C:\Users\gupta\Downloads\GaiaGit 2\GaiaGit\ProtectGaia\ProtectGaia\obj\Debug\netcoreapp3.1\Razor\Views\Dashboard\TaskRenderer.cshtml.g.cs
+C:\Users\gupta\Downloads\GaiaGit 2\GaiaGit\ProtectGaia\ProtectGaia\obj\Debug\netcoreapp3.1\Razor\Views\Explainers\ClimateChange.cshtml.g.cs
+C:\Users\gupta\Downloads\GaiaGit 2\GaiaGit\ProtectGaia\ProtectGaia\obj\Debug\netcoreapp3.1\Razor\Views\Explainers\EnergyConsumption.cshtml.g.cs
+C:\Users\gupta\Downloads\GaiaGit 2\GaiaGit\ProtectGaia\ProtectGaia\obj\Debug\netcoreapp3.1\Razor\Views\Explainers\HealthImpacts.cshtml.g.cs
+C:\Users\gupta\Downloads\GaiaGit 2\GaiaGit\ProtectGaia\ProtectGaia\obj\Debug\netcoreapp3.1\Razor\Views\Explainers\HouseholdPractices.cshtml.g.cs
+C:\Users\gupta\Downloads\GaiaGit 2\GaiaGit\ProtectGaia\ProtectGaia\obj\Debug\netcoreapp3.1\Razor\Views\Explainers\MakeAChange.cshtml.g.cs
+C:\Users\gupta\Downloads\GaiaGit 2\GaiaGit\ProtectGaia\ProtectGaia\obj\Debug\netcoreapp3.1\Razor\Views\Explainers\TransportEmissions.cshtml.g.cs
+C:\Users\gupta\Downloads\GaiaGit 2\GaiaGit\ProtectGaia\ProtectGaia\obj\Debug\netcoreapp3.1\Razor\Views\Home\Contact.cshtml.g.cs
+C:\Users\gupta\Downloads\GaiaGit 2\GaiaGit\ProtectGaia\ProtectGaia\obj\Debug\netcoreapp3.1\Razor\Views\Home\Error.cshtml.g.cs
+C:\Users\gupta\Downloads\GaiaGit 2\GaiaGit\ProtectGaia\ProtectGaia\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\gupta\Downloads\GaiaGit 2\GaiaGit\ProtectGaia\ProtectGaia\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
+C:\Users\gupta\Downloads\GaiaGit 2\GaiaGit\ProtectGaia\ProtectGaia\obj\Debug\netcoreapp3.1\Razor\Views\Resources\Visualization.cshtml.g.cs
+C:\Users\gupta\Downloads\GaiaGit 2\GaiaGit\ProtectGaia\ProtectGaia\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
+C:\Users\gupta\Downloads\GaiaGit 2\GaiaGit\ProtectGaia\ProtectGaia\obj\Debug\netcoreapp3.1\Razor\Views\Shared\NotFound.cshtml.g.cs
+C:\Users\gupta\Downloads\GaiaGit 2\GaiaGit\ProtectGaia\ProtectGaia\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_AuthenticatedLayout.cshtml.g.cs
+C:\Users\gupta\Downloads\GaiaGit 2\GaiaGit\ProtectGaia\ProtectGaia\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\gupta\Downloads\GaiaGit 2\GaiaGit\ProtectGaia\ProtectGaia\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\gupta\Downloads\GaiaGit 2\GaiaGit\ProtectGaia\ProtectGaia\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_WebLayout.cshtml.g.cs
+C:\Users\gupta\Downloads\GaiaGit 2\GaiaGit\ProtectGaia\ProtectGaia\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\gupta\Downloads\GaiaGit 2\GaiaGit\ProtectGaia\ProtectGaia\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\gupta\Downloads\GaiaGit 2\GaiaGit\ProtectGaia\ProtectGaia\obj\Debug\netcoreapp3.1\ProtectGaia.RazorTargetAssemblyInfo.cache
+C:\Users\gupta\Downloads\GaiaGit 2\GaiaGit\ProtectGaia\ProtectGaia\obj\Debug\netcoreapp3.1\ProtectGaia.RazorTargetAssemblyInfo.cs
+C:\Users\gupta\Downloads\GaiaGit 2\GaiaGit\ProtectGaia\ProtectGaia\obj\Debug\netcoreapp3.1\ProtectGaia.Views.pdb
+C:\Users\gupta\Downloads\GaiaGit 2\GaiaGit\ProtectGaia\ProtectGaia\obj\Debug\netcoreapp3.1\ProtectGaia.csproj.CopyComplete
+C:\Users\gupta\Downloads\GaiaGit 2\GaiaGit\ProtectGaia\ProtectGaia\obj\Debug\netcoreapp3.1\staticwebassets\ProtectGaia.StaticWebAssets.Manifest.cache
+C:\Users\gupta\Downloads\GaiaGit 2\GaiaGit\ProtectGaia\ProtectGaia\obj\Debug\netcoreapp3.1\staticwebassets\ProtectGaia.StaticWebAssets.xml
+C:\Users\gupta\Downloads\GaiaGit 2\GaiaGit\ProtectGaia\ProtectGaia\obj\Debug\netcoreapp3.1\ProtectGaia.dll
+C:\Users\gupta\Downloads\GaiaGit 2\GaiaGit\ProtectGaia\ProtectGaia\obj\Debug\netcoreapp3.1\ProtectGaia.pdb
+C:\Users\gupta\Downloads\GaiaGit 2\GaiaGit\ProtectGaia\ProtectGaia\obj\Debug\netcoreapp3.1\ProtectGaia.genruntimeconfig.cache

@@ -57,11 +57,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\gupta\\Source\\Repos\\ProtectGaia-dev\\ProtectGaia.Entities\\ProtectGaia.Entities.csproj",
+      "projectUniqueName": "C:\\Users\\gupta\\Downloads\\GaiaGit 2\\GaiaGit\\ProtectGaia\\ProtectGaia.Entities\\ProtectGaia.Entities.csproj",
       "projectName": "ProtectGaia.Entities",
-      "projectPath": "C:\\Users\\gupta\\Source\\Repos\\ProtectGaia-dev\\ProtectGaia.Entities\\ProtectGaia.Entities.csproj",
+      "projectPath": "C:\\Users\\gupta\\Downloads\\GaiaGit 2\\GaiaGit\\ProtectGaia\\ProtectGaia.Entities\\ProtectGaia.Entities.csproj",
       "packagesPath": "C:\\Users\\gupta\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\gupta\\Source\\Repos\\ProtectGaia-dev\\ProtectGaia.Entities\\obj\\",
+      "outputPath": "C:\\Users\\gupta\\Downloads\\GaiaGit 2\\GaiaGit\\ProtectGaia\\ProtectGaia.Entities\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\gupta\\AppData\\Roaming\\NuGet\\NuGet.Config",

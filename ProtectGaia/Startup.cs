@@ -8,6 +8,10 @@ using Microsoft.Extensions.DependencyInjection.Extensions;
 using Microsoft.Extensions.Hosting;
 using ProtectGaia.DataAccess;
 using ProtectGaia.Interface;
+using Microsoft.EntityFrameworkCore;
+using ProtectGaia.DataContexts;
+using ProtectGaia.Interfaces;
+using ProtectGaia.Implementations;
 
 namespace ProtectGaia
 {
@@ -23,19 +27,46 @@ namespace ProtectGaia
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+
+
             services.AddControllersWithViews();
+
+            services.AddDbContextPool<ChallengeDB>(options => options.UseSqlServer(Configuration.GetConnectionString("EcoMorphConnection")));
+
+            //services.AddDbContextPool<ChallengeDB>(options => options.UseSqlServer(Configuration.GetConnectionString("EcoMorphConnection")));
+            //services.AddDbContextPool<ChallengeDB>(options =>
+            //    options.UseSqlServer(
+            //        Configuration.GetConnectionString("EcoMorphConnection")));
+
             services.AddDistributedMemoryCache();
+
 
             services.AddSession(options =>
             {
-                options.IdleTimeout = TimeSpan.FromMinutes(2);
+                options.IdleTimeout = TimeSpan.FromMinutes(5);
                 options.Cookie.HttpOnly = true;
                 options.Cookie.IsEssential = true;
+            });
+            services.ConfigureApplicationCookie(options =>
+            {
+                options.Cookie.SameSite = SameSiteMode.None;
             });
 
             services.AddScoped<INewsApi, NewsApi>();
             services.AddScoped<IWeatherApi, WeatherApi>();
+            services.AddScoped<IUser, UserRepository>();
+            services.AddScoped<IChallenge, ChallengeRepository >();
+
             services.TryAddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+            services.AddAuthentication()
+            .AddGoogle(options =>
+            {
+                IConfigurationSection googleAuthNSection =
+                    Configuration.GetSection("Authentication:Google");
+
+                options.ClientId = googleAuthNSection["ClientId"];
+                options.ClientSecret = googleAuthNSection["ClientSecret"];
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -43,11 +74,15 @@ namespace ProtectGaia
         {
             if (env.IsDevelopment())
             {
-                app.UseDeveloperExceptionPage();
+                app.UseStatusCodePagesWithReExecute("/Home/Error", "?statusCode={0}");
+                //app.UseDeveloperExceptionPage();
             }
             else
             {
-                app.UseExceptionHandler("/Home/Error");
+                //app.UseExceptionHandler("/Error");
+                //app.UseStatusCodePagesWithReExecute("/Error/{0}");
+                //app.UseStatusCodePagesWithRedirects("/Error/{0}");
+                app.UseStatusCodePagesWithReExecute("/Home/Error", "?statusCode={0}");
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
@@ -57,10 +92,9 @@ namespace ProtectGaia
             app.UseStaticFiles();
 
             app.UseRouting();
-
+            app.UseAuthentication();
             app.UseAuthorization();
            
-
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(

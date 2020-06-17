@@ -1,0 +1,22 @@
+﻿@{
+    Layout = "_WebLayout";
+    ViewBag.Title = "NotFound";
+}
+<link rel="stylesheet" href="~/css/error.css" >
+
+    <div id="notfound">
+        <div class="notfound">
+            <div class="notfound-404">
+                <h1> @ViewBag.ErrorTitle </h1>
+                <h3> @ViewBag.ErrorTitleNext </h3>
+            </div>
+            <div>
+                <h2>
+                    @ViewBag.ErrorMessage
+                </h2>
+
+                <a asp-action="index" asp-controller="Home">Go back to Home</a>
+            </div>
+        </div>
+    </div>
+

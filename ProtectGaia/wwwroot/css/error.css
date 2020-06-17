@@ -1,0 +1,78 @@
+﻿#notfound {
+    position: relative;
+    height: 32em;
+}
+
+    #notfound .notfound {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+
+.notfound {
+    max-width: 710px;
+    width: 100%;
+    text-align: center;
+    padding: 0px 15px;
+    line-height: 1.4;
+}
+
+    .notfound .notfound-404 {
+        height: 200px;
+        line-height: 200px;
+    }
+
+        .notfound .notfound-404 h1 {
+            font-family: 'Fredoka One', cursive;
+            font-size: 7em;
+            margin: 0px;
+            color: #2fc2a2;
+            text-transform: uppercase;
+            font-weight: 900;
+        }
+
+        .notfound .notfound-404 h3 {
+            font-family: 'Fredoka One', cursive;
+            font-size: 4em;
+            margin: 0px;
+            color: #2fc2a2;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+    .notfound h2 {
+        font-family: 'Raleway', sans-serif;
+        font-size: 1.2em;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: #222;
+        margin: 1em;
+    }
+
+    .notfound a {
+        font-family: 'Raleway', sans-serif;
+        display: inline-block;
+        font-weight: 700;
+        border-radius: 15px;
+        text-decoration: none;
+        color: #2fc2a2;
+    }
+
+
+@media only screen and (max-width: 767px) {
+    .notfound .notfound-404 {
+        height: 122px;
+        line-height: 122px;
+    }
+
+        .notfound .notfound-404 h1 {
+            font-size: 4em;
+        }
+
+        .notfound .notfound-404 h3 {
+            font-size: 2em;
+        }
+}

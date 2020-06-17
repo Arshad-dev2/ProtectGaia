@@ -1,27 +1,27 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Diagnostics;
-using System.Web;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.Logging;
-using ProtectGaia.Entities.NewsEntity;
-using ProtectGaia.Interface;
-using ProtectGaia.Models;
-using MetOfficeDataPoint;
-using MetOfficeDataPoint.Models;
-using MetOfficeDataPoint.Models.GeoCoordinate;
-using ProtectGaia.Entities.WeatherEntity;
 using System.Linq;
 using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore;
+using System.Web;
+using Microsoft.AspNetCore.Diagnostics;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
+using ProtectGaia.ActionFilters;
+using ProtectGaia.Entities.NewsEntity;
+using ProtectGaia.Entities.WeatherEntity;
+using ProtectGaia.Interface;
+using ProtectGaia.Interfaces;
+using ProtectGaia.Models;
 
 namespace ProtectGaia.Controllers
 {
     /// <summary>
     /// Home Contrller Navigates through all  pages
     /// </summary>
+    [BasicAuthenticationAttribute("ecoMorph", "Password123", BasicRealm = "ecoMorph")]
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
@@ -29,13 +29,18 @@ namespace ProtectGaia.Controllers
         private readonly IWeatherApi _weatherApi;
         private readonly IHttpContextAccessor _httpContextAccessor;
         private ISession _session => _httpContextAccessor.HttpContext.Session;
+        private readonly IUser _user;
+        private readonly IChallenge _challenge;
 
-        public HomeController(ILogger<HomeController> logger, INewsApi _newsApi,IWeatherApi _weatherApi, IHttpContextAccessor httpContextAccessor)
+        public HomeController(ILogger<HomeController> logger, INewsApi _newsApi, IWeatherApi _weatherApi, IHttpContextAccessor httpContextAccessor, IUser _user, IChallenge _challenge)
         {
             _logger = logger;
             this._newsApi = _newsApi;
             this._weatherApi = _weatherApi;
             this._httpContextAccessor = httpContextAccessor;
+            this._user = _user;
+            this._challenge = _challenge;
+
         }
 
         /// <summary>
@@ -43,12 +48,14 @@ namespace ProtectGaia.Controllers
         /// </summary>
         /// <returns></returns>
         [HttpGet]
-        public  IActionResult Index()
+        public IActionResult Index()
         {
-          
+            
+
             IndexViewModel indexViewModel = new IndexViewModel();
             NewsRequest newsRequest = new NewsRequest();
             var newsResponse = new NewsResponse();
+            
             // Session Check for the user to consume the News API. If already retrieved, Get from session else call the API
             if (!string.IsNullOrEmpty(HttpContext.Session.GetString("News")))
             {
@@ -56,74 +63,90 @@ namespace ProtectGaia.Controllers
             }
             else
             {
-                newsRequest.queryString = HttpUtility.UrlEncode("carbon emission Environment climate change");
-                newsRequest.domainList.Add("abc.net.au");
-                newsRequest.domainList.Add("9news.com.au");
+                newsRequest.queryString = HttpUtility.UrlEncode("greenhouse-gas+climate-change");
                 newsRequest.language = "en";
-                newsRequest.sortby = "popularity";
+                newsRequest.sortby = "publishedAt";
                 try
                 {
                     newsResponse = _newsApi.UpcomingNews(newsRequest);
                     string output = JsonConvert.SerializeObject(newsResponse);
                     _session.SetString("News", output);
                 }
-                catch(Exception ex)
+                catch (Exception ex)
                 {
                     _logger.LogError(ex.StackTrace);
                 }
             }
             // If the newsAPI is retrieves, status will be ok
-            if (newsResponse.Status.ToLower() == "ok" && newsResponse.Articles!=null && newsResponse.Articles.Count()>0)
+            if (newsResponse!=null && newsResponse.Status.ToLower() == "ok" && newsResponse.Articles != null && newsResponse.Articles.Count() > 0)
             {
                 indexViewModel.ArticleList = newsResponse.Articles.Select(x => new Models.Article()
-                {Title = x.Title,
-                 ImageUrl = x.UrlToImage!=null? x.UrlToImage.ToString():string.Empty,
-                 PublishedDate = TimeCalculator(DateTime.UtcNow,x.PublishedAt.UtcDateTime),
-                  Source=x.Source.Name,
-                   Url = x.Url.AbsoluteUri
+                {
+                    Title = x.Title,
+                    ImageUrl = x.UrlToImage != null ? x.UrlToImage.OriginalString : string.Empty,
+                    PublishedDate = TimeCalculator(DateTime.Now, x.PublishedAt.DateTime),
+                    Source = x.Source.Name,
+                    Url = x.Url.AbsoluteUri
                 }).ToList();
             }
+           
             return View(indexViewModel.ArticleList);
         }
 
-        /// <summary>
-        /// Published Post time calculator
-        /// </summary>
-        /// <param name="cDate"></param>
-        /// <param name="pDate"></param>
-        /// <returns></returns>
-        private string TimeCalculator(DateTime cDate,DateTime pDate)
+        [HttpPost]
+        public async Task<IActionResult> Index(string userEmail, string userName,string userImageUrl)
         {
-            string days;
-            TimeSpan diff2 = cDate - pDate;
-            if (diff2.TotalDays > 0)
+            
+            UserModel userModel = new UserModel();
+            if (!string.IsNullOrEmpty(userEmail) || !string.IsNullOrEmpty(userName))
             {
-                days = string.Format("{0} days ago", Convert.ToUInt32(diff2.TotalDays).ToString());
-            }
-            else
-            {
-                if(diff2.TotalHours > 0)
+                _session.SetString("userEmail", userEmail);
+                _session.SetString("userName", userName);
+                _session.SetString("userImageUrl", userImageUrl);
+                _session.SetString("IsLoggedIn", "true");
+
+                if (!_user.UserExists(userEmail))
                 {
-                days = string.Format("{0} hours ago", Convert.ToUInt32(diff2.TotalHours).ToString());
+                    userModel.UserEmail = userEmail;
+                    userModel.UserName = !string.IsNullOrEmpty(userName)?userName:userEmail;
+                    userModel.UserImageUrl = !string.IsNullOrEmpty(userImageUrl) ? userImageUrl : string.Empty;
+                    userModel.LevelId = 1;
+                    userModel.TotalTaskCompleted=0;
+                    userModel.LevelCompletedTask= 0;
+                    userModel.PendingTask = 4;
+                    userModel.TotalPointScored=0;
+                    userModel.CarbonScore=0;
+                    userModel.LastModified = DateTime.Now;
+                    userModel.CarbonActivity = string.Empty;
+                    userModel.IsFirstTimeLogin = true;
+                    IDictionary<string, int> Activity_dict = new Dictionary<string, int>();
+                    // Activity will have currenttimestamp and total points scored
+                    Activity_dict.Add(DateTime.Now.ToString(), userModel.TotalPointScored);
+                     var activity_str = JsonConvert.SerializeObject(Activity_dict);
+                    userModel.Activity= activity_str;
+                    userModel.CarbonActivity = string.Empty;
+                    userModel = await _user.CreateUserAsync(userModel);
+                    _session.SetString("UserModel", JsonConvert.SerializeObject(userModel));
                 }
                 else
                 {
-                    if(diff2.TotalMinutes > 0)
-                    {
-                        days = string.Format("{0} Minutes ago", Convert.ToUInt32(diff2.TotalMinutes).ToString());
-
-                    }
-                    else
-                    {
-                        days = "few seconds ago";
-                    }
+                    userModel = await _user.GetUserAsync(userEmail);
+                    userModel.IsFirstTimeLogin=false;
+                    _session.SetString("UserModel", JsonConvert.SerializeObject(userModel));
                 }
             }
-            return days;
+            else
+            {
+                return Redirect("/");
+            }
+            return Json(new { newUrl = Url.Action("Index", "Dashboard") });
+
+
         }
 
+
         /// <summary>
-        /// Get the Location of the user based on the user consent & call the APIs for the widget
+        /// Get the Location of the user based on the user consent and call the APIs for the widget
         /// </summary>
         /// <param name="location"></param>
         /// <returns></returns>
@@ -164,25 +187,80 @@ namespace ProtectGaia.Controllers
                     _session.SetString("Temp", widgetResponse.Temp.ToString());
                     _session.SetString("Aqi", widgetResponse.Aqi.ToString());
                 }
-                catch(Exception ex)
+                catch (Exception ex)
                 {
                     _logger.LogError(ex.StackTrace);
                 }
             }
-            return Json(new{isSucess=true,location= widgetResponse });
+            return Json(new { isSucess = true, location = widgetResponse });
         }
 
-       
-        //public IActionResult Contact()
-        //{
-            
-        //    return View();
-        //}
+
+        public IActionResult SignOut(string userEmail)
+        {
+            _session.Clear();
+            return Json(new { newUrl = Url.Action("Index", "Home") });
+        }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
+        public IActionResult Error(int statusCode)
         {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+           // return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+
+         var statusCodeResult = HttpContext.Features.Get<IStatusCodeReExecuteFeature>();
+            switch (statusCode)
+            {
+                case 404:
+                    ViewBag.ErrorTitle = "404";
+                    ViewBag.ErrorTitleNext = "Page not Found";
+                    ViewBag.ErrorMessage = "Oops, The Page you are looking for can't be found!";
+                    break;
+                case 500:
+                    ViewBag.ErrorTitle = "500";
+                    ViewBag.ErrorTitleNext = "Internal Server Error";
+                    ViewBag.ErrorMessage = "The requested url is temporarily unavailable";
+                    break;
+            }
+            return View("NotFound");
         }
+
+        /// <summary>
+        /// Published Post time calculator
+        /// </summary>
+        /// <param name="cDate"></param>
+        /// <param name="pDate"></param>
+        /// <returns></returns>
+        private string TimeCalculator(DateTime cDate, DateTime pDate)
+        {
+            string days;
+            TimeSpan diff2 = cDate - pDate;
+            if (diff2.TotalDays > 1)
+            {
+                days = string.Format("{0} days ago", Convert.ToUInt32(diff2.TotalDays).ToString());
+            }
+            else
+            {
+                if (diff2.TotalHours > 0)
+                {
+                    days = string.Format("{0} hours ago", Convert.ToUInt32(diff2.TotalHours).ToString());
+                }
+                else
+                {
+                    if (diff2.TotalMinutes > 0)
+                    {
+                        days = string.Format("{0} Minutes ago", Convert.ToUInt32(diff2.TotalMinutes).ToString());
+
+                    }
+                    else
+                    {
+                        days = "few seconds ago";
+                    }
+                }
+            }
+            return days;
+        }
+
+
+
     }
 }
